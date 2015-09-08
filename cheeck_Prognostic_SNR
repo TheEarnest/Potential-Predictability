@@ -2,7 +2,7 @@
 ###############################################################################
 # check the signal to noise ratio  
 #------------------------------------------------------------------------------
-set -ex
+set -e
 ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 # Parameters
@@ -10,17 +10,12 @@ ScriptHome=`pwd`
 DIR=/scratch/earnest/SyncTransfer/FF_ini_try
 tempDIR=/scratch/earnest/temp
 casePrefix=NorCPM_F19_tn21
+MEyear=2000
 DataDIR=/scratch/earnest/noresmexp/FF_ini_try
 
+ModelCompartments="ocn atm ice lnd"
 #------------------------------------------------------------------------------
 # Constants
-is_building_ensemble_mean=1
-is_building_ensemble_mean_ocn=0
-is_check_SSTBias=0
-is_check_SSTDiff=1
-is_check_SSTSpread=0
-is_build_OceanTSLayer=0
-is_check_OceanTBias=0
 is_revisiting_jobs=1
 #------------------------------------------------------------------------------
 funcPath=${ScriptHome}/functions
@@ -30,128 +25,50 @@ LinnBreaker="--------------------------------------------------------"
 if [ ! -d ${DIR} ]; then
   mkdir -p ${DIR}
 fi
-cd ${DIR}
+cd ${DataDIR}
+Members=`ls --color=no `
+firstMem=`echo ${Members} | awk -F " " '{print $1}'`
+lastMem=`echo ${Members} | awk -F " " '{print $NF}'`
 
-if [ "${is_building_ensemble_mean_atm}" == "1" ]; then
-  . ${funcPath}/ps_func_building_ensemble_mean_atm
-fi
+set -ex 
 
-if [ "${is_building_ensemble_mean_ocn}" == "1" ]; then
-  . ${funcPath}/ps_func_building_ensemble_mean_ocn
-fi
+for compartment in ${ModelCompartments}; do 
+  # check the files
+  cd ${DataDIR}/${firstMem}/${compartment}/hist
+  #tarFiles=`ls --color=no ${casePrefix}* `
+  tempcheck=`ls --color=no *${MEyear}* | awk -F "${MEyear}" '{print $1}'`
 
-# for atm
-if [ "${is_check_SSTBias}" == "1" ]; then
-  . ${funcPath}/ps_func_check_SSTBias
-fi
-
-if [ "${is_check_SSTDiff}" == "1" ]; then
-  . ${funcPath}/ps_func_check_SSTDiff
-fi
-
-# for atm
-if [ "${is_check_SSTSpread}" == "1" ]; then
-  . ${funcPath}/ps_func_check_SSTSpread
-fi
-
-# for ocean
-average2=500 #(m)
-AVE=`echo 000${average2} | tail -c5 `
-AnalysisN="OCN_DA_L"${AVE}
-tempPrefix=temp_DA
-if [ "${is_build_OceanTSLayer}" == "1" ]; then
-  depth_bnds_text=${tempDIR}/${tempPrefix}_depth_bnds_text
-  tarDIR=${DIR}/ocn/${AnalysisN}
-  mkdir -p ${tarDIR}
-  cd ${DataDIR}/${casePrefix}_mem01/ocn/hist
-  files=`ls --color=no *hm*`
-  file=`echo ${files} | awk -F " " '{print $1}'`
-  ncdump -v depth_bnds ${file} > ${depth_bnds_text}
-  dblineS=`cat -n ${depth_bnds_text} | grep "depth_bnds =" | awk -F " " '{print $1}'`
-  for file in ${files}; do
-    month=`echo $file | awk -F "-" '{print $NF}' | cut -c1-2 `
-    year=`echo $file | awk -F "-" '{print $1}' | tail -c5 `
-    echo ${year}-${month}
-    cd ${DataDIR}
-    suffix=`echo ${file} | awk -F "hm" '{print $2}' `
-    Targets=`ls ${casePrefix}_mem??/ocn/hist/*${suffix} `
-    for target in ${Targets}; do
-      tar_suffix=`echo ${target} | awk -F "${casePrefix}" '{print $NF}'  `
-      tarname=${tarDIR}/${casePrefix}_OceanTS${tar_suffix}
-      if [ ! -f ${tarname} ]; then
-        rm -f ${tempDIR}/${tempPrefix}_levR*
-        layeridx=0;  UpperBound=0
-        
-        while (( ${UpperBound} <= ${average2} )) ; do
-          cd ${DataDIR}
-          (( layeridx = layeridx + 1 ))
-          (( dpline = dblineS + layeridx ))
-          UpperBound=`cat ${depth_bnds_text} | sed -n "${dpline}p" | awk -F "," '{print $1}' | bc -l`
-          BottomBound=`cat ${depth_bnds_text} | sed -n "${dpline}p" | awk -F "," '{print $2}' | bc -l`
-          layerdepth=`echo "(${BottomBound}-${UpperBound})*1.0" | bc -l `
-          uBound=`echo "scale=0;(${UpperBound}/1.0)" | bc -l`
-          bBound=`echo "scale=0;(${BottomBound}/1.0)" | bc -l`
-          if (( ${bBound} > ${average2} )); then
-            layerdepth=`echo "${average2}-${UpperBound}" | bc -l `
-          else
-            layerdepth=`echo "(${BottomBound}-${UpperBound})*1.0" | bc -l `
-          fi
-          Ratio=`echo "${layerdepth}/${average2}" | bc -l `
-          cdo -L -O -b F32 copy -sellevidx,${layeridx} -selvar,templvl,salnlvl  ${target} ${tempDIR}/${tempPrefix}_temp_nc
-          cdo -L -O mulc,${Ratio} ${tempDIR}/${tempPrefix}_temp_nc ${tempDIR}/${tempPrefix}_levR_${layeridx}
-          echo  ${layerdepth}", "${bottombound}
-          UpperBound=${bBound}
-        done
-        cd ${tempDIR}
-        # create sea mask
-        cdo -L -O div ${tempPrefix}_levR_${layeridx} ${tempPrefix}_levR_${layeridx} ${tempPrefix}_levR_0
-        cdo -L -O enssum ${tempPrefix}_levR_* ${tempPrefix}_levR_ensmean
-        cdo -L -O mul ${tempPrefix}_levR_ensmean ${tempPrefix}_levR_0 ${tarname}
+  prefixes=""
+  is_same_prefix=0
+  for prefixCheck in ${tempcheck}; do 
+    is_same_prefix=0
+    for prefix in ${prefixes}; do 
+      if [ "${prefixCheck}" == "${prefix}" ]; then
+        is_same_prefix=1
       fi
     done
+    if [ "${is_same_prefix}" != "1" ]; then
+      prefixes=${prefixes}" "${prefixCheck}
+    fi
   done
-fi
 
-
-
-# for ocean
-if [ "${is_check_OceanTBias}" == "1" ]; then
-  tarDIR=${DIR}/ocn/Bias_TS
-  mkdir -p ${tarDIR}
-  cd ${DataDIR}/${casePrefix}_mem01/atm/hist
-  files=`ls --color=no *h0*`
-  for file in ${files}; do
-    month=`echo $file | awk -F "-" '{print $NF}' | cut -c1-2 `
-    year=`echo $file | awk -F "-" '{print $1}' | tail -c5 `
-    echo ${year}-${month}
-    cd ${DataDIR}
-    suffix=`echo ${file} | awk -F "h0" '{print $2}' `
-    Targets=`ls ${casePrefix}_mem??/atm/hist/*${suffix} `
-    for target in ${Targets}; do
-      tar_suffix=`echo ${target} | awk -F "${casePrefix}" '{print $NF}'  `
-      tarname=${tarDIR}/${casePrefix}_BiasSST${tar_suffix}
-      if [ ! -f ${tarname} ]; then
-        cdo -L -O sub -seldate,${year}-${month}-01,${year}-${month}-28 ${OBS} -subc,273.15 -selvar,SST ${target} ${tempDIR}/temp_nc
-        cdo -O setvrange,-100,100 ${tempDIR}/temp_nc ${tarname}
-      fi
-    done
+  #---------------------------------------------------------------------------
+  for prefix in ${prefixes}; do 
+    . ${funcPath}/ps_func_building_ensemble_mean
   done
-fi
 
+exit 1
+  for prefix in ${refixes}; do 
+    
+  cd ${DIR}  
+  if [ "${is_building_ensemble_mean}" == "1" ]; then
+    . ${funcPath}/ps_func_building_ensemble_mean
+  fi
+  done
+done
 
 if [ "${is_revisiting_jobs}" == "1" ]; then
-  cd ${funcPath}
-  files=`ls --color=no *_func_*`
-  for file in ${files}; do 
-    JobName=`grep "JobName=" ${file} | awk -F "=" '{print $NF}'  `
-    if [ "${JobName}" != ${file} ]; then
-      sed -i s/"JobName=".*/"JobName=${file}"/g ${file}
-    fi
-    tempPrefix=`grep "tempPrefix=" ${file} | awk -F "=t_" '{print $NF}'  `
-    if [ "${tempPrefix}" != ${file} ]; then
-      sed -i s/"tempPrefix=".*/"tempPrefix=t_${file}"/g ${file}
-    fi
-  done
+    . ${funcPath}/ps_func_revisiting_jobs
 fi
 
 

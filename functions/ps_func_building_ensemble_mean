@@ -1,0 +1,50 @@
+#! /bin/bash
+###############################################################################
+# ensemble info
+#------------------------------------------------------------------------------
+#
+set -e
+JobStartTime=`date`
+JobName=ps_func_building_ensemble_mean
+# 
+tempPrefix=t_ps_func_building_ensemble_mean
+###############################################################################
+Mod=${compartment}
+mkdir -p ${DIR}/${Mod}/hist_ensmean
+mkdir -p ${DIR}/${Mod}/hist_ensspread
+mkdir -p ${DIR}/${Mod}/hist_ensstd
+cd ${DataDIR}/${firstMem}/${Mod}/hist
+files=`ls --color=no ${prefix}*`
+for file in ${files}; do
+  cd ${DataDIR}
+  suffix=`echo ${file} | awk -F "${prefix}" '{print $2}' `
+  echo "Checking ${suffix} of ${Mod} ..."
+  Target=${DIR}/${Mod}/hist_ensspread/${casePrefix}_${Mod}_ensspread${suffix}
+  if [ ! -f ${Target} ]; then
+    ensTargets=`ls ${casePrefix}_mem??/${Mod}/hist/*${suffix} `
+    cdo -O ensmax ${ensTargets} ${tempDIR}/${tempPrefix}_ensmax
+    cdo -O ensmin ${ensTargets} ${tempDIR}/${tempPrefix}_ensmin
+    cdo -O sub ${tempDIR}/${tempPrefix}_ensmax ${tempDIR}/${tempPrefix}_ensmin ${tempDIR}/${tempPrefix}_Spread
+    cp -f ${tempDIR}/${tempPrefix}_Spread ${Target}
+  fi
+  Target=${DIR}/${Mod}/hist_ensmean/${casePrefix}_cam_ensmean${suffix}
+  if [ ! -f ${Target} ]; then
+    ensTargets=`ls ${casePrefix}_mem??/${Mod}/hist/*${suffix} `
+    cdo -O ensmean ${ensTargets} ${Target}
+  fi
+  Target=${DIR}/${Mod}/hist_ensstd/${casePrefix}_cam_ensstd${suffix}
+  if [ ! -f ${Target} ]; then
+    cdo -O ensstd ${ensTargets} ${Target}
+  fi
+done
+
+
+###############################################################################
+echo ${JobStartTime}
+echo `date`" || "${JobName}
+echo ${LinnBreaker}
+
+
+
+
+
