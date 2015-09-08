@@ -1,0 +1,44 @@
+#! /bin/bash
+###############################################################################
+# ensemble info
+#------------------------------------------------------------------------------
+#
+set -ex
+JobStartTime=`date`
+JobName=ps_func_building_ensemble_mean_atm
+# 
+tempPrefix=t_ps_func_building_ensemble_mean_atm
+###############################################################################
+# for atm
+
+mkdir -p ${DIR}/atm/hist
+cd ${DataDIR}/${casePrefix}_mem01/atm/hist
+files=`ls --color=no *h0*`
+for file in ${files}; do
+  cd ${DataDIR}
+  suffix=`echo ${file} | awk -F "h0" '{print $2}' `
+  Target=${DIR}/atm/hist/${casePrefix}_cam_ensspread${suffix}
+  if [ ! -f ${Target} ]; then
+    ensTargets=`ls ${casePrefix}_mem??/atm/hist/*${suffix} `
+    cdo -O ensmax ${ensTargets} ${tempDIR}/temp_ensmax
+    cdo -O ensmin ${ensTargets} ${tempDIR}/temp_ensmin
+    cdo -O sub ${tempDIR}/temp_ensmax ${tempDIR}/temp_ensmin ${tempDIR}/temp_Spread
+    cp -f ${tempDIR}/temp_Spread ${Target}
+  fi
+  Target=${DIR}/atm/hist/${casePrefix}_cam_ensmean${suffix}
+  if [ ! -f ${Target} ]; then
+    ensTargets=`ls ${casePrefix}_mem??/atm/hist/*${suffix} `
+    cdo -O ensmean ${ensTargets} ${Target}
+  fi
+done
+
+
+###############################################################################
+echo ${JobStartTime}
+echo `date`" || "${JobName}
+echo ${LinnBreaker}
+
+
+
+
+

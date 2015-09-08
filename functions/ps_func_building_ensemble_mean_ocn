@@ -1,0 +1,55 @@
+#! /bin/bash
+###############################################################################
+# ensemble info
+#------------------------------------------------------------------------------
+#
+set -ex
+JobStartTime=`date`
+JobName=ps_func_building_ensemble_mean_ocn
+# 
+tempPrefix=t_ps_func_building_ensemble_mean_ocn
+###############################################################################
+
+# for ocn
+mkdir -p ${DIR}/ocn/hist
+cd ${DataDIR}/${casePrefix}_mem01/ocn/hist
+files=`ls --color=no *micom* `
+for file in ${files}; do
+  cd ${DataDIR}
+  suffix=`echo ${file} | awk -F "micom" '{print $2}' `
+  Target=${DIR}/ocn/hist/${casePrefix}_micom_ensspread${suffix}
+  if [ ! -f ${Target} ]; then
+    targetfiless=`ls ${casePrefix}_mem??/ocn/hist/*${suffix} `
+    fid=1
+    for ofile in ${targetfiless}; do
+      cdo -O -b F32 copy ${ofile} ${tempDIR}/temp_Ffile_${fid}
+      (( fid = fid + 1 ))
+    done
+    cdo -O ensmax ${tempDIR}/temp_Ffile_* ${tempDIR}/temp_ensmax
+    cdo -O ensmin ${tempDIR}/temp_Ffile_* ${tempDIR}/temp_ensmin
+    cdo -O sub ${tempDIR}/temp_ensmax ${tempDIR}/temp_ensmin ${tempDIR}/temp_Spread
+    cp -f ${tempDIR}/temp_Spread ${Target}
+    rm ${tempDIR}/temp_Ffile_*
+  fi
+  Target=${DIR}/ocn/hist/${casePrefix}_micom_ensmean${suffix}
+  if [ ! -f ${Target} ]; then
+    targetfiless=`ls ${casePrefix}_mem??/ocn/hist/*${suffix} `
+    fid=1
+    for ofile in ${targetfiless}; do
+      cdo -O -b F32 copy ${ofile} ${tempDIR}/temp_Ffile_${fid}
+      (( fid = fid + 1 ))
+    done
+    cdo -O ensmean ${tempDIR}/temp_Ffile_* ${Target}
+  fi
+done
+
+
+###############################################################################
+echo ${JobStartTime}
+echo `date`" || "${JobName}
+echo ${LinnBreaker}
+
+
+
+
+

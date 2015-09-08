@@ -1,0 +1,43 @@
+#! /bin/bash
+###############################################################################
+# ensemble info
+#------------------------------------------------------------------------------
+#
+set -ex
+JobStartTime=`date`
+JobName=ps_func_check_SSTBias
+# 
+tempPrefix=t_ps_func_check_SSTBias
+###############################################################################
+
+tarDIR=${DIR}/atm/Bias_SST
+mkdir -p ${tarDIR}
+cd ${DataDIR}/${casePrefix}_mem01/atm/hist
+files=`ls --color=no *h0*`
+for file in ${files}; do
+  month=`echo $file | awk -F "-" '{print $NF}' | cut -c1-2 `
+  year=`echo $file | awk -F "-" '{print $1}' | tail -c5 `
+  echo ${year}-${month}
+  cd ${DataDIR}
+  suffix=`echo ${file} | awk -F "h0" '{print $2}' `
+  Targets=`ls ${casePrefix}_mem??/atm/hist/*${suffix} `
+  for target in ${Targets}; do
+    tar_suffix=`echo ${target} | awk -F "${casePrefix}" '{print $NF}'  `
+    tarname=${tarDIR}/${casePrefix}_BiasSST${tar_suffix}
+    if [ ! -f ${tarname} ]; then
+      cdo -L -O sub -subc,273.15 -selvar,SST ${target} -seldate,${year}-${month}-01,${year}-${month}-28 ${OBS} ${tempDIR}/temp_nc
+      cdo -O setvrange,-100,100 ${tempDIR}/temp_nc ${tarname}
+    fi
+  done
+done
+
+
+###############################################################################
+echo ${JobStartTime}
+echo `date`" || "${JobName}
+echo ${LinnBreaker}
+
+
+
+
+
