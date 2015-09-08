@@ -5,13 +5,13 @@ For calculating Prognostic Potential Predictability (PPP) on nostore-osl
 Do these before using the script
 ------
 *  Change the following head parameters in "cheeck_Prognostic_SNR"
-  DIR="the main output path"
-  tempDIR="where the temporary files are saved"
-  casePrefix="a general case name for all ensemble members" 
-  MEyear="a year which must be existed in all ensemble members. For determining the file prefixes" 
-  DataDIR="dir for the outputs"
+  *  DIR="the main output path"
+  *  tempDIR="where the temporary files are saved"
+  *  casePrefix="a general case name for all ensemble members" 
+  *  MEyear="a year which must be existed in all ensemble members. For determining the file prefixes" 
+  *  DataDIR="dir for the outputs"
 
-  ModelCompartments="ocn atm ice lnd"
+  *  ModelCompartments="ocn atm ice lnd"
 
 * Make sure the data are well-prepared (no missing ensemble member or missing years)
 
