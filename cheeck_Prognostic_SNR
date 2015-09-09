@@ -13,7 +13,8 @@ casePrefix=NorCPM_F19_tn21
 MEyear=2000
 DataDIR=/scratch/earnest/noresmexp/FF_ini_try
 
-ModelCompartments="ocn atm ice lnd"
+#ModelCompartments="ocn atm ice lnd"
+ModelCompartments="lnd"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -30,7 +31,7 @@ Members=`ls --color=no `
 firstMem=`echo ${Members} | awk -F " " '{print $1}'`
 lastMem=`echo ${Members} | awk -F " " '{print $NF}'`
 
-set -ex 
+set -e 
 
 for compartment in ${ModelCompartments}; do 
   # check the files
@@ -81,4 +82,5 @@ if [ "${is_revisiting_jobs}" == "1" ]; then
   . ${funcPath}/ps_func_revisiting_jobs
 fi
 
+# http://hugotravel.pixnet.net/blog/post/66203133
 

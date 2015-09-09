@@ -19,16 +19,20 @@ cd ${DataDIR}/${firstMem}/${Mod}/hist
 files=`ls --color=no ${prefix}*`
 for file in ${files}; do
   suffix=`echo ${file} | awk -F "${prefix}" '{print $NF}' `
+  firstprefix=`echo ${prefix} | awk -F "." '{print $1}'`
+  infix=`echo ${prefix} | awk -F "${firstprefix}" '{print $NF}'`
+
   cd ${DataDIR}
   Sources=`ls ${DataDIR}/${casePrefix}*/${compartment}/hist/*${suffix}`
   ensmean=`ls ${DIR}/${Mod}/hist_ensmean/*${suffix} `
   for Source in ${Sources}; do
     filename=`echo ${Source} | awk -F "/" '{print $NF}'`
     target=${tarDIR}/${Member}/${filename}
-    if [ ! -f ${filename} ]; then
+    if [ ! -f ${target} ]; then
       cdo sub ${Source} ${ensmean} ${target}
     fi
   done    
+exit 1
 done
 
 

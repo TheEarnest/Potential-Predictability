@@ -40,14 +40,13 @@ for file in ${files}; do
   if [ ! -f ${Target} ]; then
     cdo -O ensstd ${ensTargets} ${Target}
   fi
-exit 1
 done
 time cdo -O mergetime ${DIR}/${Mod}/hist_ensmean/*${infix}* ${DIR}/${Mod}/${casePrefix}${infix}mergetime
 time cdo -O ymonmean ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${DIR}/${Mod}/${casePrefix}${infix}ymonmean
-cdo -O sub ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${DIR}/${Mod}/${casePrefix}${infix}ymonmean ${DIR}/${Mod}/${casePrefix}_${infix}_anomaly
+cdo -O sub ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${DIR}/${Mod}/${casePrefix}${infix}ymonmean ${DIR}/${Mod}/${casePrefix}${infix}anomaly
 cdo -O timvar ${DIR}/${Mod}/${casePrefix}${infix}anomaly ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar
-months=`cdo showmon ${DIR}/${Mod}/${casePrefix}${infix}anomaly `
-for month in `seq 1 12 `; do 
+months=`cdo showmon ${DIR}/${Mod}/${casePrefix}${infix}ymonmean `
+for month in ${months}; do 
   mm=`echo 00${month} | tail -c3 `
   cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}
 done
