@@ -53,22 +53,32 @@ for compartment in ${ModelCompartments}; do
   done
 
   #---------------------------------------------------------------------------
+  # calculating the ensemble mean/std/spread (max-min)
   for prefix in ${prefixes}; do 
     . ${funcPath}/ps_func_building_ensemble_mean
   done
 
+  #---------------------------------------------------------------------------
+  # the difference of each member and ensemble mean
+  for prefix in ${prefixes}; do 
+    #------------------------------------------------------------------------
+    # for all variables 
+    . ${funcPath}/ps_func_check_Diff
+    cd ${DataDIR}/${firstMem}/${compartment}/hist
+    files=`ls --color=no ${prefix}* `
+    firstfile=`echo ${files} | awk -F " " '{print $1}' `
+    varnames=`cdo showvar ${firstfile}`
+    for varname in ${varnames}; do 
 exit 1
-  for prefix in ${refixes}; do 
-    
-  cd ${DIR}  
-  if [ "${is_building_ensemble_mean}" == "1" ]; then
-    . ${funcPath}/ps_func_building_ensemble_mean
-  fi
+      . ${funcPath}/ps_func_check_Spread
+      . ${funcPath}/ps_func_check_Signal2NoiseRatio
+      . ${funcPath}/ps_func_check_PPP
+    done
   done
 done
 
 if [ "${is_revisiting_jobs}" == "1" ]; then
-    . ${funcPath}/ps_func_revisiting_jobs
+  . ${funcPath}/ps_func_revisiting_jobs
 fi
 
 

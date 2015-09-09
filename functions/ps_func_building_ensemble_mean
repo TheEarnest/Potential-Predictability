@@ -19,7 +19,8 @@ for file in ${files}; do
   cd ${DataDIR}
   suffix=`echo ${file} | awk -F "${prefix}" '{print $2}' `
   echo "Checking ${suffix} of ${Mod} ..."
-  Target=${DIR}/${Mod}/hist_ensspread/${casePrefix}_${Mod}_ensspread${suffix}
+  Target=${DIR}/${Mod}/hist_ensspread/${casePrefix}_${Mod}_ensspread.${suffix}
+
   if [ ! -f ${Target} ]; then
     ensTargets=`ls ${casePrefix}_mem??/${Mod}/hist/*${suffix} `
     cdo -O ensmax ${ensTargets} ${tempDIR}/${tempPrefix}_ensmax
@@ -27,18 +28,25 @@ for file in ${files}; do
     cdo -O sub ${tempDIR}/${tempPrefix}_ensmax ${tempDIR}/${tempPrefix}_ensmin ${tempDIR}/${tempPrefix}_Spread
     cp -f ${tempDIR}/${tempPrefix}_Spread ${Target}
   fi
-  Target=${DIR}/${Mod}/hist_ensmean/${casePrefix}_cam_ensmean${suffix}
+  Target=${DIR}/${Mod}/hist_ensmean/${casePrefix}_${Mod}_ensmean.${suffix}
   if [ ! -f ${Target} ]; then
     ensTargets=`ls ${casePrefix}_mem??/${Mod}/hist/*${suffix} `
     cdo -O ensmean ${ensTargets} ${Target}
   fi
-  Target=${DIR}/${Mod}/hist_ensstd/${casePrefix}_cam_ensstd${suffix}
+  Target=${DIR}/${Mod}/hist_ensstd/${casePrefix}_${Mod}_ensstd.${suffix}
   if [ ! -f ${Target} ]; then
     cdo -O ensstd ${ensTargets} ${Target}
   fi
 done
-
-
+time cdo -O mergetime ${DIR}/${Mod}/hist_ensmean/${prefix}* ${DIR}/${Mod}/${casePrefix}_${Mod}_mergetime
+time cdo -O ymonmean ${DIR}/${Mod}/${casePrefix}_${Mod}_mergetime ${DIR}/${Mod}/${casePrefix}_${Mod}_ymonmean
+cdo -O sub ${DIR}/${Mod}/${casePrefix}_${Mod}_mergetime ${DIR}/${Mod}/${casePrefix}_${Mod}_ymonmean ${DIR}/${Mod}/${casePrefix}_${Mod}_anomaly
+cdo -O timvar ${DIR}/${Mod}/${casePrefix}_${Mod}_anomaly ${DIR}/${Mod}/${casePrefix}_${Mod}_anomaly_timvar
+months=`cdo showmon ${DIR}/${Mod}/${casePrefix}_${Mod}_anomaly `
+for month in `seq 1 12 `; do 
+  mm=`echo 00${month} | tail -c3 `
+  cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}_${Mod}_anomaly ${DIR}/${Mod}/${casePrefix}_${Mod}_anomaly_timvar_m${mm}
+done
 ###############################################################################
 echo ${JobStartTime}
 echo `date`" || "${JobName}

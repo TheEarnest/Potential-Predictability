@@ -1,0 +1,43 @@
+#! /bin/bash
+###############################################################################
+# ensemble info
+#------------------------------------------------------------------------------
+#
+set -ex
+JobStartTime=`date`
+JobName=ps_func_check_SSTDiff
+# 
+tempPrefix=t_ps_func_check_SSTDiff
+###############################################################################
+Mod=${compartment}
+tarDIR=${DIR}/${Mod}/Diff
+mkdir -p ${tarDIR}
+for Member in ${Members}; do 
+  mkdir -p ${tarDIR}/${Member}
+done
+cd ${DataDIR}/${firstMem}/${Mod}/hist
+files=`ls --color=no ${prefix}*`
+for file in ${files}; do
+  suffix=`echo ${file} | awk -F "${prefix}" '{print $NF}' `
+  cd ${DataDIR}
+  Sources=`ls ${DataDIR}/${casePrefix}*/${compartment}/hist/*${suffix}`
+  ensmean=`ls ${DIR}/${Mod}/hist_ensmean/*${suffix} `
+  for Source in ${Sources}; do
+    filename=`echo ${Source} | awk -F "/" '{print $NF}'`
+    target=${tarDIR}/${Member}/${filename}
+    if [ ! -f ${filename} ]; then
+      cdo sub ${Source} ${ensmean} ${target}
+    fi
+  done    
+done
+
+
+###############################################################################
+echo ${JobStartTime}
+echo `date`" || "${JobName}
+echo ${LinnBreaker}
+
+
+
+
+
