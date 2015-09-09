@@ -1,6 +1,7 @@
 
-For calculating Prognostic Potential Predictability (PPP) on nostore-osl
+Prognostic Potential Predictability (PPP)
 ==========
+#### For calculating Prognostic Potential Predictability (PPP) on nostore-osl ####
 
 Do these before using the script
 ------
@@ -23,4 +24,4 @@ Do these before using the script
 
 > Schematic figure on the signal-to-noise ratio 
 >> markdown testing....
-
+>>> markdown another testing ...
