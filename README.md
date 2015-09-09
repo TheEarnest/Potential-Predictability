@@ -4,6 +4,9 @@ For calculating Prognostic Potential Predictability (PPP) on nostore-osl
 
 Do these before using the script
 ------
+
+### Do these before using the script ###
+
 *  Change the following head parameters in "cheeck_Prognostic_SNR"
   *  DIR="the main output path"
   *  tempDIR="where the temporary files are saved"
