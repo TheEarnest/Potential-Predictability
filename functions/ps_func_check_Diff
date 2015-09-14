@@ -32,7 +32,6 @@ for file in ${files}; do
       cdo sub ${Source} ${ensmean} ${target}
     fi
   done    
-exit 1
 done
 
 

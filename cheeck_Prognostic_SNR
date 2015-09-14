@@ -65,6 +65,7 @@ for compartment in ${ModelCompartments}; do
     #------------------------------------------------------------------------
     # for all variables 
     . ${funcPath}/ps_func_check_Diff
+set -ex
     cd ${DataDIR}/${firstMem}/${compartment}/hist
     files=`ls --color=no ${prefix}* `
     firstfile=`echo ${files} | awk -F " " '{print $1}' `
