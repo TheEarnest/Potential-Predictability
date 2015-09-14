@@ -13,7 +13,7 @@ casePrefix=NorCPM_F19_tn21
 MEyear=2000
 DataDIR=/scratch/earnest/noresmexp/FF_ini_try
 
-#ModelCompartments="ocn atm ice lnd"
+#ModelCompartments="lnd ocn atm ice"
 ModelCompartments="lnd"
 #------------------------------------------------------------------------------
 # Constants

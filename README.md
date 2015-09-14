@@ -1,10 +1,9 @@
 
 Prognostic Potential Predictability (PPP)
 ==========
-#### For calculating Prognostic Potential Predictability (PPP) on nostore-osl ####
+>> For calculating Prognostic Potential Predictability (PPP) on nostore-osl 
 
-Do these before using the script
-------
+
 
 ### Do these before using the script ###
 
@@ -21,7 +20,8 @@ Do these before using the script
 
 * micom outputs are compressed format, and cannot be processed by "cdo" because each file has different factor and offset. Better convert the outputs to F32 format before using this script.
 
-
+-------
 > Schematic figure on the signal-to-noise ratio 
 >> markdown testing....
 >>> markdown another testing ...
+

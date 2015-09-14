@@ -41,15 +41,47 @@ for file in ${files}; do
     cdo -O ensstd ${ensTargets} ${Target}
   fi
 done
-time cdo -O mergetime ${DIR}/${Mod}/hist_ensmean/*${infix}* ${DIR}/${Mod}/${casePrefix}${infix}mergetime
-time cdo -O ymonmean ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${DIR}/${Mod}/${casePrefix}${infix}ymonmean
-cdo -O sub ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${DIR}/${Mod}/${casePrefix}${infix}ymonmean ${DIR}/${Mod}/${casePrefix}${infix}anomaly
-cdo -O timvar ${DIR}/${Mod}/${casePrefix}${infix}anomaly ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar
-months=`cdo showmon ${DIR}/${Mod}/${casePrefix}${infix}ymonmean `
-for month in ${months}; do 
-  mm=`echo 00${month} | tail -c3 `
-  cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}
-done
+set -ex
+#time cdo -O mergetime ${DIR}/${Mod}/hist_ensmean/*${infix}* ${DIR}/${Mod}/${casePrefix}${infix}mergetime
+#time cdo -O ymonmean ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${DIR}/${Mod}/${casePrefix}${infix}ymonmean
+cdo griddes ${DIR}/${Mod}/${casePrefix}${infix}ymonmean | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
+grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
+
+if [ "${grid_count}" == "1" ]; then
+  gridtarget=${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar
+  if [ ! -f ${gridtarget} ]; then
+    cdo -O sub ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${DIR}/${Mod}/${casePrefix}${infix}ymonmean ${DIR}/${Mod}/${casePrefix}${infix}anomaly
+    cdo -O timvar ${DIR}/${Mod}/${casePrefix}${infix}anomaly ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar
+  fi
+  months=`cdo showmon ${DIR}/${Mod}/${casePrefix}${infix}ymonmean `
+  for month in ${months}; do 
+    mm=`echo 00${month} | tail -c3 `
+    cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}
+  done
+else
+  ig=`echo 000${grid_count} | tail -c3 `
+  gridtarget=${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_G${ig}
+  if [ ! -f ${gridtarget} ]; then    
+    cdo -O -f nc copy ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${tempDIR}/${tempPrefix}_mergetime_nc
+    cdo -O splitgrid ${tempDIR}/${tempPrefix}_mergetime_nc ${tempDIR}/${tempPrefix}_mergetime_G
+    cdo -O -f nc copy ${DIR}/${Mod}/${casePrefix}${infix}ymonmean ${tempDIR}/${tempPrefix}_ymonmean_nc
+    cdo -O splitgrid ${tempDIR}/${tempPrefix}_ymonmean_nc ${tempDIR}/${tempPrefix}_ymonmean_G
+  fi
+  for ig in `seq 1 ${grid_count}`; do 
+    igg=`echo 000${ig} | tail -c3` 
+    gridtarget=${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_G${igg}
+    if [ ! -f ${gridtarget} ]; then
+      cdo -O sub ${tempDIR}/${tempPrefix}_mergetime_G${igg}.nc ${tempDIR}/${tempPrefix}_ymonmean_G${igg}.nc ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg}
+      cdo -O timvar ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_G${igg}
+    fi
+    months=`cdo showmon ${DIR}/${Mod}/${casePrefix}${infix}ymonmean `
+    for month in ${months}; do
+      mm=`echo 00${month} | tail -c3 `
+      cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}_G${igg}
+    done
+  done
+fi
+
 ###############################################################################
 echo ${JobStartTime}
 echo `date`" || "${JobName}
