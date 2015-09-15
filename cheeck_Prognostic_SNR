@@ -14,7 +14,7 @@ MEyear=2000
 DataDIR=/scratch/earnest/noresmexp/FF_ini_try
 
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="lnd"
+ModelCompartments="lnd ice"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -68,14 +68,11 @@ for compartment in ${ModelCompartments}; do
     cd ${DataDIR}/${firstMem}/${compartment}/hist
     files=`ls --color=no ${prefix}* `
     firstfile=`echo ${files} | awk -F " " '{print $1}' `
-    varnames=`cdo showvar ${firstfile}`
-    for varname in ${varnames}; do 
-      . ${funcPath}/ps_func_check_sqr
-      . ${funcPath}/ps_func_check_Spread
-exit 1
-      . ${funcPath}/ps_func_check_Signal2NoiseRatio
-      . ${funcPath}/ps_func_check_PPP
-    done
+#    varnames=`cdo showvar ${firstfile}`
+    . ${funcPath}/ps_func_check_sqr
+    . ${funcPath}/ps_func_check_Spread
+    . ${funcPath}/ps_func_check_Signal2NoiseRatio
+#    done
   done
 done
 

@@ -7,7 +7,7 @@ set -e
 JobStartTime=`date`
 JobName=ps_func_building_ensemble_mean
 # 
-tempPrefix=t_ps_func_building_ensemble_mean
+tempPrefix=t_'ps_func_building_ensemble_mean'
 ###############################################################################
 Mod=${compartment}
 mkdir -p ${DIR}/${Mod}/hist_ensmean

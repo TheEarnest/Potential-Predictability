@@ -5,9 +5,9 @@
 #
 set -e
 JobStartTime=`date`
-JobName=ps_func_check_SSTSpread
+JobName='ps_func_check_sqr'
 # 
-tempPrefix=t_ps_func_check_SSTSpread
+tempPrefix=t_'ps_func_check_sqr'
 ###############################################################################
 tarDIR=${DIR}/${Mod}/sqr
 for Member in ${Members}; do

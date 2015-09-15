@@ -7,7 +7,7 @@ set -ex
 JobStartTime=`date`
 JobName=ps_func_building_ensemble_mean_atm
 # 
-tempPrefix=t_ps_func_building_ensemble_mean_atm
+tempPrefix=t_'ps_func_building_ensemble_mean_atm'
 ###############################################################################
 # for atm
 
