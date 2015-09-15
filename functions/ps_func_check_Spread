@@ -6,6 +6,9 @@
 set -e
 JobStartTime=`date`
 JobName='ps_func_check_Spread'
+echo ${LinnBreaker}
+echo ${LinnBreaker}
+echo "Starting "${JobName}" of "${compartment}" ...... "
 # 
 tempPrefix=t_'ps_func_check_Spread'
 ###############################################################################
@@ -19,7 +22,6 @@ else
   echo "Ensemble difference is not ready yet ... "
   exit 1
 fi
-
 for file in ${files}; do
   . ${funcPath}/ps_func_check_filefix
   cd ${sqrDIR}
@@ -31,13 +33,47 @@ for file in ${files}; do
     cdo ensmean ${Sources} ${target} 
   fi
 done
+
 mkdir -p ${DIR}/${Mod}/Signal2NoiseRatio
-target=${DIR}/${Mod}/Signal2NoiseRatio/${casePrefix}${infix}EnsDiffVar${suffix_no_year}
-cdo -O ensmean ${tarDIR}/*${suffix_no_year}* ${target}
-cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
-grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
-if [ "${grid_count}" != "1" ]; then
-  cdo -O splitgrid ${target} ${target}_G 
+if [ "${suffix_no_year_pre}" == "${suffix_no_year}" ]; then
+  target=${DIR}/${Mod}/Signal2NoiseRatio/${casePrefix}${infix}EnsDiffVar_All
+  cdo -O ensmean ${tarDIR}/*${suffix_no_year}* ${target}
+  cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
+  grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
+  if [ "${grid_count}" != "1" ]; then
+    cdo -O splitgrid ${target} ${target}_G 
+  fi
+else
+  suffixes_no_year=""
+  is_same_suffix=0
+  for file in ${files}; do
+    . ${funcPath}/ps_func_check_filefix
+    is_same_suffix=0
+    for suffixCheck in ${suffixes_no_year}; do
+      if [ "${suffixCheck}" == "${suffix_no_year}" ]; then
+        is_same_suffix=1
+      fi
+    done
+    if [ "${is_same_suffix}" != "1" ]; then
+      suffixes_no_year=${suffixes_no_year}" "${suffix_no_year}
+    fi
+  done
+  for suffixCheck in ${suffixes_no_year}; do
+    target=${DIR}/${Mod}/Signal2NoiseRatio/${casePrefix}${infix}EnsDiffVar${suffixCheck}
+    cdo -O ensmean ${tarDIR}/*${suffixCheck}* ${target}
+    cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
+    grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
+    if [ "${grid_count}" != "1" ]; then
+      cdo -O splitgrid ${target} ${target}_G
+    fi
+  done
+  target=${DIR}/${Mod}/Signal2NoiseRatio/${casePrefix}${infix}EnsDiffVar_All
+  cdo -O ensmean ${tarDIR}/${casePrefix}${infix}EnsDiffVar* ${target}
+  cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
+  grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
+  if [ "${grid_count}" != "1" ]; then
+    cdo -O splitgrid ${target} ${target}_G
+  fi  
 fi
 ###############################################################################
 echo ${JobStartTime}

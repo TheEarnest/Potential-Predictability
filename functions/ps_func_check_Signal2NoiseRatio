@@ -3,10 +3,14 @@
 # ensemble info
 #------------------------------------------------------------------------------
 #
-set -e
+set -ex
 JobStartTime=`date`
 JobName='ps_func_check_Signal2NoiseRatio'
 # 
+echo ${LinnBreaker}
+echo ${LinnBreaker}
+echo "Starting "${JobName}" of "${compartment}" ...... "
+
 tempPrefix=t_'ps_func_check_Signal2NoiseRatio'
 ###############################################################################
 tarDIR=${DIR}/${Mod}/Signal2NoiseRatio
@@ -20,10 +24,9 @@ else
   echo "Ensemble difference is not ready yet ... "
   exit 1
 fi
-
 if [ "${file_count}" == "1" ]; then
   EnsDiffVar=`ls `
-  echo ""
+  echo "Unexpect file numbers: "${file_count}" ......"
   exit 1
 else
   for file in ${files}; do
@@ -32,6 +35,7 @@ else
     EnsDiffVarFile=`ls --color=no Signal2NoiseRatio/*EnsDiffVar*G${GridC}*` 
     ls --color=no Signal2NoiseRatio/*EnsDiffVar*G${GridC}* > ${tempDIR}/${tempPrefix}_files
     file_count=` wc -l ${tempDIR}/${tempPrefix}_files | awk -F " " '{print $1}'`
+exit 1
     if [ "${file_count}" == "1" ]; then
       S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
       target=${tarDIR}/${casePrefix}_S2NR${S2NRsuffix}
@@ -41,8 +45,10 @@ else
       target2=${tarDIR}/${casePrefix}_PPP${S2NRsuffix}
       cdo -O div ${target} -addc,1 ${target} ${target2}
     else
-      echo "Unexpect file numbers: "${file_count}" ......"
-      exit 1
+      EnsDiffVarFiles=`ls --color=no Signal2NoiseRatio/*EnsDiffVar*G${GridC}*`
+      for EnsDiffVarFile in ${EnsDiffVarFiles}; do 
+        
+      done
     fi
   done
 fi
