@@ -31,6 +31,7 @@ if [ "${file_count}" == "1" ]; then
 else
   for file in ${files}; do
     cd ${DIR}/${Mod} 
+    # for multiple grids ...
     GridC=`echo ${file} | awk -F "_G" '{print $NF}' | cut -c1-2`
     EnsDiffVarFile=`ls --color=no Signal2NoiseRatio/*EnsDiffVar*G${GridC}*` 
     ls --color=no Signal2NoiseRatio/*EnsDiffVar*G${GridC}* > ${tempDIR}/${tempPrefix}_files
