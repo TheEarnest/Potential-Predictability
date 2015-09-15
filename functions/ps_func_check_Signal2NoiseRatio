@@ -35,13 +35,12 @@ else
     EnsDiffVarFile=`ls --color=no Signal2NoiseRatio/*EnsDiffVar*G${GridC}*` 
     ls --color=no Signal2NoiseRatio/*EnsDiffVar*G${GridC}* > ${tempDIR}/${tempPrefix}_files
     file_count=` wc -l ${tempDIR}/${tempPrefix}_files | awk -F " " '{print $1}'`
-exit 1
     if [ "${file_count}" == "1" ]; then
       S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
       . ${funcPath}/ps_func_calculate_SNR_wi_PPP
     else
-      month=`echo ${file} | awk -F "_m" '{print $NF}' | cut -c1-2` || month="None"
-      if [ "${month}" == "None" ]; then
+      month=`echo ${file} | awk -F "_m" '{print $NF}' | cut -c1-2` 
+      if [ "${month}" == "No" ]; then
         EnsDiffVarFile=`ls --color=no Signal2NoiseRatio/*EnsDiffVar_All*G${GridC}*`
         S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
         . ${funcPath}/ps_func_calculate_SNR_wi_PPP
@@ -51,7 +50,6 @@ exit 1
         . ${funcPath}/ps_func_calculate_SNR_wi_PPP
       fi
     fi
-exit 1
   done
 fi
 ###############################################################################
