@@ -38,18 +38,20 @@ else
 exit 1
     if [ "${file_count}" == "1" ]; then
       S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
-      target=${tarDIR}/${casePrefix}_S2NR${S2NRsuffix}
-      cdo -O -b F64 copy ${EnsDiffVarFile} ${tempDIR}/${tempPrefix}_dividend
-      cdo -O -b F64 copy ${file} ${tempDIR}/${tempPrefix}_divisor
-      cdo -O div ${tempDIR}/${tempPrefix}_dividend ${tempDIR}/${tempPrefix}_divisor ${target}
-      target2=${tarDIR}/${casePrefix}_PPP${S2NRsuffix}
-      cdo -O div ${target} -addc,1 ${target} ${target2}
+      . ${funcPath}/ps_func_calculate_SNR_wi_PPP
     else
-      EnsDiffVarFiles=`ls --color=no Signal2NoiseRatio/*EnsDiffVar*G${GridC}*`
-      for EnsDiffVarFile in ${EnsDiffVarFiles}; do 
-        
-      done
+      month=`echo ${file} | awk -F "_m" '{print $NF}' | cut -c1-2` || month="None"
+      if [ "${month}" == "None" ]; then
+        EnsDiffVarFile=`ls --color=no Signal2NoiseRatio/*EnsDiffVar_All*G${GridC}*`
+        S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
+        . ${funcPath}/ps_func_calculate_SNR_wi_PPP
+      else
+        EnsDiffVarFile=`ls --color=no Signal2NoiseRatio/*EnsDiffVar*${month}*G${GridC}*`
+        S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
+        . ${funcPath}/ps_func_calculate_SNR_wi_PPP
+      fi
     fi
+exit 1
   done
 fi
 ###############################################################################

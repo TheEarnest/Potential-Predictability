@@ -1,0 +1,8 @@
+#! /bin/bash
+###############################################################################
+target=${tarDIR}/${casePrefix}_S2NR${S2NRsuffix}
+cdo -O -b F64 copy ${EnsDiffVarFile} ${tempDIR}/${tempPrefix}_dividend
+cdo -O -b F64 copy ${file} ${tempDIR}/${tempPrefix}_divisor
+cdo -O div ${tempDIR}/${tempPrefix}_dividend ${tempDIR}/${tempPrefix}_divisor ${target}
+target2=${tarDIR}/${casePrefix}_PPP${S2NRsuffix}
+cdo -O div ${target} -addc,1 ${target} ${target2}
