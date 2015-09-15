@@ -31,6 +31,7 @@ for file in ${files}; do
     cdo ensmean ${Sources} ${target} 
   fi
 done
+mkdir -p ${DIR}/${Mod}/Signal2NoiseRatio
 target=${DIR}/${Mod}/Signal2NoiseRatio/${casePrefix}${infix}EnsDiffVar${suffix_no_year}
 cdo -O ensmean ${tarDIR}/*${suffix_no_year}* ${target}
 cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids

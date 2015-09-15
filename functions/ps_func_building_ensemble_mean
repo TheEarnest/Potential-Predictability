@@ -40,8 +40,14 @@ for file in ${files}; do
   fi
 done
 set -e
-#time cdo -O mergetime ${DIR}/${Mod}/hist_ensmean/*${infix}* ${DIR}/${Mod}/${casePrefix}${infix}mergetime
-#time cdo -O ymonmean ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${DIR}/${Mod}/${casePrefix}${infix}ymonmean
+target=${DIR}/${Mod}/${casePrefix}${infix}mergetime
+if [ ! -f ${target} ]; then
+  time cdo -O mergetime ${DIR}/${Mod}/hist_ensmean/*${infix}* ${target}
+fi
+target=${DIR}/${Mod}/${casePrefix}${infix}ymonmean
+if [ ! -f ${target} ]; then
+  time cdo -O ymonmean ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${target}
+fi
 cdo griddes ${DIR}/${Mod}/${casePrefix}${infix}ymonmean | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
 grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
 
