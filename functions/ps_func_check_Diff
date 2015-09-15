@@ -3,7 +3,7 @@
 # ensemble info
 #------------------------------------------------------------------------------
 #
-set -ex
+set -e
 JobStartTime=`date`
 JobName=ps_func_check_SSTDiff
 # 
@@ -18,17 +18,16 @@ done
 cd ${DataDIR}/${firstMem}/${Mod}/hist
 files=`ls --color=no ${prefix}*`
 for file in ${files}; do
-  suffix=`echo ${file} | awk -F "${prefix}" '{print $NF}' `
-  firstprefix=`echo ${prefix} | awk -F "." '{print $1}'`
-  infix=`echo ${prefix} | awk -F "${firstprefix}" '{print $NF}'`
-
+  . ${funcPath}/ps_func_check_filefix
   cd ${DataDIR}
   Sources=`ls ${DataDIR}/${casePrefix}*/${compartment}/hist/*${suffix}`
   ensmean=`ls ${DIR}/${Mod}/hist_ensmean/*${suffix} `
   for Source in ${Sources}; do
     filename=`echo ${Source} | awk -F "/" '{print $NF}'`
-    target=${tarDIR}/${Member}/${filename}
+    caseName=`echo ${filename} | awk -F "${infix}" '{print $1}'`
+    target=${tarDIR}/${caseName}/${filename}
     if [ ! -f ${target} ]; then
+      echo "Checking "${filename}" of "${Mod}" ... "
       cdo sub ${Source} ${ensmean} ${target}
     fi
   done    

@@ -65,14 +65,14 @@ for compartment in ${ModelCompartments}; do
     #------------------------------------------------------------------------
     # for all variables 
     . ${funcPath}/ps_func_check_Diff
-set -ex
     cd ${DataDIR}/${firstMem}/${compartment}/hist
     files=`ls --color=no ${prefix}* `
     firstfile=`echo ${files} | awk -F " " '{print $1}' `
     varnames=`cdo showvar ${firstfile}`
     for varname in ${varnames}; do 
-exit 1
+      . ${funcPath}/ps_func_check_sqr
       . ${funcPath}/ps_func_check_Spread
+exit 1
       . ${funcPath}/ps_func_check_Signal2NoiseRatio
       . ${funcPath}/ps_func_check_PPP
     done

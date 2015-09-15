@@ -1,0 +1,8 @@
+#! /bin/bash
+###############################################################################
+suffix=`echo ${file} | awk -F "${prefix}" '{print $NF}' `
+firstprefix=`echo ${prefix} | awk -F "." '{print $1}'`
+infix=`echo ${prefix} | awk -F "${firstprefix}" '{print $NF}'`
+fileyear=`echo ${suffix} | awk -F "-" '{print $1}'`
+filemonth=`echo ${suffix} | awk -F "-" '{print $2}'`
+suffix_no_year=`echo ${suffix} | awk -F "${fileyear}" '{print $NF}'`

@@ -9,11 +9,13 @@ JobName=ps_func_check_SSTSpread
 # 
 tempPrefix=t_ps_func_check_SSTSpread
 ###############################################################################
-tarDIR=${DIR}/${Mod}/EnsDiffVar
-mkdir -p ${tarDIR}
-sqrDIR=${DIR}/${Mod}/sqr
-if [ -d ${sqrDIR} ]; then
-  cd ${sqrDIR}/${firstMem}
+tarDIR=${DIR}/${Mod}/sqr
+for Member in ${Members}; do
+  mkdir -p ${tarDIR}/${Member}
+done
+DiffDIR=${DIR}/${Mod}/Diff
+if [ -d ${DiffDIR} ]; then
+  cd ${DiffDIR}/${firstMem}
   files=`ls --color=no ${prefix}*`
 else
   echo "Ensemble difference is not ready yet ... "
@@ -22,22 +24,22 @@ fi
 
 for file in ${files}; do
   . ${funcPath}/ps_func_check_filefix
-  cd ${sqrDIR}
+  cd ${DiffDIR}
   Sources=`ls */*${suffix} `
-  target=${tarDIR}/${casePrefix}${infix}EnsDiffVar.${suffix}
-  if [ ! -f ${target} ]; then
-    echo "Checking "${suffix}" of "${Mod}" ... "
-    cd ${sqrDIR}
-    cdo ensmean ${Sources} ${target} 
-  fi
+  for Source in ${Sources}; do
+
+    filename=`echo ${Source} | awk -F "/" '{print $NF}' `
+    caseName=`echo ${filename} | awk -F "${infix}" '{print $1}'`
+    target=${tarDIR}/${caseName}/${filename}
+    if [ ! -f ${target} ]; then
+      echo "Checking "${filename}" of "${Mod}" ... "
+      cdo -O  -f nc copy ${DiffDIR}/${Source} ${tempDIR}/${tempPrefix}_nc
+      cdo sqr ${tempDIR}/${tempPrefix}_nc ${target} 
+      rm -f ${tempDIR}/${tempPrefix}_nc*
+    fi
+  done
 done
-target=${DIR}/${Mod}/${casePrefix}${infix}EnsDiffVar${suffix_no_year}
-cdo -O ensmean ${tarDIR}/*${suffix_no_year}* ${target}
-cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
-grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
-if [ "${grid_count}" != "1" ]; then
-  cdo -O splitgrid ${target} ${target}_G 
-fi
+
 ###############################################################################
 echo ${JobStartTime}
 echo `date`" || "${JobName}

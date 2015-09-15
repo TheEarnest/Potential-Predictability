@@ -17,9 +17,7 @@ cd ${DataDIR}/${firstMem}/${Mod}/hist
 files=`ls --color=no ${prefix}*`
 for file in ${files}; do
   cd ${DataDIR}
-  suffix=`echo ${file} | awk -F "${prefix}" '{print $2}' `
-  firstprefix=`echo ${prefix} | awk -F "." '{print $1}'` 
-  infix=`echo ${prefix} | awk -F "${firstprefix}" '{print $NF}'`
+  . ${funcPath}/ps_func_check_filefix
 
   echo "Checking ${suffix} of ${Mod} ..."
   Target=${DIR}/${Mod}/hist_ensspread/${casePrefix}${infix}ensspread.${suffix}
@@ -41,7 +39,7 @@ for file in ${files}; do
     cdo -O ensstd ${ensTargets} ${Target}
   fi
 done
-set -ex
+set -e
 #time cdo -O mergetime ${DIR}/${Mod}/hist_ensmean/*${infix}* ${DIR}/${Mod}/${casePrefix}${infix}mergetime
 #time cdo -O ymonmean ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${DIR}/${Mod}/${casePrefix}${infix}ymonmean
 cdo griddes ${DIR}/${Mod}/${casePrefix}${infix}ymonmean | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
@@ -54,10 +52,16 @@ if [ "${grid_count}" == "1" ]; then
     cdo -O timvar ${DIR}/${Mod}/${casePrefix}${infix}anomaly ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar
   fi
   months=`cdo showmon ${DIR}/${Mod}/${casePrefix}${infix}ymonmean `
-  for month in ${months}; do 
-    mm=`echo 00${month} | tail -c3 `
-    cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}
+  imonC=0
+  for month in ${months}; do
+    (( imonC = imonC + 1 ))
   done
+  if [ ${imonC} -gt 1 ]; then
+    for month in ${months}; do 
+      mm=`echo 00${month} | tail -c3 `
+      cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}
+    done
+  fi
 else
   ig=`echo 000${grid_count} | tail -c3 `
   gridtarget=${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_G${ig}
@@ -75,10 +79,16 @@ else
       cdo -O timvar ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_G${igg}
     fi
     months=`cdo showmon ${DIR}/${Mod}/${casePrefix}${infix}ymonmean `
+    imonC=0
     for month in ${months}; do
-      mm=`echo 00${month} | tail -c3 `
-      cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}_G${igg}
+      (( imonC = imonC + 1 ))
     done
+    if [ ${imonC} -gt 1 ]; then
+      for month in ${months}; do
+        mm=`echo 00${month} | tail -c3 `
+        cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}_G${igg}
+      done
+    fi
   done
 fi
 
