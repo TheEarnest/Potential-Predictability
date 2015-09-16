@@ -58,7 +58,6 @@ for SVfile in ${SVfiles}; do
     fi
   fi
 done
-exit 1
 ###############################################################################
 echo ${JobStartTime}
 echo `date`" || "${JobName}

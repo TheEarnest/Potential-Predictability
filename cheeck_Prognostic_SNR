@@ -14,7 +14,7 @@ MEyear=2000
 DataDIR=/scratch/earnest/noresmexp/FF_ini_try
 
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="lnd"
+ModelCompartments="ocn atm"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -65,10 +65,10 @@ for compartment in ${ModelCompartments}; do
   for prefix in ${prefixes}; do 
     #------------------------------------------------------------------------
     # for all variables 
- #   . ${funcPath}/ps_func_check_Diff
- #   . ${funcPath}/ps_func_check_sqr
- #   . ${funcPath}/ps_func_check_Spread
- #   . ${funcPath}/ps_func_check_Signal2NoiseRatio
+    . ${funcPath}/ps_func_check_Diff
+    . ${funcPath}/ps_func_check_sqr
+    . ${funcPath}/ps_func_check_Spread
+    . ${funcPath}/ps_func_check_Signal2NoiseRatio
     # spliting variables
     . ${funcPath}/ps_func_split_variables_check
   done

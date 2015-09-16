@@ -3,7 +3,7 @@
 # ensemble info
 #------------------------------------------------------------------------------
 #
-set -ex
+set -e
 JobStartTime=`date`
 JobName='ps_func_check_Signal2NoiseRatio'
 # 
