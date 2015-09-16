@@ -1,0 +1,51 @@
+#! /bin/bash
+###############################################################################
+# generating web contant 
+#------------------------------------------------------------------------------
+#
+set -ex
+ScriptHome=`pwd`
+webpageDIR=${ScriptHome}/docs
+figureDIR=${ScriptHome}/figures
+MainScript=cheeck_Prognostic_SNR
+#------------------------------------------------------------------------------
+# Parameters (grep from the main script)
+#------------------------------------------------------------------------------
+OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
+
+ModelCompartments="lnd ocn atm ice"
+for ModelCompartment in ${ModelCompartments}; do 
+  if [ -d ${OutputDIR}/${ModelCompartment}/PPP_all_figures ]; then
+    rm -rf ${figureDIR}/PPP_${ModelCompartment}
+    cp -rf ${OutputDIR}/${ModelCompartment}/PPP_all_figures ${figureDIR}/PPP_${ModelCompartment}
+  fi
+done
+
+cd ${figureDIR}
+fDIRs=`ls --color=no `
+for fDIR in ${fDIRs}; do 
+  Mod=`echo ${fDIR} | awk -F "PPP_" '{print $NF}'`
+  ModfDIR=${figureDIR}/${fDIR}
+  cd ${ModfDIR}
+  figures=`ls --color=no `
+  for figure in ${figures}; do 
+  # check vname 
+    figsuffix=`echo ${figure} | tail -c5 `
+    vname=`echo ${figure} | awk -F "PPP_" '{print $NF}' | awk -F "${figsuffix}" '{print $1}'`
+    fname=`ls --color=no ${OutputDIR}/${Mod}/PPP_all_variables/*${vname}* `
+    SPGReg="300,345,48,65"
+    EUReg="40,140,40,70"
+    Nino34Reg="-170,-120,-5,5"
+    AtlNino3Reg="-20,-0,-3,3"
+    if [ -f ${fname} ]; then 
+      fldmax=0`cdo -s outputf,%10.3f,1 -fldmax ${fname} | bc -l`
+#      NaN_check=
+
+      fldmean=0`cdo -s outputf,%10.3f,1 -fldmean ${fname} | bc -l`
+      SPGfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${SPGReg} ${fname} | bc -l`
+      EUfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${EUReg} ${fname} | bc -l`
+      Nino34fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${Nino34Reg} ${fname} | bc -l`
+      AltNino3fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${AtlNino3Reg} ${fname} | bc -l`
+    fi
+  done
+done
