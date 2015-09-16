@@ -4,6 +4,11 @@ Prognostic Potential Predictability (PPP)
 >> For calculating Prognostic Potential Predictability (PPP) on nostore-osl 
 
 
+* The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than 0.001
+  * CLM
+  * MICOM
+  * CICE
+  * CAM 
 
 ### Do these before using the script ###
 

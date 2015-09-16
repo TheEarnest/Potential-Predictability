@@ -14,7 +14,7 @@ MEyear=2000
 DataDIR=/scratch/earnest/noresmexp/FF_ini_try
 
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="ocn atm"
+ModelCompartments="ocn"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
