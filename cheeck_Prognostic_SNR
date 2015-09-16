@@ -7,17 +7,18 @@ ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 # Parameters
 #------------------------------------------------------------------------------
-DIR=/scratch/earnest/SyncTransfer/FF_ini_try
+OutputDIR=/scratch/earnest/SyncTransfer/FF_ini_try
 tempDIR=/scratch/earnest/temp
 casePrefix=NorCPM_F19_tn21
 MEyear=2000
 DataDIR=/scratch/earnest/noresmexp/FF_ini_try
 
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="ocn atm"
+ModelCompartments="lnd"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
+DIR=${OutputDIR}
 #------------------------------------------------------------------------------
 funcPath=${ScriptHome}/functions
 LinnBreaker="--------------------------------------------------------"
@@ -64,15 +65,12 @@ for compartment in ${ModelCompartments}; do
   for prefix in ${prefixes}; do 
     #------------------------------------------------------------------------
     # for all variables 
-    . ${funcPath}/ps_func_check_Diff
-    cd ${DataDIR}/${firstMem}/${compartment}/hist
-    files=`ls --color=no ${prefix}* `
-    firstfile=`echo ${files} | awk -F " " '{print $1}' `
-#    varnames=`cdo showvar ${firstfile}`
-    . ${funcPath}/ps_func_check_sqr
-    . ${funcPath}/ps_func_check_Spread
-    . ${funcPath}/ps_func_check_Signal2NoiseRatio
-#    done
+ #   . ${funcPath}/ps_func_check_Diff
+ #   . ${funcPath}/ps_func_check_sqr
+ #   . ${funcPath}/ps_func_check_Spread
+ #   . ${funcPath}/ps_func_check_Signal2NoiseRatio
+    # spliting variables
+    . ${funcPath}/ps_func_split_variables_check
   done
 done
 

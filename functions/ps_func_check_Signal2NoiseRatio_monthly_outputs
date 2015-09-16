@@ -1,0 +1,22 @@
+#! /bin/bash
+###########################################################################
+EnsDiffVarFile=`ls --color=no ${lsDividendStr} `
+ls --color=no ${lsDividendStr} > ${tempDIR}/${tempPrefix}_files
+file_count=` wc -l ${tempDIR}/${tempPrefix}_files | awk -F " " '{print $1}'`
+if [ "${file_count}" == "1" ]; then
+  S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
+  . ${funcPath}/ps_func_calculate_SNR_wi_PPP
+else
+  month=`echo ${file} | awk -F "_m" '{print $NF}' | cut -c1-2`
+  if [ "${month}" == "/s" ]; then
+    EnsDiffVarFile=`ls --color=no ${lsDividendStrAll}   `
+    S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
+    . ${funcPath}/ps_func_calculate_SNR_wi_PPP
+  else
+    EnsDiffVarFile=`ls --color=no ${lsDividendStrMon}*${month}* `
+    S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
+    . ${funcPath}/ps_func_calculate_SNR_wi_PPP
+  fi
+fi
+
+

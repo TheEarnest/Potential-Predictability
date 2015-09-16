@@ -15,15 +15,20 @@ tempPrefix=t_'ps_func_check_Signal2NoiseRatio'
 ###############################################################################
 tarDIR=${DIR}/${Mod}/Signal2NoiseRatio
 EnsDiffVarDIR=${DIR}/${Mod}/EnsDiffVar
+lsDivisorStr="${DIR}/${Mod}/${casePrefix}${infix}*timvar*"
 if [ -d ${EnsDiffVarDIR} ]; then
   cd ${DIR}/${Mod} 
-  files=`ls --color=no ${casePrefix}*timvar*`
-  ls --color=no ${casePrefix}*timvar* > ${tempDIR}/${tempPrefix}_files
+  files=`ls --color=no ${lsDivisorStr} `
+  ls --color=no ${lsDivisorStr} > ${tempDIR}/${tempPrefix}_files
   file_count=` wc -l ${tempDIR}/${tempPrefix}_files | awk -F " " '{print $1}'`
 else
   echo "Ensemble difference is not ready yet ... "
   exit 1
 fi
+# counting for grids
+cdo griddes ${DIR}/${Mod}/${casePrefix}${infix}ymonmean | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
+grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
+
 if [ "${file_count}" == "1" ]; then
   EnsDiffVar=`ls `
   echo "Unexpect file numbers: "${file_count}" ......"
@@ -31,25 +36,19 @@ if [ "${file_count}" == "1" ]; then
 else
   for file in ${files}; do
     cd ${DIR}/${Mod} 
-    # for multiple grids ...
-    GridC=`echo ${file} | awk -F "_G" '{print $NF}' | cut -c1-2`
-    EnsDiffVarFile=`ls --color=no Signal2NoiseRatio/*EnsDiffVar*G${GridC}*` 
-    ls --color=no Signal2NoiseRatio/*EnsDiffVar*G${GridC}* > ${tempDIR}/${tempPrefix}_files
-    file_count=` wc -l ${tempDIR}/${tempPrefix}_files | awk -F " " '{print $1}'`
-    if [ "${file_count}" == "1" ]; then
-      S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
-      . ${funcPath}/ps_func_calculate_SNR_wi_PPP
+    if [ "${grid_count}" == "1" ]; then
+    # for single grid
+      lsDividendStr=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar*
+      lsDividendStrAll=${DIR}/${Mod}/Signal2NoiseRatio/*EnsDiffVar_All
+      lsDividendStrMon=${DIR}/${Mod}/Signal2NoiseRatio/*EnsDiffVar
+      . ${funcPath}/ps_func_check_Signal2NoiseRatio_monthly_outputs
     else
-      month=`echo ${file} | awk -F "_m" '{print $NF}' | cut -c1-2` 
-      if [ "${month}" == "No" ]; then
-        EnsDiffVarFile=`ls --color=no Signal2NoiseRatio/*EnsDiffVar_All*G${GridC}*`
-        S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
-        . ${funcPath}/ps_func_calculate_SNR_wi_PPP
-      else
-        EnsDiffVarFile=`ls --color=no Signal2NoiseRatio/*EnsDiffVar*${month}*G${GridC}*`
-        S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
-        . ${funcPath}/ps_func_calculate_SNR_wi_PPP
-      fi
+    # for multiple grids ...
+      GridC=`echo ${file} | awk -F "_G" '{print $NF}' | cut -c1-2`
+      lsDividendStr=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar*G${GridC}*
+      lsDividendStrAll=${DIR}/${Mod}/Signal2NoiseRatio/*EnsDiffVar_All*G${GridC}*
+      lsDividendStrMon=${DIR}/${Mod}/Signal2NoiseRatio/*EnsDiffVar*${month}*G${GridC}*
+      . ${funcPath}/ps_func_check_Signal2NoiseRatio_monthly_outputs
     fi
   done
 fi
