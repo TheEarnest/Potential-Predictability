@@ -41,13 +41,13 @@ for ModelCompartment in ${ModelCompartments}; do
     echo "==========" >> ${MDfile} 
     echo ">> Created on: __"`date`"__ " >> ${MDfile} 
     echo " "  >> ${MDfile}
-    echo ">> Last modified on: __"`date`"__ " >> ${MDfile}
+    echo ">> Last update on: __"`date`"__ " >> ${MDfile}
     echo " "  >> ${MDfile}
     echo "------ "  >> ${MDfile}
     echo " "  >> ${MDfile}
   else
     nowdate=`date`
-    sed -i s/"Last modified on: ".*/"Last modified on: __${nowdate}__ "/g ${MDfile}
+    sed -i s/"Last update on: ".*/"Last update on: __${nowdate}__ "/g ${MDfile}
   fi
   if [ -d ${figureDIR}/PPP_${ModelCompartment} ]; then
     PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `
@@ -108,14 +108,20 @@ for ModelCompartment in ${ModelCompartments}; do
       # update markdown data ...
       vname=`cdo showvar ${PPPfile} | cut -c2-100 `
       namesuffix=`echo ${PPPfile} | awk -F "/" '{print $NF}' | awk -F "${vname}" '{print $NF}' | awk -F ".nc" '{print $1}'` 
+      nameinfix=`echo ${PPPfile} | awk -F "/" '{print $NF}' | awk -F "${vname}" '{print $1}' | awk -F "PPP_" '{print $NF}'`
+
       levelStr=""
       if [ "${namesuffix}" != "" ]; then
-        level=`echo ${fname} | awk -F "_" '{print $NF}'`
+        level=`echo ${namesuffix} | cut -c2-100`
         levelStr=" (level: ${level}) "
       fi
       varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
       varLongName=`echo ${varLongName//\"} | tr "/" "-"`
-      vnameCheck=`grep "${varLongName}" ${MDfile} ` || vnameCheck="None"
+      if [ "${levelStr}" != "" ]; then
+        vnameCheck=`grep "${varLongName}" ${MDfile} | grep ${levelStr} ` || vnameCheck="None"
+      else
+        vnameCheck=`grep "${varLongName}" ${MDfile} ` || vnameCheck="None"
+      fi
       cd ${figureDIR}/PPP_${ModelCompartment}
       figfilename=`ls *${vname}${namesuffix}${fsuffix} ` || figfilename="None"
       if [ "${figfilename}" == "None" ]; then
@@ -127,11 +133,11 @@ for ModelCompartment in ${ModelCompartments}; do
 
       if [ "${vnameCheck}" == "None" ]; then
         # generate the line
-        echo "  * [__${vname}: ${varLongName}__] ${figurelink} ${levelStr}-> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
+        echo "  * [__${vname}: ${varLongName}__] ${figurelink} (${nameinfix}) ${levelStr}-> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
         echo " " >> ${MDfile}
       else
         figurelink=`echo ${figurelink} | sed 's/\//\\\\\//g' `
-        sed -i s/"${vname}: ".*/"${vname}: ${varLongName}__] ${figurelink} ${levelStr}-> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
+        sed -i s/"${vname}: ".*"${nameinfix}".*"${levelStr}".*/"${vname}: ${varLongName}__] ${figurelink} (${nameinfix}) ${levelStr}-> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
       fi
     done
   fi

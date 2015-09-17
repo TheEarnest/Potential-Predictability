@@ -46,6 +46,7 @@ for SVfile in ${SVfiles}; do
   fi 
 done
 
+exit 1
 # remove insignificate results 
 cd ${tarDIR}
 SVfiles=`ls --color=no `
