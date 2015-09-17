@@ -6,4 +6,8 @@ PPP of all variables in lnd
 
 
 ![testing] (svg/test.svg)
+
 <a><img src="svg/test.svg/></a>
+
+Roses are <span style="color:red">red</span>, violets are <span style="color:blue">blue</span>.
+
