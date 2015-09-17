@@ -33,18 +33,21 @@ figureCount=0
 # building base page in advance 
 for ModelCompartment in ${ModelCompartments}; do
   MDfile=${webpageDIR}/PPP_${ModelCompartment}.markdown
+  if [ ! -f ${MDfile} ]; then
+    # header of markdown pages
+    echo "PPP of all variables in "${ModelCompartment} > ${MDfile}
+    echo "==========" >> ${MDfile} 
+    echo ">> Created on: __"`date`"__ " >> ${MDfile} 
+    echo " "  >> ${MDfile}
+    echo ">> Last modified on: __"`date`"__ " >> ${MDfile}
+    echo " "  >> ${MDfile}
+    echo "------ "  >> ${MDfile}
+    echo " "  >> ${MDfile}
+  else
+    nowdate=`date`
+    sed -i s/"Last modified on: ".*/"Last modified on: __${nowdate}__ "/g ${MDfile}
+  fi
   if [ -d ${figureDIR}/PPP_${ModelCompartment} ]; then
-    if [ ! -f ${MDfile} ]; then
-      # header of markdown pages
-      echo "PPP of all variables in "${ModelCompartment} > ${MDfile}
-      echo "==========" >> ${MDfile} 
-      echo ">> Created on: __"`date`"__ " >> ${MDfile} 
-      echo " "  >> ${MDfile}
-      echo ">> Last modified on: __"`date`"__ " >> ${MDfile}
-    else
-      nowdate=`date`
-      sed -i s/"Last modified on: ".*/"Last modified on: __${nowdate}__ "/g ${MDfile}
-    fi
     PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `
     for PPPfile in ${PPPfiles}; do 
       threholdPPP=`echo "scale=0; (${thPPP}*1000.0)/1.0" | bc -l `
@@ -116,11 +119,11 @@ for ModelCompartment in ${ModelCompartments}; do
 
       if [ "${vnameCheck}" == "None" ]; then
         # generate the line
-        echo "  * [${vname}: ${varLongName}] ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
+        echo "  * __[${vname}: ${varLongName}]__ ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
         echo " " >> ${MDfile}
       else
         figurelink=`echo ${figurelink} | sed 's/\//\\\\\//g' `
-        sed -i s/" ${vname}: ".*/" ${vname}: ${varLongName}] ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
+        sed -i s/" ${vname}: ".*/" ${vname}: ${varLongName}]__ ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
       fi
     done
   fi
