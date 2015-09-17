@@ -106,12 +106,20 @@ for ModelCompartment in ${ModelCompartments}; do
     vnameCheck=`grep "${varLongName}" ${MDfile} ` || vnameCheck="None"
     cd ${figureDIR}/PPP_${ModelCompartment}
     figfilename=`ls *${vname}* ` || figfilename="None"
+    if [ "${figfilename}" == "None" ]; then
+      figurelink=""
+    else
+      figurelink="(../figures/PPP_${ModelCompartment}/${figfilename})"
+    fi
+
     if [ "${vnameCheck}" == "None" ]; then
       # generate the line
-      echo "  * [${vname}: ${varLongName}] (../figures/PPP_${ModelCompartment}/${figfilename}) -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
+      echo "  * [${vname}: ${varLongName}] ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
       echo " " >> ${MDfile}
     else
-      sed -i s/" ${varLongName}] ".*/" ${varLongName}] -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
+      figurelink=`echo ${figurelink} | sed 's/\//\\\\\//g' `
+      sed -i s/" ${varLongName}] ".*/" ${varLongName}] ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
+
     fi
   done
 done
