@@ -23,7 +23,7 @@ AtlNino3Reg="-20,-0,-3,3"
 thPPP=0.6
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 
-ModelCompartments="ice"
+ModelCompartments="lnd"
 for ModelCompartment in ${ModelCompartments}; do 
   if [ -d ${OutputDIR}/${ModelCompartment}/PPP_all_figures ]; then
     rm -rf ${figureDIR}/PPP_${ModelCompartment}
@@ -113,15 +113,15 @@ for ModelCompartment in ${ModelCompartments}; do
     levelStr=""
     if [ "${namesuffix}" != "" ]; then
       level=`echo ${namesuffix} | cut -c2-100`
-      levelStr=" (level: ${level}) "
+      levelStr="(level: ${level})"
+    else
+      levelStr="(level: 0)"
     fi
     varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
     varLongName=`echo ${varLongName//\"} | tr "/" "-"`
-    if [ "${levelStr}" != "" ]; then
-      vnameCheck=`grep "${varLongName}" ${MDfile} | grep ${levelStr} ` || vnameCheck="None"
-    else
-      vnameCheck=`grep "${varLongName}" ${MDfile} ` || vnameCheck="None"
-    fi
+    vnameCheck=`grep "${varLongName}" ${MDfile} | grep "${levelStr}" ` || vnameCheck="None"
+
+    figurelink=""
     if [ -d ${figureDIR}/PPP_${ModelCompartment} ]; then
       cd ${figureDIR}/PPP_${ModelCompartment}
       figfilename=`ls *${vname}${namesuffix}${fsuffix} ` || figfilename="None"
@@ -134,13 +134,12 @@ for ModelCompartment in ${ModelCompartments}; do
     fi
     if [ "${vnameCheck}" == "None" ]; then
       # generate the line
-      echo "  * [__${vname}: ${varLongName}__] ${figurelink} (${nameinfix}) ${levelStr}-> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
+      echo "  * [__${vname}: ${varLongName}__] ${figurelink}, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
       echo " " >> ${MDfile}
     else
       figurelink=`echo ${figurelink} | sed 's/\//\\\\\//g' `
-      sed -i s/"${vname}: ".*"${nameinfix}".*"${levelStr}".*/"${vname}: ${varLongName}__] ${figurelink} (${nameinfix}) ${levelStr}-> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
+      sed -i s/"${vname}: ${varLongName}__] ${figurelink}, ${nameinfix}, ${levelStr} -".*/"${vname}: ${varLongName}__] ${figurelink}, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
     fi
-exit 1
   done
 done
 
