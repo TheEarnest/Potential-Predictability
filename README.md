@@ -4,12 +4,13 @@ Prognostic Potential Predictability (PPP)
 >> For calculating Prognostic Potential Predictability (PPP) on nostore-osl 
 
 
-* The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than 0.001
+* The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
-  * [__MICOM__] (docs/PPP_MICOM.markdown)
-  * [__CAM__] (docs/PPP_MICOM.markdown) 
-  * [__CLM__] (docs/PPP_MICOM.markdown)
-  * [__CICE__] (docs/PPP_MICOM.markdown)
+  * [__MICOM__] (docs/PPP_ocn.markdown)
+  * [__CAM__] (docs/PPP_atm.markdown) 
+  * [__CLM__] (docs/PPP_lnd.markdown)
+  * [__CICE__] (docs/PPP_ice.markdown)
+* Total figures: 1
 
 ### Do these before using the script ###
 

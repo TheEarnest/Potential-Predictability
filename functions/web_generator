@@ -24,6 +24,37 @@ for ModelCompartment in ${ModelCompartments}; do
   fi
 done
 
+# -------------------------
+# building base page in advance 
+for ModelCompartment in ${ModelCompartments}; do
+  MDfile=${webpageDIR}/PPP_${ModelCompartment}.markdown
+  if [ ! -f ${MDfile} ]; then
+    # header of markdown pages
+    echo "PPP of all variables in "${ModelCompartment} > ${MDfile}
+    echo "==========" >> ${MDfile} 
+    echo "Created on: __"`date`"__ " >> ${MDfile} 
+    echo "Last modified on: __"`date`"__ " >> ${MDfile}
+  else
+    nowdate=`date`
+    sed -i s/"Last modified on: ".*/"Last modified on: __${nowdate}__ "/g ${MDfile}
+  fi
+  files=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `
+  for file in ${files}; do 
+    fldmax=0`cdo -s outputf,%10.3f,1 -fldmax ${file} | bc -l`
+#      NaN_check=
+
+      fldmean=0`cdo -s outputf,%10.3f,1 -fldmean ${file} | bc -l`
+      SPGfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${SPGReg} ${file} | bc -l`
+      EUfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${EUReg} ${file} | bc -l`
+      Nino34fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${Nino34Reg} ${file} | bc -l`
+      AltNino3fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${AtlNino3Reg} ${file} | bc -l`
+
+exit 1
+
+  done
+done
+
+
 cd ${figureDIR}
 figureCount=0
 fDIRs=`ls --color=no `
@@ -52,6 +83,8 @@ for fDIR in ${fDIRs}; do
       Nino34fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${Nino34Reg} ${fname} | bc -l`
       AltNino3fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${AtlNino3Reg} ${fname} | bc -l`
     fi
+sed -i s/"Total figures: ".*/"Total figures: ${figureCount}"/g ${ScriptHome}/README.md
+
 exit 1
   done
 done

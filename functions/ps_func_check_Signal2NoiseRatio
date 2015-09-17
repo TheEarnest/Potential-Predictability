@@ -28,7 +28,7 @@ fi
 # counting for grids
 cdo griddes ${DIR}/${Mod}/${casePrefix}${infix}ymonmean | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
 grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
-
+GridC=""
  
 if [ "${file_count}" == "1" ]; then
   EnsDiffVar=`ls `

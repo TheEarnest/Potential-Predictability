@@ -3,7 +3,7 @@
 # ensemble info
 #------------------------------------------------------------------------------
 #
-set -ex
+set -e
 JobStartTime=`date`
 JobName='ps_func_split_variables_check'
 # 
@@ -33,11 +33,14 @@ for SVfile in ${SVfiles}; do
   if [ "${dimStr}" == "None" ]; then
     rm ${SVfile}
   else
-set -ex
     nlevel=`cdo nlevel ${SVfile} `
     if [ "${nlevel}" != "1" ]; then
       fileprefix=`echo ${SVfile} | awk -F ".nc" '{print $1}' `
-      cdo -O splitlevel ${SVfile} ${fileprefix}_
+      if [ "${Mod}" == "ocn" ]; then 
+        . ${funcPath}/ps_func_split_variables_check_micom
+      else
+        cdo -O splitlevel ${SVfile} ${fileprefix}_
+      fi
       rm ${SVfile}
     fi
   fi 
