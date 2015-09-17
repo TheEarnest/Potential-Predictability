@@ -10,7 +10,7 @@ Prognostic Potential Predictability (PPP)
   * [__CAM__] (docs/PPP_atm.markdown) 
   * [__CLM__] (docs/PPP_lnd.markdown)
   * [__CICE__] (docs/PPP_ice.markdown)
-* Total figures: 202
+* Total figures: 0
 
 * About this analysis:
   * We using NorESM

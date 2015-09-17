@@ -23,7 +23,7 @@ AtlNino3Reg="-20,-0,-3,3"
 thPPP=0.6
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 
-ModelCompartments="lnd"
+ModelCompartments="ice"
 for ModelCompartment in ${ModelCompartments}; do 
   if [ -d ${OutputDIR}/${ModelCompartment}/PPP_all_figures ]; then
     rm -rf ${figureDIR}/PPP_${ModelCompartment}
@@ -108,7 +108,7 @@ for ModelCompartment in ${ModelCompartments}; do
     # update markdown data ...
     vname=`cdo showvar ${PPPfile} | cut -c2-100 `
     namesuffix=`echo ${PPPfile} | awk -F "/" '{print $NF}' | awk -F "${vname}" '{print $NF}' | awk -F ".nc" '{print $1}'` 
-    nameinfix=`echo ${PPPfile} | awk -F "/" '{print $NF}' | awk -F "${vname}" '{print $1}' | awk -F "PPP_" '{print $NF}'`
+    nameinfix=`echo ${PPPfile} | awk -F "/" '{print $NF}' | awk -F "${vname}" '{print $1}' | awk -F "PPP" '{print $NF}' | cut -c2-100`
 
     levelStr=""
     if [ "${namesuffix}" != "" ]; then
@@ -119,7 +119,7 @@ for ModelCompartment in ${ModelCompartments}; do
     fi
     varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
     varLongName=`echo ${varLongName//\"} | tr "/" "-"`
-    vnameCheck=`grep "${varLongName}" ${MDfile} | grep "${levelStr}" ` || vnameCheck="None"
+    vnameCheck=`grep "${varLongName}" ${MDfile} | grep "${levelStr}" | grep "nameinfix" ` || vnameCheck="None"
 
     figurelink=""
     if [ -d ${figureDIR}/PPP_${ModelCompartment} ]; then
