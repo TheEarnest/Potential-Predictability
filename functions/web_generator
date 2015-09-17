@@ -18,7 +18,7 @@ SPGReg="300,345,48,65"
 EUReg="40,140,40,70"
 Nino34Reg="-170,-120,-5,5"
 AtlNino3Reg="-20,-0,-3,3"
-
+thPPP=0.6
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 
 ModelCompartments="lnd ocn atm ice"
@@ -44,17 +44,73 @@ for ModelCompartment in ${ModelCompartments}; do
     nowdate=`date`
     sed -i s/"Last modified on: ".*/"Last modified on: __${nowdate}__ "/g ${MDfile}
   fi
-  files=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `
-  for file in ${files}; do 
-    fldmax=0`cdo -s outputf,%10.3f,1 -fldmax ${file} | bc -l`
-#      NaN_check=
+  PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `
+  for PPPfile in ${PPPfiles}; do 
+    threholdPPP=`echo "scale=0; (${thPPP}*1000.0)/1.0" | bc -l `
+    fldmax=0`cdo -s outputf,%10.3f,1 -fldmax ${PPPfile} | bc -l`
+    NaN_check=`echo "scale=0; (${fldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
+    if [ ${NaN_check} -gt ${threholdPPP} ]; then 
+      fldmax="__${fldmax}__"
+    fi
 
-    fldmean=0`cdo -s outputf,%10.3f,1 -fldmean ${file} | bc -l`
-    SPGfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${SPGReg} ${file} | bc -l`
-    EUfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${EUReg} ${file} | bc -l`
-    Nino34fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${Nino34Reg} ${file} | bc -l`
-    AltNino3fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${AtlNino3Reg} ${file} | bc -l`
+    fldmean=0`cdo -s outputf,%10.3f,1 -fldmean ${PPPfile} | bc -l`
+    NaN_check=`echo "scale=0; (${fldmean}*1000.0)/1.0" | bc -l | cut -c1-14`
+    if [ ${NaN_check} -gt ${threholdPPP} ]; then
+      fldmean="__${fldmean}__"
+    fi
 
+    SPGfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${SPGReg} ${PPPfile} | bc -l`
+    NaN_check=`echo "scale=0; (${SPGfldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
+    if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
+      SPGfldmax="NaN"
+    else
+      if [ ${NaN_check} -gt ${threholdPPP} ]; then
+        SPGfldmax="__${fldmean}__"
+      fi
+    fi
+
+
+    EUfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${EUReg} ${PPPfile} | bc -l`
+    NaN_check=`echo "scale=0; (${EUfldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
+    if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
+      EUfldmax="NaN"
+    else
+      if [ ${NaN_check} -gt ${threholdPPP} ]; then
+        EUfldmax="__${fldmean}__"
+      fi
+    fi
+
+    Nino34fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${Nino34Reg} ${PPPfile} | bc -l`
+    NaN_check=`echo "scale=0; (${Nino34fldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
+    if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
+      Nino34fldmax="NaN"
+    else
+      if [ ${NaN_check} -gt ${threholdPPP} ]; then
+        Nino34fldmax="__${fldmean}__"
+      fi
+    fi
+
+    AltNino3fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${AtlNino3Reg} ${PPPfile} | bc -l`
+    NaN_check=`echo "scale=0; (${AltNino3fldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
+    if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
+      AltNino3fldmax="NaN"
+    else
+      if [ ${NaN_check} -gt ${threholdPPP} ]; then
+        AltNino3fldmax="__${fldmean}__"
+      fi
+    fi
+    # update markdown data ...
+    vname=`cdo showvar ${PPPfile} | cut -c2-100 `
+    varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
+    varLongName=${varLongName//\"}
+    vnameCheck=`grep "${varLongName}" ${MDfile} ` || vnameCheck="None"
+    if [ "${vnameCheck}" == "None" ]; then
+      # generate the line
+      echo "  * ${vname}: ${varLongName} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
+      echo " " >> ${MDfile}
+    else
+      sed -i s/" ${varLongName} ".*/" ${varLongName} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
+    fi
 exit 1
 
   done
