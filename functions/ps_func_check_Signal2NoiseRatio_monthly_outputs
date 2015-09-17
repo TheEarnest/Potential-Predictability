@@ -13,7 +13,11 @@ else
     S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
     . ${funcPath}/ps_func_calculate_SNR_wi_PPP
   else
-    EnsDiffVarFile=`ls --color=no ${lsDividendStrMon}*${month}* `
+    if [ "${GridC}" != "" ]; then
+      EnsDiffVarFile=`ls --color=no ${lsDividendStrMon}*${month}* `
+    else
+      EnsDiffVarFile=`ls --color=no ${lsDividendStrMon}*${month}*G${GridC}* `
+    fi
     S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
     . ${funcPath}/ps_func_calculate_SNR_wi_PPP
   fi

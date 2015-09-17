@@ -52,5 +52,6 @@ for fDIR in ${fDIRs}; do
       Nino34fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${Nino34Reg} ${fname} | bc -l`
       AltNino3fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${AtlNino3Reg} ${fname} | bc -l`
     fi
+exit 1
   done
 done

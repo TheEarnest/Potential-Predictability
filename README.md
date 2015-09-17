@@ -6,10 +6,10 @@ Prognostic Potential Predictability (PPP)
 
 * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than 0.001
 
-  * [MICOM] (docs/PPP_MICOM.markdown) [micom testing ]
-  * [CAM] (docs/PPP_MICOM.markdown) 
-  * [CLM] (docs/PPP_MICOM.markdown)
-  * [CICE] (docs/PPP_MICOM.markdown)
+  * [__MICOM__] (docs/PPP_MICOM.markdown)
+  * [__CAM__] (docs/PPP_MICOM.markdown) 
+  * [__CLM__] (docs/PPP_MICOM.markdown)
+  * [__CICE__] (docs/PPP_MICOM.markdown)
 
 ### Do these before using the script ###
 

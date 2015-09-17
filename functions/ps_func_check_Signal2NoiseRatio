@@ -48,7 +48,7 @@ else
       GridC=`echo ${file} | awk -F "_G" '{print $NF}' | cut -c1-2`
       lsDividendStr=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar*G${GridC}*
       lsDividendStrAll=${DIR}/${Mod}/Signal2NoiseRatio/*EnsDiffVar_All*G${GridC}*
-      lsDividendStrMon=${DIR}/${Mod}/Signal2NoiseRatio/*EnsDiffVar*${month}*G${GridC}*
+      lsDividendStrMon=${DIR}/${Mod}/Signal2NoiseRatio/*EnsDiffVar
       . ${funcPath}/ps_func_check_Signal2NoiseRatio_monthly_outputs
     fi
   done
