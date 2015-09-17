@@ -10,7 +10,15 @@ Prognostic Potential Predictability (PPP)
   * [__CAM__] (docs/PPP_atm.markdown) 
   * [__CLM__] (docs/PPP_lnd.markdown)
   * [__CICE__] (docs/PPP_ice.markdown)
-* Total figures: 5
+* Total figures: 203
+
+* About this analysis:
+  * We using NorESM
+  * Applying full-field SST (HadISST2) assimilation (EnKF, 30 members) on ocean compartment only
+  * From 1980-2007
+  * Known issue: skill loose due to one-grid shift in preparing SST data
+    * PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
+    * Redefine the noise as the spread to observation (SST) can identify this skill loose. 
 
 ### Do these before using the script ###
 
@@ -20,7 +28,6 @@ Prognostic Potential Predictability (PPP)
   *  casePrefix="a general case name for all ensemble members" 
   *  MEyear="a year which must be existed in all ensemble members. For determining the file prefixes" 
   *  DataDIR="dir for the outputs"
-
   *  ModelCompartments="ocn atm ice lnd"
 
 * Make sure the data are well-prepared (no missing ensemble member or missing years)

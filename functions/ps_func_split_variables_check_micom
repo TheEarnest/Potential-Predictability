@@ -7,14 +7,16 @@ set -ex
 depth_bnds_text=${tempDIR}/${tempPrefix}_levels
 cd ${tarDIR}
 mifile=${SVfile}
-ncdump -v depth_bnds ${mifile} > ${depth_bnds_text}
-dblineS=`cat -n ${depth_bnds_text} | grep "depth_bnds =" | awk -F " " '{print $1}'`
-nlevel=`cdo nlevel ${mifile} `
+ncdump -v depth_bnds ${mifile} > ${depth_bnds_text} || is_not_z_level=1
+if [ "${is_not_z_level}" != "1" ]; then
+  dblineS=`cat -n ${depth_bnds_text} | grep "depth_bnds =" | awk -F " " '{print $1}'`
+  nlevel=`cdo nlevel ${mifile} `
 
-for nL in `seq 1 ${nlevel}`; do 
-  (( dpline = dblineS + nL ))
-  UpperBound=`cat ${depth_bnds_text} | sed -n "${dpline}p" | awk -F "," '{print $1}' | bc -l`  
-  BottomBound=`cat ${depth_bnds_text} | sed -n "${dpline}p" | awk -F "," '{print $2}' | bc -l`
-  levelpresent=`echo "scale=2; (${BottomBound}+${UpperBound})*1.0/2.0" | bc -l `
-  cdo -O sellevidx,${nL} ${mifile} ${fileprefix}_${levelpresent}
-done
+  for nL in `seq 1 ${nlevel}`; do 
+    (( dpline = dblineS + nL ))
+    UpperBound=`cat ${depth_bnds_text} | sed -n "${dpline}p" | awk -F "," '{print $1}' | bc -l`  
+    BottomBound=`cat ${depth_bnds_text} | sed -n "${dpline}p" | awk -F "," '{print $2}' | bc -l`
+    levelpresent=`echo "scale=2; (${BottomBound}+${UpperBound})*1.0/2.0" | bc -l `
+    cdo -O sellevidx,${nL} ${mifile} ${fileprefix}_${levelpresent}
+  done
+fi
