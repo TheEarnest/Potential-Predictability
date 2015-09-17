@@ -123,7 +123,7 @@ for ModelCompartment in ${ModelCompartments}; do
         echo " " >> ${MDfile}
       else
         figurelink=`echo ${figurelink} | sed 's/\//\\\\\//g' `
-        sed -i s/"${vname}: ".*/" ${vname}: ${varLongName}__] ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
+        sed -i s/"${vname}: ".*/"${vname}: ${varLongName}__] ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
       fi
     done
   fi
