@@ -3,7 +3,7 @@
 # ensemble info
 #------------------------------------------------------------------------------
 #
-set -e
+set -ex
 JobStartTime=`date`
 JobName='ps_func_check_Signal2NoiseRatio'
 # 
@@ -29,6 +29,7 @@ fi
 cdo griddes ${DIR}/${Mod}/${casePrefix}${infix}ymonmean | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
 grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
 
+ 
 if [ "${file_count}" == "1" ]; then
   EnsDiffVar=`ls `
   echo "Unexpect file numbers: "${file_count}" ......"
