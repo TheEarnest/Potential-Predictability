@@ -26,7 +26,7 @@ done
 
 cd ${tarDIR}
 # check dimention and split levels
-SVfiles=`ls --color=no ` # all splited variables 
+SVfiles=`ls --color=no *${infix}* ` # all splited variables 
 for SVfile in ${SVfiles}; do 
   vname=`echo ${SVfile} | awk -F "${infix}" '{print $NF}' | awk -F ".nc" '{print $1}'`
   dimStr=`ncdump -h ${SVfile} | grep "${vname}(" | grep "," ` || dimStr="None"

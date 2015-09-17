@@ -1,0 +1,75 @@
+#! /bin/ksh
+###############################################################################
+#### Batch Queuing System is PBS pro
+#PBS -A nn9039k
+#PBS -N z_sst_micomR
+#PBS -q batch
+#PBS -l mppwidth=1
+#PBS -l mem=1gb
+#PBS -l walltime=00:58:00
+#PBS -j oe
+#PBS -S /bin/bash
+###############################################################################
+#------------------------------------------------------------------------------
+#
+#
+set -ex
+
+#module=() 
+#{  
+#  eval `/opt/modules/3.2.6.7/bin/modulecmd bash $*`
+#}
+#module load python
+
+/opt/modules/3.2.6.7/bin/modulecmd bash load python
+
+expid=NorCPM_Historical
+
+vars="templvl salnlvl"
+for vname in ${vars}; do 
+
+#vname=templvl
+#vname=salnlvl
+# vname=sigmx sealv fice mld maxmld sst sss templvl salnlvl
+#sourceDir=/work/${USER}/archive/${expid}/ocn/hist
+#sourceDir=/work/earnest/Conversion/FF_ini_try
+sourceDir=/work/earnest/temp/noresmexp/Historical_forcing_ens
+#
+workdir=/work/${USER}/temp/micom/${expid}_output
+outdir=${workdir}/${vname}
+mkdir -p ${outdir}
+scriptdir=/home/uib/${USER}/Analysis/python_codes/micom
+scriptname=micom_read_and_regriding_2Df.py
+cdo=cdo
+SourceBackupNC=IGT15_var3Dlev_${expid}_${vname}.nc; SBcheck=No
+#cp ${scriptdir}/../../moc_mpiom/${SourceBackupNC} ${workdir}
+cd ${sourceDir}
+#files=`ls --color=no *.grb `
+files=`ls --color=no *1995_2004* `
+#cdo -f nc copy -remapbil,r361x181 -seltimestep,1 /home/uib/earnest/Data/mpiom_ssh.grb ${workdir}/${SourceBackupNC}
+
+cp ${scriptdir}/${scriptname} ${workdir}
+cd ${workdir}
+core_count=0
+for file in ${files}; do
+  (( core_count = core_count + 1 )) 
+  filename=${vname}_`echo ${file} | awk -F "." '{print $1}'`
+  cdo selvar,${vname}  ${sourceDir}/${file} ${workdir}/${filename}_temp.nc 
+  pythoncommandstr="${scriptname} ${filename}_temp.nc ${vname} ${core_count}"
+  if [ "${PBS_O_WORKDIR}" == "" ]; then
+    python ${pythoncommandstr}
+  else
+    aprun -n 1 python ${pythoncommandstr}  
+  fi
+  #mv ${workdir}/${tempTarget} ${workdir}/${vname}_${filename}.nc  
+  #rm ${filename}.nc
+#  if [ ${core_count} -eq 16 ]; then
+#    sleep 60
+#    core_count=0
+#  fi
+  echo "Output is: "${workdir}/${vname}/${filename} 
+done # files
+done
+wait
+
+
