@@ -107,16 +107,17 @@ for ModelCompartment in ${ModelCompartments}; do
       fi
       # update markdown data ...
       vname=`cdo showvar ${PPPfile} | cut -c2-100 `
+      namesuffix=`echo ${PPPfile} | awk -F "/" '{print $NF}' | awk -F "${vname}" '{print $NF}' | awk -F ".nc" '{print $1}'` 
+      levelStr=""
+      if [ "${namesuffix}" != "" ]; then
+        level=`echo ${fname} | awk -F "_" '{print $NF}'`
+        levelStr=" (level: ${level}) "
+      fi
       varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
       varLongName=`echo ${varLongName//\"} | tr "/" "-"`
       vnameCheck=`grep "${varLongName}" ${MDfile} ` || vnameCheck="None"
-      nlevel=`cdo nlevel ${PPPfile}`
       cd ${figureDIR}/PPP_${ModelCompartment}
-      if [ "${nlevel}" == "1" ]; then
-        figfilename=`ls *${vname}${fsuffix} ` || figfilename="None"
-      else
-        figfilename=`ls *${vname}_*.*${fsuffix} ` || figfilename="None"
-      fi
+      figfilename=`ls *${vname}${namesuffix}${fsuffix} ` || figfilename="None"
       if [ "${figfilename}" == "None" ]; then
         figurelink=""
       else
@@ -126,11 +127,11 @@ for ModelCompartment in ${ModelCompartments}; do
 
       if [ "${vnameCheck}" == "None" ]; then
         # generate the line
-        echo "  * [__${vname}: ${varLongName}__] ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
+        echo "  * [__${vname}: ${varLongName}__] ${figurelink} ${levelStr}-> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
         echo " " >> ${MDfile}
       else
         figurelink=`echo ${figurelink} | sed 's/\//\\\\\//g' `
-        sed -i s/"${vname}: ".*/"${vname}: ${varLongName}__] ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
+        sed -i s/"${vname}: ".*/"${vname}: ${varLongName}__] ${figurelink} ${levelStr}-> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
       fi
     done
   fi
