@@ -8,6 +8,7 @@ PPP of all variables in lnd
  
   * [__BIOGENCO: biogenic CO flux__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.BIOGENCO.png), All_G02.clm2.h0., (level: 0) -> maximum PPP is __0.998__; averaged PPP is __0.761__; maximum PPP of SPG is __0.924__; maximum PPP of Eurasia is __0.932__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
  
+  ![test] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.BIOGENCO.png)
   * [__BTRAN: transpiration beta factor__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.BTRAN.png), All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.419; maximum PPP of SPG is __0.826__; maximum PPP of Eurasia is __0.986__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
  
   * [__BUILDHEAT: heat flux from urban building interior to walls and roof__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.BUILDHEAT.png), All_G02.clm2.h0., (level: 0) -> maximum PPP is __0.992__; averaged PPP is __0.753__; maximum PPP of SPG is __0.660__; maximum PPP of Eurasia is __0.944__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
