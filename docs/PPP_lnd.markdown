@@ -6,3 +6,4 @@ PPP of all variables in lnd
 
 
 ![testing] (svg/test.svg)
+<a><img src="svg/test.svg/></a>
