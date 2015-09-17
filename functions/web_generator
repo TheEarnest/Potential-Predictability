@@ -14,6 +14,11 @@ figureDIR=${ScriptHome}/figures
 #------------------------------------------------------------------------------
 # Parameters (grep from the main script)
 #------------------------------------------------------------------------------
+SPGReg="300,345,48,65"
+EUReg="40,140,40,70"
+Nino34Reg="-170,-120,-5,5"
+AtlNino3Reg="-20,-0,-3,3"
+
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 
 ModelCompartments="lnd ocn atm ice"
@@ -44,11 +49,11 @@ for ModelCompartment in ${ModelCompartments}; do
     fldmax=0`cdo -s outputf,%10.3f,1 -fldmax ${file} | bc -l`
 #      NaN_check=
 
-      fldmean=0`cdo -s outputf,%10.3f,1 -fldmean ${file} | bc -l`
-      SPGfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${SPGReg} ${file} | bc -l`
-      EUfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${EUReg} ${file} | bc -l`
-      Nino34fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${Nino34Reg} ${file} | bc -l`
-      AltNino3fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${AtlNino3Reg} ${file} | bc -l`
+    fldmean=0`cdo -s outputf,%10.3f,1 -fldmean ${file} | bc -l`
+    SPGfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${SPGReg} ${file} | bc -l`
+    EUfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${EUReg} ${file} | bc -l`
+    Nino34fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${Nino34Reg} ${file} | bc -l`
+    AltNino3fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${AtlNino3Reg} ${file} | bc -l`
 
 exit 1
 
