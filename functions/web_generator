@@ -102,10 +102,10 @@ for ModelCompartment in ${ModelCompartments}; do
     # update markdown data ...
     vname=`cdo showvar ${PPPfile} | cut -c2-100 `
     varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
-    varLongName=${varLongName//\"}
+    varLongName=`echo ${varLongName//\"} | tr "/" "-"`
     vnameCheck=`grep "${varLongName}" ${MDfile} ` || vnameCheck="None"
     cd ${figureDIR}/PPP_${ModelCompartment}
-    figfilename=`ls *${vname}* `
+    figfilename=`ls *${vname}* ` || figfilename="None"
     if [ "${vnameCheck}" == "None" ]; then
       # generate the line
       echo "  * [${vname}: ${varLongName}] (../figures/PPP_${ModelCompartment}/${figfilename}) -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
@@ -113,42 +113,6 @@ for ModelCompartment in ${ModelCompartments}; do
     else
       sed -i s/" ${varLongName}] ".*/" ${varLongName}] -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
     fi
-exit 1
-
   done
 done
 
-
-cd ${figureDIR}
-figureCount=0
-fDIRs=`ls --color=no `
-for fDIR in ${fDIRs}; do 
-  Mod=`echo ${fDIR} | awk -F "PPP_" '{print $NF}'`
-  ModfDIR=${figureDIR}/${fDIR}
-  cd ${ModfDIR}
-  figures=`ls --color=no `
-  for figure in ${figures}; do 
-  # check vname 
-    (( figureCount = figureCount + 1 ))
-    figsuffix=`echo ${figure} | tail -c5 `
-    vname=`echo ${figure} | awk -F "PPP_" '{print $NF}' | awk -F "${figsuffix}" '{print $1}'`
-    fname=`ls --color=no ${OutputDIR}/${Mod}/PPP_all_variables/*${vname}* `
-    SPGReg="300,345,48,65"
-    EUReg="40,140,40,70"
-    Nino34Reg="-170,-120,-5,5"
-    AtlNino3Reg="-20,-0,-3,3"
-    if [ -f ${fname} ]; then 
-      fldmax=0`cdo -s outputf,%10.3f,1 -fldmax ${fname} | bc -l`
-#      NaN_check=
-
-      fldmean=0`cdo -s outputf,%10.3f,1 -fldmean ${fname} | bc -l`
-      SPGfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${SPGReg} ${fname} | bc -l`
-      EUfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${EUReg} ${fname} | bc -l`
-      Nino34fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${Nino34Reg} ${fname} | bc -l`
-      AltNino3fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${AtlNino3Reg} ${fname} | bc -l`
-    fi
-sed -i s/"Total figures: ".*/"Total figures: ${figureCount}"/g ${ScriptHome}/README.md
-
-exit 1
-  done
-done
