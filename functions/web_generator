@@ -28,99 +28,102 @@ for ModelCompartment in ${ModelCompartments}; do
     cp -rf ${OutputDIR}/${ModelCompartment}/PPP_all_figures ${figureDIR}/PPP_${ModelCompartment}
   fi
 done
-
+figureCount=0
 # -------------------------
 # building base page in advance 
 for ModelCompartment in ${ModelCompartments}; do
   MDfile=${webpageDIR}/PPP_${ModelCompartment}.markdown
-  if [ ! -f ${MDfile} ]; then
-    # header of markdown pages
-    echo "PPP of all variables in "${ModelCompartment} > ${MDfile}
-    echo "==========" >> ${MDfile} 
-    echo ">> Created on: __"`date`"__ " >> ${MDfile} 
-    echo " "  >> ${MDfile}
-    echo ">> Last modified on: __"`date`"__ " >> ${MDfile}
-  else
-    nowdate=`date`
-    sed -i s/"Last modified on: ".*/"Last modified on: __${nowdate}__ "/g ${MDfile}
+  if [ -d ${figureDIR}/PPP_${ModelCompartment} ]; then
+    if [ ! -f ${MDfile} ]; then
+      # header of markdown pages
+      echo "PPP of all variables in "${ModelCompartment} > ${MDfile}
+      echo "==========" >> ${MDfile} 
+      echo ">> Created on: __"`date`"__ " >> ${MDfile} 
+      echo " "  >> ${MDfile}
+      echo ">> Last modified on: __"`date`"__ " >> ${MDfile}
+    else
+      nowdate=`date`
+      sed -i s/"Last modified on: ".*/"Last modified on: __${nowdate}__ "/g ${MDfile}
+    fi
+    PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `
+    for PPPfile in ${PPPfiles}; do 
+      threholdPPP=`echo "scale=0; (${thPPP}*1000.0)/1.0" | bc -l `
+      fldmax=0`cdo -s outputf,%10.3f,1 -fldmax ${PPPfile} | bc -l`
+      NaN_check=`echo "scale=0; (${fldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
+      if [ ${NaN_check} -gt ${threholdPPP} ]; then 
+        fldmax="__${fldmax}__"
+      fi
+
+      fldmean=0`cdo -s outputf,%10.3f,1 -fldmean ${PPPfile} | bc -l`
+      NaN_check=`echo "scale=0; (${fldmean}*1000.0)/1.0" | bc -l | cut -c1-14`
+      if [ ${NaN_check} -gt ${threholdPPP} ]; then
+        fldmean="__${fldmean}__"
+      fi
+
+      SPGfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${SPGReg} ${PPPfile} | bc -l`
+      NaN_check=`echo "scale=0; (${SPGfldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
+      if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
+        SPGfldmax="NaN"
+      else
+        if [ ${NaN_check} -gt ${threholdPPP} ]; then
+          SPGfldmax="__${SPGfldmax}__"
+        fi
+      fi
+
+
+      EUfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${EUReg} ${PPPfile} | bc -l`
+      NaN_check=`echo "scale=0; (${EUfldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
+      if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
+        EUfldmax="NaN"
+      else
+        if [ ${NaN_check} -gt ${threholdPPP} ]; then
+          EUfldmax="__${EUfldmax}__"
+        fi
+      fi
+
+      Nino34fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${Nino34Reg} ${PPPfile} | bc -l`
+      NaN_check=`echo "scale=0; (${Nino34fldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
+      if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
+        Nino34fldmax="NaN"
+      else
+        if [ ${NaN_check} -gt ${threholdPPP} ]; then
+          Nino34fldmax="__${Nino34fldmax}__"
+        fi
+      fi
+ 
+      AltNino3fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${AtlNino3Reg} ${PPPfile} | bc -l`
+      NaN_check=`echo "scale=0; (${AltNino3fldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
+      if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
+        AltNino3fldmax="NaN"
+      else
+        if [ ${NaN_check} -gt ${threholdPPP} ]; then
+          AltNino3fldmax="__${AltNino3fldmax}__"
+        fi
+      fi
+      # update markdown data ...
+      vname=`cdo showvar ${PPPfile} | cut -c2-100 `
+      varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
+      varLongName=`echo ${varLongName//\"} | tr "/" "-"`
+      vnameCheck=`grep "${varLongName}" ${MDfile} ` || vnameCheck="None"
+      cd ${figureDIR}/PPP_${ModelCompartment}
+      figfilename=`ls *${vname}* ` || figfilename="None"
+      if [ "${figfilename}" == "None" ]; then
+        figurelink=""
+      else
+        figurelink="(../figures/PPP_${ModelCompartment}/${figfilename})"
+        (( figureCount = figureCount + 1 ))
+      fi
+
+      if [ "${vnameCheck}" == "None" ]; then
+        # generate the line
+        echo "  * [${vname}: ${varLongName}] ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
+        echo " " >> ${MDfile}
+      else
+        figurelink=`echo ${figurelink} | sed 's/\//\\\\\//g' `
+        sed -i s/" ${vname}: ".*/" ${vname}: ${varLongName}] ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
+      fi
+    done
   fi
-  PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `
-  for PPPfile in ${PPPfiles}; do 
-    threholdPPP=`echo "scale=0; (${thPPP}*1000.0)/1.0" | bc -l `
-    fldmax=0`cdo -s outputf,%10.3f,1 -fldmax ${PPPfile} | bc -l`
-    NaN_check=`echo "scale=0; (${fldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
-    if [ ${NaN_check} -gt ${threholdPPP} ]; then 
-      fldmax="__${fldmax}__"
-    fi
-
-    fldmean=0`cdo -s outputf,%10.3f,1 -fldmean ${PPPfile} | bc -l`
-    NaN_check=`echo "scale=0; (${fldmean}*1000.0)/1.0" | bc -l | cut -c1-14`
-    if [ ${NaN_check} -gt ${threholdPPP} ]; then
-      fldmean="__${fldmean}__"
-    fi
-
-    SPGfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${SPGReg} ${PPPfile} | bc -l`
-    NaN_check=`echo "scale=0; (${SPGfldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
-    if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
-      SPGfldmax="NaN"
-    else
-      if [ ${NaN_check} -gt ${threholdPPP} ]; then
-        SPGfldmax="__${SPGfldmax}__"
-      fi
-    fi
-
-
-    EUfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${EUReg} ${PPPfile} | bc -l`
-    NaN_check=`echo "scale=0; (${EUfldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
-    if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
-      EUfldmax="NaN"
-    else
-      if [ ${NaN_check} -gt ${threholdPPP} ]; then
-        EUfldmax="__${EUfldmax}__"
-      fi
-    fi
-
-    Nino34fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${Nino34Reg} ${PPPfile} | bc -l`
-    NaN_check=`echo "scale=0; (${Nino34fldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
-    if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
-      Nino34fldmax="NaN"
-    else
-      if [ ${NaN_check} -gt ${threholdPPP} ]; then
-        Nino34fldmax="__${Nino34fldmax}__"
-      fi
-    fi
-
-    AltNino3fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${AtlNino3Reg} ${PPPfile} | bc -l`
-    NaN_check=`echo "scale=0; (${AltNino3fldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
-    if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
-      AltNino3fldmax="NaN"
-    else
-      if [ ${NaN_check} -gt ${threholdPPP} ]; then
-        AltNino3fldmax="__${AltNino3fldmax}__"
-      fi
-    fi
-    # update markdown data ...
-    vname=`cdo showvar ${PPPfile} | cut -c2-100 `
-    varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
-    varLongName=`echo ${varLongName//\"} | tr "/" "-"`
-    vnameCheck=`grep "${varLongName}" ${MDfile} ` || vnameCheck="None"
-    cd ${figureDIR}/PPP_${ModelCompartment}
-    figfilename=`ls *${vname}* ` || figfilename="None"
-    if [ "${figfilename}" == "None" ]; then
-      figurelink=""
-    else
-      figurelink="(../figures/PPP_${ModelCompartment}/${figfilename})"
-    fi
-
-    if [ "${vnameCheck}" == "None" ]; then
-      # generate the line
-      echo "  * [${vname}: ${varLongName}] ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}" >> ${MDfile}
-      echo " " >> ${MDfile}
-    else
-      figurelink=`echo ${figurelink} | sed 's/\//\\\\\//g' `
-      sed -i s/" ${varLongName}] ".*/" ${varLongName}] ${figurelink} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}"/g ${MDfile}
-
-    fi
-  done
 done
 
+sed -i s/"Total figures: ".*/"Total figures: ${figureCount}"/g ${ScriptHome}/README.md

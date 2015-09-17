@@ -2,7 +2,7 @@ PPP of all variables in lnd
 ==========
 >> Created on: __Thu Sep 17 11:50:25 CEST 2015__ 
  
->> Last modified on: __Thu Sep 17 13:19:44 CEST 2015__ 
+>> Last modified on: __Thu Sep 17 13:28:39 CEST 2015__ 
 
 
 
@@ -23,8 +23,6 @@ PPP of all variables in lnd
   * [ERRH2O: total water conservation error]  -> maximum PPP is __0.995__; averaged PPP is __0.754__; maximum PPP of SPG is __0.968__; maximum PPP of Eurasia is __0.984__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
  
   * [ERRSEB: surface energy conservation error]  -> maximum PPP is __0.879__; averaged PPP is 0.116; maximum PPP of SPG is 0.129; maximum PPP of Eurasia is 0.449; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
- 
-  * [ERRSOI: soil/lake energy conservation error] (../figures/PPP_lnd/None) -> maximum PPP is __0.981__; averaged PPP is 0.342; maximum PPP of SPG is 0.222; maximum PPP of Eurasia is __0.926__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
  
   * [ERRSOL: solar radiation conservation error]  -> maximum PPP is __0.858__; averaged PPP is 0.051; maximum PPP of SPG is 0.159; maximum PPP of Eurasia is __0.787__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
  
