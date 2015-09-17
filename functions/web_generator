@@ -128,19 +128,18 @@ for ModelCompartment in ${ModelCompartments}; do
       if [ "${figfilename}" == "None" ]; then
         figurelink=""
       else
-        figurelink="(../figures/PPP_${ModelCompartment}/${figfilename})"
+        figurelink=" ![] (../figures/PPP_${ModelCompartment}/${figfilename})"
         (( figureCount = figureCount + 1 ))
       fi
     fi
     if [ "${vnameCheck}" == "None" ]; then
       # generate the line
-      echo "  * [__${vname}: ${varLongName}__] ${figurelink}, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax}\n ![] ${figurelink}" >> ${MDfile}
+      echo "  * __${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax} ${figurelink}" >> ${MDfile}
       echo " " >> ${MDfile}
     else
       figurelink=`echo ${figurelink} | sed 's/\//\\\\\//g' `
-      sed -i s/"${vname}: ${varLongName}__] ${figurelink}, ${nameinfix}, ${levelStr} -".*/"${vname}: ${varLongName}__] ${figurelink}, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax} ![] ${figurelink}"/g ${MDfile}
+      sed -i s/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -".*/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax} ${figurelink}"/g ${MDfile}
     fi
-exit 1
   done
 done
 
