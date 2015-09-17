@@ -11,6 +11,8 @@ fi
 ScriptHome=`pwd`
 webpageDIR=${ScriptHome}/docs
 figureDIR=${ScriptHome}/figures
+fsuffix=`grep "fsuffix=" ${ScriptHome}/functions/plotingAll | awk -F "=" '{print $NF}'`
+fsuffix=${fsuffix//\"}
 #------------------------------------------------------------------------------
 # Parameters (grep from the main script)
 #------------------------------------------------------------------------------
@@ -108,8 +110,13 @@ for ModelCompartment in ${ModelCompartments}; do
       varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
       varLongName=`echo ${varLongName//\"} | tr "/" "-"`
       vnameCheck=`grep "${varLongName}" ${MDfile} ` || vnameCheck="None"
+      nlevel=`cdo nlevel ${PPPfile}`
       cd ${figureDIR}/PPP_${ModelCompartment}
-      figfilename=`ls *${vname}* ` || figfilename="None"
+      if [ "${nlevel}" == "1" ]; then
+        figfilename=`ls *${vname}${fsuffix} ` || figfilename="None"
+      else
+        figfilename=`ls *${vname}_*.*${fsuffix} ` || figfilename="None"
+      fi
       if [ "${figfilename}" == "None" ]; then
         figurelink=""
       else
