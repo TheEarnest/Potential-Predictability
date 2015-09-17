@@ -23,7 +23,7 @@ AtlNino3Reg="-20,-0,-3,3"
 thPPP=0.6
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 
-ModelCompartments="lnd"
+ModelCompartments="lnd ice ocn atm"
 for ModelCompartment in ${ModelCompartments}; do 
   if [ -d ${OutputDIR}/${ModelCompartment}/PPP_all_figures ]; then
     rm -rf ${figureDIR}/PPP_${ModelCompartment}
