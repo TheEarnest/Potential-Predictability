@@ -14,7 +14,7 @@ MEyear=2000
 DataDIR=/scratch/earnest/noresmexp/FF_ini_try
 
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="ocn"
+ModelCompartments="ice"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -58,11 +58,9 @@ for compartment in ${ModelCompartments}; do
   # calculating the ensemble mean/std/spread (max-min)
   for prefix in ${prefixes}; do 
     . ${funcPath}/ps_func_building_ensemble_mean
-  done
 
   #---------------------------------------------------------------------------
   # the difference of each member and ensemble mean
-  for prefix in ${prefixes}; do 
     #------------------------------------------------------------------------
     # for all variables 
     . ${funcPath}/ps_func_check_Diff
