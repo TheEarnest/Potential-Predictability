@@ -2,7 +2,7 @@ PPP of all variables in lnd
 ==========
 >> Created on: __Thu Sep 17 15:54:22 CEST 2015__ 
  
->> Last update on: __Thu Sep 17 15:55:24 CEST 2015__ 
+>> Last update on: __Thu Sep 17 16:20:32 CEST 2015__ 
  
 ------ 
  
@@ -428,7 +428,7 @@ PPP of all variables in lnd
  
   * [__ZBOT: atmospheric reference height__]  (All_G02.clm2.h0.) -> maximum PPP is __0.969__; averaged PPP is __0.728__; maximum PPP of SPG is __0.703__; maximum PPP of Eurasia is __0.953__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
  
-  * [__ZWT: water table depth__]  (All_G02.clm2.h0.) -> maximum PPP is __0.923__; averaged PPP is 0.161; maximum PPP of SPG is 0.589; maximum PPP of Eurasia is 0.357; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+  * [__ZWT: total water storage (unsaturated soil water + groundwater)__]  (All_G02.clm2.h0.) -> maximum PPP is __0.903__; averaged PPP is 0.163; maximum PPP of SPG is 0.589; maximum PPP of Eurasia is __0.618__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
  
   * [__QCHANR_ICE: RTM river flow: ICE__]  (All_G03.clm2.h0.) -> maximum PPP is __0.702__; averaged PPP is 0.244; maximum PPP of SPG is 0.316; maximum PPP of Eurasia is NaN; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
  
@@ -439,4 +439,146 @@ PPP of all variables in lnd
   * [__QCHOCNR: RTM river discharge into ocean: LIQ__]  (All_G03.clm2.h0.) -> maximum PPP is __0.922__; averaged PPP is 0.245; maximum PPP of SPG is 0.529; maximum PPP of Eurasia is 0.542; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
  
   * [__VOLR: RTM storage: LIQ__]  (All_G03.clm2.h0.) -> maximum PPP is __0.899__; averaged PPP is 0.255; maximum PPP of SPG is 0.520; maximum PPP of Eurasia is __0.899__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_0.00710064.png) (All_G02.clm2.h0.)  (level: 0.00710064) -> maximum PPP is __0.955__; averaged PPP is 0.340; maximum PPP of SPG is 0.549; maximum PPP of Eurasia is __0.856__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_0.027925.png) (All_G02.clm2.h0.)  (level: 0.027925) -> maximum PPP is __0.949__; averaged PPP is 0.310; maximum PPP of SPG is 0.540; maximum PPP of Eurasia is __0.843__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_0.0622586.png) (All_G02.clm2.h0.)  (level: 0.0622586) -> maximum PPP is __0.944__; averaged PPP is 0.298; maximum PPP of SPG is 0.546; maximum PPP of Eurasia is __0.835__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_0.118865.png) (All_G02.clm2.h0.)  (level: 0.118865) -> maximum PPP is __0.941__; averaged PPP is 0.288; maximum PPP of SPG is 0.588; maximum PPP of Eurasia is __0.819__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_0.212193.png) (All_G02.clm2.h0.)  (level: 0.212193) -> maximum PPP is __0.930__; averaged PPP is 0.275; maximum PPP of SPG is 0.470; maximum PPP of Eurasia is __0.812__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_0.366066.png) (All_G02.clm2.h0.)  (level: 0.366066) -> maximum PPP is __0.911__; averaged PPP is 0.263; maximum PPP of SPG is 0.512; maximum PPP of Eurasia is __0.778__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_0.619758.png) (All_G02.clm2.h0.)  (level: 0.619758) -> maximum PPP is __0.916__; averaged PPP is 0.247; maximum PPP of SPG is 0.511; maximum PPP of Eurasia is __0.724__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_1.03803.png) (All_G02.clm2.h0.)  (level: 1.03803) -> maximum PPP is __0.926__; averaged PPP is 0.221; maximum PPP of SPG is 0.586; maximum PPP of Eurasia is 0.548; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_12.9253.png) (All_G02.clm2.h0.)  (level: 12.9253) -> maximum PPP is 0.242; averaged PPP is 0.010; maximum PPP of SPG is 0.235; maximum PPP of Eurasia is 0.047; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_1.72764.png) (All_G02.clm2.h0.)  (level: 1.72764) -> maximum PPP is __0.954__; averaged PPP is 0.189; maximum PPP of SPG is __0.670__; maximum PPP of Eurasia is 0.333; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_21.3265.png) (All_G02.clm2.h0.)  (level: 21.3265) -> maximum PPP is 0.217; averaged PPP is 0.004; maximum PPP of SPG is 00; maximum PPP of Eurasia is 0.044; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_2.86461.png) (All_G02.clm2.h0.)  (level: 2.86461) -> maximum PPP is __0.950__; averaged PPP is 0.158; maximum PPP of SPG is 0.355; maximum PPP of Eurasia is 0.346; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_35.1776.png) (All_G02.clm2.h0.)  (level: 35.1776) -> maximum PPP is 0.140; averaged PPP is 0.002; maximum PPP of SPG is 00; maximum PPP of Eurasia is 0.041; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_4.73916.png) (All_G02.clm2.h0.)  (level: 4.73916) -> maximum PPP is 0.176; averaged PPP is 0.010; maximum PPP of SPG is 0.043; maximum PPP of Eurasia is 0.056; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__H2OSOI: volumetric soil water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.H2OSOI_7.82977.png) (All_G02.clm2.h0.)  (level: 7.82977) -> maximum PPP is 0.203; averaged PPP is 0.011; maximum PPP of SPG is 0.162; maximum PPP of Eurasia is 0.067; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_0.00710064.png) (All_G02.clm2.h0.)  (level: 0.00710064) -> maximum PPP is __0.978__; averaged PPP is 0.406; maximum PPP of SPG is __0.871__; maximum PPP of Eurasia is __0.969__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_0.027925.png) (All_G02.clm2.h0.)  (level: 0.027925) -> maximum PPP is __0.978__; averaged PPP is 0.427; maximum PPP of SPG is __0.815__; maximum PPP of Eurasia is __0.967__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_0.0622586.png) (All_G02.clm2.h0.)  (level: 0.0622586) -> maximum PPP is __0.970__; averaged PPP is 0.431; maximum PPP of SPG is __0.843__; maximum PPP of Eurasia is __0.965__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_0.118865.png) (All_G02.clm2.h0.)  (level: 0.118865) -> maximum PPP is __0.968__; averaged PPP is 0.430; maximum PPP of SPG is __0.828__; maximum PPP of Eurasia is __0.960__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_0.212193.png) (All_G02.clm2.h0.)  (level: 0.212193) -> maximum PPP is __0.968__; averaged PPP is 0.395; maximum PPP of SPG is __0.716__; maximum PPP of Eurasia is __0.954__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_0.366066.png) (All_G02.clm2.h0.)  (level: 0.366066) -> maximum PPP is __0.965__; averaged PPP is 0.326; maximum PPP of SPG is __0.687__; maximum PPP of Eurasia is __0.950__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_0.619758.png) (All_G02.clm2.h0.)  (level: 0.619758) -> maximum PPP is __0.952__; averaged PPP is 0.245; maximum PPP of SPG is 0.406; maximum PPP of Eurasia is __0.940__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_1.03803.png) (All_G02.clm2.h0.)  (level: 1.03803) -> maximum PPP is __0.928__; averaged PPP is 0.145; maximum PPP of SPG is 0.493; maximum PPP of Eurasia is __0.911__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_12.9253.png) (All_G02.clm2.h0.)  (level: 12.9253) -> maximum PPP is __0.866__; averaged PPP is 0.084; maximum PPP of SPG is 0.038; maximum PPP of Eurasia is 0.517; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_1.72764.png) (All_G02.clm2.h0.)  (level: 1.72764) -> maximum PPP is __0.792__; averaged PPP is 0.079; maximum PPP of SPG is 0.444; maximum PPP of Eurasia is __0.678__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_21.3265.png) (All_G02.clm2.h0.)  (level: 21.3265) -> maximum PPP is __0.854__; averaged PPP is 0.092; maximum PPP of SPG is NaN; maximum PPP of Eurasia is 0.521; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_2.86461.png) (All_G02.clm2.h0.)  (level: 2.86461) -> maximum PPP is __0.831__; averaged PPP is 0.048; maximum PPP of SPG is 0.387; maximum PPP of Eurasia is __0.704__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_35.1776.png) (All_G02.clm2.h0.)  (level: 35.1776) -> maximum PPP is __0.859__; averaged PPP is 0.097; maximum PPP of SPG is NaN; maximum PPP of Eurasia is 0.520; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_4.73916.png) (All_G02.clm2.h0.)  (level: 4.73916) -> maximum PPP is __0.868__; averaged PPP is 0.083; maximum PPP of SPG is 0.043; maximum PPP of Eurasia is 0.516; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILICE: soil ice__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILICE_7.82977.png) (All_G02.clm2.h0.)  (level: 7.82977) -> maximum PPP is __0.871__; averaged PPP is 0.078; maximum PPP of SPG is 0.026; maximum PPP of Eurasia is 0.515; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_0.00710064.png) (All_G02.clm2.h0.)  (level: 0.00710064) -> maximum PPP is __0.957__; averaged PPP is 0.439; maximum PPP of SPG is __0.897__; maximum PPP of Eurasia is __0.910__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_0.027925.png) (All_G02.clm2.h0.)  (level: 0.027925) -> maximum PPP is __0.973__; averaged PPP is 0.430; maximum PPP of SPG is __0.896__; maximum PPP of Eurasia is __0.911__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_0.0622586.png) (All_G02.clm2.h0.)  (level: 0.0622586) -> maximum PPP is __0.973__; averaged PPP is 0.417; maximum PPP of SPG is __0.871__; maximum PPP of Eurasia is __0.903__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_0.118865.png) (All_G02.clm2.h0.)  (level: 0.118865) -> maximum PPP is __0.973__; averaged PPP is 0.401; maximum PPP of SPG is __0.791__; maximum PPP of Eurasia is __0.899__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_0.212193.png) (All_G02.clm2.h0.)  (level: 0.212193) -> maximum PPP is __0.973__; averaged PPP is 0.376; maximum PPP of SPG is __0.735__; maximum PPP of Eurasia is __0.896__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_0.366066.png) (All_G02.clm2.h0.)  (level: 0.366066) -> maximum PPP is __0.971__; averaged PPP is 0.340; maximum PPP of SPG is __0.708__; maximum PPP of Eurasia is __0.895__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_0.619758.png) (All_G02.clm2.h0.)  (level: 0.619758) -> maximum PPP is __0.954__; averaged PPP is 0.299; maximum PPP of SPG is 0.407; maximum PPP of Eurasia is __0.858__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_1.03803.png) (All_G02.clm2.h0.)  (level: 1.03803) -> maximum PPP is __0.925__; averaged PPP is 0.243; maximum PPP of SPG is 0.586; maximum PPP of Eurasia is __0.827__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_12.9253.png) (All_G02.clm2.h0.)  (level: 12.9253) -> maximum PPP is __0.756__; averaged PPP is 0.018; maximum PPP of SPG is 0.033; maximum PPP of Eurasia is 0.278; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_1.72764.png) (All_G02.clm2.h0.)  (level: 1.72764) -> maximum PPP is __0.954__; averaged PPP is 0.195; maximum PPP of SPG is __0.670__; maximum PPP of Eurasia is __0.669__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_21.3265.png) (All_G02.clm2.h0.)  (level: 21.3265) -> maximum PPP is __0.747__; averaged PPP is 0.015; maximum PPP of SPG is 00; maximum PPP of Eurasia is 0.285; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_2.86461.png) (All_G02.clm2.h0.)  (level: 2.86461) -> maximum PPP is __0.950__; averaged PPP is 0.161; maximum PPP of SPG is 0.330; maximum PPP of Eurasia is __0.697__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_35.1776.png) (All_G02.clm2.h0.)  (level: 35.1776) -> maximum PPP is __0.746__; averaged PPP is 0.009; maximum PPP of SPG is 00; maximum PPP of Eurasia is 0.283; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_4.73916.png) (All_G02.clm2.h0.)  (level: 4.73916) -> maximum PPP is __0.757__; averaged PPP is 0.021; maximum PPP of SPG is 0.043; maximum PPP of Eurasia is 0.283; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__SOILLIQ: soil liquid water__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.SOILLIQ_7.82977.png) (All_G02.clm2.h0.)  (level: 7.82977) -> maximum PPP is __0.760__; averaged PPP is 0.020; maximum PPP of SPG is 0.026; maximum PPP of Eurasia is 0.283; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TLAKE: lake temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TLAKE_000.05.png) (All_G02.clm2.h0.)  (level: 000.05) -> maximum PPP is __0.935__; averaged PPP is __0.685__; maximum PPP of SPG is NaN; maximum PPP of Eurasia is __0.935__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TLAKE: lake temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TLAKE_0000.6.png) (All_G02.clm2.h0.)  (level: 0000.6) -> maximum PPP is __0.934__; averaged PPP is __0.665__; maximum PPP of SPG is NaN; maximum PPP of Eurasia is __0.934__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TLAKE: lake temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TLAKE_0002.1.png) (All_G02.clm2.h0.)  (level: 0002.1) -> maximum PPP is __0.914__; averaged PPP is 0.419; maximum PPP of SPG is NaN; maximum PPP of Eurasia is 0.548; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TLAKE: lake temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TLAKE_0004.6.png) (All_G02.clm2.h0.)  (level: 0004.6) -> maximum PPP is __0.914__; averaged PPP is 0.359; maximum PPP of SPG is NaN; maximum PPP of Eurasia is 0.553; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TLAKE: lake temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TLAKE_0008.1.png) (All_G02.clm2.h0.)  (level: 0008.1) -> maximum PPP is __0.914__; averaged PPP is 0.352; maximum PPP of SPG is NaN; maximum PPP of Eurasia is 0.522; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TLAKE: lake temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TLAKE_0012.6.png) (All_G02.clm2.h0.)  (level: 0012.6) -> maximum PPP is __0.914__; averaged PPP is 0.352; maximum PPP of SPG is NaN; maximum PPP of Eurasia is 0.520; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TLAKE: lake temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TLAKE_0018.6.png) (All_G02.clm2.h0.)  (level: 0018.6) -> maximum PPP is __0.914__; averaged PPP is 0.352; maximum PPP of SPG is NaN; maximum PPP of Eurasia is 0.520; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TLAKE: lake temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TLAKE_0025.6.png) (All_G02.clm2.h0.)  (level: 0025.6) -> maximum PPP is __0.914__; averaged PPP is 0.349; maximum PPP of SPG is NaN; maximum PPP of Eurasia is 0.518; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TLAKE: lake temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TLAKE_34.325.png) (All_G02.clm2.h0.)  (level: 34.325) -> maximum PPP is __0.914__; averaged PPP is 0.337; maximum PPP of SPG is NaN; maximum PPP of Eurasia is 0.512; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TLAKE: lake temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TLAKE_44.775.png) (All_G02.clm2.h0.)  (level: 44.775) -> maximum PPP is __0.914__; averaged PPP is 0.333; maximum PPP of SPG is NaN; maximum PPP of Eurasia is 0.512; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_0.00710064.png) (All_G02.clm2.h0.)  (level: 0.00710064) -> maximum PPP is __0.981__; averaged PPP is __0.769__; maximum PPP of SPG is __0.883__; maximum PPP of Eurasia is __0.972__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_0.027925.png) (All_G02.clm2.h0.)  (level: 0.027925) -> maximum PPP is __0.979__; averaged PPP is __0.759__; maximum PPP of SPG is __0.893__; maximum PPP of Eurasia is __0.963__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_0.0622586.png) (All_G02.clm2.h0.)  (level: 0.0622586) -> maximum PPP is __0.975__; averaged PPP is __0.744__; maximum PPP of SPG is __0.900__; maximum PPP of Eurasia is __0.959__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_0.118865.png) (All_G02.clm2.h0.)  (level: 0.118865) -> maximum PPP is __0.971__; averaged PPP is __0.731__; maximum PPP of SPG is __0.906__; maximum PPP of Eurasia is __0.961__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_0.212193.png) (All_G02.clm2.h0.)  (level: 0.212193) -> maximum PPP is __0.966__; averaged PPP is __0.725__; maximum PPP of SPG is __0.909__; maximum PPP of Eurasia is __0.964__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_0.366066.png) (All_G02.clm2.h0.)  (level: 0.366066) -> maximum PPP is __0.965__; averaged PPP is __0.722__; maximum PPP of SPG is __0.900__; maximum PPP of Eurasia is __0.965__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_0.619758.png) (All_G02.clm2.h0.)  (level: 0.619758) -> maximum PPP is __0.965__; averaged PPP is __0.709__; maximum PPP of SPG is __0.876__; maximum PPP of Eurasia is __0.963__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_1.03803.png) (All_G02.clm2.h0.)  (level: 1.03803) -> maximum PPP is __0.960__; averaged PPP is __0.677__; maximum PPP of SPG is __0.817__; maximum PPP of Eurasia is __0.960__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_12.9253.png) (All_G02.clm2.h0.)  (level: 12.9253) -> maximum PPP is __0.968__; averaged PPP is 0.478; maximum PPP of SPG is __0.793__; maximum PPP of Eurasia is __0.806__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_1.72764.png) (All_G02.clm2.h0.)  (level: 1.72764) -> maximum PPP is __0.939__; averaged PPP is __0.613__; maximum PPP of SPG is __0.675__; maximum PPP of Eurasia is __0.937__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_21.3265.png) (All_G02.clm2.h0.)  (level: 21.3265) -> maximum PPP is __0.973__; averaged PPP is 0.436; maximum PPP of SPG is __0.828__; maximum PPP of Eurasia is __0.866__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_2.86461.png) (All_G02.clm2.h0.)  (level: 2.86461) -> maximum PPP is __0.938__; averaged PPP is 0.481; maximum PPP of SPG is 0.560; maximum PPP of Eurasia is __0.786__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_35.1776.png) (All_G02.clm2.h0.)  (level: 35.1776) -> maximum PPP is __0.974__; averaged PPP is 0.399; maximum PPP of SPG is __0.858__; maximum PPP of Eurasia is __0.888__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_4.73916.png) (All_G02.clm2.h0.)  (level: 4.73916) -> maximum PPP is __0.950__; averaged PPP is 0.427; maximum PPP of SPG is __0.659__; maximum PPP of Eurasia is __0.716__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__TSOI: soil temperature__] (../figures/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_7.82977.png) (All_G02.clm2.h0.)  (level: 7.82977) -> maximum PPP is __0.962__; averaged PPP is 0.492; maximum PPP of SPG is __0.793__; maximum PPP of Eurasia is __0.810__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
+ 
+  * [__ZWT: water table depth__]  (All_G02.clm2.h0.) -> maximum PPP is __0.923__; averaged PPP is 0.161; maximum PPP of SPG is 0.589; maximum PPP of Eurasia is 0.357; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
  

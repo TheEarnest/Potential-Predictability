@@ -46,7 +46,6 @@ for SVfile in ${SVfiles}; do
   fi 
 done
 
-exit 1
 # remove insignificate results 
 cd ${tarDIR}
 SVfiles=`ls --color=no `
@@ -57,7 +56,7 @@ for SVfile in ${SVfiles}; do
     rm ${SVfile}
   else
     fldstatic=`cdo -s output -fldmax ${SVfile} `
-    roundSkill=`echo "scale=0; (${fldstatic}*100)/1" | bc -l`  
+    roundSkill=`echo "scale=0; (${fldstatic}*100.0)/1.0" | bc -l`  
     if [ "${roundSkill}" == "0" ]; then
       echo "Max PPP of "${SVfile}" is smaller than 0.001, so we delete it."
       rm ${SVfile}
