@@ -9,6 +9,11 @@ PPP of all variables in lnd
 
 <a><img src="svg/test.svg/"></a>
 
+* testing 
+
+<a><img src="https://github.com/TheEarnest/Prognostic-Potential-Predictability/blob/master/docs/svg/test.svg"></a>
+
+
 * testing ...
 
 Roses are <span style="color:red">red</span>, violets are <span style="color:blue">blue</span>.
