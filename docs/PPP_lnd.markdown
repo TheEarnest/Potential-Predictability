@@ -18,7 +18,4 @@ PPP of all variables in lnd
 
 Roses are <span style="color:red">red</span>, violets are <span style="color:blue">blue</span>.
 
-  * BIOGENCO: biogenic CO flux -> maximum PPP is __0.998__; averaged PPP is __0.761__; maximum PPP of SPG is ____0.761____; maximum PPP of Eurasia is ____0.761____; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
- 
-  * BIOGENCO: biogenic CO flux -> maximum PPP is __0.998__; averaged PPP is __0.761__; maximum PPP of SPG is ____0.761____; maximum PPP of Eurasia is ____0.761____; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN
  
