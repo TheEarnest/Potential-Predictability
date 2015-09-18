@@ -52,19 +52,15 @@ if is_using_local_grid == "0" :
   grids_lon = GData.variables['plon'].data
   grids_lat = GData.variables['plat'].data
 
+nio.netcdf_file.close(GData)
 
-sys.exit()
-GData = nio.netcdf_file(FGrid)
-grids_lon = GData.variables['plon'].data
-grids_lat = GData.variables['plat'].data
 temp = np.reshape(grids_lon, grids_lon.size)
 grids = np.zeros((grids_lon.size,0))
 grids = np.append( grids, np.atleast_2d(temp).transpose(), 1)
 temp = np.reshape(grids_lat, grids_lat.size)
 grids = np.append( grids, np.atleast_2d(temp).transpose(), 1)
 # local NC file
-tempNCfn = "tempIGT_" + vname + "_" + str(myid) +".nc"
-#os.system("cp " + SourceBackupNC + " " + tempNCfn)
+tempNCfn = "tempIGT_" + vname + "_" + ".nc"
 
 #  grids = readnetgrid(FGrid,'oces')
 ## griddata can be used
@@ -102,7 +98,7 @@ except :
   print "No need to re-range the data ..."
 
 
-print "ID: ", myid, ("--- %s s is used for parameters defining! ---" % (time.time() - start_time))
+print "ID: ", ("--- %s s is used for parameters defining! ---" % (time.time() - start_time))
 
 fData = NCDataset(DataFilename, 'r')
 varData = fData.variables[vname]
@@ -139,7 +135,7 @@ for im in range(1) : # for month
     temp_put = temp_griddata.reshape(mLo.shape[0], mLo.shape[1]).copy()
     temp_put[np.isnan(temp_put)] = missV
     regriddata[im,:,:] = np.float32(temp_put)
-  print "ID: ", myid, ("--- %s s is used! ---" % (time.time() - start_time))
+  print "ID: ", ("--- %s s is used! ---" % (time.time() - start_time))
 #  print data[im,0,60,4], 'v.s.', regriddata[im,39,64,120]
 #  print 'C1: ', data.shape, ' C2: ', temp_put.shape, 'Check 2: ', temp.shape
 #--------------------------------------------------------------------
@@ -217,4 +213,4 @@ GData.close()
 
 os.system("mv " + tempNCfn + " " + vname + "/" + DataFilename[:-8:])
 os.system("rm " + DataFilename)
-print "ID: ", myid, "Done!!"
+print "ID: ", "Done!!"
