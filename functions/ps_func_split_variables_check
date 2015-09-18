@@ -63,6 +63,10 @@ for SVfile in ${SVfiles}; do
     fi
   fi
 done
+
+if [ "${Mod}" == "ocn" ] || [ "${Mod}" == "ice" ]; then
+  . ${funcPath}/ps_func_split_variables_check_regrid
+fi
 ###############################################################################
 echo ${JobStartTime}
 echo `date`" || "${JobName}

@@ -14,7 +14,7 @@ MEyear=2000
 DataDIR=/scratch/earnest/noresmexp/FF_ini_try
 
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="atm"
+ModelCompartments="ice"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -63,10 +63,10 @@ for compartment in ${ModelCompartments}; do
   # the difference of each member and ensemble mean
     #------------------------------------------------------------------------
     # for all variables 
-    . ${funcPath}/ps_func_check_Diff
-    . ${funcPath}/ps_func_check_sqr
-    . ${funcPath}/ps_func_check_Spread
-    . ${funcPath}/ps_func_check_Signal2NoiseRatio
+ #   . ${funcPath}/ps_func_check_Diff
+ #   . ${funcPath}/ps_func_check_sqr
+ #   . ${funcPath}/ps_func_check_Spread
+ #   . ${funcPath}/ps_func_check_Signal2NoiseRatio
     # spliting variables
     . ${funcPath}/ps_func_split_variables_check
   done
