@@ -44,7 +44,6 @@ for ModelCompartment in ${ModelCompartments}; do
       else
         is_using_local_grids=0
       fi
-      cd ${funcPath}
       pythoncommandstr="${scriptname} ${PPPfile} ${vname} ${is_using_local_grids} ${LonStr} ${LatStr}"
       ${pythoncommandstr}
 
