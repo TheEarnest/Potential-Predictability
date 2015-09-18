@@ -41,13 +41,13 @@ for ModelCompartment in ${ModelCompartments}; do
     echo "==========" >> ${MDfile} 
     echo ">> Created on: __"`date`"__ " >> ${MDfile} 
     echo " "  >> ${MDfile}
-    echo ">> Last update on: __"`date`"__ " >> ${MDfile}
+    echo ">> Last updated on: __"`date`"__ " >> ${MDfile}
     echo " "  >> ${MDfile}
     echo "------ "  >> ${MDfile}
     echo " "  >> ${MDfile}
   else
     nowdate=`date`
-    sed -i s/"Last update on: ".*/"Last update on: __${nowdate}__ "/g ${MDfile}
+    sed -i s/"Last update".*/"Last updated on: __${nowdate}__ "/g ${MDfile}
   fi
 
   PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `

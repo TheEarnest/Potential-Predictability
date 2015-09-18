@@ -37,19 +37,23 @@ vname = sys.argv[2]
 if len(sys.argv) > 3 :
   is_using_local_grid = sys.argv[3]
 
+if is_using_local_grid == "1" :
+  FGrid = DataFilename
+  GData = nio.netcdf_file(FGrid)
+  LonStr = sys.argv[4]
+  LatStr = sys.argv[5]
+  grids_lon = GData.variables[LonStr].data
+  grids_lat = GData.variables[LatStr].data
 
-print is_using_local_grid
-sys.exit() 
-#vname = "var2"
-#DataFilename = "/Users/earnestshen/temp/pSUMO_mpiom_22000101_22001231.nc"
-#SourceBackupNC = "IGT15_var3Dlev.nc"
-if m == "linux2" :
-  GridPath = "/work/shared/noresm/inputdata/ocn/micom/tnx2v1/20130206"
 
-if sys.platform == "darwin" :
-  GridPath = "/Users/earnestshen/Research/Data/OBData/T31/GridInfo"
+if is_using_local_grid == "0" :
+  FGrid = "./grid.nc"
+  GData = nio.netcdf_file(FGrid)
+  grids_lon = GData.variables['plon'].data
+  grids_lat = GData.variables['plat'].data
 
-FGrid = GridPath + "/grid.nc"
+
+sys.exit()
 GData = nio.netcdf_file(FGrid)
 grids_lon = GData.variables['plon'].data
 grids_lat = GData.variables['plat'].data

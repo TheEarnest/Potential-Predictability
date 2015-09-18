@@ -17,10 +17,10 @@ thost=`echo $HOST | cut -c1-7 `
 if [  "${thost}" == "hexagon" ]; then
   expCaseName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
   DIR=/work/${USER}/SyncTransfer/${expCaseName}
-  
-  /work/earnest/temp
+  tempDIR=/work/earnest/temp 
 else
   DIR=${OutputDIR}
+  tempDIR=`grep "tempDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 fi
 funcPath=${ScriptHome}/functions
 
@@ -28,22 +28,24 @@ for ModelCompartment in ${ModelCompartments}; do
   if [ -d ${DIR}/${ModelCompartment}/PPP_all_variables ]; then
     tarDIR=${DIR}/${ModelCompartment}/PPP_all_variables
     tarDIR2=${DIR}/${ModelCompartment}/PPP_all_variables_org
+    cp ${funcPath}/${scriptname} ${tempDIR} 
     cd ${tarDIR}
     PPPfiles=`ls --color=no `
     for PPPfile in ${PPPfiles}; do
+      cd ${tempDIR}
+      cp ${tarDIR}/${PPPfile} . 
+      cp ${tarDIR}/${PPPfile} ${tarDIR2}
       vname=`cdo showvar ${PPPfile} | cut -c2-100 `
       fname=`echo ${PPPfile} | awk -F "PPP_" '{print $NF}' | awk -F ".nc" '{print $1}'`
-
-
-
-      is_local_Lon=`ncdump -h ${PPPfile} | grep ":long_name ="  | grep "longitude" ` || is_local_Lon="None"
-      if [ "${is_local_Lon}" != "None" ]; then
-        is_using_local_grid=1
+      LonStr=`ncdump -h ${PPPfile} | grep ":long_name ="  | grep "longitude" | awk -F ":" '{print $1}' ` || is_local_Lon="None"
+      LatStr=`ncdump -h ${PPPfile} | grep ":long_name ="  | grep "latitude" | awk -F ":" '{print $1}' ` || is_local_Lon="None"
+      if [ "${LonStr}" != "None" ] && [ "${LatStr}" != "None" ]; then
+        is_using_local_grids=1
       else
-        is_using_local_grid=0
+        is_using_local_grids=0
       fi
       cd ${funcPath}
-      pythoncommandstr="${scriptname} ${filename}_temp.nc ${vname} ${is_using_local_grid}"
+      pythoncommandstr="${scriptname} ${PPPfile} ${vname} ${is_using_local_grids} ${LonStr} ${LatStr}"
       ${pythoncommandstr}
 
 exit 1 
