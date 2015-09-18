@@ -28,22 +28,22 @@ print("--- %s s is used for loading libs! ---" % (time.time() - start_time))
 #--------------------------------------------------------------------
 # define parameters
 #
-if len(sys.argv) < 2:
+if len(sys.argv) < 3:
   print "The file name and variable name are necessary!!!"
   sys.exit()
 
 DataFilename = sys.argv[1]
 vname = sys.argv[2]
-#SourceBackupNC = sys.argv[3]
-if len(sys.argv) < 4 :
-  myid = 1
-else :
-  myid = sys.argv[3]
+if len(sys.argv) > 3 :
+  is_using_local_grid = sys.argv[3]
 
+
+print is_using_local_grid
+sys.exit() 
 #vname = "var2"
 #DataFilename = "/Users/earnestshen/temp/pSUMO_mpiom_22000101_22001231.nc"
 #SourceBackupNC = "IGT15_var3Dlev.nc"
-if sys.platform == "linux2" :
+if m == "linux2" :
   GridPath = "/work/shared/noresm/inputdata/ocn/micom/tnx2v1/20130206"
 
 if sys.platform == "darwin" :

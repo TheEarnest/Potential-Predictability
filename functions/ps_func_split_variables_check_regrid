@@ -1,13 +1,59 @@
 #! /bin/bash
 ###############################################################################
-# 
+# regriding, and only for ice and ocn
 #------------------------------------------------------------------------------
 #
 set -ex
-cd ${tarDIR}
-SVfiles=`ls --color=no `
-tarDIR2=${DIR}/${Mod}/PPP_all_variables_org
+MainScript=cheeck_Prognostic_SNR
 scriptname=ps_func_micom_read_and_regriding_2Df.py
+ModelCompartments="ice ocn"
+if [ ! -f ${MainScript} ]; then
+  cd ..
+fi
+ScriptHome=`pwd`
+OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
+tempPrefix=t_ps_func_check_Spread
+thost=`echo $HOST | cut -c1-7 `
+if [  "${thost}" == "hexagon" ]; then
+  expCaseName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
+  DIR=/work/${USER}/SyncTransfer/${expCaseName}
+  
+  /work/earnest/temp
+else
+  DIR=${OutputDIR}
+fi
+funcPath=${ScriptHome}/functions
+
+for ModelCompartment in ${ModelCompartments}; do
+  if [ -d ${DIR}/${ModelCompartment}/PPP_all_variables ]; then
+    tarDIR=${DIR}/${ModelCompartment}/PPP_all_variables
+    tarDIR2=${DIR}/${ModelCompartment}/PPP_all_variables_org
+    cd ${tarDIR}
+    PPPfiles=`ls --color=no `
+    for PPPfile in ${PPPfiles}; do
+      vname=`cdo showvar ${PPPfile} | cut -c2-100 `
+      fname=`echo ${PPPfile} | awk -F "PPP_" '{print $NF}' | awk -F ".nc" '{print $1}'`
+
+
+
+      is_local_Lon=`ncdump -h ${PPPfile} | grep ":long_name ="  | grep "longitude" ` || is_local_Lon="None"
+      if [ "${is_local_Lon}" != "None" ]; then
+        is_using_local_grid=1
+      else
+        is_using_local_grid=0
+      fi
+      cd ${funcPath}
+      pythoncommandstr="${scriptname} ${filename}_temp.nc ${vname} ${is_using_local_grid}"
+      ${pythoncommandstr}
+
+exit 1 
+    done
+
+  fi
+done
+
+
+exit 1
 
 for SVfile in ${SVfiles}; do
   is_local_Lon=`ncdump -h ${SVfile} | grep ":long_name ="  | grep "longitude" ` || is_local_Lon="None"
