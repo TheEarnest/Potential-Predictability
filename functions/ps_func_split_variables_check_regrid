@@ -6,7 +6,7 @@
 set -ex
 MainScript=cheeck_Prognostic_SNR
 scriptname=ps_func_micom_read_and_regriding_2Df.py
-ModelCompartments="ice ocn"
+	ModelCompartments="ocn"
 if [ ! -f ${MainScript} ]; then
   cd ..
 fi
@@ -31,51 +31,32 @@ for ModelCompartment in ${ModelCompartments}; do
     cp ${funcPath}/${scriptname} ${tempDIR} 
     cd ${tarDIR}
     PPPfiles=`ls --color=no `
+    if [ "${ModelCompartment}" == "ocn" ]; then
+      cp ${funcPath}/grid.nc ${tempDIR}
+    fi
     for PPPfile in ${PPPfiles}; do
       cd ${tempDIR}
-      cp ${tarDIR}/${PPPfile} . 
+      gridnumber=`ncdump -h ${tarDIR}/${PPPfile} | grep "latitude =" | awk -F " " '{print $3}' `
+      if [ "${gridnumber}" != "181" ]; then
+      nccopy -k 1 ${tarDIR}/${PPPfile} ${PPPfile} 
       cp ${tarDIR}/${PPPfile} ${tarDIR2}
       vname=`cdo showvar ${PPPfile} | cut -c2-100 `
       fname=`echo ${PPPfile} | awk -F "PPP_" '{print $NF}' | awk -F ".nc" '{print $1}'`
-      LonStr=`ncdump -h ${PPPfile} | grep ":long_name ="  | grep "longitude" | awk -F ":" '{print $1}' ` || is_local_Lon="None"
-      LatStr=`ncdump -h ${PPPfile} | grep ":long_name ="  | grep "latitude" | awk -F ":" '{print $1}' ` || is_local_Lon="None"
-      if [ "${LonStr}" != "None" ] && [ "${LatStr}" != "None" ]; then
+      LonStr=`ncdump -h ${PPPfile} | grep ":long_name ="  | grep "longitude" | awk -F ":" '{print $1}' `  
+      LatStr=`ncdump -h ${PPPfile} | grep ":long_name ="  | grep "latitude" | awk -F ":" '{print $1}' ` 
+      if [ "${LonStr}" != "" ] && [ "${LatStr}" != "" ]; then
         is_using_local_grids=1
       else
         is_using_local_grids=0
       fi
-      pythoncommandstr="${scriptname} ${PPPfile} ${vname} ${is_using_local_grids} ${LonStr//\ } ${LatStr//\ }"
+      tempFN=${tempDIR}/${tempPrefix}_output
+      pythoncommandstr="${scriptname} ${PPPfile} ${tempFN} ${vname} ${is_using_local_grids} ${LonStr//\ } ${LatStr//\ }"
       ${pythoncommandstr}
-
-exit 1 
+      cp -f ${tempFN} ${tarDIR}/${PPPfile} 
+    fi
     done
-
   fi
 done
 
 
-exit 1
 
-for SVfile in ${SVfiles}; do
-  is_local_Lon=`ncdump -h ${SVfile} | grep ":long_name ="  | grep "longitude" ` || is_local_Lon="None"
-  if [ "${is_local_Lon}" != "None" ]; then
-    pythoncommandstr="${scriptname} ${filename}_temp.nc ${vname} ${core_count}"
-
-  fi
-  ${pythoncommandstr}
-done
-ncdump -v depth_bnds ${mifile} > ${depth_bnds_text} || is_not_z_level=1
-if [ "${is_not_z_level}" != "1" ]; then
-  dblineS=`cat -n ${depth_bnds_text} | grep "depth_bnds =" | awk -F " " '{print $1}'`
-  nlevel=`cdo nlevel ${mifile} `
-
-  for nL in `seq 1 ${nlevel}`; do 
-    (( dpline = dblineS + nL ))
-    UpperBound=`cat ${depth_bnds_text} | sed -n "${dpline}p" | awk -F "," '{print $1}' | bc -l`  
-    BottomBound=`cat ${depth_bnds_text} | sed -n "${dpline}p" | awk -F "," '{print $2}' | bc -l`
-    levelpresent=`echo "scale=2; (${BottomBound}+${UpperBound})*1.0/2.0" | bc -l `
-    cdo -O sellevidx,${nL} ${mifile} ${fileprefix}_${levelpresent}
-  done
-fi
-
-exit 1

@@ -33,15 +33,16 @@ if len(sys.argv) < 3:
   sys.exit()
 
 DataFilename = sys.argv[1]
-vname = sys.argv[2]
-if len(sys.argv) > 3 :
-  is_using_local_grid = sys.argv[3]
+outputDataName = sys.argv[2]
+vname = sys.argv[3]
+if len(sys.argv) > 4 :
+  is_using_local_grid = sys.argv[4]
 
 if is_using_local_grid == "1" :
   FGrid = DataFilename
   GData = nio.netcdf_file(FGrid)
-  LonStr = sys.argv[4]
-  LatStr = sys.argv[5]
+  LonStr = sys.argv[5]
+  LatStr = sys.argv[6]
   grids_lon = GData.variables[LonStr].data
   grids_lat = GData.variables[LatStr].data
 
@@ -211,6 +212,6 @@ GData.close()
 
 #plt.show()
 
-os.system("mv " + tempNCfn + " " + vname + "/" + DataFilename[:-8:])
+os.system("mv " + tempNCfn + " " + outputDataName)
 os.system("rm " + DataFilename)
 print "ID: ", "Done!!"
