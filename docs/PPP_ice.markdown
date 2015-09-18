@@ -2,7 +2,7 @@ PPP of all variables in ice
 ==========
 >> Created on: __Thu Sep 17 17:08:08 CEST 2015__ 
  
->> Last update on: __Thu Sep 17 17:08:08 CEST 2015__ 
+>> Last update on: __Fri Sep 18 12:17:27 CEST 2015__ 
  
 ------ 
  
@@ -213,4 +213,20 @@ PPP of all variables in ice
   * __transix: ice mass transport (x) on East side__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.791__; averaged PPP is 0.135; maximum PPP of SPG is 0.379; maximum PPP of Eurasia is 0.132; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
  
   * __transiy: ice mass transport (y) on North side__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.688__; averaged PPP is 0.112; maximum PPP of SPG is 0.411; maximum PPP of Eurasia is 0.246; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+ 
+  * __: T grid center longitude T grid center latitude area of grid cell model time ice area (aggregate)__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+  * __: T grid center longitude T grid center latitude area of grid cell model time grid cell mean snow fraction__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+  * __: T grid center longitude T grid center latitude area of grid cell model time grid cell mean ice thickness__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+  * __: T grid center longitude T grid center latitude area of grid cell model time grid cell mean snow thickness__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+  * __: T grid center longitude T grid center latitude area of grid cell model time ice mass transport (x) on East side__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+  * __: T grid center longitude T grid center latitude area of grid cell model time ice mass transport (y) on North side__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+  * __: U grid center longitude U grid center latitude model time ice velocity (x)__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+  * __: U grid center longitude U grid center latitude model time ice velocity (y)__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
  

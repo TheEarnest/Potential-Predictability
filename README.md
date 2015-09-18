@@ -3,6 +3,7 @@ Prognostic Potential Predictability (PPP)
 ==========
 >> For calculating Prognostic Potential Predictability (PPP) on nostore-osl 
 
+Author: Mao-Lin Shen
 
 * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 

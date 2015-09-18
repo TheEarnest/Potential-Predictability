@@ -23,7 +23,7 @@ if [  "${thost}" == "hexagon" ]; then
   #export LIBGL_DEBUG=verbose
 fi
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="lnd"
+ModelCompartments="ice"
 mScript=`echo ${plotScript} | awk -F "/" '{print $NF}' | awk -F ".m" '{print $1}' `
 MatlabScriptDIR=`echo ${plotScript} | awk -F "/${mScript}" '{print $1}'`
 
@@ -51,6 +51,7 @@ for ModelCompartment in ${ModelCompartments}; do
         matlab -nosplash -nodesktop -r "vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile}'; ${mScript}; exit "
         PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
         figfilename=`ls --color=no *${PPPfilename}*`
+        #fsuffix=`echo ${figfilename} | tail -c5`
         cp -f ${figfilename} ${PlotDIR}/PPP_${fname}${fsuffix}
         rm -f ${figfilename}
       fi

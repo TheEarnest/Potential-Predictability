@@ -64,9 +64,10 @@ for SVfile in ${SVfiles}; do
   fi
 done
 
-if [ "${Mod}" == "ocn" ] || [ "${Mod}" == "ice" ]; then
-  . ${funcPath}/ps_func_split_variables_check_regrid
-fi
+# leave this part on Hexagon due to "Scipy" module in python is not available on norstore
+#if [ "${Mod}" == "ocn" ] || [ "${Mod}" == "ice" ]; then
+#  . ${funcPath}/ps_func_split_variables_check_regrid
+#fi
 ###############################################################################
 echo ${JobStartTime}
 echo `date`" || "${JobName}

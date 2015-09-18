@@ -1,7 +1,7 @@
 % read ECHAM data//
 % by Mao-Lin Shen
 format long;close all;
-clearvars -except vname filename
+clearvars -except vname filename titleStr
 if ~isempty(strfind(computer,'MACI64')) || ~isempty(strfind(computer,'Darwin'))
 	load /Users/earnestshen/Cloudsky/SkyDrive/Program/Matlab/work/Z_MatFiles/MacBook_Workaround
 	addpath /Users/earnestshen/Cloudsky/SkyDrive/Program/Matlab/SelfDefine/export_fig
@@ -28,6 +28,7 @@ DSep = '/';
 imgpref = 'Glabal2D';
 if ~exist('vname','var'), vname='sst'; end
 if ~exist('filename','var'), filename='/work/earnest/UPData/FF01_Seasonal_pM01_noDA_pn3_pL6/ACC_SST/ACC_SST_r005_05.nc'; end
+if ~exist('titleStr','var'), titleStr=filename; end
 
 temp = strsplit(filename, DSep);
 CaseName = temp{end};
@@ -113,7 +114,7 @@ end
 m_usercoast(costfile,'color','k');
 m_grid('box','on','LineStyle','none','tickdir','in','FontSize',20,'fontweight','bold');
 axis normal
-title(filename);
+title(titleStr);
 
 
 figfilename = [imgpref '_' vname '_' CaseName '.png'];
