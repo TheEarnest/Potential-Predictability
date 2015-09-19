@@ -42,8 +42,8 @@ for ModelCompartment in ${ModelCompartments}; do
       cp ${tarDIR}/${PPPfile} ${tarDIR2}
       vname=`cdo showvar ${PPPfile} | cut -c2-100 `
       fname=`echo ${PPPfile} | awk -F "PPP_" '{print $NF}' | awk -F ".nc" '{print $1}'`
-      LonStr=`ncdump -h ${PPPfile} | grep ":long_name ="  | grep "longitude" | awk -F ":" '{print $1}' `  
-      LatStr=`ncdump -h ${PPPfile} | grep ":long_name ="  | grep "latitude" | awk -F ":" '{print $1}' ` 
+      LonStr=`ncdump -h ${PPPfile} | grep ":long_name ="  | grep -i "longitude" | awk -F ":" '{print $1}' `  
+      LatStr=`ncdump -h ${PPPfile} | grep ":long_name ="  | grep -i "latitude" | awk -F ":" '{print $1}' ` 
       if [ "${LonStr}" != "" ] && [ "${LatStr}" != "" ]; then
         is_using_local_grids=1
       else
