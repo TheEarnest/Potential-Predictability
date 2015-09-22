@@ -74,6 +74,7 @@ if [ "${grid_count}" == "1" ]; then
     done
   fi
 else
+  # deal with exception: some grid has no time dimention ...
   ig=`echo 000${grid_count} | tail -c3 `
   gridtarget=${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_G${ig}
   if [ ! -f ${gridtarget} ]; then    
@@ -82,6 +83,7 @@ else
     cdo -O -f nc copy ${DIR}/${Mod}/${casePrefix}${infix}ymonmean ${tempDIR}/${tempPrefix}_ymonmean_nc
     cdo -O splitgrid ${tempDIR}/${tempPrefix}_ymonmean_nc ${tempDIR}/${tempPrefix}_ymonmean_G
   fi
+set -e
   for ig in `seq 1 ${grid_count}`; do 
     igg=`echo 000${ig} | tail -c3` 
     gridtarget=${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_G${igg}
@@ -89,16 +91,20 @@ else
       cdo -O sub ${tempDIR}/${tempPrefix}_mergetime_G${igg}.nc ${tempDIR}/${tempPrefix}_ymonmean_G${igg}.nc ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg}
       cdo -O timvar ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_G${igg}
     fi
-    months=`cdo showmon ${DIR}/${Mod}/${casePrefix}${infix}ymonmean `
-    imonC=0
-    for month in ${months}; do
-      (( imonC = imonC + 1 ))
-    done
-    if [ ${imonC} -gt 1 ]; then
+    # check time dimention ...
+    checkDate=`cdo showdate ${gridtarget} ` 
+    if [ "${checkDate}" != "" ]; then 
+      months=`cdo showmon ${DIR}/${Mod}/${casePrefix}${infix}ymonmean `
+      imonC=0
       for month in ${months}; do
-        mm=`echo 00${month} | tail -c3 `
-        cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}_G${igg}
+        (( imonC = imonC + 1 ))
       done
+      if [ ${imonC} -gt 1 ]; then
+        for month in ${months}; do
+          mm=`echo 00${month} | tail -c3 `
+          cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}_G${igg}
+        done
+      fi
     fi
   done
 fi

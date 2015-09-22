@@ -10,8 +10,9 @@ Author: Mao-Lin Shen
 
 
 --------------------------------------
-* ### Full field SST assimilated Ocean (1st version, finished on 18 Apr. 2015)
+* ### Full field SST assimilated Ocean (1st version)
 
+  * ##Finished on 18 Apr. 2015##
   * Data is kept @Norstore-osl:/tape/NS9207K/earnest/NorCPM/FF_ini_try_tar/ 
   * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
