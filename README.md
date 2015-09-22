@@ -14,10 +14,10 @@ Author: Mao-Lin Shen
 
   * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
-    * [__MICOM__] (docs/PPP_ocn.markdown)
-    * [__CAM__] (docs/PPP_atm.markdown) 
-    * [__CLM__] (docs/PPP_lnd.markdown)
-    * [__CICE__] (docs/PPP_ice.markdown)
+    * [__MICOM__] (docs/FF_ini_try/PPP_ocn.markdown)
+    * [__CAM__] (docs/FF_ini_try/PPP_atm.markdown) 
+    * [__CLM__] (docs/FF_ini_try/PPP_lnd.markdown)
+    * [__CICE__] (docs/FF_ini_try/PPP_ice.markdown)
   * Total figures: __0__
 
   * About this analysis:
