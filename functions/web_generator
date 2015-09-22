@@ -42,7 +42,7 @@ for ModelCompartment in ${ModelCompartments}; do
   MDfile=${webpageDIR}/PPP_${ModelCompartment}.markdown
   if [ ! -f ${MDfile} ]; then
     # header of markdown pages
-    echo "PPP of all variables in "${ModelCompartment} > ${MDfile}
+    echo "PPP of all variables in "${ModelCompartment}" outputs" > ${MDfile}
     echo "==========" >> ${MDfile} 
     echo ">> Created on: __"`date`"__ " >> ${MDfile} 
     echo " "  >> ${MDfile}
@@ -149,7 +149,7 @@ for ModelCompartment in ${ModelCompartments}; do
     fi
     if [ "${vnameCheck}" == "None" ]; then
       # generate the line
-      echo " * __${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax} ${figurelink}" >> ${MDfile}
+      echo "#### __${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax} ${figurelink}" >> ${MDfile}
       echo " " >> ${MDfile}
       echo "------ "  >> ${MDfile}
       echo " " >> ${MDfile}
