@@ -8,23 +8,23 @@ Author: Mao-Lin Shen
 
 ## Analysis:
 
-### Full field SST assimilated Ocean (1st version)
+* ### Full field SST assimilated Ocean (1st version)
  
-* The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
+  * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
-  * [__MICOM__] (docs/PPP_ocn.markdown)
-  * [__CAM__] (docs/PPP_atm.markdown) 
-  * [__CLM__] (docs/PPP_lnd.markdown)
-  * [__CICE__] (docs/PPP_ice.markdown)
-* Total figures: 202
+    * [__MICOM__] (docs/PPP_ocn.markdown)
+    * [__CAM__] (docs/PPP_atm.markdown) 
+    * [__CLM__] (docs/PPP_lnd.markdown)
+    * [__CICE__] (docs/PPP_ice.markdown)
+  * Total figures: 202
 
-* About this analysis:
-  * We using NorESM
-  * Applying full-field SST (HadISST2) assimilation (EnKF, 30 members) on ocean compartment only
-  * From 1980-2007
-  * Known issue: skill loose due to one-grid shift in preparing SST data
-    * PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
-    * Redefine the noise as the spread to observation (SST) can identify this skill loose. 
+  * About this analysis:
+    * We using NorESM
+    * Applying full-field SST (HadISST2) assimilation (EnKF, 30 members) on ocean compartment only
+    * From 1980-2007
+    * Known issue: skill loose due to one-grid shift in preparing SST data
+      * PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
+      * Redefine the noise as the spread to observation (SST) can identify this skill loose. 
 
 ## Do these before using the script ##
 
