@@ -143,7 +143,7 @@ for ModelCompartment in ${ModelCompartments}; do
       if [ "${figfilename}" == "None" ]; then
         figurelink=""
       else
-        figurelink=" ![] (../figures/${ExpID}/PPP_${ModelCompartment}/${figfilename})"
+        figurelink=" ![] (../../figures/${ExpID}/PPP_${ModelCompartment}/${figfilename})"
         (( figureCount = figureCount + 1 ))
       fi
     fi
