@@ -148,7 +148,7 @@ for ModelCompartment in ${ModelCompartments}; do
     fi
     if [ "${vnameCheck}" == "None" ]; then
       # generate the line
-      echo "###__${vname}: ${varLongName}__### <br> * ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax} ${figurelink}" >> ${MDfile}
+      echo "###__${vname}__### <br><br>  * ${varLongName}, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax} ${figurelink}" >> ${MDfile}
       echo " " >> ${MDfile}
       echo "------ "  >> ${MDfile}
       echo " " >> ${MDfile}
