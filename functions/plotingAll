@@ -23,7 +23,7 @@ if [  "${thost}" == "hexagon" ]; then
   #export LIBGL_DEBUG=verbose
 fi
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="ice"
+ModelCompartments="ocn"
 mScript=`echo ${plotScript} | awk -F "/" '{print $NF}' | awk -F ".m" '{print $1}' `
 MatlabScriptDIR=`echo ${plotScript} | awk -F "/${mScript}" '{print $1}'`
 

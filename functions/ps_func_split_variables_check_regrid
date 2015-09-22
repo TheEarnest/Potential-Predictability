@@ -46,12 +46,17 @@ for ModelCompartment in ${ModelCompartments}; do
       LatStr=`ncdump -h ${PPPfile} | grep ":long_name ="  | grep -i "latitude" | awk -F ":" '{print $1}' ` 
       if [ "${LonStr}" != "" ] && [ "${LatStr}" != "" ]; then
         is_using_local_grids=1
+      elif [ "${LonStr}" != "" ] || [ "${LatStr}" != "" ]; then
+        echo "Not horizontal map ..."
+        is_do_nothing=1
       else
         is_using_local_grids=0
       fi
       tempFN=${tempDIR}/${tempPrefix}_output
-      pythoncommandstr="${scriptname} ${PPPfile} ${tempFN} ${vname} ${is_using_local_grids} ${LonStr//\ } ${LatStr//\ }"
-      ${pythoncommandstr}
+      if [ "${is_do_nothing}" != "1" ]; then
+        pythoncommandstr="${scriptname} ${PPPfile} ${tempFN} ${vname} ${is_using_local_grids} ${LonStr//\ } ${LatStr//\ }"
+        ${pythoncommandstr}
+      fi
       cp -f ${tempFN} ${tarDIR}/${PPPfile} 
     fi
     done

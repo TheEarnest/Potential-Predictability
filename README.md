@@ -20,7 +20,7 @@ Author: Mao-Lin Shen
     * [__CAM__] (docs/PPP_atm.markdown) 
     * [__CLM__] (docs/PPP_lnd.markdown)
     * [__CICE__] (docs/PPP_ice.markdown)
-  * Total figures: 202
+  * Total figures: __202__
 
   * About this analysis:
     * We using NorESM
