@@ -139,6 +139,7 @@ for ModelCompartment in ${ModelCompartments}; do
     if [ -d ${figureDIR}/PPP_${ModelCompartment} ]; then
       cd ${figureDIR}/PPP_${ModelCompartment}
       figfilename=`ls *${vname}${namesuffix}${fsuffix} ` || figfilename="None"
+
       if [ "${figfilename}" == "None" ]; then
         figurelink=""
       else
@@ -156,8 +157,7 @@ for ModelCompartment in ${ModelCompartments}; do
       figurelink=`echo ${figurelink} | sed 's/\//\\\\\//g' `
       sed -i s/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -".*/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax} ${figurelink}"/g ${MDfile}
     fi
- 
-exit 1
+exit 1 
   done
 done
 
