@@ -27,8 +27,8 @@ Author: Mao-Lin Shen
     * We using [ Norwegian Earth System Model (NorESM)] (http://folk.uib.no/ngfhd/EarthClim/)
     * Applying full-field SST ([HadISST2](http://www.metoffice.gov.uk/hadobs/hadisst2/)) assimilation ([EnKF](http://enkf.nersc.no/), 30 members) on ocean compartment only
     * From 1980-2007
-    * Known issue: skill lost due to one-grid shift in preparing SST data
-      * PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
+    * Known issue: skill lost due to one-grid shift in preparing SST data. It also implies that the PPP of ensemble members is not really robust. 
+      * ##### PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
       * Redefine the noise as the spread to observation (SST) can identify this skill loose. 
      * PPP of SST
        
