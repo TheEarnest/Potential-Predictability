@@ -5,6 +5,11 @@ Prognostic Potential Predictability (PPP)
 
 Author: Mao-Lin Shen
 
+
+## Analysis:
+
+### Full field SST assimilated Ocean (1st version)
+ 
 * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
   * [__MICOM__] (docs/PPP_ocn.markdown)
@@ -21,7 +26,7 @@ Author: Mao-Lin Shen
     * PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
     * Redefine the noise as the spread to observation (SST) can identify this skill loose. 
 
-### Do these before using the script ###
+## Do these before using the script ##
 
 * Change the following head parameters in "cheeck_Prognostic_SNR"
   * DIR="the main output path"
