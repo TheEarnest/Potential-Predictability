@@ -160,4 +160,4 @@ for ModelCompartment in ${ModelCompartments}; do
   done
 done
 
-sed -i s/"Total figures: ".*/"Total figures: __${figureCount}__"/g ${ScriptHome}/README.md
+sed -i s/"Total figures in ${ExpID}: ".*/"Total figures in ${ExpID}: __${figureCount}__"/g ${ScriptHome}/README.md

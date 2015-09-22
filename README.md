@@ -18,7 +18,8 @@ Author: Mao-Lin Shen
     * [__CAM__] (docs/FF_ini_try/PPP_atm.markdown) 
     * [__CLM__] (docs/FF_ini_try/PPP_lnd.markdown)
     * [__CICE__] (docs/FF_ini_try/PPP_ice.markdown)
-  * Total figures: __211__
+
+  * Total figures in FF_ini_try: __211__
 
   * About this analysis:
     * __Finished on 18 Apr. 2015__
@@ -31,7 +32,8 @@ Author: Mao-Lin Shen
       * Redefine the noise as the spread to observation (SST) can identify this skill loose. 
      * PPP of SST
        
-     * PPP (to observation) of SST
+     * PPP (to observation) of SST ![] (figures/FF_ini_try/Glabal2D_sst_NorCPM_F19_tn21_PP08.nc.png)
+
      * Prediction Skill of SSK
 
 ------------------
