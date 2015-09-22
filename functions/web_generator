@@ -9,13 +9,14 @@ if [ ! -f ${MainScript} ]; then
   cd ..
 fi
 ScriptHome=`pwd`
-webpageDIR=${ScriptHome}/docs
-figureDIR=${ScriptHome}/figures
 fsuffix=`grep "fsuffix=" ${ScriptHome}/functions/plotingAll | awk -F "=" '{print $NF}'`
 fsuffix=${fsuffix//\"}
 #------------------------------------------------------------------------------
 # Parameters (grep from the main script)
 #------------------------------------------------------------------------------
+ExpID=`grep "DataDIR=" ${MainScript} | awk -F "/" '{print $NF}'`
+webpageDIR=${ScriptHome}/docs/${ExpID}
+figureDIR=${ScriptHome}/figures/${ExpID}
 SPGReg="300,345,48,65"
 EUReg="40,140,40,70"
 Nino34Reg="-170,-120,-5,5"
@@ -23,7 +24,11 @@ AtlNino3Reg="-20,-0,-3,3"
 thPPP=0.6
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 
-ModelCompartments="lnd ice ocn atm"
+ModelCompartments="lnd"
+if [ ! -d ${webpageDIR} ]; then 
+  mkdir -p ${figureDIR}
+  mkdir -p ${webpageDIR}
+fi
 for ModelCompartment in ${ModelCompartments}; do 
   if [ -d ${OutputDIR}/${ModelCompartment}/PPP_all_figures ]; then
     rm -rf ${figureDIR}/PPP_${ModelCompartment}

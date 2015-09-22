@@ -10,25 +10,29 @@ Author: Mao-Lin Shen
 
 
 --------------------------------------
-* ### Full field SST assimilated Ocean (1st version)
+* ### Full field SST assimilated Ocean of NorESM (1st version)
 
-  * __Finished on 18 Apr. 2015__
-  * Data is kept @Norstore-osl:/tape/NS9207K/earnest/NorCPM/FF_ini_try_tar/ 
   * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
     * [__MICOM__] (docs/PPP_ocn.markdown)
     * [__CAM__] (docs/PPP_atm.markdown) 
     * [__CLM__] (docs/PPP_lnd.markdown)
     * [__CICE__] (docs/PPP_ice.markdown)
-  * Total figures: __202__
+  * Total figures: __0__
 
   * About this analysis:
-    * We using NorESM
-    * Applying full-field SST (HadISST2) assimilation (EnKF, 30 members) on ocean compartment only
+    * __Finished on 18 Apr. 2015__
+    * Data is kept @Norstore-osl:/tape/NS9207K/earnest/NorCPM/FF_ini_try_tar/
+    * We using [ Norwegian Earth System Model (NorESM)] (http://folk.uib.no/ngfhd/EarthClim/)
+    * Applying full-field SST ([HadISST2](http://www.metoffice.gov.uk/hadobs/hadisst2/)) assimilation ([EnKF](http://enkf.nersc.no/), 30 members) on ocean compartment only
     * From 1980-2007
-    * Known issue: skill loose due to one-grid shift in preparing SST data
+    * Known issue: skill lost due to one-grid shift in preparing SST data
       * PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
       * Redefine the noise as the spread to observation (SST) can identify this skill loose. 
+     * PPP of SST
+       
+     * PPP (to observation) of SST
+     * Prediction Skill of SSK
 
 ------------------
 ## Do these before using the script ##
