@@ -23,20 +23,19 @@ Author: Mao-Lin Shen
 
 ### Do these before using the script ###
 
-*  Change the following head parameters in "cheeck_Prognostic_SNR"
-  *  DIR="the main output path"
-  *  tempDIR="where the temporary files are saved"
-  *  casePrefix="a general case name for all ensemble members" 
-  *  MEyear="a year which must be existed in all ensemble members. For determining the file prefixes" 
-  *  DataDIR="dir for the outputs"
-  *  ModelCompartments="ocn atm ice lnd"
+* Change the following head parameters in "cheeck_Prognostic_SNR"
+  * DIR="the main output path"
+  * tempDIR="where the temporary files are saved"
+  * casePrefix="a general case name for all ensemble members" 
+  * MEyear="a year which must be existed in all ensemble members. For determining the file prefixes" 
+  * DataDIR="dir for the outputs"
+  * ModelCompartments="ocn atm ice lnd"
 
-* Make sure the data are well-prepared (no missing ensemble member or missing years)
+* Before running the script (some known issues)
+  * Make sure the data are well-prepared (no missing ensemble member or missing years)
+  * micom outputs are compressed format, and cannot be processed by "cdo" because each file has different factor and offset. Better convert the outputs to F32 format before using this script.
+  * The script of CAM automatically keeps the output of previous simulation, of which the exported variables are highly possible different with any new simulation. So those files (NorCPM_F19_tn21_mem??.cam2.h0.1979-12.nc in this case) should be removed in advance.   
 
-* micom outputs are compressed format, and cannot be processed by "cdo" because each file has different factor and offset. Better convert the outputs to F32 format before using this script.
 
--------
-> Schematic figure on the signal-to-noise ratio 
->> markdown testing....
->>> markdown another testing ...
+
 
