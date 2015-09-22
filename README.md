@@ -34,7 +34,8 @@ Author: Mao-Lin Shen
        
      * PPP (to observation) of SST ![] (figures/FF_ini_try/Glabal2D_sst_NorCPM_F19_tn21_PP08.nc.png)
 
-     * Prediction Skill of SSK
+     * Prediction Skill of SST ![] (figures/FF_ini_try/Glabal2D_corr_ACC_SST_r008_08.nc.png)
+       * Notes this prediction:
 
 ------------------
 ## Do these before using the script ##
