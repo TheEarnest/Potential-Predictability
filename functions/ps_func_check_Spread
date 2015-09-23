@@ -69,7 +69,9 @@ else
       cdo -O splitgrid ${target} ${target}_G
     fi
   done
+ 
   target=${DIR}/${Mod}/Signal2NoiseRatio/${casePrefix}${infix}EnsDiffVar_All
+  # ensemble size is too big as doing for atm outputs
   cdo -O ensmean ${tarDIR}/${casePrefix}${infix}EnsDiffVar* ${target}
   cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
   grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
