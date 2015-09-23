@@ -18,7 +18,7 @@ Author: Mao-Lin Shen
     * [__CLM__] (docs/FF_ini_try/PPP_lnd.markdown)
     * [__CICE__] (docs/FF_ini_try/PPP_ice.markdown)
 
-  * Total figures in FF_ini_try: __211__
+  * Total figures in FF_ini_try: __0__
 
   * About this analysis:
     * __Finished on 18 Apr. 2015__
