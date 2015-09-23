@@ -2,967 +2,967 @@ PPP of all variables in atm
 ==========
 >> Created on: __Fri Sep 18 12:18:18 CEST 2015__ 
  
->> Last updated on: __Wed Sep 23 11:50:14 CEST 2015__ 
+>> Last updated on: __Wed Sep 23 12:30:54 CEST 2015__ 
  
 ------ 
  
-  * __AEROD_v: Total Aerosol Optical Depth in visible band__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.908__; maximum PPP of SPG is __0.970__; maximum PPP of Eurasia is __0.970__; maximum PPP of Nino 3 is __0.997__; maximum PPP of Atlantic Nino 3 is __0.997__ 
+  * __AEROD_v: Total Aerosol Optical Depth in visible band__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.908__; maximum PPP of SPG is __0.970__; maximum PPP of Eurasia is __0.970__; maximum PPP of Nino 3 is __0.997__; maximum PPP of Atlantic Nino 3 is __0.997__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.AEROD_v.png)
  
 ------ 
  
-  * __ATMEINT: Vertically integrated total atmospheric energy__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.882__; averaged PPP is 0.235; maximum PPP of SPG is 0.074; maximum PPP of Eurasia is 0.104; maximum PPP of Nino 3 is __0.882__; maximum PPP of Atlantic Nino 3 is __0.614__ 
+  * __ATMEINT: Vertically integrated total atmospheric energy__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.882__; averaged PPP is 0.235; maximum PPP of SPG is 0.074; maximum PPP of Eurasia is 0.104; maximum PPP of Nino 3 is __0.882__; maximum PPP of Atlantic Nino 3 is __0.614__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.ATMEINT.png)
  
 ------ 
  
-  * __CLDHGH: Vertically-integrated high cloud__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.852__; averaged PPP is 0.155; maximum PPP of SPG is 0.058; maximum PPP of Eurasia is 0.162; maximum PPP of Nino 3 is __0.840__; maximum PPP of Atlantic Nino 3 is 0.283 
+  * __CLDHGH: Vertically-integrated high cloud__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.852__; averaged PPP is 0.155; maximum PPP of SPG is 0.058; maximum PPP of Eurasia is 0.162; maximum PPP of Nino 3 is __0.840__; maximum PPP of Atlantic Nino 3 is 0.283 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.CLDHGH.png)
  
 ------ 
  
-  * __CLDLOW: Vertically-integrated low cloud__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.974__; averaged PPP is 0.107; maximum PPP of SPG is 0.213; maximum PPP of Eurasia is 0.105; maximum PPP of Nino 3 is __0.681__; maximum PPP of Atlantic Nino 3 is 0.571 
+  * __CLDLOW: Vertically-integrated low cloud__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.974__; averaged PPP is 0.107; maximum PPP of SPG is 0.213; maximum PPP of Eurasia is 0.105; maximum PPP of Nino 3 is __0.681__; maximum PPP of Atlantic Nino 3 is 0.571 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.CLDLOW.png)
  
 ------ 
  
-  * __CLDMED: Vertically-integrated mid-level cloud__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.900__; averaged PPP is 0.119; maximum PPP of SPG is 0.079; maximum PPP of Eurasia is 0.087; maximum PPP of Nino 3 is __0.900__; maximum PPP of Atlantic Nino 3 is 0.167 
+  * __CLDMED: Vertically-integrated mid-level cloud__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.900__; averaged PPP is 0.119; maximum PPP of SPG is 0.079; maximum PPP of Eurasia is 0.087; maximum PPP of Nino 3 is __0.900__; maximum PPP of Atlantic Nino 3 is 0.167 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.CLDMED.png)
  
 ------ 
  
-  * __CLDTOT: Vertically-integrated total cloud__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.745__; averaged PPP is 0.134; maximum PPP of SPG is 0.132; maximum PPP of Eurasia is 0.151; maximum PPP of Nino 3 is __0.745__; maximum PPP of Atlantic Nino 3 is 0.499 
+  * __CLDTOT: Vertically-integrated total cloud__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.745__; averaged PPP is 0.134; maximum PPP of SPG is 0.132; maximum PPP of Eurasia is 0.151; maximum PPP of Nino 3 is __0.745__; maximum PPP of Atlantic Nino 3 is 0.499 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.CLDTOT.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 100.515) -> maximum PPP is __0.916__; averaged PPP is 0.115; maximum PPP of SPG is 0.240; maximum PPP of Eurasia is 0.163; maximum PPP of Nino 3 is 0.236; maximum PPP of Atlantic Nino 3 is 0.075 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 100.515) -> maximum PPP is __0.916__; averaged PPP is 0.115; maximum PPP of SPG is 0.240; maximum PPP of Eurasia is 0.163; maximum PPP of Nino 3 is 0.236; maximum PPP of Atlantic Nino 3 is 0.075 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_100.515.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 118.25) -> maximum PPP is __0.934__; averaged PPP is 0.097; maximum PPP of SPG is 0.340; maximum PPP of Eurasia is 0.292; maximum PPP of Nino 3 is 0.212; maximum PPP of Atlantic Nino 3 is 0.028 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 118.25) -> maximum PPP is __0.934__; averaged PPP is 0.097; maximum PPP of SPG is 0.340; maximum PPP of Eurasia is 0.292; maximum PPP of Nino 3 is 0.212; maximum PPP of Atlantic Nino 3 is 0.028 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_118.25.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 139.115) -> maximum PPP is __0.616__; averaged PPP is 0.081; maximum PPP of SPG is 0.310; maximum PPP of Eurasia is 0.410; maximum PPP of Nino 3 is 0.312; maximum PPP of Atlantic Nino 3 is 0.054 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 139.115) -> maximum PPP is __0.616__; averaged PPP is 0.081; maximum PPP of SPG is 0.310; maximum PPP of Eurasia is 0.410; maximum PPP of Nino 3 is 0.312; maximum PPP of Atlantic Nino 3 is 0.054 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_139.115.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is __0.885__; averaged PPP is 0.296; maximum PPP of SPG is 0.051; maximum PPP of Eurasia is 0.122; maximum PPP of Nino 3 is 0.260; maximum PPP of Atlantic Nino 3 is 0.304 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is __0.885__; averaged PPP is 0.296; maximum PPP of SPG is 0.051; maximum PPP of Eurasia is 0.122; maximum PPP of Nino 3 is 0.260; maximum PPP of Atlantic Nino 3 is 0.304 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_13.9672.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 163.662) -> maximum PPP is 0.465; averaged PPP is 0.070; maximum PPP of SPG is 0.125; maximum PPP of Eurasia is 0.293; maximum PPP of Nino 3 is 0.227; maximum PPP of Atlantic Nino 3 is 0.048 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 163.662) -> maximum PPP is 0.465; averaged PPP is 0.070; maximum PPP of SPG is 0.125; maximum PPP of Eurasia is 0.293; maximum PPP of Nino 3 is 0.227; maximum PPP of Atlantic Nino 3 is 0.048 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_163.662.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 192.54) -> maximum PPP is 0.465; averaged PPP is 0.059; maximum PPP of SPG is 0.243; maximum PPP of Eurasia is 0.212; maximum PPP of Nino 3 is 0.105; maximum PPP of Atlantic Nino 3 is 0.077 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 192.54) -> maximum PPP is 0.465; averaged PPP is 0.059; maximum PPP of SPG is 0.243; maximum PPP of Eurasia is 0.212; maximum PPP of Nino 3 is 0.105; maximum PPP of Atlantic Nino 3 is 0.077 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_192.54.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 226.513) -> maximum PPP is 0.332; averaged PPP is 0.050; maximum PPP of SPG is 0.088; maximum PPP of Eurasia is 0.300; maximum PPP of Nino 3 is 0.104; maximum PPP of Atlantic Nino 3 is 0.063 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 226.513) -> maximum PPP is 0.332; averaged PPP is 0.050; maximum PPP of SPG is 0.088; maximum PPP of Eurasia is 0.300; maximum PPP of Nino 3 is 0.104; maximum PPP of Atlantic Nino 3 is 0.063 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_226.513.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is __0.978__; averaged PPP is 0.498; maximum PPP of SPG is 0.083; maximum PPP of Eurasia is 0.221; maximum PPP of Nino 3 is __0.685__; maximum PPP of Atlantic Nino 3 is 0.557 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is __0.978__; averaged PPP is 0.498; maximum PPP of SPG is 0.083; maximum PPP of Eurasia is 0.221; maximum PPP of Nino 3 is __0.685__; maximum PPP of Atlantic Nino 3 is 0.557 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_23.9446.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 266.481) -> maximum PPP is 0.365; averaged PPP is 0.049; maximum PPP of SPG is 0.068; maximum PPP of Eurasia is 0.234; maximum PPP of Nino 3 is 0.052; maximum PPP of Atlantic Nino 3 is 0.044 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 266.481) -> maximum PPP is 0.365; averaged PPP is 0.049; maximum PPP of SPG is 0.068; maximum PPP of Eurasia is 0.234; maximum PPP of Nino 3 is 0.052; maximum PPP of Atlantic Nino 3 is 0.044 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_266.481.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 313.501) -> maximum PPP is 0.552; averaged PPP is 0.046; maximum PPP of SPG is 0.079; maximum PPP of Eurasia is 0.235; maximum PPP of Nino 3 is 0.087; maximum PPP of Atlantic Nino 3 is 0.063 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 313.501) -> maximum PPP is 0.552; averaged PPP is 0.046; maximum PPP of SPG is 0.079; maximum PPP of Eurasia is 0.235; maximum PPP of Nino 3 is 0.087; maximum PPP of Atlantic Nino 3 is 0.063 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_313.501.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 3.54464) -> maximum PPP is __0.738__; averaged PPP is 0.127; maximum PPP of SPG is 0.036; maximum PPP of Eurasia is 0.074; maximum PPP of Nino 3 is 0.061; maximum PPP of Atlantic Nino 3 is 0.088 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 3.54464) -> maximum PPP is __0.738__; averaged PPP is 0.127; maximum PPP of SPG is 0.036; maximum PPP of Eurasia is 0.074; maximum PPP of Nino 3 is 0.061; maximum PPP of Atlantic Nino 3 is 0.088 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_3.54464.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 368.818) -> maximum PPP is __0.603__; averaged PPP is 0.044; maximum PPP of SPG is 0.099; maximum PPP of Eurasia is 0.216; maximum PPP of Nino 3 is 0.064; maximum PPP of Atlantic Nino 3 is 0.060 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 368.818) -> maximum PPP is __0.603__; averaged PPP is 0.044; maximum PPP of SPG is 0.099; maximum PPP of Eurasia is 0.216; maximum PPP of Nino 3 is 0.064; maximum PPP of Atlantic Nino 3 is 0.060 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_368.818.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 37.2303) -> maximum PPP is __0.852__; averaged PPP is 0.389; maximum PPP of SPG is 0.117; maximum PPP of Eurasia is 0.293; maximum PPP of Nino 3 is 0.502; maximum PPP of Atlantic Nino 3 is 0.506 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 37.2303) -> maximum PPP is __0.852__; averaged PPP is 0.389; maximum PPP of SPG is 0.117; maximum PPP of Eurasia is 0.293; maximum PPP of Nino 3 is 0.502; maximum PPP of Atlantic Nino 3 is 0.506 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_37.2303.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 433.895) -> maximum PPP is __0.622__; averaged PPP is 0.044; maximum PPP of SPG is 0.076; maximum PPP of Eurasia is 0.146; maximum PPP of Nino 3 is 0.086; maximum PPP of Atlantic Nino 3 is 0.041 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 433.895) -> maximum PPP is __0.622__; averaged PPP is 0.044; maximum PPP of SPG is 0.076; maximum PPP of Eurasia is 0.146; maximum PPP of Nino 3 is 0.086; maximum PPP of Atlantic Nino 3 is 0.041 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_433.895.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 510.455) -> maximum PPP is __0.742__; averaged PPP is 0.045; maximum PPP of SPG is 0.093; maximum PPP of Eurasia is 0.225; maximum PPP of Nino 3 is 0.152; maximum PPP of Atlantic Nino 3 is 0.134 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 510.455) -> maximum PPP is __0.742__; averaged PPP is 0.045; maximum PPP of SPG is 0.093; maximum PPP of Eurasia is 0.225; maximum PPP of Nino 3 is 0.152; maximum PPP of Atlantic Nino 3 is 0.134 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_510.455.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 53.1146) -> maximum PPP is __0.956__; averaged PPP is 0.555; maximum PPP of SPG is 0.221; maximum PPP of Eurasia is __0.642__; maximum PPP of Nino 3 is 0.566; maximum PPP of Atlantic Nino 3 is 0.490 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 53.1146) -> maximum PPP is __0.956__; averaged PPP is 0.555; maximum PPP of SPG is 0.221; maximum PPP of Eurasia is __0.642__; maximum PPP of Nino 3 is 0.566; maximum PPP of Atlantic Nino 3 is 0.490 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_53.1146.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 600.524) -> maximum PPP is __0.896__; averaged PPP is 0.057; maximum PPP of SPG is 0.181; maximum PPP of Eurasia is 0.332; maximum PPP of Nino 3 is 0.256; maximum PPP of Atlantic Nino 3 is 0.046 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 600.524) -> maximum PPP is __0.896__; averaged PPP is 0.057; maximum PPP of SPG is 0.181; maximum PPP of Eurasia is 0.332; maximum PPP of Nino 3 is 0.256; maximum PPP of Atlantic Nino 3 is 0.046 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_600.524.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 696.796) -> maximum PPP is __0.990__; averaged PPP is 0.069; maximum PPP of SPG is 0.437; maximum PPP of Eurasia is 0.264; maximum PPP of Nino 3 is 0.284; maximum PPP of Atlantic Nino 3 is 0.181 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 696.796) -> maximum PPP is __0.990__; averaged PPP is 0.069; maximum PPP of SPG is 0.437; maximum PPP of Eurasia is 0.264; maximum PPP of Nino 3 is 0.284; maximum PPP of Atlantic Nino 3 is 0.181 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_696.796.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 70.0592) -> maximum PPP is __0.795__; averaged PPP is 0.244; maximum PPP of SPG is 0.344; maximum PPP of Eurasia is __0.676__; maximum PPP of Nino 3 is 0.486; maximum PPP of Atlantic Nino 3 is 0.070 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 70.0592) -> maximum PPP is __0.795__; averaged PPP is 0.244; maximum PPP of SPG is 0.344; maximum PPP of Eurasia is __0.676__; maximum PPP of Nino 3 is 0.486; maximum PPP of Atlantic Nino 3 is 0.070 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_70.0592.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 7.38881) -> maximum PPP is __0.677__; averaged PPP is 0.134; maximum PPP of SPG is 0.093; maximum PPP of Eurasia is 0.063; maximum PPP of Nino 3 is 0.074; maximum PPP of Atlantic Nino 3 is 0.075 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 7.38881) -> maximum PPP is __0.677__; averaged PPP is 0.134; maximum PPP of SPG is 0.093; maximum PPP of Eurasia is 0.063; maximum PPP of Nino 3 is 0.074; maximum PPP of Atlantic Nino 3 is 0.075 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_7.38881.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 787.702) -> maximum PPP is __0.993__; averaged PPP is 0.078; maximum PPP of SPG is __0.941__; maximum PPP of Eurasia is 0.422; maximum PPP of Nino 3 is __0.740__; maximum PPP of Atlantic Nino 3 is 0.130 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 787.702) -> maximum PPP is __0.993__; averaged PPP is 0.078; maximum PPP of SPG is __0.941__; maximum PPP of Eurasia is 0.422; maximum PPP of Nino 3 is __0.740__; maximum PPP of Atlantic Nino 3 is 0.130 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_787.702.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 85.4391) -> maximum PPP is 0.407; averaged PPP is 0.095; maximum PPP of SPG is 0.118; maximum PPP of Eurasia is 0.247; maximum PPP of Nino 3 is 0.158; maximum PPP of Atlantic Nino 3 is 0.067 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 85.4391) -> maximum PPP is 0.407; averaged PPP is 0.095; maximum PPP of SPG is 0.118; maximum PPP of Eurasia is 0.247; maximum PPP of Nino 3 is 0.158; maximum PPP of Atlantic Nino 3 is 0.067 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_85.4391.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 867.161) -> maximum PPP is __0.996__; averaged PPP is 0.096; maximum PPP of SPG is 0.412; maximum PPP of Eurasia is __0.719__; maximum PPP of Nino 3 is __0.825__; maximum PPP of Atlantic Nino 3 is 0.450 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 867.161) -> maximum PPP is __0.996__; averaged PPP is 0.096; maximum PPP of SPG is 0.412; maximum PPP of Eurasia is __0.719__; maximum PPP of Nino 3 is __0.825__; maximum PPP of Atlantic Nino 3 is 0.450 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_867.161.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 929.649) -> maximum PPP is __0.957__; averaged PPP is 0.110; maximum PPP of SPG is 0.294; maximum PPP of Eurasia is __0.638__; maximum PPP of Nino 3 is __0.793__; maximum PPP of Atlantic Nino 3 is 0.496 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 929.649) -> maximum PPP is __0.957__; averaged PPP is 0.110; maximum PPP of SPG is 0.294; maximum PPP of Eurasia is __0.638__; maximum PPP of Nino 3 is __0.793__; maximum PPP of Atlantic Nino 3 is 0.496 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_929.649.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 970.555) -> maximum PPP is __0.863__; averaged PPP is 0.140; maximum PPP of SPG is 0.322; maximum PPP of Eurasia is 0.570; maximum PPP of Nino 3 is __0.791__; maximum PPP of Atlantic Nino 3 is 0.481 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 970.555) -> maximum PPP is __0.863__; averaged PPP is 0.140; maximum PPP of SPG is 0.322; maximum PPP of Eurasia is 0.570; maximum PPP of Nino 3 is __0.791__; maximum PPP of Atlantic Nino 3 is 0.481 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_970.555.png)
  
 ------ 
  
-  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 992.556) -> maximum PPP is __0.868__; averaged PPP is 0.139; maximum PPP of SPG is 0.267; maximum PPP of Eurasia is 0.473; maximum PPP of Nino 3 is __0.868__; maximum PPP of Atlantic Nino 3 is 0.571 
+  * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 992.556) -> maximum PPP is __0.868__; averaged PPP is 0.139; maximum PPP of SPG is 0.267; maximum PPP of Eurasia is 0.473; maximum PPP of Nino 3 is __0.868__; maximum PPP of Atlantic Nino 3 is 0.571 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_992.556.png)
  
 ------ 
  
-  * __FLDSC: Clearsky downwelling longwave flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.929__; averaged PPP is 0.252; maximum PPP of SPG is 0.372; maximum PPP of Eurasia is 0.167; maximum PPP of Nino 3 is __0.929__; maximum PPP of Atlantic Nino 3 is __0.663__ 
+  * __FLDSC: Clearsky downwelling longwave flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.929__; averaged PPP is 0.252; maximum PPP of SPG is 0.372; maximum PPP of Eurasia is 0.167; maximum PPP of Nino 3 is __0.929__; maximum PPP of Atlantic Nino 3 is __0.663__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FLDSC.png)
  
 ------ 
  
-  * __FLDS: Downwelling longwave flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.911__; averaged PPP is 0.191; maximum PPP of SPG is 0.372; maximum PPP of Eurasia is 0.133; maximum PPP of Nino 3 is __0.911__; maximum PPP of Atlantic Nino 3 is 0.555 
+  * __FLDS: Downwelling longwave flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.911__; averaged PPP is 0.191; maximum PPP of SPG is 0.372; maximum PPP of Eurasia is 0.133; maximum PPP of Nino 3 is __0.911__; maximum PPP of Atlantic Nino 3 is 0.555 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FLDS.png)
  
 ------ 
  
-  * __FLNSC: Clearsky net longwave flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.822__; averaged PPP is 0.164; maximum PPP of SPG is 0.444; maximum PPP of Eurasia is 0.423; maximum PPP of Nino 3 is __0.822__; maximum PPP of Atlantic Nino 3 is 0.444 
+  * __FLNSC: Clearsky net longwave flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.822__; averaged PPP is 0.164; maximum PPP of SPG is 0.444; maximum PPP of Eurasia is 0.423; maximum PPP of Nino 3 is __0.822__; maximum PPP of Atlantic Nino 3 is 0.444 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FLNSC.png)
  
 ------ 
  
-  * __FLNS: Net longwave flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.799__; averaged PPP is 0.131; maximum PPP of SPG is 0.201; maximum PPP of Eurasia is 0.177; maximum PPP of Nino 3 is __0.799__; maximum PPP of Atlantic Nino 3 is 0.562 
+  * __FLNS: Net longwave flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.799__; averaged PPP is 0.131; maximum PPP of SPG is 0.201; maximum PPP of Eurasia is 0.177; maximum PPP of Nino 3 is __0.799__; maximum PPP of Atlantic Nino 3 is 0.562 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FLNS.png)
  
 ------ 
  
-  * __FLNTC: Clearsky net longwave flux at top of model__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.814__; averaged PPP is 0.207; maximum PPP of SPG is __0.716__; maximum PPP of Eurasia is 0.320; maximum PPP of Nino 3 is __0.760__; maximum PPP of Atlantic Nino 3 is 0.256 
+  * __FLNTC: Clearsky net longwave flux at top of model__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.814__; averaged PPP is 0.207; maximum PPP of SPG is __0.716__; maximum PPP of Eurasia is 0.320; maximum PPP of Nino 3 is __0.760__; maximum PPP of Atlantic Nino 3 is 0.256 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FLNTC.png)
  
 ------ 
  
-  * __FLNT: Net longwave flux at top of model__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.894__; averaged PPP is 0.160; maximum PPP of SPG is 0.212; maximum PPP of Eurasia is 0.168; maximum PPP of Nino 3 is __0.893__; maximum PPP of Atlantic Nino 3 is 0.246 
+  * __FLNT: Net longwave flux at top of model__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.894__; averaged PPP is 0.160; maximum PPP of SPG is 0.212; maximum PPP of Eurasia is 0.168; maximum PPP of Nino 3 is __0.893__; maximum PPP of Atlantic Nino 3 is 0.246 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FLNT.png)
  
 ------ 
  
-  * __FLUTC: Clearsky upwelling longwave flux at top of model__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.813__; averaged PPP is 0.206; maximum PPP of SPG is __0.706__; maximum PPP of Eurasia is 0.318; maximum PPP of Nino 3 is __0.760__; maximum PPP of Atlantic Nino 3 is 0.256 
+  * __FLUTC: Clearsky upwelling longwave flux at top of model__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.813__; averaged PPP is 0.206; maximum PPP of SPG is __0.706__; maximum PPP of Eurasia is 0.318; maximum PPP of Nino 3 is __0.760__; maximum PPP of Atlantic Nino 3 is 0.256 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FLUTC.png)
  
 ------ 
  
-  * __FLUT: Upwelling longwave flux at top of model__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.894__; averaged PPP is 0.160; maximum PPP of SPG is 0.211; maximum PPP of Eurasia is 0.168; maximum PPP of Nino 3 is __0.893__; maximum PPP of Atlantic Nino 3 is 0.246 
+  * __FLUT: Upwelling longwave flux at top of model__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.894__; averaged PPP is 0.160; maximum PPP of SPG is 0.211; maximum PPP of Eurasia is 0.168; maximum PPP of Nino 3 is __0.893__; maximum PPP of Atlantic Nino 3 is 0.246 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FLUT.png)
  
 ------ 
  
-  * __FREQSH: Fractional occurance of shallow convection__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.756__; averaged PPP is 0.095; maximum PPP of SPG is 0.263; maximum PPP of Eurasia is 0.211; maximum PPP of Nino 3 is 0.521; maximum PPP of Atlantic Nino 3 is 0.090 
+  * __FREQSH: Fractional occurance of shallow convection__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.756__; averaged PPP is 0.095; maximum PPP of SPG is 0.263; maximum PPP of Eurasia is 0.211; maximum PPP of Nino 3 is 0.521; maximum PPP of Atlantic Nino 3 is 0.090 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FREQSH.png)
  
 ------ 
  
-  * __FREQZM: Fractional occurance of ZM convection__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.141; maximum PPP of SPG is 0.543; maximum PPP of Eurasia is __0.698__; maximum PPP of Nino 3 is __0.895__; maximum PPP of Atlantic Nino 3 is __0.604__ 
+  * __FREQZM: Fractional occurance of ZM convection__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.141; maximum PPP of SPG is 0.543; maximum PPP of Eurasia is __0.698__; maximum PPP of Nino 3 is __0.895__; maximum PPP of Atlantic Nino 3 is __0.604__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FREQZM.png)
  
 ------ 
  
-  * __FSDSC: Clearsky downwelling solar flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.971__; averaged PPP is 0.570; maximum PPP of SPG is 0.595; maximum PPP of Eurasia is __0.829__; maximum PPP of Nino 3 is __0.944__; maximum PPP of Atlantic Nino 3 is __0.953__ 
+  * __FSDSC: Clearsky downwelling solar flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.971__; averaged PPP is 0.570; maximum PPP of SPG is 0.595; maximum PPP of Eurasia is __0.829__; maximum PPP of Nino 3 is __0.944__; maximum PPP of Atlantic Nino 3 is __0.953__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FSDSC.png)
  
 ------ 
  
-  * __FSDS: Downwelling solar flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.813__; averaged PPP is 0.120; maximum PPP of SPG is 0.073; maximum PPP of Eurasia is 0.137; maximum PPP of Nino 3 is __0.813__; maximum PPP of Atlantic Nino 3 is 0.541 
+  * __FSDS: Downwelling solar flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.813__; averaged PPP is 0.120; maximum PPP of SPG is 0.073; maximum PPP of Eurasia is 0.137; maximum PPP of Nino 3 is __0.813__; maximum PPP of Atlantic Nino 3 is 0.541 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FSDS.png)
  
 ------ 
  
-  * __FSNSC: Clearsky net solar flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.983__; averaged PPP is 0.538; maximum PPP of SPG is 0.386; maximum PPP of Eurasia is __0.777__; maximum PPP of Nino 3 is __0.943__; maximum PPP of Atlantic Nino 3 is __0.954__ 
+  * __FSNSC: Clearsky net solar flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.983__; averaged PPP is 0.538; maximum PPP of SPG is 0.386; maximum PPP of Eurasia is __0.777__; maximum PPP of Nino 3 is __0.943__; maximum PPP of Atlantic Nino 3 is __0.954__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FSNSC.png)
  
 ------ 
  
-  * __FSNS: Net solar flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.812__; averaged PPP is 0.122; maximum PPP of SPG is 0.177; maximum PPP of Eurasia is 0.224; maximum PPP of Nino 3 is __0.812__; maximum PPP of Atlantic Nino 3 is 0.540 
+  * __FSNS: Net solar flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.812__; averaged PPP is 0.122; maximum PPP of SPG is 0.177; maximum PPP of Eurasia is 0.224; maximum PPP of Nino 3 is __0.812__; maximum PPP of Atlantic Nino 3 is 0.540 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FSNS.png)
  
 ------ 
  
-  * __FSNTC: Clearsky net solar flux at top of model__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.802__; maximum PPP of SPG is __0.939__; maximum PPP of Eurasia is __0.917__; maximum PPP of Nino 3 is __0.999__; maximum PPP of Atlantic Nino 3 is __0.999__ 
+  * __FSNTC: Clearsky net solar flux at top of model__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.802__; maximum PPP of SPG is __0.939__; maximum PPP of Eurasia is __0.917__; maximum PPP of Nino 3 is __0.999__; maximum PPP of Atlantic Nino 3 is __0.999__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FSNTC.png)
  
 ------ 
  
-  * __FSNT: Net solar flux at top of model__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.811__; averaged PPP is 0.133; maximum PPP of SPG is 0.564; maximum PPP of Eurasia is 0.311; maximum PPP of Nino 3 is __0.811__; maximum PPP of Atlantic Nino 3 is 0.529 
+  * __FSNT: Net solar flux at top of model__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.811__; averaged PPP is 0.133; maximum PPP of SPG is 0.564; maximum PPP of Eurasia is 0.311; maximum PPP of Nino 3 is __0.811__; maximum PPP of Atlantic Nino 3 is 0.529 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FSNT.png)
  
 ------ 
  
-  * __FSNTOAC: Clearsky net solar flux at top of atmosphere__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.802__; maximum PPP of SPG is __0.938__; maximum PPP of Eurasia is __0.917__; maximum PPP of Nino 3 is __0.999__; maximum PPP of Atlantic Nino 3 is __0.999__ 
+  * __FSNTOAC: Clearsky net solar flux at top of atmosphere__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.802__; maximum PPP of SPG is __0.938__; maximum PPP of Eurasia is __0.917__; maximum PPP of Nino 3 is __0.999__; maximum PPP of Atlantic Nino 3 is __0.999__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FSNTOAC.png)
  
 ------ 
  
-  * __FSNTOA: Net solar flux at top of atmosphere__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.811__; averaged PPP is 0.133; maximum PPP of SPG is 0.563; maximum PPP of Eurasia is 0.309; maximum PPP of Nino 3 is __0.811__; maximum PPP of Atlantic Nino 3 is 0.529 
+  * __FSNTOA: Net solar flux at top of atmosphere__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.811__; averaged PPP is 0.133; maximum PPP of SPG is 0.563; maximum PPP of Eurasia is 0.309; maximum PPP of Nino 3 is __0.811__; maximum PPP of Atlantic Nino 3 is 0.529 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FSNTOA.png)
  
 ------ 
  
-  * __FSUTOA: Upwelling solar flux at top of atmosphere__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.811__; averaged PPP is 0.133; maximum PPP of SPG is 0.564; maximum PPP of Eurasia is 0.310; maximum PPP of Nino 3 is __0.811__; maximum PPP of Atlantic Nino 3 is 0.529 
+  * __FSUTOA: Upwelling solar flux at top of atmosphere__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.811__; averaged PPP is 0.133; maximum PPP of SPG is 0.564; maximum PPP of Eurasia is 0.310; maximum PPP of Nino 3 is __0.811__; maximum PPP of Atlantic Nino 3 is 0.529 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FSUTOA.png)
  
 ------ 
  
-  * __ICEFRAC: Fraction of sfc area covered by sea-ice__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.464; maximum PPP of SPG is __0.616__; maximum PPP of Eurasia is __0.977__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __ICEFRAC: Fraction of sfc area covered by sea-ice__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.464; maximum PPP of SPG is __0.616__; maximum PPP of Eurasia is __0.977__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.ICEFRAC.png)
  
 ------ 
  
-  * __LHFLX: Surface latent heat flux__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.982__; averaged PPP is 0.165; maximum PPP of SPG is 0.500; maximum PPP of Eurasia is __0.797__; maximum PPP of Nino 3 is __0.903__; maximum PPP of Atlantic Nino 3 is 0.516 
+  * __LHFLX: Surface latent heat flux__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.982__; averaged PPP is 0.165; maximum PPP of SPG is 0.500; maximum PPP of Eurasia is __0.797__; maximum PPP of Nino 3 is __0.903__; maximum PPP of Atlantic Nino 3 is 0.516 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.LHFLX.png)
  
 ------ 
  
-  * __LWCF: Longwave cloud forcing__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.906__; averaged PPP is 0.155; maximum PPP of SPG is 0.191; maximum PPP of Eurasia is 0.150; maximum PPP of Nino 3 is __0.905__; maximum PPP of Atlantic Nino 3 is 0.217 
+  * __LWCF: Longwave cloud forcing__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.906__; averaged PPP is 0.155; maximum PPP of SPG is 0.191; maximum PPP of Eurasia is 0.150; maximum PPP of Nino 3 is __0.905__; maximum PPP of Atlantic Nino 3 is 0.217 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.LWCF.png)
  
 ------ 
  
-  * __OCNFRAC: Fraction of sfc area covered by ocean__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.463; maximum PPP of SPG is __0.616__; maximum PPP of Eurasia is __0.977__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __OCNFRAC: Fraction of sfc area covered by ocean__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.463; maximum PPP of SPG is __0.616__; maximum PPP of Eurasia is __0.977__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.OCNFRAC.png)
  
 ------ 
  
-  * __OMEGA500: Vertical velocity at 500 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.866__; averaged PPP is 0.111; maximum PPP of SPG is 0.063; maximum PPP of Eurasia is 0.082; maximum PPP of Nino 3 is __0.866__; maximum PPP of Atlantic Nino 3 is 0.199 
+  * __OMEGA500: Vertical velocity at 500 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.866__; averaged PPP is 0.111; maximum PPP of SPG is 0.063; maximum PPP of Eurasia is 0.082; maximum PPP of Nino 3 is __0.866__; maximum PPP of Atlantic Nino 3 is 0.199 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.OMEGA500.png)
  
 ------ 
  
-  * __OMEGA850: Vertical velocity at 850 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.819__; averaged PPP is 0.118; maximum PPP of SPG is 0.166; maximum PPP of Eurasia is 0.084; maximum PPP of Nino 3 is __0.819__; maximum PPP of Atlantic Nino 3 is 0.460 
+  * __OMEGA850: Vertical velocity at 850 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.819__; averaged PPP is 0.118; maximum PPP of SPG is 0.166; maximum PPP of Eurasia is 0.084; maximum PPP of Nino 3 is __0.819__; maximum PPP of Atlantic Nino 3 is 0.460 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.OMEGA850.png)
  
 ------ 
  
-  * __PBLH: PBL height__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.860__; averaged PPP is 0.137; maximum PPP of SPG is 0.536; maximum PPP of Eurasia is 0.373; maximum PPP of Nino 3 is __0.775__; maximum PPP of Atlantic Nino 3 is 0.351 
+  * __PBLH: PBL height__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.860__; averaged PPP is 0.137; maximum PPP of SPG is 0.536; maximum PPP of Eurasia is 0.373; maximum PPP of Nino 3 is __0.775__; maximum PPP of Atlantic Nino 3 is 0.351 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.PBLH.png)
  
 ------ 
  
-  * __PCONVB: convection base pressure__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.884__; averaged PPP is 0.163; maximum PPP of SPG is 0.063; maximum PPP of Eurasia is 0.071; maximum PPP of Nino 3 is __0.877__; maximum PPP of Atlantic Nino 3 is 0.584 
+  * __PCONVB: convection base pressure__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.884__; averaged PPP is 0.163; maximum PPP of SPG is 0.063; maximum PPP of Eurasia is 0.071; maximum PPP of Nino 3 is __0.877__; maximum PPP of Atlantic Nino 3 is 0.584 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.PCONVB.png)
  
 ------ 
  
-  * __PCONVT: convection top pressure__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.881__; averaged PPP is 0.157; maximum PPP of SPG is 0.263; maximum PPP of Eurasia is 0.155; maximum PPP of Nino 3 is __0.881__; maximum PPP of Atlantic Nino 3 is 0.509 
+  * __PCONVT: convection top pressure__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.881__; averaged PPP is 0.157; maximum PPP of SPG is 0.263; maximum PPP of Eurasia is 0.155; maximum PPP of Nino 3 is __0.881__; maximum PPP of Atlantic Nino 3 is 0.509 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.PCONVT.png)
  
 ------ 
  
-  * __PRECCDZM: Convective precipitation rate from ZM deep__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.158; maximum PPP of SPG is 0.251; maximum PPP of Eurasia is __01.000__; maximum PPP of Nino 3 is __0.896__; maximum PPP of Atlantic Nino 3 is 0.428 
+  * __PRECCDZM: Convective precipitation rate from ZM deep__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.158; maximum PPP of SPG is 0.251; maximum PPP of Eurasia is __01.000__; maximum PPP of Nino 3 is __0.896__; maximum PPP of Atlantic Nino 3 is 0.428 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.PRECCDZM.png)
  
 ------ 
  
-  * __PRECC: Convective precipitation rate (liq + ice)__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.965__; averaged PPP is 0.146; maximum PPP of SPG is 0.371; maximum PPP of Eurasia is 0.419; maximum PPP of Nino 3 is __0.889__; maximum PPP of Atlantic Nino 3 is 0.423 
+  * __PRECC: Convective precipitation rate (liq + ice)__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.965__; averaged PPP is 0.146; maximum PPP of SPG is 0.371; maximum PPP of Eurasia is 0.419; maximum PPP of Nino 3 is __0.889__; maximum PPP of Atlantic Nino 3 is 0.423 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.PRECC.png)
  
 ------ 
  
-  * __PRECL: Large-scale (stable) precipitation rate (liq + ice)__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.788__; averaged PPP is 0.095; maximum PPP of SPG is 0.080; maximum PPP of Eurasia is 0.103; maximum PPP of Nino 3 is __0.788__; maximum PPP of Atlantic Nino 3 is 0.459 
+  * __PRECL: Large-scale (stable) precipitation rate (liq + ice)__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.788__; averaged PPP is 0.095; maximum PPP of SPG is 0.080; maximum PPP of Eurasia is 0.103; maximum PPP of Nino 3 is __0.788__; maximum PPP of Atlantic Nino 3 is 0.459 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.PRECL.png)
  
 ------ 
  
-  * __PRECSC: Convective snow rate (water equivalent)__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.132; maximum PPP of SPG is 0.411; maximum PPP of Eurasia is 0.386; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __PRECSC: Convective snow rate (water equivalent)__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.132; maximum PPP of SPG is 0.411; maximum PPP of Eurasia is 0.386; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.PRECSC.png)
  
 ------ 
  
-  * __PRECSH: Shallow Convection precipitation rate__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.962__; averaged PPP is 0.104; maximum PPP of SPG is 0.482; maximum PPP of Eurasia is 0.260; maximum PPP of Nino 3 is __0.848__; maximum PPP of Atlantic Nino 3 is 0.217 
+  * __PRECSH: Shallow Convection precipitation rate__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.962__; averaged PPP is 0.104; maximum PPP of SPG is 0.482; maximum PPP of Eurasia is 0.260; maximum PPP of Nino 3 is __0.848__; maximum PPP of Atlantic Nino 3 is 0.217 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.PRECSH.png)
  
 ------ 
  
-  * __PRECSL: Large-scale (stable) snow rate (water equivalent)__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.100; maximum PPP of SPG is 0.134; maximum PPP of Eurasia is 0.101; maximum PPP of Nino 3 is 0.275; maximum PPP of Atlantic Nino 3 is 0.230 
+  * __PRECSL: Large-scale (stable) snow rate (water equivalent)__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.100; maximum PPP of SPG is 0.134; maximum PPP of Eurasia is 0.101; maximum PPP of Nino 3 is 0.275; maximum PPP of Atlantic Nino 3 is 0.230 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.PRECSL.png)
  
 ------ 
  
-  * __PRECT: Total (convective and large-scale) precipitation rate (liq + ice)__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.878__; averaged PPP is 0.124; maximum PPP of SPG is 0.260; maximum PPP of Eurasia is 0.100; maximum PPP of Nino 3 is __0.878__; maximum PPP of Atlantic Nino 3 is 0.391 
+  * __PRECT: Total (convective and large-scale) precipitation rate (liq + ice)__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.878__; averaged PPP is 0.124; maximum PPP of SPG is 0.260; maximum PPP of Eurasia is 0.100; maximum PPP of Nino 3 is __0.878__; maximum PPP of Atlantic Nino 3 is 0.391 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.PRECT.png)
  
 ------ 
  
-  * __PSL: Sea level pressure__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.701__; averaged PPP is 0.176; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.068; maximum PPP of Nino 3 is __0.701__; maximum PPP of Atlantic Nino 3 is 0.249 
+  * __PSL: Sea level pressure__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.701__; averaged PPP is 0.176; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.068; maximum PPP of Nino 3 is __0.701__; maximum PPP of Atlantic Nino 3 is 0.249 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.PSL.png)
  
 ------ 
  
-  * __PS: Surface pressure__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.701__; averaged PPP is 0.177; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.073; maximum PPP of Nino 3 is __0.701__; maximum PPP of Atlantic Nino 3 is 0.249 
+  * __PS: Surface pressure__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.701__; averaged PPP is 0.177; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.073; maximum PPP of Nino 3 is __0.701__; maximum PPP of Atlantic Nino 3 is 0.249 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.PS.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 100.515) -> maximum PPP is __0.686__; averaged PPP is 0.392; maximum PPP of SPG is __0.668__; maximum PPP of Eurasia is __0.686__; maximum PPP of Nino 3 is 0.465; maximum PPP of Atlantic Nino 3 is 0.332 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 100.515) -> maximum PPP is __0.686__; averaged PPP is 0.392; maximum PPP of SPG is __0.668__; maximum PPP of Eurasia is __0.686__; maximum PPP of Nino 3 is 0.465; maximum PPP of Atlantic Nino 3 is 0.332 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_100.515.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 118.25) -> maximum PPP is __0.742__; averaged PPP is 0.322; maximum PPP of SPG is 0.589; maximum PPP of Eurasia is __0.665__; maximum PPP of Nino 3 is 0.595; maximum PPP of Atlantic Nino 3 is 0.429 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 118.25) -> maximum PPP is __0.742__; averaged PPP is 0.322; maximum PPP of SPG is 0.589; maximum PPP of Eurasia is __0.665__; maximum PPP of Nino 3 is 0.595; maximum PPP of Atlantic Nino 3 is 0.429 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_118.25.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 139.115) -> maximum PPP is __0.765__; averaged PPP is 0.282; maximum PPP of SPG is 0.242; maximum PPP of Eurasia is 0.588; maximum PPP of Nino 3 is __0.732__; maximum PPP of Atlantic Nino 3 is 0.428 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 139.115) -> maximum PPP is __0.765__; averaged PPP is 0.282; maximum PPP of SPG is 0.242; maximum PPP of Eurasia is 0.588; maximum PPP of Nino 3 is __0.732__; maximum PPP of Atlantic Nino 3 is 0.428 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_139.115.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is __0.783__; averaged PPP is __0.713__; maximum PPP of SPG is __0.755__; maximum PPP of Eurasia is __0.762__; maximum PPP of Nino 3 is __0.783__; maximum PPP of Atlantic Nino 3 is __0.780__ 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is __0.783__; averaged PPP is __0.713__; maximum PPP of SPG is __0.755__; maximum PPP of Eurasia is __0.762__; maximum PPP of Nino 3 is __0.783__; maximum PPP of Atlantic Nino 3 is __0.780__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_13.9672.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 163.662) -> maximum PPP is __0.850__; averaged PPP is 0.239; maximum PPP of SPG is 0.117; maximum PPP of Eurasia is 0.351; maximum PPP of Nino 3 is __0.840__; maximum PPP of Atlantic Nino 3 is 0.390 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 163.662) -> maximum PPP is __0.850__; averaged PPP is 0.239; maximum PPP of SPG is 0.117; maximum PPP of Eurasia is 0.351; maximum PPP of Nino 3 is __0.840__; maximum PPP of Atlantic Nino 3 is 0.390 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_163.662.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 192.54) -> maximum PPP is __0.881__; averaged PPP is 0.197; maximum PPP of SPG is 0.088; maximum PPP of Eurasia is 0.228; maximum PPP of Nino 3 is __0.879__; maximum PPP of Atlantic Nino 3 is 0.373 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 192.54) -> maximum PPP is __0.881__; averaged PPP is 0.197; maximum PPP of SPG is 0.088; maximum PPP of Eurasia is 0.228; maximum PPP of Nino 3 is __0.879__; maximum PPP of Atlantic Nino 3 is 0.373 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_192.54.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 226.513) -> maximum PPP is __0.875__; averaged PPP is 0.181; maximum PPP of SPG is 0.090; maximum PPP of Eurasia is 0.134; maximum PPP of Nino 3 is __0.875__; maximum PPP of Atlantic Nino 3 is 0.378 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 226.513) -> maximum PPP is __0.875__; averaged PPP is 0.181; maximum PPP of SPG is 0.090; maximum PPP of Eurasia is 0.134; maximum PPP of Nino 3 is __0.875__; maximum PPP of Atlantic Nino 3 is 0.378 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_226.513.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is __0.774__; averaged PPP is __0.647__; maximum PPP of SPG is __0.742__; maximum PPP of Eurasia is __0.746__; maximum PPP of Nino 3 is __0.728__; maximum PPP of Atlantic Nino 3 is __0.721__ 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is __0.774__; averaged PPP is __0.647__; maximum PPP of SPG is __0.742__; maximum PPP of Eurasia is __0.746__; maximum PPP of Nino 3 is __0.728__; maximum PPP of Atlantic Nino 3 is __0.721__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_23.9446.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 266.481) -> maximum PPP is __0.844__; averaged PPP is 0.170; maximum PPP of SPG is 0.077; maximum PPP of Eurasia is 0.174; maximum PPP of Nino 3 is __0.844__; maximum PPP of Atlantic Nino 3 is 0.345 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 266.481) -> maximum PPP is __0.844__; averaged PPP is 0.170; maximum PPP of SPG is 0.077; maximum PPP of Eurasia is 0.174; maximum PPP of Nino 3 is __0.844__; maximum PPP of Atlantic Nino 3 is 0.345 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_266.481.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 313.501) -> maximum PPP is __0.823__; averaged PPP is 0.162; maximum PPP of SPG is 0.074; maximum PPP of Eurasia is 0.166; maximum PPP of Nino 3 is __0.817__; maximum PPP of Atlantic Nino 3 is 0.307 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 313.501) -> maximum PPP is __0.823__; averaged PPP is 0.162; maximum PPP of SPG is 0.074; maximum PPP of Eurasia is 0.166; maximum PPP of Nino 3 is __0.817__; maximum PPP of Atlantic Nino 3 is 0.307 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_313.501.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 3.54464) -> maximum PPP is __0.783__; averaged PPP is __0.749__; maximum PPP of SPG is __0.714__; maximum PPP of Eurasia is __0.748__; maximum PPP of Nino 3 is __0.783__; maximum PPP of Atlantic Nino 3 is __0.782__ 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 3.54464) -> maximum PPP is __0.783__; averaged PPP is __0.749__; maximum PPP of SPG is __0.714__; maximum PPP of Eurasia is __0.748__; maximum PPP of Nino 3 is __0.783__; maximum PPP of Atlantic Nino 3 is __0.782__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_3.54464.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 368.818) -> maximum PPP is __0.837__; averaged PPP is 0.156; maximum PPP of SPG is 0.071; maximum PPP of Eurasia is 0.159; maximum PPP of Nino 3 is __0.836__; maximum PPP of Atlantic Nino 3 is 0.211 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 368.818) -> maximum PPP is __0.837__; averaged PPP is 0.156; maximum PPP of SPG is 0.071; maximum PPP of Eurasia is 0.159; maximum PPP of Nino 3 is __0.836__; maximum PPP of Atlantic Nino 3 is 0.211 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_368.818.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 37.2303) -> maximum PPP is __0.775__; averaged PPP is __0.617__; maximum PPP of SPG is __0.730__; maximum PPP of Eurasia is __0.733__; maximum PPP of Nino 3 is __0.701__; maximum PPP of Atlantic Nino 3 is __0.696__ 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 37.2303) -> maximum PPP is __0.775__; averaged PPP is __0.617__; maximum PPP of SPG is __0.730__; maximum PPP of Eurasia is __0.733__; maximum PPP of Nino 3 is __0.701__; maximum PPP of Atlantic Nino 3 is __0.696__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_37.2303.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 433.895) -> maximum PPP is __0.881__; averaged PPP is 0.151; maximum PPP of SPG is 0.073; maximum PPP of Eurasia is 0.165; maximum PPP of Nino 3 is __0.880__; maximum PPP of Atlantic Nino 3 is 0.201 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 433.895) -> maximum PPP is __0.881__; averaged PPP is 0.151; maximum PPP of SPG is 0.073; maximum PPP of Eurasia is 0.165; maximum PPP of Nino 3 is __0.880__; maximum PPP of Atlantic Nino 3 is 0.201 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_433.895.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 510.455) -> maximum PPP is __0.899__; averaged PPP is 0.152; maximum PPP of SPG is 0.074; maximum PPP of Eurasia is 0.162; maximum PPP of Nino 3 is __0.899__; maximum PPP of Atlantic Nino 3 is 0.294 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 510.455) -> maximum PPP is __0.899__; averaged PPP is 0.152; maximum PPP of SPG is 0.074; maximum PPP of Eurasia is 0.162; maximum PPP of Nino 3 is __0.899__; maximum PPP of Atlantic Nino 3 is 0.294 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_510.455.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 53.1146) -> maximum PPP is __0.736__; averaged PPP is 0.589; maximum PPP of SPG is __0.714__; maximum PPP of Eurasia is __0.723__; maximum PPP of Nino 3 is __0.619__; maximum PPP of Atlantic Nino 3 is __0.686__ 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 53.1146) -> maximum PPP is __0.736__; averaged PPP is 0.589; maximum PPP of SPG is __0.714__; maximum PPP of Eurasia is __0.723__; maximum PPP of Nino 3 is __0.619__; maximum PPP of Atlantic Nino 3 is __0.686__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_53.1146.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 600.524) -> maximum PPP is __0.838__; averaged PPP is 0.137; maximum PPP of SPG is 0.078; maximum PPP of Eurasia is 0.157; maximum PPP of Nino 3 is __0.838__; maximum PPP of Atlantic Nino 3 is 0.208 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 600.524) -> maximum PPP is __0.838__; averaged PPP is 0.137; maximum PPP of SPG is 0.078; maximum PPP of Eurasia is 0.157; maximum PPP of Nino 3 is __0.838__; maximum PPP of Atlantic Nino 3 is 0.208 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_600.524.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 696.796) -> maximum PPP is __0.845__; averaged PPP is 0.137; maximum PPP of SPG is 0.098; maximum PPP of Eurasia is 0.156; maximum PPP of Nino 3 is __0.845__; maximum PPP of Atlantic Nino 3 is 0.317 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 696.796) -> maximum PPP is __0.845__; averaged PPP is 0.137; maximum PPP of SPG is 0.098; maximum PPP of Eurasia is 0.156; maximum PPP of Nino 3 is __0.845__; maximum PPP of Atlantic Nino 3 is 0.317 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_696.796.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 70.0592) -> maximum PPP is __0.716__; averaged PPP is 0.512; maximum PPP of SPG is __0.709__; maximum PPP of Eurasia is __0.716__; maximum PPP of Nino 3 is 0.533; maximum PPP of Atlantic Nino 3 is 0.550 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 70.0592) -> maximum PPP is __0.716__; averaged PPP is 0.512; maximum PPP of SPG is __0.709__; maximum PPP of Eurasia is __0.716__; maximum PPP of Nino 3 is 0.533; maximum PPP of Atlantic Nino 3 is 0.550 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_70.0592.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 7.38881) -> maximum PPP is __0.796__; averaged PPP is __0.750__; maximum PPP of SPG is __0.757__; maximum PPP of Eurasia is __0.765__; maximum PPP of Nino 3 is __0.795__; maximum PPP of Atlantic Nino 3 is __0.791__ 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 7.38881) -> maximum PPP is __0.796__; averaged PPP is __0.750__; maximum PPP of SPG is __0.757__; maximum PPP of Eurasia is __0.765__; maximum PPP of Nino 3 is __0.795__; maximum PPP of Atlantic Nino 3 is __0.791__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_7.38881.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 787.702) -> maximum PPP is __0.813__; averaged PPP is 0.143; maximum PPP of SPG is 0.128; maximum PPP of Eurasia is 0.139; maximum PPP of Nino 3 is __0.813__; maximum PPP of Atlantic Nino 3 is 0.321 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 787.702) -> maximum PPP is __0.813__; averaged PPP is 0.143; maximum PPP of SPG is 0.128; maximum PPP of Eurasia is 0.139; maximum PPP of Nino 3 is __0.813__; maximum PPP of Atlantic Nino 3 is 0.321 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_787.702.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 85.4391) -> maximum PPP is __0.709__; averaged PPP is 0.445; maximum PPP of SPG is __0.702__; maximum PPP of Eurasia is __0.708__; maximum PPP of Nino 3 is 0.178; maximum PPP of Atlantic Nino 3 is 0.480 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 85.4391) -> maximum PPP is __0.709__; averaged PPP is 0.445; maximum PPP of SPG is __0.702__; maximum PPP of Eurasia is __0.708__; maximum PPP of Nino 3 is 0.178; maximum PPP of Atlantic Nino 3 is 0.480 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_85.4391.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 867.161) -> maximum PPP is __0.838__; averaged PPP is 0.162; maximum PPP of SPG is 0.153; maximum PPP of Eurasia is 0.149; maximum PPP of Nino 3 is __0.837__; maximum PPP of Atlantic Nino 3 is 0.477 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 867.161) -> maximum PPP is __0.838__; averaged PPP is 0.162; maximum PPP of SPG is 0.153; maximum PPP of Eurasia is 0.149; maximum PPP of Nino 3 is __0.837__; maximum PPP of Atlantic Nino 3 is 0.477 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_867.161.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 929.649) -> maximum PPP is __0.937__; averaged PPP is 0.200; maximum PPP of SPG is 0.157; maximum PPP of Eurasia is 0.131; maximum PPP of Nino 3 is __0.937__; maximum PPP of Atlantic Nino 3 is __0.618__ 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 929.649) -> maximum PPP is __0.937__; averaged PPP is 0.200; maximum PPP of SPG is 0.157; maximum PPP of Eurasia is 0.131; maximum PPP of Nino 3 is __0.937__; maximum PPP of Atlantic Nino 3 is __0.618__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_929.649.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 970.555) -> maximum PPP is __0.924__; averaged PPP is 0.204; maximum PPP of SPG is 0.155; maximum PPP of Eurasia is 0.147; maximum PPP of Nino 3 is __0.917__; maximum PPP of Atlantic Nino 3 is __0.646__ 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 970.555) -> maximum PPP is __0.924__; averaged PPP is 0.204; maximum PPP of SPG is 0.155; maximum PPP of Eurasia is 0.147; maximum PPP of Nino 3 is __0.917__; maximum PPP of Atlantic Nino 3 is __0.646__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_970.555.png)
  
 ------ 
  
-  * __Q: Specific humidity__, 01.cam2.h0., (level: 992.556) -> maximum PPP is __0.906__; averaged PPP is 0.203; maximum PPP of SPG is 0.159; maximum PPP of Eurasia is 0.141; maximum PPP of Nino 3 is __0.906__; maximum PPP of Atlantic Nino 3 is __0.605__ 
+  * __Q: Specific humidity__, 01.cam2.h0., (level: 992.556) -> maximum PPP is __0.906__; averaged PPP is 0.203; maximum PPP of SPG is 0.159; maximum PPP of Eurasia is 0.141; maximum PPP of Nino 3 is __0.906__; maximum PPP of Atlantic Nino 3 is __0.605__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.Q_992.556.png)
  
 ------ 
  
-  * __QFLX: Surface water flux__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.984__; averaged PPP is 0.166; maximum PPP of SPG is 0.504; maximum PPP of Eurasia is __0.804__; maximum PPP of Nino 3 is __0.903__; maximum PPP of Atlantic Nino 3 is 0.516 
+  * __QFLX: Surface water flux__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.984__; averaged PPP is 0.166; maximum PPP of SPG is 0.504; maximum PPP of Eurasia is __0.804__; maximum PPP of Nino 3 is __0.903__; maximum PPP of Atlantic Nino 3 is 0.516 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.QFLX.png)
  
 ------ 
  
-  * __QREFHT: Reference height humidity__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.925__; averaged PPP is 0.227; maximum PPP of SPG is 0.260; maximum PPP of Eurasia is 0.149; maximum PPP of Nino 3 is __0.925__; maximum PPP of Atlantic Nino 3 is __0.671__ 
+  * __QREFHT: Reference height humidity__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.925__; averaged PPP is 0.227; maximum PPP of SPG is 0.260; maximum PPP of Eurasia is 0.149; maximum PPP of Nino 3 is __0.925__; maximum PPP of Atlantic Nino 3 is __0.671__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.QREFHT.png)
  
 ------ 
  
-  * __RHREFHT: Reference height relative humidity__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.857__; averaged PPP is 0.139; maximum PPP of SPG is 0.269; maximum PPP of Eurasia is 0.283; maximum PPP of Nino 3 is __0.818__; maximum PPP of Atlantic Nino 3 is 0.347 
+  * __RHREFHT: Reference height relative humidity__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.857__; averaged PPP is 0.139; maximum PPP of SPG is 0.269; maximum PPP of Eurasia is 0.283; maximum PPP of Nino 3 is __0.818__; maximum PPP of Atlantic Nino 3 is 0.347 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.RHREFHT.png)
  
 ------ 
  
-  * __SHFLX: Surface sensible heat flux__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.884__; averaged PPP is 0.155; maximum PPP of SPG is 0.290; maximum PPP of Eurasia is __0.646__; maximum PPP of Nino 3 is __0.865__; maximum PPP of Atlantic Nino 3 is __0.627__ 
+  * __SHFLX: Surface sensible heat flux__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.884__; averaged PPP is 0.155; maximum PPP of SPG is 0.290; maximum PPP of Eurasia is __0.646__; maximum PPP of Nino 3 is __0.865__; maximum PPP of Atlantic Nino 3 is __0.627__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.SHFLX.png)
  
 ------ 
  
-  * __SNOWHICE: Water equivalent snow depth__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.275; maximum PPP of SPG is 0.268; maximum PPP of Eurasia is 0.080; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __SNOWHICE: Water equivalent snow depth__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.275; maximum PPP of SPG is 0.268; maximum PPP of Eurasia is 0.080; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.SNOWHICE.png)
  
 ------ 
  
-  * __SRFRAD: Net radiative flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.832__; averaged PPP is 0.150; maximum PPP of SPG is 0.450; maximum PPP of Eurasia is 0.210; maximum PPP of Nino 3 is __0.740__; maximum PPP of Atlantic Nino 3 is 0.581 
+  * __SRFRAD: Net radiative flux at surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.832__; averaged PPP is 0.150; maximum PPP of SPG is 0.450; maximum PPP of Eurasia is 0.210; maximum PPP of Nino 3 is __0.740__; maximum PPP of Atlantic Nino 3 is 0.581 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.SRFRAD.png)
  
 ------ 
  
-  * __SST: sea surface temperature__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.998__; averaged PPP is 0.490; maximum PPP of SPG is __0.936__; maximum PPP of Eurasia is __0.981__; maximum PPP of Nino 3 is __0.962__; maximum PPP of Atlantic Nino 3 is __0.748__ 
+  * __SST: sea surface temperature__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.998__; averaged PPP is 0.490; maximum PPP of SPG is __0.936__; maximum PPP of Eurasia is __0.981__; maximum PPP of Nino 3 is __0.962__; maximum PPP of Atlantic Nino 3 is __0.748__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.SST.png PPP_PPP-08.cam2.h0.SST.png)
  
 ------ 
  
-  * __SWCF: Shortwave cloud forcing__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.803__; averaged PPP is 0.123; maximum PPP of SPG is 0.280; maximum PPP of Eurasia is 0.392; maximum PPP of Nino 3 is __0.803__; maximum PPP of Atlantic Nino 3 is 0.474 
+  * __SWCF: Shortwave cloud forcing__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.803__; averaged PPP is 0.123; maximum PPP of SPG is 0.280; maximum PPP of Eurasia is 0.392; maximum PPP of Nino 3 is __0.803__; maximum PPP of Atlantic Nino 3 is 0.474 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.SWCF.png)
  
 ------ 
  
-  * __T1000: Temperature at 1000 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.945__; averaged PPP is 0.288; maximum PPP of SPG is 0.355; maximum PPP of Eurasia is 0.125; maximum PPP of Nino 3 is __0.938__; maximum PPP of Atlantic Nino 3 is __0.704__ 
+  * __T1000: Temperature at 1000 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.945__; averaged PPP is 0.288; maximum PPP of SPG is 0.355; maximum PPP of Eurasia is 0.125; maximum PPP of Nino 3 is __0.938__; maximum PPP of Atlantic Nino 3 is __0.704__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T1000.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 100.515) -> maximum PPP is __0.795__; averaged PPP is 0.280; maximum PPP of SPG is 0.096; maximum PPP of Eurasia is 0.368; maximum PPP of Nino 3 is 0.438; maximum PPP of Atlantic Nino 3 is 0.435 
+  * __T: Temperature__, 01.cam2.h0., (level: 100.515) -> maximum PPP is __0.795__; averaged PPP is 0.280; maximum PPP of SPG is 0.096; maximum PPP of Eurasia is 0.368; maximum PPP of Nino 3 is 0.438; maximum PPP of Atlantic Nino 3 is 0.435 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_100.515.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 118.25) -> maximum PPP is __0.737__; averaged PPP is 0.223; maximum PPP of SPG is 0.060; maximum PPP of Eurasia is 0.210; maximum PPP of Nino 3 is 0.438; maximum PPP of Atlantic Nino 3 is 0.460 
+  * __T: Temperature__, 01.cam2.h0., (level: 118.25) -> maximum PPP is __0.737__; averaged PPP is 0.223; maximum PPP of SPG is 0.060; maximum PPP of Eurasia is 0.210; maximum PPP of Nino 3 is 0.438; maximum PPP of Atlantic Nino 3 is 0.460 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_118.25.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 139.115) -> maximum PPP is __0.736__; averaged PPP is 0.241; maximum PPP of SPG is 0.071; maximum PPP of Eurasia is 0.103; maximum PPP of Nino 3 is 0.378; maximum PPP of Atlantic Nino 3 is 0.506 
+  * __T: Temperature__, 01.cam2.h0., (level: 139.115) -> maximum PPP is __0.736__; averaged PPP is 0.241; maximum PPP of SPG is 0.071; maximum PPP of Eurasia is 0.103; maximum PPP of Nino 3 is 0.378; maximum PPP of Atlantic Nino 3 is 0.506 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_139.115.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is __0.722__; averaged PPP is 0.300; maximum PPP of SPG is 0.050; maximum PPP of Eurasia is 0.139; maximum PPP of Nino 3 is 0.274; maximum PPP of Atlantic Nino 3 is 0.306 
+  * __T: Temperature__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is __0.722__; averaged PPP is 0.300; maximum PPP of SPG is 0.050; maximum PPP of Eurasia is 0.139; maximum PPP of Nino 3 is 0.274; maximum PPP of Atlantic Nino 3 is 0.306 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_13.9672.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 163.662) -> maximum PPP is __0.802__; averaged PPP is 0.282; maximum PPP of SPG is 0.091; maximum PPP of Eurasia is 0.160; maximum PPP of Nino 3 is __0.607__; maximum PPP of Atlantic Nino 3 is 0.491 
+  * __T: Temperature__, 01.cam2.h0., (level: 163.662) -> maximum PPP is __0.802__; averaged PPP is 0.282; maximum PPP of SPG is 0.091; maximum PPP of Eurasia is 0.160; maximum PPP of Nino 3 is __0.607__; maximum PPP of Atlantic Nino 3 is 0.491 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_163.662.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 192.54) -> maximum PPP is __0.809__; averaged PPP is 0.312; maximum PPP of SPG is 0.109; maximum PPP of Eurasia is 0.198; maximum PPP of Nino 3 is __0.800__; maximum PPP of Atlantic Nino 3 is 0.515 
+  * __T: Temperature__, 01.cam2.h0., (level: 192.54) -> maximum PPP is __0.809__; averaged PPP is 0.312; maximum PPP of SPG is 0.109; maximum PPP of Eurasia is 0.198; maximum PPP of Nino 3 is __0.800__; maximum PPP of Atlantic Nino 3 is 0.515 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_192.54.png)
  
 ------ 
  
-  * __T200: Temperature at 200 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.823__; averaged PPP is 0.318; maximum PPP of SPG is 0.110; maximum PPP of Eurasia is 0.206; maximum PPP of Nino 3 is __0.818__; maximum PPP of Atlantic Nino 3 is 0.541 
+  * __T200: Temperature at 200 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.823__; averaged PPP is 0.318; maximum PPP of SPG is 0.110; maximum PPP of Eurasia is 0.206; maximum PPP of Nino 3 is __0.818__; maximum PPP of Atlantic Nino 3 is 0.541 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T200.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 226.513) -> maximum PPP is __0.846__; averaged PPP is 0.319; maximum PPP of SPG is 0.107; maximum PPP of Eurasia is 0.208; maximum PPP of Nino 3 is __0.846__; maximum PPP of Atlantic Nino 3 is __0.609__ 
+  * __T: Temperature__, 01.cam2.h0., (level: 226.513) -> maximum PPP is __0.846__; averaged PPP is 0.319; maximum PPP of SPG is 0.107; maximum PPP of Eurasia is 0.208; maximum PPP of Nino 3 is __0.846__; maximum PPP of Atlantic Nino 3 is __0.609__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_226.513.png PPP_PPP-06.cam2.h0.T_226.513.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is __0.748__; averaged PPP is 0.401; maximum PPP of SPG is 0.057; maximum PPP of Eurasia is 0.194; maximum PPP of Nino 3 is 0.490; maximum PPP of Atlantic Nino 3 is 0.471 
+  * __T: Temperature__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is __0.748__; averaged PPP is 0.401; maximum PPP of SPG is 0.057; maximum PPP of Eurasia is 0.194; maximum PPP of Nino 3 is 0.490; maximum PPP of Atlantic Nino 3 is 0.471 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_23.9446.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 266.481) -> maximum PPP is __0.859__; averaged PPP is 0.313; maximum PPP of SPG is 0.129; maximum PPP of Eurasia is 0.199; maximum PPP of Nino 3 is __0.853__; maximum PPP of Atlantic Nino 3 is __0.645__ 
+  * __T: Temperature__, 01.cam2.h0., (level: 266.481) -> maximum PPP is __0.859__; averaged PPP is 0.313; maximum PPP of SPG is 0.129; maximum PPP of Eurasia is 0.199; maximum PPP of Nino 3 is __0.853__; maximum PPP of Atlantic Nino 3 is __0.645__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_266.481.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 313.501) -> maximum PPP is __0.846__; averaged PPP is 0.296; maximum PPP of SPG is 0.111; maximum PPP of Eurasia is 0.195; maximum PPP of Nino 3 is __0.831__; maximum PPP of Atlantic Nino 3 is __0.644__ 
+  * __T: Temperature__, 01.cam2.h0., (level: 313.501) -> maximum PPP is __0.846__; averaged PPP is 0.296; maximum PPP of SPG is 0.111; maximum PPP of Eurasia is 0.195; maximum PPP of Nino 3 is __0.831__; maximum PPP of Atlantic Nino 3 is __0.644__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_313.501.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 3.54464) -> maximum PPP is __0.942__; averaged PPP is 0.504; maximum PPP of SPG is 0.099; maximum PPP of Eurasia is 0.140; maximum PPP of Nino 3 is 0.452; maximum PPP of Atlantic Nino 3 is 0.428 
+  * __T: Temperature__, 01.cam2.h0., (level: 3.54464) -> maximum PPP is __0.942__; averaged PPP is 0.504; maximum PPP of SPG is 0.099; maximum PPP of Eurasia is 0.140; maximum PPP of Nino 3 is 0.452; maximum PPP of Atlantic Nino 3 is 0.428 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_3.54464.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 368.818) -> maximum PPP is __0.781__; averaged PPP is 0.271; maximum PPP of SPG is 0.079; maximum PPP of Eurasia is 0.123; maximum PPP of Nino 3 is __0.758__; maximum PPP of Atlantic Nino 3 is __0.633__ 
+  * __T: Temperature__, 01.cam2.h0., (level: 368.818) -> maximum PPP is __0.781__; averaged PPP is 0.271; maximum PPP of SPG is 0.079; maximum PPP of Eurasia is 0.123; maximum PPP of Nino 3 is __0.758__; maximum PPP of Atlantic Nino 3 is __0.633__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_368.818.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 37.2303) -> maximum PPP is __0.913__; averaged PPP is __0.619__; maximum PPP of SPG is 0.070; maximum PPP of Eurasia is 0.386; maximum PPP of Nino 3 is __0.891__; maximum PPP of Atlantic Nino 3 is __0.873__ 
+  * __T: Temperature__, 01.cam2.h0., (level: 37.2303) -> maximum PPP is __0.913__; averaged PPP is __0.619__; maximum PPP of SPG is 0.070; maximum PPP of Eurasia is 0.386; maximum PPP of Nino 3 is __0.891__; maximum PPP of Atlantic Nino 3 is __0.873__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_37.2303.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 433.895) -> maximum PPP is __0.759__; averaged PPP is 0.247; maximum PPP of SPG is 0.068; maximum PPP of Eurasia is 0.094; maximum PPP of Nino 3 is __0.694__; maximum PPP of Atlantic Nino 3 is 0.476 
+  * __T: Temperature__, 01.cam2.h0., (level: 433.895) -> maximum PPP is __0.759__; averaged PPP is 0.247; maximum PPP of SPG is 0.068; maximum PPP of Eurasia is 0.094; maximum PPP of Nino 3 is __0.694__; maximum PPP of Atlantic Nino 3 is 0.476 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_433.895.png)
  
 ------ 
  
-  * __T500: Temperature at 500 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.761__; averaged PPP is 0.232; maximum PPP of SPG is 0.066; maximum PPP of Eurasia is 0.093; maximum PPP of Nino 3 is __0.708__; maximum PPP of Atlantic Nino 3 is 0.341 
+  * __T500: Temperature at 500 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.761__; averaged PPP is 0.232; maximum PPP of SPG is 0.066; maximum PPP of Eurasia is 0.093; maximum PPP of Nino 3 is __0.708__; maximum PPP of Atlantic Nino 3 is 0.341 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T500.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 510.455) -> maximum PPP is __0.742__; averaged PPP is 0.223; maximum PPP of SPG is 0.065; maximum PPP of Eurasia is 0.094; maximum PPP of Nino 3 is __0.680__; maximum PPP of Atlantic Nino 3 is 0.261 
+  * __T: Temperature__, 01.cam2.h0., (level: 510.455) -> maximum PPP is __0.742__; averaged PPP is 0.223; maximum PPP of SPG is 0.065; maximum PPP of Eurasia is 0.094; maximum PPP of Nino 3 is __0.680__; maximum PPP of Atlantic Nino 3 is 0.261 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_510.455.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 53.1146) -> maximum PPP is __0.950__; averaged PPP is __0.681__; maximum PPP of SPG is 0.114; maximum PPP of Eurasia is __0.602__; maximum PPP of Nino 3 is __0.912__; maximum PPP of Atlantic Nino 3 is __0.884__ 
+  * __T: Temperature__, 01.cam2.h0., (level: 53.1146) -> maximum PPP is __0.950__; averaged PPP is __0.681__; maximum PPP of SPG is 0.114; maximum PPP of Eurasia is __0.602__; maximum PPP of Nino 3 is __0.912__; maximum PPP of Atlantic Nino 3 is __0.884__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_53.1146.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 600.524) -> maximum PPP is __0.742__; averaged PPP is 0.200; maximum PPP of SPG is 0.076; maximum PPP of Eurasia is 0.091; maximum PPP of Nino 3 is 0.404; maximum PPP of Atlantic Nino 3 is 0.511 
+  * __T: Temperature__, 01.cam2.h0., (level: 600.524) -> maximum PPP is __0.742__; averaged PPP is 0.200; maximum PPP of SPG is 0.076; maximum PPP of Eurasia is 0.091; maximum PPP of Nino 3 is 0.404; maximum PPP of Atlantic Nino 3 is 0.511 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_600.524.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 696.796) -> maximum PPP is __0.847__; averaged PPP is 0.222; maximum PPP of SPG is 0.093; maximum PPP of Eurasia is 0.091; maximum PPP of Nino 3 is __0.847__; maximum PPP of Atlantic Nino 3 is __0.617__ 
+  * __T: Temperature__, 01.cam2.h0., (level: 696.796) -> maximum PPP is __0.847__; averaged PPP is 0.222; maximum PPP of SPG is 0.093; maximum PPP of Eurasia is 0.091; maximum PPP of Nino 3 is __0.847__; maximum PPP of Atlantic Nino 3 is __0.617__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_696.796.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 70.0592) -> maximum PPP is __0.850__; averaged PPP is 0.504; maximum PPP of SPG is 0.135; maximum PPP of Eurasia is 0.598; maximum PPP of Nino 3 is __0.684__; maximum PPP of Atlantic Nino 3 is __0.656__ 
+  * __T: Temperature__, 01.cam2.h0., (level: 70.0592) -> maximum PPP is __0.850__; averaged PPP is 0.504; maximum PPP of SPG is 0.135; maximum PPP of Eurasia is 0.598; maximum PPP of Nino 3 is __0.684__; maximum PPP of Atlantic Nino 3 is __0.656__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_70.0592.png)
  
 ------ 
  
-  * __T700: Temperature at 700 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.848__; averaged PPP is 0.221; maximum PPP of SPG is 0.097; maximum PPP of Eurasia is 0.089; maximum PPP of Nino 3 is __0.848__; maximum PPP of Atlantic Nino 3 is __0.618__ 
+  * __T700: Temperature at 700 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.848__; averaged PPP is 0.221; maximum PPP of SPG is 0.097; maximum PPP of Eurasia is 0.089; maximum PPP of Nino 3 is __0.848__; maximum PPP of Atlantic Nino 3 is __0.618__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T700.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 7.38881) -> maximum PPP is __0.786__; averaged PPP is 0.278; maximum PPP of SPG is 0.065; maximum PPP of Eurasia is 0.124; maximum PPP of Nino 3 is 0.179; maximum PPP of Atlantic Nino 3 is 0.161 
+  * __T: Temperature__, 01.cam2.h0., (level: 7.38881) -> maximum PPP is __0.786__; averaged PPP is 0.278; maximum PPP of SPG is 0.065; maximum PPP of Eurasia is 0.124; maximum PPP of Nino 3 is 0.179; maximum PPP of Atlantic Nino 3 is 0.161 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_7.38881.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 787.702) -> maximum PPP is __0.875__; averaged PPP is 0.204; maximum PPP of SPG is 0.122; maximum PPP of Eurasia is 0.100; maximum PPP of Nino 3 is __0.865__; maximum PPP of Atlantic Nino 3 is __0.620__ 
+  * __T: Temperature__, 01.cam2.h0., (level: 787.702) -> maximum PPP is __0.875__; averaged PPP is 0.204; maximum PPP of SPG is 0.122; maximum PPP of Eurasia is 0.100; maximum PPP of Nino 3 is __0.865__; maximum PPP of Atlantic Nino 3 is __0.620__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_787.702.png)
  
 ------ 
  
-  * __T850: Temperature at 850 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.933__; averaged PPP is 0.223; maximum PPP of SPG is 0.174; maximum PPP of Eurasia is 0.112; maximum PPP of Nino 3 is __0.933__; maximum PPP of Atlantic Nino 3 is __0.696__ 
+  * __T850: Temperature at 850 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.933__; averaged PPP is 0.223; maximum PPP of SPG is 0.174; maximum PPP of Eurasia is 0.112; maximum PPP of Nino 3 is __0.933__; maximum PPP of Atlantic Nino 3 is __0.696__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T850.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 85.4391) -> maximum PPP is __0.832__; averaged PPP is 0.358; maximum PPP of SPG is 0.113; maximum PPP of Eurasia is 0.489; maximum PPP of Nino 3 is 0.585; maximum PPP of Atlantic Nino 3 is 0.481 
+  * __T: Temperature__, 01.cam2.h0., (level: 85.4391) -> maximum PPP is __0.832__; averaged PPP is 0.358; maximum PPP of SPG is 0.113; maximum PPP of Eurasia is 0.489; maximum PPP of Nino 3 is 0.585; maximum PPP of Atlantic Nino 3 is 0.481 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_85.4391.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 867.161) -> maximum PPP is __0.938__; averaged PPP is 0.229; maximum PPP of SPG is 0.181; maximum PPP of Eurasia is 0.121; maximum PPP of Nino 3 is __0.938__; maximum PPP of Atlantic Nino 3 is __0.692__ 
+  * __T: Temperature__, 01.cam2.h0., (level: 867.161) -> maximum PPP is __0.938__; averaged PPP is 0.229; maximum PPP of SPG is 0.181; maximum PPP of Eurasia is 0.121; maximum PPP of Nino 3 is __0.938__; maximum PPP of Atlantic Nino 3 is __0.692__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_867.161.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 929.649) -> maximum PPP is __0.946__; averaged PPP is 0.239; maximum PPP of SPG is 0.253; maximum PPP of Eurasia is 0.129; maximum PPP of Nino 3 is __0.938__; maximum PPP of Atlantic Nino 3 is __0.741__ 
+  * __T: Temperature__, 01.cam2.h0., (level: 929.649) -> maximum PPP is __0.946__; averaged PPP is 0.239; maximum PPP of SPG is 0.253; maximum PPP of Eurasia is 0.129; maximum PPP of Nino 3 is __0.938__; maximum PPP of Atlantic Nino 3 is __0.741__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_929.649.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 970.555) -> maximum PPP is __0.947__; averaged PPP is 0.279; maximum PPP of SPG is 0.317; maximum PPP of Eurasia is 0.131; maximum PPP of Nino 3 is __0.942__; maximum PPP of Atlantic Nino 3 is __0.722__ 
+  * __T: Temperature__, 01.cam2.h0., (level: 970.555) -> maximum PPP is __0.947__; averaged PPP is 0.279; maximum PPP of SPG is 0.317; maximum PPP of Eurasia is 0.131; maximum PPP of Nino 3 is __0.942__; maximum PPP of Atlantic Nino 3 is __0.722__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_970.555.png)
  
 ------ 
  
-  * __T: Temperature__, 01.cam2.h0., (level: 992.556) -> maximum PPP is __0.947__; averaged PPP is 0.294; maximum PPP of SPG is 0.326; maximum PPP of Eurasia is 0.130; maximum PPP of Nino 3 is __0.937__; maximum PPP of Atlantic Nino 3 is __0.711__ 
+  * __T: Temperature__, 01.cam2.h0., (level: 992.556) -> maximum PPP is __0.947__; averaged PPP is 0.294; maximum PPP of SPG is 0.326; maximum PPP of Eurasia is 0.130; maximum PPP of Nino 3 is __0.937__; maximum PPP of Atlantic Nino 3 is __0.711__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.T_992.556.png)
  
 ------ 
  
-  * __TAUX: Zonal surface stress__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.883__; averaged PPP is 0.136; maximum PPP of SPG is 0.068; maximum PPP of Eurasia is 0.087; maximum PPP of Nino 3 is __0.809__; maximum PPP of Atlantic Nino 3 is 0.167 
+  * __TAUX: Zonal surface stress__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.883__; averaged PPP is 0.136; maximum PPP of SPG is 0.068; maximum PPP of Eurasia is 0.087; maximum PPP of Nino 3 is __0.809__; maximum PPP of Atlantic Nino 3 is 0.167 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TAUX.png)
  
 ------ 
  
-  * __TAUY: Meridional surface stress__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.851__; averaged PPP is 0.120; maximum PPP of SPG is 0.071; maximum PPP of Eurasia is 0.072; maximum PPP of Nino 3 is __0.841__; maximum PPP of Atlantic Nino 3 is 0.482 
+  * __TAUY: Meridional surface stress__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.851__; averaged PPP is 0.120; maximum PPP of SPG is 0.071; maximum PPP of Eurasia is 0.072; maximum PPP of Nino 3 is __0.841__; maximum PPP of Atlantic Nino 3 is 0.482 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TAUY.png)
  
 ------ 
  
-  * __TGCLDIWP: Total grid-box cloud ice water path__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.872__; averaged PPP is 0.129; maximum PPP of SPG is 0.080; maximum PPP of Eurasia is 0.124; maximum PPP of Nino 3 is __0.872__; maximum PPP of Atlantic Nino 3 is 0.255 
+  * __TGCLDIWP: Total grid-box cloud ice water path__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.872__; averaged PPP is 0.129; maximum PPP of SPG is 0.080; maximum PPP of Eurasia is 0.124; maximum PPP of Nino 3 is __0.872__; maximum PPP of Atlantic Nino 3 is 0.255 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TGCLDIWP.png)
  
 ------ 
  
-  * __TGCLDLWP: Total grid-box cloud liquid water path__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.809__; averaged PPP is 0.103; maximum PPP of SPG is 0.077; maximum PPP of Eurasia is 0.116; maximum PPP of Nino 3 is __0.809__; maximum PPP of Atlantic Nino 3 is 0.451 
+  * __TGCLDLWP: Total grid-box cloud liquid water path__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.809__; averaged PPP is 0.103; maximum PPP of SPG is 0.077; maximum PPP of Eurasia is 0.116; maximum PPP of Nino 3 is __0.809__; maximum PPP of Atlantic Nino 3 is 0.451 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TGCLDLWP.png)
  
 ------ 
  
-  * __TMQ: Total (vertically integrated) precipitatable water__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.885__; averaged PPP is 0.172; maximum PPP of SPG is 0.110; maximum PPP of Eurasia is 0.136; maximum PPP of Nino 3 is __0.885__; maximum PPP of Atlantic Nino 3 is 0.428 
+  * __TMQ: Total (vertically integrated) precipitatable water__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.885__; averaged PPP is 0.172; maximum PPP of SPG is 0.110; maximum PPP of Eurasia is 0.136; maximum PPP of Nino 3 is __0.885__; maximum PPP of Atlantic Nino 3 is 0.428 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TMQ.png)
  
 ------ 
  
-  * __TREFHT: Reference height temperature__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.951__; averaged PPP is 0.321; maximum PPP of SPG is 0.417; maximum PPP of Eurasia is 0.129; maximum PPP of Nino 3 is __0.944__; maximum PPP of Atlantic Nino 3 is __0.726__ 
+  * __TREFHT: Reference height temperature__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.951__; averaged PPP is 0.321; maximum PPP of SPG is 0.417; maximum PPP of Eurasia is 0.129; maximum PPP of Nino 3 is __0.944__; maximum PPP of Atlantic Nino 3 is __0.726__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TREFHT.png)
  
 ------ 
  
-  * __TREFMNAV: Average of TREFHT daily minimum__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.950__; averaged PPP is 0.319; maximum PPP of SPG is 0.348; maximum PPP of Eurasia is 0.131; maximum PPP of Nino 3 is __0.941__; maximum PPP of Atlantic Nino 3 is __0.734__ 
+  * __TREFMNAV: Average of TREFHT daily minimum__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.950__; averaged PPP is 0.319; maximum PPP of SPG is 0.348; maximum PPP of Eurasia is 0.131; maximum PPP of Nino 3 is __0.941__; maximum PPP of Atlantic Nino 3 is __0.734__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TREFMNAV.png)
  
 ------ 
  
-  * __TREFMXAV: Average of TREFHT daily maximum__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.952__; averaged PPP is 0.312; maximum PPP of SPG is 0.487; maximum PPP of Eurasia is 0.118; maximum PPP of Nino 3 is __0.947__; maximum PPP of Atlantic Nino 3 is __0.724__ 
+  * __TREFMXAV: Average of TREFHT daily maximum__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.952__; averaged PPP is 0.312; maximum PPP of SPG is 0.487; maximum PPP of Eurasia is 0.118; maximum PPP of Nino 3 is __0.947__; maximum PPP of Atlantic Nino 3 is __0.724__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TREFMXAV.png)
  
 ------ 
  
-  * __TROP_P: Tropopause Pressure__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.735__; averaged PPP is 0.217; maximum PPP of SPG is 0.084; maximum PPP of Eurasia is 0.140; maximum PPP of Nino 3 is 0.529; maximum PPP of Atlantic Nino 3 is 0.343 
+  * __TROP_P: Tropopause Pressure__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.735__; averaged PPP is 0.217; maximum PPP of SPG is 0.084; maximum PPP of Eurasia is 0.140; maximum PPP of Nino 3 is 0.529; maximum PPP of Atlantic Nino 3 is 0.343 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TROP_P.png)
  
 ------ 
  
-  * __TROP_T: Tropopause Temperature__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.732__; averaged PPP is 0.235; maximum PPP of SPG is 0.132; maximum PPP of Eurasia is 0.214; maximum PPP of Nino 3 is __0.612__; maximum PPP of Atlantic Nino 3 is 0.482 
+  * __TROP_T: Tropopause Temperature__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.732__; averaged PPP is 0.235; maximum PPP of SPG is 0.132; maximum PPP of Eurasia is 0.214; maximum PPP of Nino 3 is __0.612__; maximum PPP of Atlantic Nino 3 is 0.482 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TROP_T.png)
  
 ------ 
  
-  * __TROP_Z: Tropopause Height__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.746__; averaged PPP is 0.227; maximum PPP of SPG is 0.082; maximum PPP of Eurasia is 0.131; maximum PPP of Nino 3 is 0.598; maximum PPP of Atlantic Nino 3 is 0.347 
+  * __TROP_Z: Tropopause Height__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.746__; averaged PPP is 0.227; maximum PPP of SPG is 0.082; maximum PPP of Eurasia is 0.131; maximum PPP of Nino 3 is 0.598; maximum PPP of Atlantic Nino 3 is 0.347 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TROP_Z.png)
  
 ------ 
  
-  * __TSMN: Minimum surface temperature over output period__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.954__; averaged PPP is 0.373; maximum PPP of SPG is __0.920__; maximum PPP of Eurasia is 0.444; maximum PPP of Nino 3 is __0.954__; maximum PPP of Atlantic Nino 3 is __0.687__ 
+  * __TSMN: Minimum surface temperature over output period__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.954__; averaged PPP is 0.373; maximum PPP of SPG is __0.920__; maximum PPP of Eurasia is 0.444; maximum PPP of Nino 3 is __0.954__; maximum PPP of Atlantic Nino 3 is __0.687__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TSMN.png)
  
 ------ 
  
-  * __TSMX: Maximum surface temperature over output period__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.959__; averaged PPP is 0.330; maximum PPP of SPG is __0.930__; maximum PPP of Eurasia is 0.394; maximum PPP of Nino 3 is __0.959__; maximum PPP of Atlantic Nino 3 is __0.729__ 
+  * __TSMX: Maximum surface temperature over output period__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.959__; averaged PPP is 0.330; maximum PPP of SPG is __0.930__; maximum PPP of Eurasia is 0.394; maximum PPP of Nino 3 is __0.959__; maximum PPP of Atlantic Nino 3 is __0.729__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TSMX.png)
  
 ------ 
  
-  * __TS: Surface temperature (radiative)__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.962__; averaged PPP is 0.395; maximum PPP of SPG is __0.931__; maximum PPP of Eurasia is 0.435; maximum PPP of Nino 3 is __0.962__; maximum PPP of Atlantic Nino 3 is __0.748__ 
+  * __TS: Surface temperature (radiative)__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.962__; averaged PPP is 0.395; maximum PPP of SPG is __0.931__; maximum PPP of Eurasia is 0.435; maximum PPP of Nino 3 is __0.962__; maximum PPP of Atlantic Nino 3 is __0.748__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.TS.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 100.515) -> maximum PPP is __0.821__; averaged PPP is 0.238; maximum PPP of SPG is 0.066; maximum PPP of Eurasia is 0.209; maximum PPP of Nino 3 is __0.821__; maximum PPP of Atlantic Nino 3 is 0.199 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 100.515) -> maximum PPP is __0.821__; averaged PPP is 0.238; maximum PPP of SPG is 0.066; maximum PPP of Eurasia is 0.209; maximum PPP of Nino 3 is __0.821__; maximum PPP of Atlantic Nino 3 is 0.199 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_100.515.png)
  
 ------ 
  
-  * __U10: 10m wind speed__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.821__; averaged PPP is 0.126; maximum PPP of SPG is 0.083; maximum PPP of Eurasia is 0.133; maximum PPP of Nino 3 is __0.821__; maximum PPP of Atlantic Nino 3 is 0.361 
+  * __U10: 10m wind speed__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.821__; averaged PPP is 0.126; maximum PPP of SPG is 0.083; maximum PPP of Eurasia is 0.133; maximum PPP of Nino 3 is __0.821__; maximum PPP of Atlantic Nino 3 is 0.361 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U10.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 118.25) -> maximum PPP is __0.817__; averaged PPP is 0.223; maximum PPP of SPG is 0.062; maximum PPP of Eurasia is 0.227; maximum PPP of Nino 3 is __0.817__; maximum PPP of Atlantic Nino 3 is 0.219 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 118.25) -> maximum PPP is __0.817__; averaged PPP is 0.223; maximum PPP of SPG is 0.062; maximum PPP of Eurasia is 0.227; maximum PPP of Nino 3 is __0.817__; maximum PPP of Atlantic Nino 3 is 0.219 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_118.25.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 139.115) -> maximum PPP is __0.796__; averaged PPP is 0.210; maximum PPP of SPG is 0.057; maximum PPP of Eurasia is 0.233; maximum PPP of Nino 3 is __0.796__; maximum PPP of Atlantic Nino 3 is 0.359 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 139.115) -> maximum PPP is __0.796__; averaged PPP is 0.210; maximum PPP of SPG is 0.057; maximum PPP of Eurasia is 0.233; maximum PPP of Nino 3 is __0.796__; maximum PPP of Atlantic Nino 3 is 0.359 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_139.115.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is 0.594; averaged PPP is 0.210; maximum PPP of SPG is 0.072; maximum PPP of Eurasia is 0.056; maximum PPP of Nino 3 is 0.132; maximum PPP of Atlantic Nino 3 is 0.098 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is 0.594; averaged PPP is 0.210; maximum PPP of SPG is 0.072; maximum PPP of Eurasia is 0.056; maximum PPP of Nino 3 is 0.132; maximum PPP of Atlantic Nino 3 is 0.098 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_13.9672.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 163.662) -> maximum PPP is __0.751__; averaged PPP is 0.199; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.224; maximum PPP of Nino 3 is __0.751__; maximum PPP of Atlantic Nino 3 is 0.498 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 163.662) -> maximum PPP is __0.751__; averaged PPP is 0.199; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.224; maximum PPP of Nino 3 is __0.751__; maximum PPP of Atlantic Nino 3 is 0.498 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_163.662.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 192.54) -> maximum PPP is __0.709__; averaged PPP is 0.189; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.195; maximum PPP of Nino 3 is __0.695__; maximum PPP of Atlantic Nino 3 is 0.540 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 192.54) -> maximum PPP is __0.709__; averaged PPP is 0.189; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.195; maximum PPP of Nino 3 is __0.695__; maximum PPP of Atlantic Nino 3 is 0.540 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_192.54.png)
  
 ------ 
  
-  * __U200: Zonal wind at 200 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.707__; averaged PPP is 0.186; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.139; maximum PPP of Nino 3 is __0.690__; maximum PPP of Atlantic Nino 3 is 0.542 
+  * __U200: Zonal wind at 200 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.707__; averaged PPP is 0.186; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.139; maximum PPP of Nino 3 is __0.690__; maximum PPP of Atlantic Nino 3 is 0.542 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U200.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 226.513) -> maximum PPP is __0.704__; averaged PPP is 0.178; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.159; maximum PPP of Nino 3 is __0.654__; maximum PPP of Atlantic Nino 3 is 0.517 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 226.513) -> maximum PPP is __0.704__; averaged PPP is 0.178; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.159; maximum PPP of Nino 3 is __0.654__; maximum PPP of Atlantic Nino 3 is 0.517 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_226.513.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is __0.713__; averaged PPP is 0.254; maximum PPP of SPG is 0.084; maximum PPP of Eurasia is 0.070; maximum PPP of Nino 3 is 0.124; maximum PPP of Atlantic Nino 3 is 0.127 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is __0.713__; averaged PPP is 0.254; maximum PPP of SPG is 0.084; maximum PPP of Eurasia is 0.070; maximum PPP of Nino 3 is 0.124; maximum PPP of Atlantic Nino 3 is 0.127 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_23.9446.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 266.481) -> maximum PPP is __0.702__; averaged PPP is 0.166; maximum PPP of SPG is 0.055; maximum PPP of Eurasia is 0.120; maximum PPP of Nino 3 is __0.634__; maximum PPP of Atlantic Nino 3 is 0.450 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 266.481) -> maximum PPP is __0.702__; averaged PPP is 0.166; maximum PPP of SPG is 0.055; maximum PPP of Eurasia is 0.120; maximum PPP of Nino 3 is __0.634__; maximum PPP of Atlantic Nino 3 is 0.450 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_266.481.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 313.501) -> maximum PPP is __0.692__; averaged PPP is 0.153; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.093; maximum PPP of Nino 3 is __0.646__; maximum PPP of Atlantic Nino 3 is 0.359 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 313.501) -> maximum PPP is __0.692__; averaged PPP is 0.153; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.093; maximum PPP of Nino 3 is __0.646__; maximum PPP of Atlantic Nino 3 is 0.359 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_313.501.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 3.54464) -> maximum PPP is __0.670__; averaged PPP is 0.136; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.055; maximum PPP of Nino 3 is 0.117; maximum PPP of Atlantic Nino 3 is 0.101 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 3.54464) -> maximum PPP is __0.670__; averaged PPP is 0.136; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.055; maximum PPP of Nino 3 is 0.117; maximum PPP of Atlantic Nino 3 is 0.101 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_3.54464.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 368.818) -> maximum PPP is __0.666__; averaged PPP is 0.139; maximum PPP of SPG is 0.065; maximum PPP of Eurasia is 0.091; maximum PPP of Nino 3 is __0.633__; maximum PPP of Atlantic Nino 3 is 0.281 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 368.818) -> maximum PPP is __0.666__; averaged PPP is 0.139; maximum PPP of SPG is 0.065; maximum PPP of Eurasia is 0.091; maximum PPP of Nino 3 is __0.633__; maximum PPP of Atlantic Nino 3 is 0.281 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_368.818.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 37.2303) -> maximum PPP is __0.739__; averaged PPP is 0.271; maximum PPP of SPG is 0.094; maximum PPP of Eurasia is 0.080; maximum PPP of Nino 3 is 0.213; maximum PPP of Atlantic Nino 3 is 0.114 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 37.2303) -> maximum PPP is __0.739__; averaged PPP is 0.271; maximum PPP of SPG is 0.094; maximum PPP of Eurasia is 0.080; maximum PPP of Nino 3 is 0.213; maximum PPP of Atlantic Nino 3 is 0.114 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_37.2303.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 433.895) -> maximum PPP is __0.640__; averaged PPP is 0.129; maximum PPP of SPG is 0.069; maximum PPP of Eurasia is 0.088; maximum PPP of Nino 3 is 0.549; maximum PPP of Atlantic Nino 3 is 0.250 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 433.895) -> maximum PPP is __0.640__; averaged PPP is 0.129; maximum PPP of SPG is 0.069; maximum PPP of Eurasia is 0.088; maximum PPP of Nino 3 is 0.549; maximum PPP of Atlantic Nino 3 is 0.250 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_433.895.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 510.455) -> maximum PPP is __0.655__; averaged PPP is 0.124; maximum PPP of SPG is 0.072; maximum PPP of Eurasia is 0.085; maximum PPP of Nino 3 is 0.452; maximum PPP of Atlantic Nino 3 is 0.307 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 510.455) -> maximum PPP is __0.655__; averaged PPP is 0.124; maximum PPP of SPG is 0.072; maximum PPP of Eurasia is 0.085; maximum PPP of Nino 3 is 0.452; maximum PPP of Atlantic Nino 3 is 0.307 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_510.455.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 53.1146) -> maximum PPP is __0.732__; averaged PPP is 0.264; maximum PPP of SPG is 0.088; maximum PPP of Eurasia is 0.085; maximum PPP of Nino 3 is 0.104; maximum PPP of Atlantic Nino 3 is 0.202 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 53.1146) -> maximum PPP is __0.732__; averaged PPP is 0.264; maximum PPP of SPG is 0.088; maximum PPP of Eurasia is 0.085; maximum PPP of Nino 3 is 0.104; maximum PPP of Atlantic Nino 3 is 0.202 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_53.1146.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 600.524) -> maximum PPP is __0.666__; averaged PPP is 0.122; maximum PPP of SPG is 0.074; maximum PPP of Eurasia is 0.081; maximum PPP of Nino 3 is 0.291; maximum PPP of Atlantic Nino 3 is 0.318 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 600.524) -> maximum PPP is __0.666__; averaged PPP is 0.122; maximum PPP of SPG is 0.074; maximum PPP of Eurasia is 0.081; maximum PPP of Nino 3 is 0.291; maximum PPP of Atlantic Nino 3 is 0.318 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_600.524.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 696.796) -> maximum PPP is __0.659__; averaged PPP is 0.135; maximum PPP of SPG is 0.076; maximum PPP of Eurasia is 0.075; maximum PPP of Nino 3 is 0.446; maximum PPP of Atlantic Nino 3 is 0.230 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 696.796) -> maximum PPP is __0.659__; averaged PPP is 0.135; maximum PPP of SPG is 0.076; maximum PPP of Eurasia is 0.075; maximum PPP of Nino 3 is 0.446; maximum PPP of Atlantic Nino 3 is 0.230 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_696.796.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 70.0592) -> maximum PPP is __0.778__; averaged PPP is 0.260; maximum PPP of SPG is 0.076; maximum PPP of Eurasia is 0.132; maximum PPP of Nino 3 is __0.705__; maximum PPP of Atlantic Nino 3 is 0.366 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 70.0592) -> maximum PPP is __0.778__; averaged PPP is 0.260; maximum PPP of SPG is 0.076; maximum PPP of Eurasia is 0.132; maximum PPP of Nino 3 is __0.705__; maximum PPP of Atlantic Nino 3 is 0.366 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_70.0592.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 7.38881) -> maximum PPP is __0.659__; averaged PPP is 0.169; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.046; maximum PPP of Nino 3 is 0.139; maximum PPP of Atlantic Nino 3 is 0.087 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 7.38881) -> maximum PPP is __0.659__; averaged PPP is 0.169; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.046; maximum PPP of Nino 3 is 0.139; maximum PPP of Atlantic Nino 3 is 0.087 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_7.38881.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 787.702) -> maximum PPP is __0.697__; averaged PPP is 0.142; maximum PPP of SPG is 0.078; maximum PPP of Eurasia is 0.073; maximum PPP of Nino 3 is __0.689__; maximum PPP of Atlantic Nino 3 is 0.115 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 787.702) -> maximum PPP is __0.697__; averaged PPP is 0.142; maximum PPP of SPG is 0.078; maximum PPP of Eurasia is 0.073; maximum PPP of Nino 3 is __0.689__; maximum PPP of Atlantic Nino 3 is 0.115 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_787.702.png)
  
 ------ 
  
-  * __U850: Zonal wind at 850 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.771__; averaged PPP is 0.137; maximum PPP of SPG is 0.083; maximum PPP of Eurasia is 0.075; maximum PPP of Nino 3 is __0.771__; maximum PPP of Atlantic Nino 3 is 0.080 
+  * __U850: Zonal wind at 850 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.771__; averaged PPP is 0.137; maximum PPP of SPG is 0.083; maximum PPP of Eurasia is 0.075; maximum PPP of Nino 3 is __0.771__; maximum PPP of Atlantic Nino 3 is 0.080 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U850.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 85.4391) -> maximum PPP is __0.783__; averaged PPP is 0.248; maximum PPP of SPG is 0.070; maximum PPP of Eurasia is 0.184; maximum PPP of Nino 3 is __0.783__; maximum PPP of Atlantic Nino 3 is 0.231 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 85.4391) -> maximum PPP is __0.783__; averaged PPP is 0.248; maximum PPP of SPG is 0.070; maximum PPP of Eurasia is 0.184; maximum PPP of Nino 3 is __0.783__; maximum PPP of Atlantic Nino 3 is 0.231 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_85.4391.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 867.161) -> maximum PPP is __0.812__; averaged PPP is 0.134; maximum PPP of SPG is 0.083; maximum PPP of Eurasia is 0.070; maximum PPP of Nino 3 is __0.812__; maximum PPP of Atlantic Nino 3 is 0.067 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 867.161) -> maximum PPP is __0.812__; averaged PPP is 0.134; maximum PPP of SPG is 0.083; maximum PPP of Eurasia is 0.070; maximum PPP of Nino 3 is __0.812__; maximum PPP of Atlantic Nino 3 is 0.067 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_867.161.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 929.649) -> maximum PPP is __0.849__; averaged PPP is 0.132; maximum PPP of SPG is 0.085; maximum PPP of Eurasia is 0.068; maximum PPP of Nino 3 is __0.849__; maximum PPP of Atlantic Nino 3 is 0.090 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 929.649) -> maximum PPP is __0.849__; averaged PPP is 0.132; maximum PPP of SPG is 0.085; maximum PPP of Eurasia is 0.068; maximum PPP of Nino 3 is __0.849__; maximum PPP of Atlantic Nino 3 is 0.090 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_929.649.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 970.555) -> maximum PPP is __0.850__; averaged PPP is 0.133; maximum PPP of SPG is 0.076; maximum PPP of Eurasia is 0.076; maximum PPP of Nino 3 is __0.850__; maximum PPP of Atlantic Nino 3 is 0.091 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 970.555) -> maximum PPP is __0.850__; averaged PPP is 0.133; maximum PPP of SPG is 0.076; maximum PPP of Eurasia is 0.076; maximum PPP of Nino 3 is __0.850__; maximum PPP of Atlantic Nino 3 is 0.091 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_970.555.png)
  
 ------ 
  
-  * __U: Zonal wind__, 01.cam2.h0., (level: 992.556) -> maximum PPP is __0.850__; averaged PPP is 0.134; maximum PPP of SPG is 0.069; maximum PPP of Eurasia is 0.081; maximum PPP of Nino 3 is __0.850__; maximum PPP of Atlantic Nino 3 is 0.092 
+  * __U: Zonal wind__, 01.cam2.h0., (level: 992.556) -> maximum PPP is __0.850__; averaged PPP is 0.134; maximum PPP of SPG is 0.069; maximum PPP of Eurasia is 0.081; maximum PPP of Nino 3 is __0.850__; maximum PPP of Atlantic Nino 3 is 0.092 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.U_992.556.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 100.515) -> maximum PPP is __0.819__; averaged PPP is 0.237; maximum PPP of SPG is 0.059; maximum PPP of Eurasia is 0.188; maximum PPP of Nino 3 is __0.819__; maximum PPP of Atlantic Nino 3 is 0.184 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 100.515) -> maximum PPP is __0.819__; averaged PPP is 0.237; maximum PPP of SPG is 0.059; maximum PPP of Eurasia is 0.188; maximum PPP of Nino 3 is __0.819__; maximum PPP of Atlantic Nino 3 is 0.184 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_100.515.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 118.25) -> maximum PPP is __0.813__; averaged PPP is 0.222; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.203; maximum PPP of Nino 3 is __0.813__; maximum PPP of Atlantic Nino 3 is 0.208 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 118.25) -> maximum PPP is __0.813__; averaged PPP is 0.222; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.203; maximum PPP of Nino 3 is __0.813__; maximum PPP of Atlantic Nino 3 is 0.208 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_118.25.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 139.115) -> maximum PPP is __0.797__; averaged PPP is 0.209; maximum PPP of SPG is 0.056; maximum PPP of Eurasia is 0.204; maximum PPP of Nino 3 is __0.797__; maximum PPP of Atlantic Nino 3 is 0.341 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 139.115) -> maximum PPP is __0.797__; averaged PPP is 0.209; maximum PPP of SPG is 0.056; maximum PPP of Eurasia is 0.204; maximum PPP of Nino 3 is __0.797__; maximum PPP of Atlantic Nino 3 is 0.341 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_139.115.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is 0.594; averaged PPP is 0.210; maximum PPP of SPG is 0.072; maximum PPP of Eurasia is 0.056; maximum PPP of Nino 3 is 0.130; maximum PPP of Atlantic Nino 3 is 0.094 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is 0.594; averaged PPP is 0.210; maximum PPP of SPG is 0.072; maximum PPP of Eurasia is 0.056; maximum PPP of Nino 3 is 0.130; maximum PPP of Atlantic Nino 3 is 0.094 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_13.9672.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 163.662) -> maximum PPP is __0.755__; averaged PPP is 0.198; maximum PPP of SPG is 0.056; maximum PPP of Eurasia is 0.193; maximum PPP of Nino 3 is __0.755__; maximum PPP of Atlantic Nino 3 is 0.480 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 163.662) -> maximum PPP is __0.755__; averaged PPP is 0.198; maximum PPP of SPG is 0.056; maximum PPP of Eurasia is 0.193; maximum PPP of Nino 3 is __0.755__; maximum PPP of Atlantic Nino 3 is 0.480 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_163.662.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 192.54) -> maximum PPP is __0.712__; averaged PPP is 0.188; maximum PPP of SPG is 0.055; maximum PPP of Eurasia is 0.164; maximum PPP of Nino 3 is __0.697__; maximum PPP of Atlantic Nino 3 is 0.531 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 192.54) -> maximum PPP is __0.712__; averaged PPP is 0.188; maximum PPP of SPG is 0.055; maximum PPP of Eurasia is 0.164; maximum PPP of Nino 3 is __0.697__; maximum PPP of Atlantic Nino 3 is 0.531 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_192.54.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 226.513) -> maximum PPP is __0.704__; averaged PPP is 0.177; maximum PPP of SPG is 0.055; maximum PPP of Eurasia is 0.128; maximum PPP of Nino 3 is __0.654__; maximum PPP of Atlantic Nino 3 is 0.515 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 226.513) -> maximum PPP is __0.704__; averaged PPP is 0.177; maximum PPP of SPG is 0.055; maximum PPP of Eurasia is 0.128; maximum PPP of Nino 3 is __0.654__; maximum PPP of Atlantic Nino 3 is 0.515 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_226.513.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is __0.713__; averaged PPP is 0.253; maximum PPP of SPG is 0.084; maximum PPP of Eurasia is 0.070; maximum PPP of Nino 3 is 0.111; maximum PPP of Atlantic Nino 3 is 0.117 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is __0.713__; averaged PPP is 0.253; maximum PPP of SPG is 0.084; maximum PPP of Eurasia is 0.070; maximum PPP of Nino 3 is 0.111; maximum PPP of Atlantic Nino 3 is 0.117 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_23.9446.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 266.481) -> maximum PPP is __0.700__; averaged PPP is 0.165; maximum PPP of SPG is 0.055; maximum PPP of Eurasia is 0.095; maximum PPP of Nino 3 is __0.639__; maximum PPP of Atlantic Nino 3 is 0.451 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 266.481) -> maximum PPP is __0.700__; averaged PPP is 0.165; maximum PPP of SPG is 0.055; maximum PPP of Eurasia is 0.095; maximum PPP of Nino 3 is __0.639__; maximum PPP of Atlantic Nino 3 is 0.451 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_266.481.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 313.501) -> maximum PPP is __0.690__; averaged PPP is 0.152; maximum PPP of SPG is 0.060; maximum PPP of Eurasia is 0.093; maximum PPP of Nino 3 is __0.640__; maximum PPP of Atlantic Nino 3 is 0.357 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 313.501) -> maximum PPP is __0.690__; averaged PPP is 0.152; maximum PPP of SPG is 0.060; maximum PPP of Eurasia is 0.093; maximum PPP of Nino 3 is __0.640__; maximum PPP of Atlantic Nino 3 is 0.357 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_313.501.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 3.54464) -> maximum PPP is __0.668__; averaged PPP is 0.136; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.054; maximum PPP of Nino 3 is 0.117; maximum PPP of Atlantic Nino 3 is 0.100 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 3.54464) -> maximum PPP is __0.668__; averaged PPP is 0.136; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.054; maximum PPP of Nino 3 is 0.117; maximum PPP of Atlantic Nino 3 is 0.100 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_3.54464.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 368.818) -> maximum PPP is __0.664__; averaged PPP is 0.139; maximum PPP of SPG is 0.063; maximum PPP of Eurasia is 0.090; maximum PPP of Nino 3 is __0.634__; maximum PPP of Atlantic Nino 3 is 0.280 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 368.818) -> maximum PPP is __0.664__; averaged PPP is 0.139; maximum PPP of SPG is 0.063; maximum PPP of Eurasia is 0.090; maximum PPP of Nino 3 is __0.634__; maximum PPP of Atlantic Nino 3 is 0.280 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_368.818.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 37.2303) -> maximum PPP is __0.741__; averaged PPP is 0.270; maximum PPP of SPG is 0.092; maximum PPP of Eurasia is 0.080; maximum PPP of Nino 3 is 0.213; maximum PPP of Atlantic Nino 3 is 0.112 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 37.2303) -> maximum PPP is __0.741__; averaged PPP is 0.270; maximum PPP of SPG is 0.092; maximum PPP of Eurasia is 0.080; maximum PPP of Nino 3 is 0.213; maximum PPP of Atlantic Nino 3 is 0.112 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_37.2303.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 433.895) -> maximum PPP is __0.638__; averaged PPP is 0.128; maximum PPP of SPG is 0.065; maximum PPP of Eurasia is 0.087; maximum PPP of Nino 3 is 0.543; maximum PPP of Atlantic Nino 3 is 0.249 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 433.895) -> maximum PPP is __0.638__; averaged PPP is 0.128; maximum PPP of SPG is 0.065; maximum PPP of Eurasia is 0.087; maximum PPP of Nino 3 is 0.543; maximum PPP of Atlantic Nino 3 is 0.249 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_433.895.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 510.455) -> maximum PPP is __0.657__; averaged PPP is 0.123; maximum PPP of SPG is 0.067; maximum PPP of Eurasia is 0.084; maximum PPP of Nino 3 is 0.443; maximum PPP of Atlantic Nino 3 is 0.305 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 510.455) -> maximum PPP is __0.657__; averaged PPP is 0.123; maximum PPP of SPG is 0.067; maximum PPP of Eurasia is 0.084; maximum PPP of Nino 3 is 0.443; maximum PPP of Atlantic Nino 3 is 0.305 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_510.455.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 53.1146) -> maximum PPP is __0.734__; averaged PPP is 0.263; maximum PPP of SPG is 0.085; maximum PPP of Eurasia is 0.085; maximum PPP of Nino 3 is 0.104; maximum PPP of Atlantic Nino 3 is 0.165 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 53.1146) -> maximum PPP is __0.734__; averaged PPP is 0.263; maximum PPP of SPG is 0.085; maximum PPP of Eurasia is 0.085; maximum PPP of Nino 3 is 0.104; maximum PPP of Atlantic Nino 3 is 0.165 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_53.1146.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 600.524) -> maximum PPP is __0.662__; averaged PPP is 0.121; maximum PPP of SPG is 0.069; maximum PPP of Eurasia is 0.081; maximum PPP of Nino 3 is 0.292; maximum PPP of Atlantic Nino 3 is 0.322 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 600.524) -> maximum PPP is __0.662__; averaged PPP is 0.121; maximum PPP of SPG is 0.069; maximum PPP of Eurasia is 0.081; maximum PPP of Nino 3 is 0.292; maximum PPP of Atlantic Nino 3 is 0.322 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_600.524.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 696.796) -> maximum PPP is __0.655__; averaged PPP is 0.134; maximum PPP of SPG is 0.071; maximum PPP of Eurasia is 0.076; maximum PPP of Nino 3 is 0.412; maximum PPP of Atlantic Nino 3 is 0.210 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 696.796) -> maximum PPP is __0.655__; averaged PPP is 0.134; maximum PPP of SPG is 0.071; maximum PPP of Eurasia is 0.076; maximum PPP of Nino 3 is 0.412; maximum PPP of Atlantic Nino 3 is 0.210 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_696.796.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 70.0592) -> maximum PPP is __0.777__; averaged PPP is 0.259; maximum PPP of SPG is 0.072; maximum PPP of Eurasia is 0.120; maximum PPP of Nino 3 is __0.705__; maximum PPP of Atlantic Nino 3 is 0.355 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 70.0592) -> maximum PPP is __0.777__; averaged PPP is 0.259; maximum PPP of SPG is 0.072; maximum PPP of Eurasia is 0.120; maximum PPP of Nino 3 is __0.705__; maximum PPP of Atlantic Nino 3 is 0.355 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_70.0592.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 7.38881) -> maximum PPP is __0.663__; averaged PPP is 0.169; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.045; maximum PPP of Nino 3 is 0.136; maximum PPP of Atlantic Nino 3 is 0.084 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 7.38881) -> maximum PPP is __0.663__; averaged PPP is 0.169; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.045; maximum PPP of Nino 3 is 0.136; maximum PPP of Atlantic Nino 3 is 0.084 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_7.38881.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 787.702) -> maximum PPP is __0.700__; averaged PPP is 0.140; maximum PPP of SPG is 0.074; maximum PPP of Eurasia is 0.072; maximum PPP of Nino 3 is __0.688__; maximum PPP of Atlantic Nino 3 is 0.096 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 787.702) -> maximum PPP is __0.700__; averaged PPP is 0.140; maximum PPP of SPG is 0.074; maximum PPP of Eurasia is 0.072; maximum PPP of Nino 3 is __0.688__; maximum PPP of Atlantic Nino 3 is 0.096 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_787.702.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 85.4391) -> maximum PPP is __0.782__; averaged PPP is 0.247; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.166; maximum PPP of Nino 3 is __0.782__; maximum PPP of Atlantic Nino 3 is 0.215 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 85.4391) -> maximum PPP is __0.782__; averaged PPP is 0.247; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.166; maximum PPP of Nino 3 is __0.782__; maximum PPP of Atlantic Nino 3 is 0.215 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_85.4391.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 867.161) -> maximum PPP is __0.811__; averaged PPP is 0.133; maximum PPP of SPG is 0.080; maximum PPP of Eurasia is 0.069; maximum PPP of Nino 3 is __0.811__; maximum PPP of Atlantic Nino 3 is 0.053 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 867.161) -> maximum PPP is __0.811__; averaged PPP is 0.133; maximum PPP of SPG is 0.080; maximum PPP of Eurasia is 0.069; maximum PPP of Nino 3 is __0.811__; maximum PPP of Atlantic Nino 3 is 0.053 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_867.161.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 929.649) -> maximum PPP is __0.850__; averaged PPP is 0.131; maximum PPP of SPG is 0.086; maximum PPP of Eurasia is 0.069; maximum PPP of Nino 3 is __0.850__; maximum PPP of Atlantic Nino 3 is 0.088 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 929.649) -> maximum PPP is __0.850__; averaged PPP is 0.131; maximum PPP of SPG is 0.086; maximum PPP of Eurasia is 0.069; maximum PPP of Nino 3 is __0.850__; maximum PPP of Atlantic Nino 3 is 0.088 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_929.649.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 970.555) -> maximum PPP is __0.842__; averaged PPP is 0.132; maximum PPP of SPG is 0.078; maximum PPP of Eurasia is 0.079; maximum PPP of Nino 3 is __0.842__; maximum PPP of Atlantic Nino 3 is 0.093 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 970.555) -> maximum PPP is __0.842__; averaged PPP is 0.132; maximum PPP of SPG is 0.078; maximum PPP of Eurasia is 0.079; maximum PPP of Nino 3 is __0.842__; maximum PPP of Atlantic Nino 3 is 0.093 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_970.555.png)
  
 ------ 
  
-  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 992.556) -> maximum PPP is __0.838__; averaged PPP is 0.133; maximum PPP of SPG is 0.073; maximum PPP of Eurasia is 0.082; maximum PPP of Nino 3 is __0.838__; maximum PPP of Atlantic Nino 3 is 0.096 
+  * __US: Zonal wind, staggered__, 01.cam2.h0., (level: 992.556) -> maximum PPP is __0.838__; averaged PPP is 0.133; maximum PPP of SPG is 0.073; maximum PPP of Eurasia is 0.082; maximum PPP of Nino 3 is __0.838__; maximum PPP of Atlantic Nino 3 is 0.096 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.US_992.556.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 100.515) -> maximum PPP is 0.517; averaged PPP is 0.110; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.067; maximum PPP of Nino 3 is 0.173; maximum PPP of Atlantic Nino 3 is 0.186 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 100.515) -> maximum PPP is 0.517; averaged PPP is 0.110; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.067; maximum PPP of Nino 3 is 0.173; maximum PPP of Atlantic Nino 3 is 0.186 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_100.515.png PPP_PPP-01.cam2.h0.V_100.515.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 118.25) -> maximum PPP is 0.515; averaged PPP is 0.114; maximum PPP of SPG is 0.062; maximum PPP of Eurasia is 0.068; maximum PPP of Nino 3 is 0.153; maximum PPP of Atlantic Nino 3 is 0.194 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 118.25) -> maximum PPP is 0.515; averaged PPP is 0.114; maximum PPP of SPG is 0.062; maximum PPP of Eurasia is 0.068; maximum PPP of Nino 3 is 0.153; maximum PPP of Atlantic Nino 3 is 0.194 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_118.25.png PPP_PPP-01.cam2.h0.V_118.25.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 139.115) -> maximum PPP is 0.548; averaged PPP is 0.119; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.071; maximum PPP of Nino 3 is 0.380; maximum PPP of Atlantic Nino 3 is 0.161 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 139.115) -> maximum PPP is 0.548; averaged PPP is 0.119; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.071; maximum PPP of Nino 3 is 0.380; maximum PPP of Atlantic Nino 3 is 0.161 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_139.115.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is __0.660__; averaged PPP is 0.117; maximum PPP of SPG is 0.060; maximum PPP of Eurasia is 0.041; maximum PPP of Nino 3 is 0.073; maximum PPP of Atlantic Nino 3 is 0.098 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is __0.660__; averaged PPP is 0.117; maximum PPP of SPG is 0.060; maximum PPP of Eurasia is 0.041; maximum PPP of Nino 3 is 0.073; maximum PPP of Atlantic Nino 3 is 0.098 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_13.9672.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 163.662) -> maximum PPP is 0.557; averaged PPP is 0.118; maximum PPP of SPG is 0.065; maximum PPP of Eurasia is 0.076; maximum PPP of Nino 3 is 0.496; maximum PPP of Atlantic Nino 3 is 0.174 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 163.662) -> maximum PPP is 0.557; averaged PPP is 0.118; maximum PPP of SPG is 0.065; maximum PPP of Eurasia is 0.076; maximum PPP of Nino 3 is 0.496; maximum PPP of Atlantic Nino 3 is 0.174 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_163.662.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 192.54) -> maximum PPP is 0.572; averaged PPP is 0.111; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.082; maximum PPP of Nino 3 is 0.471; maximum PPP of Atlantic Nino 3 is 0.157 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 192.54) -> maximum PPP is 0.572; averaged PPP is 0.111; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.082; maximum PPP of Nino 3 is 0.471; maximum PPP of Atlantic Nino 3 is 0.157 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_192.54.png)
  
 ------ 
  
-  * __V200: Meridional wind at 200 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is 0.577; averaged PPP is 0.110; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.083; maximum PPP of Nino 3 is 0.458; maximum PPP of Atlantic Nino 3 is 0.156 
+  * __V200: Meridional wind at 200 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is 0.577; averaged PPP is 0.110; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.083; maximum PPP of Nino 3 is 0.458; maximum PPP of Atlantic Nino 3 is 0.156 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.V200.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 226.513) -> maximum PPP is 0.591; averaged PPP is 0.103; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.085; maximum PPP of Nino 3 is 0.375; maximum PPP of Atlantic Nino 3 is 0.140 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 226.513) -> maximum PPP is 0.591; averaged PPP is 0.103; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.085; maximum PPP of Nino 3 is 0.375; maximum PPP of Atlantic Nino 3 is 0.140 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_226.513.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is 0.564; averaged PPP is 0.092; maximum PPP of SPG is 0.057; maximum PPP of Eurasia is 0.042; maximum PPP of Nino 3 is 0.102; maximum PPP of Atlantic Nino 3 is 0.049 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is 0.564; averaged PPP is 0.092; maximum PPP of SPG is 0.057; maximum PPP of Eurasia is 0.042; maximum PPP of Nino 3 is 0.102; maximum PPP of Atlantic Nino 3 is 0.049 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_23.9446.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 266.481) -> maximum PPP is 0.579; averaged PPP is 0.093; maximum PPP of SPG is 0.063; maximum PPP of Eurasia is 0.089; maximum PPP of Nino 3 is 0.240; maximum PPP of Atlantic Nino 3 is 0.136 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 266.481) -> maximum PPP is 0.579; averaged PPP is 0.093; maximum PPP of SPG is 0.063; maximum PPP of Eurasia is 0.089; maximum PPP of Nino 3 is 0.240; maximum PPP of Atlantic Nino 3 is 0.136 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_266.481.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 313.501) -> maximum PPP is 0.484; averaged PPP is 0.081; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.090; maximum PPP of Nino 3 is 0.259; maximum PPP of Atlantic Nino 3 is 0.101 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 313.501) -> maximum PPP is 0.484; averaged PPP is 0.081; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.090; maximum PPP of Nino 3 is 0.259; maximum PPP of Atlantic Nino 3 is 0.101 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_313.501.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 3.54464) -> maximum PPP is __0.793__; averaged PPP is 0.134; maximum PPP of SPG is 0.058; maximum PPP of Eurasia is 0.056; maximum PPP of Nino 3 is 0.032; maximum PPP of Atlantic Nino 3 is 0.026 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 3.54464) -> maximum PPP is __0.793__; averaged PPP is 0.134; maximum PPP of SPG is 0.058; maximum PPP of Eurasia is 0.056; maximum PPP of Nino 3 is 0.032; maximum PPP of Atlantic Nino 3 is 0.026 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_3.54464.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 368.818) -> maximum PPP is 0.496; averaged PPP is 0.076; maximum PPP of SPG is 0.060; maximum PPP of Eurasia is 0.087; maximum PPP of Nino 3 is 0.232; maximum PPP of Atlantic Nino 3 is 0.163 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 368.818) -> maximum PPP is 0.496; averaged PPP is 0.076; maximum PPP of SPG is 0.060; maximum PPP of Eurasia is 0.087; maximum PPP of Nino 3 is 0.232; maximum PPP of Atlantic Nino 3 is 0.163 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_368.818.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 37.2303) -> maximum PPP is 0.489; averaged PPP is 0.085; maximum PPP of SPG is 0.053; maximum PPP of Eurasia is 0.063; maximum PPP of Nino 3 is 0.145; maximum PPP of Atlantic Nino 3 is 0.107 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 37.2303) -> maximum PPP is 0.489; averaged PPP is 0.085; maximum PPP of SPG is 0.053; maximum PPP of Eurasia is 0.063; maximum PPP of Nino 3 is 0.145; maximum PPP of Atlantic Nino 3 is 0.107 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_37.2303.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 433.895) -> maximum PPP is 0.519; averaged PPP is 0.079; maximum PPP of SPG is 0.058; maximum PPP of Eurasia is 0.082; maximum PPP of Nino 3 is 0.255; maximum PPP of Atlantic Nino 3 is 0.175 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 433.895) -> maximum PPP is 0.519; averaged PPP is 0.079; maximum PPP of SPG is 0.058; maximum PPP of Eurasia is 0.082; maximum PPP of Nino 3 is 0.255; maximum PPP of Atlantic Nino 3 is 0.175 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_433.895.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 510.455) -> maximum PPP is 0.529; averaged PPP is 0.080; maximum PPP of SPG is 0.057; maximum PPP of Eurasia is 0.078; maximum PPP of Nino 3 is 0.241; maximum PPP of Atlantic Nino 3 is 0.138 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 510.455) -> maximum PPP is 0.529; averaged PPP is 0.080; maximum PPP of SPG is 0.057; maximum PPP of Eurasia is 0.078; maximum PPP of Nino 3 is 0.241; maximum PPP of Atlantic Nino 3 is 0.138 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_510.455.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 53.1146) -> maximum PPP is 0.429; averaged PPP is 0.093; maximum PPP of SPG is 0.049; maximum PPP of Eurasia is 0.079; maximum PPP of Nino 3 is 0.190; maximum PPP of Atlantic Nino 3 is 0.096 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 53.1146) -> maximum PPP is 0.429; averaged PPP is 0.093; maximum PPP of SPG is 0.049; maximum PPP of Eurasia is 0.079; maximum PPP of Nino 3 is 0.190; maximum PPP of Atlantic Nino 3 is 0.096 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_53.1146.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 600.524) -> maximum PPP is 0.519; averaged PPP is 0.085; maximum PPP of SPG is 0.059; maximum PPP of Eurasia is 0.072; maximum PPP of Nino 3 is 0.298; maximum PPP of Atlantic Nino 3 is 0.198 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 600.524) -> maximum PPP is 0.519; averaged PPP is 0.085; maximum PPP of SPG is 0.059; maximum PPP of Eurasia is 0.072; maximum PPP of Nino 3 is 0.298; maximum PPP of Atlantic Nino 3 is 0.198 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_600.524.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 696.796) -> maximum PPP is __0.603__; averaged PPP is 0.095; maximum PPP of SPG is 0.059; maximum PPP of Eurasia is 0.070; maximum PPP of Nino 3 is 0.482; maximum PPP of Atlantic Nino 3 is 0.169 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 696.796) -> maximum PPP is __0.603__; averaged PPP is 0.095; maximum PPP of SPG is 0.059; maximum PPP of Eurasia is 0.070; maximum PPP of Nino 3 is 0.482; maximum PPP of Atlantic Nino 3 is 0.169 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_696.796.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 70.0592) -> maximum PPP is 0.519; averaged PPP is 0.104; maximum PPP of SPG is 0.055; maximum PPP of Eurasia is 0.072; maximum PPP of Nino 3 is 0.187; maximum PPP of Atlantic Nino 3 is 0.112 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 70.0592) -> maximum PPP is 0.519; averaged PPP is 0.104; maximum PPP of SPG is 0.055; maximum PPP of Eurasia is 0.072; maximum PPP of Nino 3 is 0.187; maximum PPP of Atlantic Nino 3 is 0.112 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_70.0592.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 7.38881) -> maximum PPP is __0.795__; averaged PPP is 0.145; maximum PPP of SPG is 0.060; maximum PPP of Eurasia is 0.049; maximum PPP of Nino 3 is 0.074; maximum PPP of Atlantic Nino 3 is 0.080 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 7.38881) -> maximum PPP is __0.795__; averaged PPP is 0.145; maximum PPP of SPG is 0.060; maximum PPP of Eurasia is 0.049; maximum PPP of Nino 3 is 0.074; maximum PPP of Atlantic Nino 3 is 0.080 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_7.38881.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 787.702) -> maximum PPP is __0.664__; averaged PPP is 0.102; maximum PPP of SPG is 0.057; maximum PPP of Eurasia is 0.070; maximum PPP of Nino 3 is __0.632__; maximum PPP of Atlantic Nino 3 is 0.169 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 787.702) -> maximum PPP is __0.664__; averaged PPP is 0.102; maximum PPP of SPG is 0.057; maximum PPP of Eurasia is 0.070; maximum PPP of Nino 3 is __0.632__; maximum PPP of Atlantic Nino 3 is 0.169 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_787.702.png)
  
 ------ 
  
-  * __V850: Meridional wind at 850 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.803__; averaged PPP is 0.108; maximum PPP of SPG is 0.068; maximum PPP of Eurasia is 0.089; maximum PPP of Nino 3 is __0.751__; maximum PPP of Atlantic Nino 3 is 0.285 
+  * __V850: Meridional wind at 850 mbar pressure surface__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.803__; averaged PPP is 0.108; maximum PPP of SPG is 0.068; maximum PPP of Eurasia is 0.089; maximum PPP of Nino 3 is __0.751__; maximum PPP of Atlantic Nino 3 is 0.285 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.V850.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 85.4391) -> maximum PPP is 0.508; averaged PPP is 0.107; maximum PPP of SPG is 0.059; maximum PPP of Eurasia is 0.069; maximum PPP of Nino 3 is 0.141; maximum PPP of Atlantic Nino 3 is 0.109 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 85.4391) -> maximum PPP is 0.508; averaged PPP is 0.107; maximum PPP of SPG is 0.059; maximum PPP of Eurasia is 0.069; maximum PPP of Nino 3 is 0.141; maximum PPP of Atlantic Nino 3 is 0.109 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_85.4391.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 867.161) -> maximum PPP is __0.754__; averaged PPP is 0.110; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.071; maximum PPP of Nino 3 is __0.751__; maximum PPP of Atlantic Nino 3 is 0.349 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 867.161) -> maximum PPP is __0.754__; averaged PPP is 0.110; maximum PPP of SPG is 0.054; maximum PPP of Eurasia is 0.071; maximum PPP of Nino 3 is __0.751__; maximum PPP of Atlantic Nino 3 is 0.349 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_867.161.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 929.649) -> maximum PPP is __0.818__; averaged PPP is 0.113; maximum PPP of SPG is 0.067; maximum PPP of Eurasia is 0.072; maximum PPP of Nino 3 is __0.818__; maximum PPP of Atlantic Nino 3 is 0.242 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 929.649) -> maximum PPP is __0.818__; averaged PPP is 0.113; maximum PPP of SPG is 0.067; maximum PPP of Eurasia is 0.072; maximum PPP of Nino 3 is __0.818__; maximum PPP of Atlantic Nino 3 is 0.242 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_929.649.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 970.555) -> maximum PPP is __0.859__; averaged PPP is 0.121; maximum PPP of SPG is 0.080; maximum PPP of Eurasia is 0.075; maximum PPP of Nino 3 is __0.839__; maximum PPP of Atlantic Nino 3 is 0.298 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 970.555) -> maximum PPP is __0.859__; averaged PPP is 0.121; maximum PPP of SPG is 0.080; maximum PPP of Eurasia is 0.075; maximum PPP of Nino 3 is __0.839__; maximum PPP of Atlantic Nino 3 is 0.298 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_970.555.png)
  
 ------ 
  
-  * __V: Meridional wind__, 01.cam2.h0., (level: 992.556) -> maximum PPP is __0.861__; averaged PPP is 0.123; maximum PPP of SPG is 0.084; maximum PPP of Eurasia is 0.089; maximum PPP of Nino 3 is __0.841__; maximum PPP of Atlantic Nino 3 is 0.320 
+  * __V: Meridional wind__, 01.cam2.h0., (level: 992.556) -> maximum PPP is __0.861__; averaged PPP is 0.123; maximum PPP of SPG is 0.084; maximum PPP of Eurasia is 0.089; maximum PPP of Nino 3 is __0.841__; maximum PPP of Atlantic Nino 3 is 0.320 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_992.556.png)
  
 ------ 
  
-  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 100.515) -> maximum PPP is 0.516; averaged PPP is 0.110; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.067; maximum PPP of Nino 3 is 0.155; maximum PPP of Atlantic Nino 3 is 0.174 
+  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 100.515) -> maximum PPP is 0.516; averaged PPP is 0.110; maximum PPP of SPG is 0.061; maximum PPP of Eurasia is 0.067; maximum PPP of Nino 3 is 0.155; maximum PPP of Atlantic Nino 3 is 0.174 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.VS_100.515.png)
  
 ------ 
  
-  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 118.25) -> maximum PPP is 0.510; averaged PPP is 0.113; maximum PPP of SPG is 0.062; maximum PPP of Eurasia is 0.068; maximum PPP of Nino 3 is 0.148; maximum PPP of Atlantic Nino 3 is 0.172 
+  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 118.25) -> maximum PPP is 0.510; averaged PPP is 0.113; maximum PPP of SPG is 0.062; maximum PPP of Eurasia is 0.068; maximum PPP of Nino 3 is 0.148; maximum PPP of Atlantic Nino 3 is 0.172 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.VS_118.25.png)
  
 ------ 
  
-  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 139.115) -> maximum PPP is 0.544; averaged PPP is 0.119; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.072; maximum PPP of Nino 3 is 0.379; maximum PPP of Atlantic Nino 3 is 0.139 
+  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 139.115) -> maximum PPP is 0.544; averaged PPP is 0.119; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.072; maximum PPP of Nino 3 is 0.379; maximum PPP of Atlantic Nino 3 is 0.139 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.VS_139.115.png)
  
 ------ 
  
-  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is __0.660__; averaged PPP is 0.117; maximum PPP of SPG is 0.059; maximum PPP of Eurasia is 0.041; maximum PPP of Nino 3 is 0.073; maximum PPP of Atlantic Nino 3 is 0.095 
+  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 13.9672) -> maximum PPP is __0.660__; averaged PPP is 0.117; maximum PPP of SPG is 0.059; maximum PPP of Eurasia is 0.041; maximum PPP of Nino 3 is 0.073; maximum PPP of Atlantic Nino 3 is 0.095 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.VS_13.9672.png)
  
 ------ 
  
-  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 163.662) -> maximum PPP is 0.553; averaged PPP is 0.117; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.076; maximum PPP of Nino 3 is 0.493; maximum PPP of Atlantic Nino 3 is 0.172 
+  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 163.662) -> maximum PPP is 0.553; averaged PPP is 0.117; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.076; maximum PPP of Nino 3 is 0.493; maximum PPP of Atlantic Nino 3 is 0.172 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.VS_163.662.png)
  
 ------ 
  
-  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 192.54) -> maximum PPP is 0.570; averaged PPP is 0.110; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.082; maximum PPP of Nino 3 is 0.468; maximum PPP of Atlantic Nino 3 is 0.155 
+  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 192.54) -> maximum PPP is 0.570; averaged PPP is 0.110; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.082; maximum PPP of Nino 3 is 0.468; maximum PPP of Atlantic Nino 3 is 0.155 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.VS_192.54.png)
  
 ------ 
  
-  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 226.513) -> maximum PPP is 0.586; averaged PPP is 0.102; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.085; maximum PPP of Nino 3 is 0.371; maximum PPP of Atlantic Nino 3 is 0.140 
+  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 226.513) -> maximum PPP is 0.586; averaged PPP is 0.102; maximum PPP of SPG is 0.064; maximum PPP of Eurasia is 0.085; maximum PPP of Nino 3 is 0.371; maximum PPP of Atlantic Nino 3 is 0.140 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.VS_226.513.png)
  
 ------ 
  
-  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is 0.564; averaged PPP is 0.092; maximum PPP of SPG is 0.056; maximum PPP of Eurasia is 0.041; maximum PPP of Nino 3 is 0.102; maximum PPP of Atlantic Nino 3 is 0.049 
+  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 23.9446) -> maximum PPP is 0.564; averaged PPP is 0.092; maximum PPP of SPG is 0.056; maximum PPP of Eurasia is 0.041; maximum PPP of Nino 3 is 0.102; maximum PPP of Atlantic Nino 3 is 0.049 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.VS_23.9446.png)
  
 ------ 
  
-  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 266.481) -> maximum PPP is 0.570; averaged PPP is 0.092; maximum PPP of SPG is 0.062; maximum PPP of Eurasia is 0.088; maximum PPP of Nino 3 is 0.240; maximum PPP of Atlantic Nino 3 is 0.134 
+  * __VS: Meridional wind, staggered__, 01.cam2.h0., (level: 266.481) -> maximum PPP is 0.570; averaged PPP is 0.092; maximum PPP of SPG is 0.062; maximum PPP of Eurasia is 0.088; maximum PPP of Nino 3 is 0.240; maximum PPP of Atlantic Nino 3 is 0.134 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.VS_266.481.png)
  
 ------ 
  
@@ -13678,7 +13678,4 @@ PPP of all variables in atm
  
 ------ 
  
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 992.556) -> maximum PPP is __0.787__; averaged PPP is 0.138; maximum PPP of SPG is 0.095; maximum PPP of Eurasia is 0.072; maximum PPP of Nino 3 is __0.787__; maximum PPP of Atlantic Nino 3 is 0.495 
- 
------- 
- 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 992.556) -> maximum PPP is __0.787__; averaged PPP is 0.138; maximum PPP of SPG is 0.095; maximum PPP of Eurasia is 0.072; maximum PPP of Ni
