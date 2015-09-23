@@ -6,30 +6,6 @@ PPP of all variables in atm
  
 ------ 
  
-  * __AEROD_v: Total Aerosol Optical Depth in visible band__, 01.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.908__; maximum PPP of SPG is __0.970__; maximum PPP of Eurasia is __0.970__; maximum PPP of Nino 3 is __0.997__; maximum PPP of Atlantic Nino 3 is __0.997__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.AEROD_v.png)
- 
------- 
- 
-  * __ATMEINT: Vertically integrated total atmospheric energy__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.882__; averaged PPP is 0.235; maximum PPP of SPG is 0.074; maximum PPP of Eurasia is 0.104; maximum PPP of Nino 3 is __0.882__; maximum PPP of Atlantic Nino 3 is __0.614__ ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.ATMEINT.png)
- 
------- 
- 
-  * __CLDHGH: Vertically-integrated high cloud__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.852__; averaged PPP is 0.155; maximum PPP of SPG is 0.058; maximum PPP of Eurasia is 0.162; maximum PPP of Nino 3 is __0.840__; maximum PPP of Atlantic Nino 3 is 0.283 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.CLDHGH.png)
- 
------- 
- 
-  * __CLDLOW: Vertically-integrated low cloud__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.974__; averaged PPP is 0.107; maximum PPP of SPG is 0.213; maximum PPP of Eurasia is 0.105; maximum PPP of Nino 3 is __0.681__; maximum PPP of Atlantic Nino 3 is 0.571 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.CLDLOW.png)
- 
------- 
- 
-  * __CLDMED: Vertically-integrated mid-level cloud__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.900__; averaged PPP is 0.119; maximum PPP of SPG is 0.079; maximum PPP of Eurasia is 0.087; maximum PPP of Nino 3 is __0.900__; maximum PPP of Atlantic Nino 3 is 0.167 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.CLDMED.png)
- 
------- 
- 
-  * __CLDTOT: Vertically-integrated total cloud__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.745__; averaged PPP is 0.134; maximum PPP of SPG is 0.132; maximum PPP of Eurasia is 0.151; maximum PPP of Nino 3 is __0.745__; maximum PPP of Atlantic Nino 3 is 0.499 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.CLDTOT.png)
- 
------- 
- 
   * __DTV: T vertical diffusion__, 01.cam2.h0., (level: 100.515) -> maximum PPP is __0.916__; averaged PPP is 0.115; maximum PPP of SPG is 0.240; maximum PPP of Eurasia is 0.163; maximum PPP of Nino 3 is 0.236; maximum PPP of Atlantic Nino 3 is 0.075 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.DTV_100.515.png)
  
 ------ 
