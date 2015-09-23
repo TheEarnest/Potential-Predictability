@@ -2,7 +2,7 @@ PPP of all variables in lnd outputs
 ==========
 >> Created on: __Thu Sep 17 17:06:52 CEST 2015__ 
  
->> Last updated on: __Wed Sep 23 12:22:55 CEST 2015__ 
+>> Last updated on: __Wed Sep 23 12:26:06 CEST 2015__ 
 
 * __Region (Lon,Lon,Lat,Lat)__ 
   * SPG: (300,345,48,65) 
