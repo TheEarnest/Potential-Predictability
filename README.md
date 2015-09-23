@@ -28,9 +28,9 @@ Author: Mao-Lin Shen
     * Applying full-field SST ([HadISST2](http://www.metoffice.gov.uk/hadobs/hadisst2/)) assimilation ([EnKF](http://enkf.nersc.no/), 30 members) on ocean compartment only
     * From 1980-2007
     * Known issue: skill lost due to one-grid shift in preparing SST data. It also implies that the PPP of ensemble members is not really robust. 
-      * ##### PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
+      * PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
       * Redefine the noise as the spread to observation (SST) can identify this skill loose. 
-     * PPP of SST
+     * ##### PPP of SST
        
      * ##### PPP (to observation) of SST ![] (figures/FF_ini_try/Glabal2D_sst_NorCPM_F19_tn21_PP08.nc.png)
 
