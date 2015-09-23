@@ -23,7 +23,7 @@ if [  "${thost}" == "hexagon" ]; then
   #export LIBGL_DEBUG=verbose
 fi
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="ocn"
+ModelCompartments="atm"
 mScript=`echo ${plotScript} | awk -F "/" '{print $NF}' | awk -F ".m" '{print $1}' `
 MatlabScriptDIR=`echo ${plotScript} | awk -F "/${mScript}" '{print $1}'`
 
@@ -34,23 +34,28 @@ for ModelCompartment in ${ModelCompartments}; do
 
   PPPfiles=`ls ${DIR}/${ModelCompartment}/PPP_all_variables/*  `
   for PPPfile in ${PPPfiles}; do 
-#    PPPfile=${DIR}/${ModelCompartment}/PPP_all_variables/PPP_ZWT.nc # for testing
-    lonlat=`ncdump -h ${PPPfile} | grep "lat(" ` || lonlat=None
+    #PPPfile=${DIR}/${ModelCompartment}/PPP_all_variables/PPP-06.cam2.h0.T_226.513.nc # for testing
+    lonlat=`ncdump -h ${PPPfile} | grep ":units" | grep -i "lon" ` || lonlat=None
+    # vname of lon & lat has to be checked and pass to matlab ...
     if [ "${lonlat}" != "None" ]; then
       vname=`cdo showvar ${PPPfile} | cut -c2-100 `
-      fname=`echo ${PPPfile} | awk -F "PPP_" '{print $NF}' | awk -F ".nc" '{print $1}'`
+      fname=`echo ${PPPfile} | awk -F "/" '{print $NF}' | awk -F "PPP_" '{print $NF}' | awk -F ".nc" '{print $1}'`
       figtarget=${PlotDIR}/PPP_${fname}${fsuffix}
       if [ ! -f ${figtarget} ]; then
         # define title
+        LonStr=`ncdump -h ${PPPfile} | grep ":units ="  | grep -i "lon" | awk -F ":" '{print $1}' `
+        LatStr=`ncdump -h ${PPPfile} | grep ":units ="  | grep -i "lat" | awk -F ":" '{print $1}' `
+        LonStr=${LonStr//\ }; LatStr=${LatStr//\ }
         varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
         varunits=`ncdump -h ${PPPfile} | grep "${vname}:units" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
         titleStr=${varLongName}" ("${varunits}")"
         titleStr=`echo "${titleStr//\"}" `
         echo ${PPPfile}
         cd ${MatlabScriptDIR}
-        matlab -nosplash -nodesktop -r "vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile}'; ${mScript}; exit "
+        matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile}'; ${mScript}; exit "
         PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
         figfilename=`ls --color=no *${PPPfilename}*`
+        #fsuffix=`echo ${figfilename} | tail -c5`
         cp -f ${figfilename} ${PlotDIR}/PPP_${fname}${fsuffix}
         rm -f ${figfilename}
       fi

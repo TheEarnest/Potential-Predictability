@@ -1,7 +1,7 @@
 % read ECHAM data//
 % by Mao-Lin Shen
 format long;close all;
-clearvars -except vname filename titleStr
+clearvars -except LonStr LatStr vname filename titleStr
 if ~isempty(strfind(computer,'MACI64')) || ~isempty(strfind(computer,'Darwin'))
 	load /Users/earnestshen/Cloudsky/SkyDrive/Program/Matlab/work/Z_MatFiles/MacBook_Workaround
 	addpath /Users/earnestshen/Cloudsky/SkyDrive/Program/Matlab/SelfDefine/export_fig
@@ -26,6 +26,8 @@ end
 DSep = '/';
 
 imgpref = 'Glabal2D';
+if ~exist('LonStr','var'), LonStr='lon'; end
+if ~exist('LatStr','var'), LatStr='lat'; end
 if ~exist('vname','var'), vname='sst'; end
 if ~exist('filename','var'), filename='/work/earnest/UPData/FF01_Seasonal_pM01_noDA_pn3_pL6/ACC_SST/ACC_SST_r005_05.nc'; end
 if ~exist('titleStr','var'), titleStr=filename; end
@@ -39,13 +41,17 @@ RLW = -180; RLE = 180; RLS = -75; RLN = 75; ScreenPos = [68    56   765   452]; 
 %RLW = -100; RLE = 40; RLS = 10; RLN = 75; ScreenPos = [68    56   765   452]; cfz = 14;
 %filename = ['/work/earnest/UPData' DSep expDiffStr DSep FileStr ];
 
-Data = readnetcdf_one(filename, vname); var = Data.data; var(var==Data.att__FillValue) = NaN;
-long = Data.lon; lati = Data.lat;
+Data = readnetcdf_one(filename, vname); var = Data.data; 
+if isfield(Data,'att__FillValue')
+  var(var==Data.att__FillValue) = NaN;
+end
+eval(['long = Data.' LonStr ';']); eval(['lati = Data.' LatStr ';'])
 [~, iLW] = min(abs(long - RLW)); [~, iLE] = min(abs(long - RLE));
 [~, iLS] = min(abs(lati - RLS)); [~, iLN] = min(abs(lati - RLN));
 %iLong = iLW:iLE; iLati = iLS:iLN;
 iLong = 1:length(long); iLati = 1:length(lati);
 temp = long; 
+
 long(1:end/2) = temp((end/2+1):end); 
 long((end/2+1):end) = temp(1:end/2);
 long(long>=180) = long(long>=180) -360;
@@ -54,7 +60,6 @@ temp = var;
 var(1:end/2,:) = temp((end/2+1):end,:);
 var((end/2+1):end,:) = temp(1:end/2,:);
 clear temp
-
 
 [mlon, mlat] = meshgrid(long, lati);
 mmvar = var(iLong,iLati)';
