@@ -6,7 +6,7 @@ Prognostic Potential Predictability (PPP)
 Author: Mao-Lin Shen
 
 ## Analysis:
-
+  * Size limit: 1MB, the number of variables in atm has to be reduced/constrained. 
 
 --------------------------------------
 * ### Full field SST assimilated Ocean of NorESM (1st version)
