@@ -5,7 +5,6 @@ Prognostic Potential Predictability (PPP)
 
 Author: Mao-Lin Shen
 
-
 ## Analysis:
 
 
@@ -54,5 +53,6 @@ Author: Mao-Lin Shen
   * The script of CAM automatically keeps the output of previous simulation, of which the exported variables are highly possible different with any new simulation. So those files (NorCPM_F19_tn21_mem??.cam2.h0.1979-12.nc in this case) should be removed in advance.   
 
 
-
+## Notes and Questions
+* What is the main difference of the total variance (to observation) and RMSE? 
 
