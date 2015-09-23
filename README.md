@@ -18,7 +18,10 @@ Author: Mao-Lin Shen
     * [__CLM__] (docs/FF_ini_try/PPP_lnd.markdown)
     * [__CICE__] (docs/FF_ini_try/PPP_ice.markdown)
 
-  * Total figures in FF_ini_try: __0__
+  * Total figures in ocn FF_ini_try: __0__
+  * Total figures in atm FF_ini_try: __0__
+  * Total figures in lnd FF_ini_try: __0__
+  * Total figures in ice FF_ini_try: __0__
 
   * About this analysis:
     * __Finished on 18 Apr. 2015__
@@ -29,9 +32,9 @@ Author: Mao-Lin Shen
     * Known issue: skill lost due to one-grid shift in preparing SST data. It also implies that the PPP of ensemble members is not really robust. 
       * PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
       * Redefine the noise as the spread to observation (SST) can identify this skill loose. 
-     * ##### PPP of SST ![] (figures/FF_ini_try/PPP_PPP-08.cam2.h0.SST.png)
-     * ##### PPP (to observation) of SST ![] (figures/FF_ini_try/Glabal2D_sst_NorCPM_F19_tn21_PP08.nc.png)
-     * ##### Prediction Skill of SST ![] (figures/FF_ini_try/Glabal2D_corr_ACC_SST_r008_08.nc.png)
+#####     * PPP of SST ![] (figures/FF_ini_try/PPP_PPP-08.cam2.h0.SST.png)
+#####     * PPP (to observation) of SST ![] (figures/FF_ini_try/Glabal2D_sst_NorCPM_F19_tn21_PP08.nc.png)
+#####     * Prediction Skill of SST ![] (figures/FF_ini_try/Glabal2D_corr_ACC_SST_r008_08.nc.png)
        * Notes this prediction:
 
 ------------------

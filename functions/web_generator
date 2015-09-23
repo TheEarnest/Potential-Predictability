@@ -24,7 +24,7 @@ AtlNino3Reg="-20,-0,-3,3"
 thPPP=0.6
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 
-ModelCompartments="lnd ice ocn atm"
+ModelCompartments="lnd"
 if [ ! -d ${webpageDIR} ]; then 
   mkdir -p ${figureDIR}
   mkdir -p ${webpageDIR}
@@ -35,10 +35,10 @@ for ModelCompartment in ${ModelCompartments}; do
     cp -rf ${OutputDIR}/${ModelCompartment}/PPP_all_figures ${figureDIR}/PPP_${ModelCompartment}
   fi
 done
-figureCount=0
 # -------------------------
 # building base page in advance 
 for ModelCompartment in ${ModelCompartments}; do
+  figureCount=0
   MDfile=${webpageDIR}/PPP_${ModelCompartment}.markdown
   if [ ! -f ${MDfile} ]; then
     # header of markdown pages
@@ -158,6 +158,6 @@ for ModelCompartment in ${ModelCompartments}; do
       sed -i s/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -".*/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax} ${figurelink}"/g ${MDfile}
     fi
   done
+  sed -i s/"Total figures in ${ModelCompartment} (${ExpID}): ".*/"Total figures in ${ModelCompartment} (${ExpID}): __${figureCount}__"/g ${ScriptHome}/README.md
 done
 
-sed -i s/"Total figures in ${ExpID}: ".*/"Total figures in ${ExpID}: __${figureCount}__"/g ${ScriptHome}/README.md
