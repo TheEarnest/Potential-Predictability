@@ -14,10 +14,11 @@ Author: Mao-Lin Shen
   * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
     * [__MICOM__] (docs/FF_ini_try/PPP_ocn.markdown)
-    * [__CAM__] (docs/FF_ini_try/PPP_atm.markdown) 
+    * [__CAM__] (docs/FF_ini_try/PPP_atm2.markdown) 
     * [__CLM__] (docs/FF_ini_try/PPP_lnd.markdown)
     * [__CICE__] (docs/FF_ini_try/PPP_ice.markdown)
 
+  * Figures of the PPP for different levels are not shown because there are too many levels and GitHub has presents files smaller than 1MB. 
   * Total figures in ocn (FF_ini_try): __0__
   * Total figures in atm (FF_ini_try): __3354__
   * Total figures in lnd (FF_ini_try): __211__

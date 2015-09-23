@@ -24,7 +24,7 @@ AtlNino3Reg="-20,-0,-3,3"
 thPPP=0.6
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 
-ModelCompartments="atm"
+ModelCompartments="lnd"
 if [ ! -d ${webpageDIR} ]; then 
   mkdir -p ${figureDIR}
   mkdir -p ${webpageDIR}
@@ -124,18 +124,20 @@ for ModelCompartment in ${ModelCompartments}; do
     namesuffix=`echo ${PPPfile} | awk -F "/" '{print $NF}' | awk -F "${vname}" '{print $NF}' | awk -F ".nc" '{print $1}'` 
     nameinfix=`echo ${PPPfile} | awk -F "/" '{print $NF}' | awk -F "${vname}" '{print $1}' | awk -F "PPP" '{print $NF}' | cut -c2-100`
 
-    levelStr=""
-    if [ "${namesuffix}" != "" ]; then
-      level=`echo ${namesuffix} | cut -c2-100`
-      levelStr="(level: ${level})"
-    else
-      levelStr="(level: 0)"
-    fi
     varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
     varLongName=`echo ${varLongName//\"} | tr "/" "-"`
     vnameCheck=`grep "${varLongName}" ${MDfile} | grep "${levelStr}" | grep "${nameinfix}" ` || vnameCheck="None"
 
     figurelink=""
+    levelStr=""
+    if [ "${namesuffix}" != "" ]; then
+      level=`echo ${namesuffix} | cut -c2-100`
+      levelStr="(level: ${level})"
+
+    else
+      levelStr="(level: 0)"
+    fi
+
     if [ -d ${figureDIR}/PPP_${ModelCompartment} ]; then
       cd ${figureDIR}/PPP_${ModelCompartment}
       figfilename=`ls *${vname}${namesuffix}${fsuffix} ` || figfilename="None"
@@ -143,8 +145,10 @@ for ModelCompartment in ${ModelCompartments}; do
       if [ "${figfilename}" == "None" ]; then
         figurelink=""
       else
-        figurelink=" ![] (../../figures/${ExpID}/PPP_${ModelCompartment}/${figfilename})"
         (( figureCount = figureCount + 1 ))
+        if [ "levelStr" == "(level: 0)" ]; then 
+          figurelink=" ![] (../../figures/${ExpID}/PPP_${ModelCompartment}/${figfilename})"
+        fi
       fi
     fi
     if [ "${vnameCheck}" == "None" ]; then

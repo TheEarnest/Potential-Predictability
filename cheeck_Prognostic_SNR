@@ -7,7 +7,7 @@
 # ./cheeck_Prognostic_SNR[71]: .: line 24: 33535: Memory fault(coredump)
 # Segmentation fault (core dumped)
 #
-DebugSetting="set -x"
+DebugSetting="set -e"
 ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 # Parameters
@@ -19,7 +19,7 @@ MEyear=2000
 DataDIR=/scratch/earnest/noresmexp/FF_ini_try
 
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="atm"
+ModelCompartments="lnd"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
