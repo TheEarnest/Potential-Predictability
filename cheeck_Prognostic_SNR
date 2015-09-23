@@ -2,7 +2,12 @@
 ###############################################################################
 # check the signal to noise ratio  
 #------------------------------------------------------------------------------
-set -e
+# the debug setting has to be change to non-exit because cdo sometimes has 
+# the follofing issue "after" it works
+# ./cheeck_Prognostic_SNR[71]: .: line 24: 33535: Memory fault(coredump)
+# Segmentation fault (core dumped)
+#
+DebugSetting="set -h"
 ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 # Parameters
@@ -32,7 +37,7 @@ Members=`ls --color=no `
 firstMem=`echo ${Members} | awk -F " " '{print $1}'`
 lastMem=`echo ${Members} | awk -F " " '{print $NF}'`
 
-set -e 
+${DebugSetting}
 
 for compartment in ${ModelCompartments}; do 
   # check the files

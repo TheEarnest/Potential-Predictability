@@ -3,7 +3,7 @@
 # ensemble info
 #------------------------------------------------------------------------------
 #
-set -e
+${DebugSetting}
 JobStartTime=`date`
 JobName='ps_func_split_variables_check'
 # 

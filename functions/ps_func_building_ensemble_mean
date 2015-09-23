@@ -3,7 +3,7 @@
 # ensemble info
 #------------------------------------------------------------------------------
 #
-set -e
+${DebugSetting}
 JobStartTime=`date`
 JobName=ps_func_building_ensemble_mean
 # 
@@ -43,7 +43,7 @@ for file in ${files}; do
     cdo -O ensstd ${ensTargets} ${Target}
   fi
 done
-set -e
+${DebugSetting}
 target=${DIR}/${Mod}/${casePrefix}${infix}mergetime
 if [ ! -f ${target} ]; then
   time cdo -O mergetime ${DIR}/${Mod}/hist_ensmean/*${infix}* ${tempDIR}/${tempPrefix}_mergetime
@@ -83,7 +83,6 @@ else
     cdo -O -f nc copy ${DIR}/${Mod}/${casePrefix}${infix}ymonmean ${tempDIR}/${tempPrefix}_ymonmean_nc
     cdo -O splitgrid ${tempDIR}/${tempPrefix}_ymonmean_nc ${tempDIR}/${tempPrefix}_ymonmean_G
   fi
-set -e
   for ig in `seq 1 ${grid_count}`; do 
     igg=`echo 000${ig} | tail -c3` 
     gridtarget=${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_G${igg}

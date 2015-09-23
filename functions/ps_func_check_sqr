@@ -3,7 +3,7 @@
 # ensemble info
 #------------------------------------------------------------------------------
 #
-set -e
+${DebugSetting}
 JobStartTime=`date`
 JobName='ps_func_check_sqr'
 # 

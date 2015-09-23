@@ -12,7 +12,7 @@ if [ ! -f ${MainScript} ]; then
 fi
 ScriptHome=`pwd`
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
-tempPrefix=t_ps_func_check_Spread
+tempPrefix=t_'ps_func_split_variables_check_regrid'
 thost=`echo $HOST | cut -c1-7 `
 if [  "${thost}" == "hexagon" ]; then
   expCaseName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
