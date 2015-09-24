@@ -3,7 +3,7 @@ Prognostic Potential Predictability (PPP)
 ==========
 >> For calculating Prognostic Potential Predictability (PPP) on nostore-osl 
 
-Author: Mao-Lin Shen
+Author: Mao-Lin Shen (E-mail: [maolin.shen@uib.no])
 
 ## Analysis:
   * Size limit: 1MB, the number of variables in atm has to be reduced/constrained. 
