@@ -20,7 +20,7 @@ Author: Mao-Lin Shen
 
   * Figures of the PPP for different levels are not shown because there are too many levels and GitHub has presents files smaller than 1MB. 
   * Total figures in ocn (FF_ini_try): __0__
-  * Total figures in atm (FF_ini_try): __3354__
+  * Total figures in atm (FF_ini_try): __3432__
   * Total figures in lnd (FF_ini_try): __211__
   * Total figures in ice (FF_ini_try): __0__
 
