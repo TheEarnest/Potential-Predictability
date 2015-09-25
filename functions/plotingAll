@@ -54,14 +54,6 @@ for ModelCompartment in ${ModelCompartments}; do
         LatStr=`ncdump -h ${PPPfile} | grep ":units ="  | grep -i "lat" | awk -F ":" '{print $1}' `
         LonStr=${LonStr//\ }; LatStr=${LatStr//\ }
         echo ${PPPfile}
-
-        if [ "${ModelCompartment}" == "ocn" ] || [ "${ModelCompartment}" == "ice" ]; then
-          # path has to be redirted to regrid path
-          ana_path=`echo ${PPPfile} | awk -F "${fname}" '{print $1}'`
-
-exit 5
-        fi
-
         cd ${MatlabScriptDIR}
         matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile}'; ${mScript}; exit "
         PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
@@ -71,7 +63,21 @@ exit 5
       fi
     else
       # path has to be redirted to regrid path
-      ana_path=`echo ${PPPfile} | awk -F "PPP_${fname}" '{print $1}'`
+      ana_path=`echo ${PPPfile} | awk -F "/PPP_${fname}" '{print $1}'`
+      ana_path=${ana_path}_regrided
+      PPPfile_rg=`ls --color=no ${ana_path}/PPP_${fname}* `
+      LonStr=`ncdump -h ${PPPfile_rg} | grep ":units ="  | grep -i "lon" | awk -F ":" '{print $1}' `
+      LatStr=`ncdump -h ${PPPfile_rg} | grep ":units ="  | grep -i "lat" | awk -F ":" '{print $1}' `
+      LonStr=${LonStr//\ }; LatStr=${LatStr//\ }
+
+      echo ${PPPfile}
+      cd ${MatlabScriptDIR}
+
+      matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile_rg}'; ${mScript}; exit "
+      PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
+      figfilename=`ls --color=no *${PPPfilename}*`
+      cp -f ${figfilename} ${PlotDIR}/PPP_${fname}${fsuffix}
+      rm -f ${figfilename}
 
 exit 5
     fi
