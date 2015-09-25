@@ -35,7 +35,7 @@ for ModelCompartment in ${ModelCompartments}; do
       cp ${funcPath}/grid.nc ${tempDIR}
     fi
     for PPPfile in ${PPPfiles}; do
-      PPPfile=PPP_All.micom.hm.sst.nc4  # for testing ...
+      #PPPfile=PPP_All.micom.hm.sst.nc4  # for testing ...
 
       cd ${tempDIR}
       gridnumber=`ncdump -h ${tarDIR}/${PPPfile} | grep "latitude =" | awk -F " " '{print $3}' `
@@ -60,7 +60,6 @@ for ModelCompartment in ${ModelCompartments}; do
       fi
       cp -f ${tempFN} ${tarDIRrg}/${PPPfile} 
     fi
-exit 5
     done
   fi
 done
