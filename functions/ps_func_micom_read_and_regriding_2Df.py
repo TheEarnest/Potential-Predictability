@@ -130,7 +130,8 @@ for im in range(1) : # for month
       temp_put[np.isnan(temp_put)] = missV
       regriddata[im,iD,:,:] = np.float32(temp_put)
   if len(data.shape) == 3 :
-    temp = data[im,::-1,:].copy().reshape(grids_lon.size)
+#    temp = data[im,::-1,:].copy().reshape(grids_lon.size)
+    temp = data[im,:,:].copy().reshape(grids_lon.size)
     temp_T = np.atleast_2d(temp).transpose()
     temp_griddata = interp.griddata(grids, temp_T, (mLo, mLa), method=interpMethod)
     temp_put = temp_griddata.reshape(mLo.shape[0], mLo.shape[1]).copy()
