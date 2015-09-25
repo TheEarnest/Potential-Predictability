@@ -34,7 +34,7 @@ for ModelCompartment in ${ModelCompartments}; do
 
   PPPfiles=`ls ${DIR}/${ModelCompartment}/PPP_all_variables/*  `
   for PPPfile in ${PPPfiles}; do 
-    PPPfile=${DIR}/${ModelCompartment}/PPP_all_variables/PPP_All.micom.hm.sst.nc4 # for testing
+    #PPPfile=${DIR}/${ModelCompartment}/PPP_all_variables/PPP_All.micom.hm.sst.nc4 # for testing
     lonlat=`ncdump -h ${PPPfile} | grep ":units" | grep -i "lon" ` || lonlat=None
     # vname of lon & lat has to be checked and pass to matlab ...
     vname=`cdo showvar ${PPPfile} | cut -c2-100 `
@@ -63,26 +63,22 @@ for ModelCompartment in ${ModelCompartments}; do
       fi
     else
       # path has to be redirted to regrid path
-      ana_path=`echo ${PPPfile} | awk -F "/PPP_${fname}" '{print $1}'`
+      ana_path=`echo ${PPPfile} | awk -F "/${fname}" '{print $1}'`
       ana_path=${ana_path}_regrided
-      PPPfile_rg=`ls --color=no ${ana_path}/PPP_${fname}* `
+      PPPfile_rg=`ls --color=no ${ana_path}/${fname}* `
       LonStr=`ncdump -h ${PPPfile_rg} | grep ":units ="  | grep -i "lon" | awk -F ":" '{print $1}' `
       LatStr=`ncdump -h ${PPPfile_rg} | grep ":units ="  | grep -i "lat" | awk -F ":" '{print $1}' `
       LonStr=${LonStr//\ }; LatStr=${LatStr//\ }
 
       echo ${PPPfile}
       cd ${MatlabScriptDIR}
-
       matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile_rg}'; ${mScript}; exit "
       PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
       figfilename=`ls --color=no *${PPPfilename}*`
       cp -f ${figfilename} ${PlotDIR}/PPP_${fname}${fsuffix}
       rm -f ${figfilename}
-
-exit 5
     fi
 
   done
-exit 5
 done
 
