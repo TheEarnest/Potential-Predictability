@@ -37,19 +37,22 @@ for ModelCompartment in ${ModelCompartments}; do
     PPPfile=${DIR}/${ModelCompartment}/PPP_all_variables/PPP_All.micom.hm.sst.nc4 # for testing
     lonlat=`ncdump -h ${PPPfile} | grep ":units" | grep -i "lon" ` || lonlat=None
     # vname of lon & lat has to be checked and pass to matlab ...
+    vname=`cdo showvar ${PPPfile} | cut -c2-100 `
+    fname=`echo ${PPPfile} | awk -F "/" '{print $NF}' | awk -F "PPP_" '{print $NF}' | awk -F ".nc" '{print $1}'`
+    figtarget=${PlotDIR}/PPP_${fname}${fsuffix}
+    varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
+    varunits=`ncdump -h ${PPPfile} | grep "${vname}:units" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
+    titleStr=${varLongName}" ("${varunits}")"
+    titleStr=`echo "${titleStr//\"}" `
+
+
     if [ "${lonlat}" != "None" ]; then
-      vname=`cdo showvar ${PPPfile} | cut -c2-100 `
-      fname=`echo ${PPPfile} | awk -F "/" '{print $NF}' | awk -F "PPP_" '{print $NF}' | awk -F ".nc" '{print $1}'`
-      figtarget=${PlotDIR}/PPP_${fname}${fsuffix}
+      # [ "${lonlat}" == "None" ] is the case for ocn aice 
       if [ ! -f ${figtarget} ]; then
         # define title
         LonStr=`ncdump -h ${PPPfile} | grep ":units ="  | grep -i "lon" | awk -F ":" '{print $1}' `
         LatStr=`ncdump -h ${PPPfile} | grep ":units ="  | grep -i "lat" | awk -F ":" '{print $1}' `
         LonStr=${LonStr//\ }; LatStr=${LatStr//\ }
-        varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
-        varunits=`ncdump -h ${PPPfile} | grep "${vname}:units" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
-        titleStr=${varLongName}" ("${varunits}")"
-        titleStr=`echo "${titleStr//\"}" `
         echo ${PPPfile}
 
         if [ "${ModelCompartment}" == "ocn" ] || [ "${ModelCompartment}" == "ice" ]; then
@@ -66,6 +69,11 @@ exit 5
         cp -f ${figfilename} ${PlotDIR}/PPP_${fname}${fsuffix}
         rm -f ${figfilename}
       fi
+    else
+      # path has to be redirted to regrid path
+      ana_path=`echo ${PPPfile} | awk -F "PPP_${fname}" '{print $1}'`
+
+exit 5
     fi
 
   done
