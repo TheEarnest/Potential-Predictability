@@ -24,7 +24,7 @@ AtlNino3Reg="-20,-0,-3,3"
 thPPP=0.6
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 
-ModelCompartments="ocn atm lnd"
+ModelCompartments="ocn"
 if [ ! -d ${webpageDIR} ]; then 
   mkdir -p ${figureDIR}
   mkdir -p ${webpageDIR}
@@ -138,7 +138,8 @@ for ModelCompartment in ${ModelCompartments}; do
 
     if [ -d ${figureDIR}/PPP_${ModelCompartment} ]; then
       cd ${figureDIR}/PPP_${ModelCompartment}
-      figfilename=`ls *${vname}${nameinfix}${fsuffix} ` || figfilename="None"
+      echo "${vname}${nameinfix}${fsuffix}"
+      figfilename=`ls *${nameinfix}${vname}${fsuffix} ` || figfilename="None"
 
       if [ "${figfilename}" == "None" ]; then
         figurelink=""
