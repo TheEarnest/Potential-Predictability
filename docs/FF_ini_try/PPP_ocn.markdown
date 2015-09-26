@@ -2,7 +2,7 @@ PPP of all variables in ocn
 ==========
 >> Created on: __Thu Sep 17 17:08:21 CEST 2015__ 
  
->> Last updated on: __Fri Sep 25 17:15:27 CEST 2015__ 
+>> Last updated on: __Sat Sep 26 18:33:47 CEST 2015__ 
  
 ------ 
  
@@ -4563,6 +4563,42 @@ PPP of all variables in ocn
 ------ 
  
   * __df_get_att_text   : ncid = 65536 varid = 0 name = calendar: __, _ps_func_check_Spread_output, (level: _ps_f) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __: time Ice concentration__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __: time Maximum mixed layer depth__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __: time Mixed layer depth__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __: z level time Salinity__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __: time Sea level__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __: time Mixed layer density__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __: time Ocean surface salinity__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __: time Ocean surface temperature__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __: z level time Temperature__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
  
 ------ 
  
