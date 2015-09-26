@@ -1374,15 +1374,15 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __sigmx: Mixed layer density__, 05.micom.hm., (level: 0) -> maximum PPP is __0.977__; averaged PPP is __0.632__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sigmx: Mixed layer density__, 05.micom.hm., (level: 0) -> maximum PPP is __0.977__; averaged PPP is __0.632__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-05.micom.hm.sigmx.png)
  
 ------ 
  
-  * __sss: Ocean surface salinity__, 05.micom.hm., (level: 0) -> maximum PPP is __0.986__; averaged PPP is __0.685__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sss: Ocean surface salinity__, 05.micom.hm., (level: 0) -> maximum PPP is __0.986__; averaged PPP is __0.685__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-05.micom.hm.sss.png)
  
 ------ 
  
-  * __sst: Ocean surface temperature__, 05.micom.hm., (level: 0) -> maximum PPP is __0.925__; averaged PPP is 0.550; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sst: Ocean surface temperature__, 05.micom.hm., (level: 0) -> maximum PPP is __0.925__; averaged PPP is 0.550; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-05.micom.hm.sst.png)
  
 ------ 
  
@@ -1526,11 +1526,11 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __maxmld: Maximum mixed layer depth__, 06.micom.hm., (level: 0) -> maximum PPP is __0.977__; averaged PPP is 0.352; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __maxmld: Maximum mixed layer depth__, 06.micom.hm., (level: 0) -> maximum PPP is __0.977__; averaged PPP is 0.352; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-06.micom.hm.maxmld.png)
  
 ------ 
  
-  * __mld: Mixed layer depth__, 06.micom.hm., (level: 0) -> maximum PPP is __0.875__; averaged PPP is 0.326; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __mld: Mixed layer depth__, 06.micom.hm., (level: 0) -> maximum PPP is __0.875__; averaged PPP is 0.326; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-06.micom.hm.mld.png)
  
 ------ 
  
@@ -1678,15 +1678,15 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __sigmx: Mixed layer density__, 06.micom.hm., (level: 0) -> maximum PPP is __0.979__; averaged PPP is __0.623__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sigmx: Mixed layer density__, 06.micom.hm., (level: 0) -> maximum PPP is __0.979__; averaged PPP is __0.623__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-06.micom.hm.sigmx.png)
  
 ------ 
  
-  * __sss: Ocean surface salinity__, 06.micom.hm., (level: 0) -> maximum PPP is __0.986__; averaged PPP is __0.679__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sss: Ocean surface salinity__, 06.micom.hm., (level: 0) -> maximum PPP is __0.986__; averaged PPP is __0.679__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-06.micom.hm.sss.png)
  
 ------ 
  
-  * __sst: Ocean surface temperature__, 06.micom.hm., (level: 0) -> maximum PPP is __0.933__; averaged PPP is 0.542; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sst: Ocean surface temperature__, 06.micom.hm., (level: 0) -> maximum PPP is __0.933__; averaged PPP is 0.542; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-06.micom.hm.sst.png)
  
 ------ 
  
@@ -1830,11 +1830,11 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __maxmld: Maximum mixed layer depth__, 07.micom.hm., (level: 0) -> maximum PPP is __0.980__; averaged PPP is 0.361; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __maxmld: Maximum mixed layer depth__, 07.micom.hm., (level: 0) -> maximum PPP is __0.980__; averaged PPP is 0.361; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-07.micom.hm.maxmld.png)
  
 ------ 
  
-  * __mld: Mixed layer depth__, 07.micom.hm., (level: 0) -> maximum PPP is __0.896__; averaged PPP is 0.332; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __mld: Mixed layer depth__, 07.micom.hm., (level: 0) -> maximum PPP is __0.896__; averaged PPP is 0.332; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-07.micom.hm.mld.png)
  
 ------ 
  
@@ -1982,15 +1982,15 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __sigmx: Mixed layer density__, 07.micom.hm., (level: 0) -> maximum PPP is __0.980__; averaged PPP is __0.622__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sigmx: Mixed layer density__, 07.micom.hm., (level: 0) -> maximum PPP is __0.980__; averaged PPP is __0.622__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-07.micom.hm.sigmx.png)
  
 ------ 
  
-  * __sss: Ocean surface salinity__, 07.micom.hm., (level: 0) -> maximum PPP is __0.987__; averaged PPP is __0.673__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sss: Ocean surface salinity__, 07.micom.hm., (level: 0) -> maximum PPP is __0.987__; averaged PPP is __0.673__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-07.micom.hm.sss.png)
  
 ------ 
  
-  * __sst: Ocean surface temperature__, 07.micom.hm., (level: 0) -> maximum PPP is __0.948__; averaged PPP is 0.543; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sst: Ocean surface temperature__, 07.micom.hm., (level: 0) -> maximum PPP is __0.948__; averaged PPP is 0.543; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-07.micom.hm.sst.png)
  
 ------ 
  
@@ -2134,11 +2134,11 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __maxmld: Maximum mixed layer depth__, 08.micom.hm., (level: 0) -> maximum PPP is __0.980__; averaged PPP is 0.360; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __maxmld: Maximum mixed layer depth__, 08.micom.hm., (level: 0) -> maximum PPP is __0.980__; averaged PPP is 0.360; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-08.micom.hm.maxmld.png)
  
 ------ 
  
-  * __mld: Mixed layer depth__, 08.micom.hm., (level: 0) -> maximum PPP is __0.876__; averaged PPP is 0.323; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __mld: Mixed layer depth__, 08.micom.hm., (level: 0) -> maximum PPP is __0.876__; averaged PPP is 0.323; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-08.micom.hm.mld.png)
  
 ------ 
  
@@ -2286,15 +2286,15 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __sigmx: Mixed layer density__, 08.micom.hm., (level: 0) -> maximum PPP is __0.981__; averaged PPP is __0.627__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sigmx: Mixed layer density__, 08.micom.hm., (level: 0) -> maximum PPP is __0.981__; averaged PPP is __0.627__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-08.micom.hm.sigmx.png)
  
 ------ 
  
-  * __sss: Ocean surface salinity__, 08.micom.hm., (level: 0) -> maximum PPP is __0.987__; averaged PPP is __0.675__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sss: Ocean surface salinity__, 08.micom.hm., (level: 0) -> maximum PPP is __0.987__; averaged PPP is __0.675__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-08.micom.hm.sss.png)
  
 ------ 
  
-  * __sst: Ocean surface temperature__, 08.micom.hm., (level: 0) -> maximum PPP is __0.954__; averaged PPP is 0.546; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sst: Ocean surface temperature__, 08.micom.hm., (level: 0) -> maximum PPP is __0.954__; averaged PPP is 0.546; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-08.micom.hm.sst.png)
  
 ------ 
  
@@ -2438,11 +2438,11 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __maxmld: Maximum mixed layer depth__, 09.micom.hm., (level: 0) -> maximum PPP is __0.976__; averaged PPP is 0.337; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __maxmld: Maximum mixed layer depth__, 09.micom.hm., (level: 0) -> maximum PPP is __0.976__; averaged PPP is 0.337; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-09.micom.hm.maxmld.png)
  
 ------ 
  
-  * __mld: Mixed layer depth__, 09.micom.hm., (level: 0) -> maximum PPP is __0.931__; averaged PPP is 0.293; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __mld: Mixed layer depth__, 09.micom.hm., (level: 0) -> maximum PPP is __0.931__; averaged PPP is 0.293; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-09.micom.hm.mld.png)
  
 ------ 
  
@@ -2590,15 +2590,15 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __sigmx: Mixed layer density__, 09.micom.hm., (level: 0) -> maximum PPP is __0.980__; averaged PPP is __0.637__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sigmx: Mixed layer density__, 09.micom.hm., (level: 0) -> maximum PPP is __0.980__; averaged PPP is __0.637__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-09.micom.hm.sigmx.png)
  
 ------ 
  
-  * __sss: Ocean surface salinity__, 09.micom.hm., (level: 0) -> maximum PPP is __0.987__; averaged PPP is __0.683__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sss: Ocean surface salinity__, 09.micom.hm., (level: 0) -> maximum PPP is __0.987__; averaged PPP is __0.683__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-09.micom.hm.sss.png)
  
 ------ 
  
-  * __sst: Ocean surface temperature__, 09.micom.hm., (level: 0) -> maximum PPP is __0.951__; averaged PPP is 0.557; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sst: Ocean surface temperature__, 09.micom.hm., (level: 0) -> maximum PPP is __0.951__; averaged PPP is 0.557; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-09.micom.hm.sst.png)
  
 ------ 
  
@@ -2742,11 +2742,11 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __maxmld: Maximum mixed layer depth__, 10.micom.hm., (level: 0) -> maximum PPP is __0.976__; averaged PPP is 0.297; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __maxmld: Maximum mixed layer depth__, 10.micom.hm., (level: 0) -> maximum PPP is __0.976__; averaged PPP is 0.297; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-10.micom.hm.maxmld.png)
  
 ------ 
  
-  * __mld: Mixed layer depth__, 10.micom.hm., (level: 0) -> maximum PPP is __0.871__; averaged PPP is 0.267; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __mld: Mixed layer depth__, 10.micom.hm., (level: 0) -> maximum PPP is __0.871__; averaged PPP is 0.267; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-10.micom.hm.mld.png)
  
 ------ 
  
@@ -2894,15 +2894,15 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __sigmx: Mixed layer density__, 10.micom.hm., (level: 0) -> maximum PPP is __0.981__; averaged PPP is __0.641__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sigmx: Mixed layer density__, 10.micom.hm., (level: 0) -> maximum PPP is __0.981__; averaged PPP is __0.641__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-10.micom.hm.sigmx.png)
  
 ------ 
  
-  * __sss: Ocean surface salinity__, 10.micom.hm., (level: 0) -> maximum PPP is __0.987__; averaged PPP is __0.693__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sss: Ocean surface salinity__, 10.micom.hm., (level: 0) -> maximum PPP is __0.987__; averaged PPP is __0.693__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-10.micom.hm.sss.png)
  
 ------ 
  
-  * __sst: Ocean surface temperature__, 10.micom.hm., (level: 0) -> maximum PPP is __0.952__; averaged PPP is 0.556; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sst: Ocean surface temperature__, 10.micom.hm., (level: 0) -> maximum PPP is __0.952__; averaged PPP is 0.556; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-10.micom.hm.sst.png)
  
 ------ 
  
@@ -3046,11 +3046,11 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __maxmld: Maximum mixed layer depth__, 11.micom.hm., (level: 0) -> maximum PPP is __0.980__; averaged PPP is 0.274; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __maxmld: Maximum mixed layer depth__, 11.micom.hm., (level: 0) -> maximum PPP is __0.980__; averaged PPP is 0.274; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-11.micom.hm.maxmld.png)
  
 ------ 
  
-  * __mld: Mixed layer depth__, 11.micom.hm., (level: 0) -> maximum PPP is __0.866__; averaged PPP is 0.259; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __mld: Mixed layer depth__, 11.micom.hm., (level: 0) -> maximum PPP is __0.866__; averaged PPP is 0.259; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-11.micom.hm.mld.png)
  
 ------ 
  
@@ -3198,15 +3198,15 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __sigmx: Mixed layer density__, 11.micom.hm., (level: 0) -> maximum PPP is __0.979__; averaged PPP is __0.635__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sigmx: Mixed layer density__, 11.micom.hm., (level: 0) -> maximum PPP is __0.979__; averaged PPP is __0.635__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-11.micom.hm.sigmx.png)
  
 ------ 
  
-  * __sss: Ocean surface salinity__, 11.micom.hm., (level: 0) -> maximum PPP is __0.987__; averaged PPP is __0.699__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sss: Ocean surface salinity__, 11.micom.hm., (level: 0) -> maximum PPP is __0.987__; averaged PPP is __0.699__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-11.micom.hm.sss.png)
  
 ------ 
  
-  * __sst: Ocean surface temperature__, 11.micom.hm., (level: 0) -> maximum PPP is __0.965__; averaged PPP is 0.540; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sst: Ocean surface temperature__, 11.micom.hm., (level: 0) -> maximum PPP is __0.965__; averaged PPP is 0.540; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-11.micom.hm.sst.png)
  
 ------ 
  
@@ -3350,11 +3350,11 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __maxmld: Maximum mixed layer depth__, 12.micom.hm., (level: 0) -> maximum PPP is __0.978__; averaged PPP is 0.277; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __maxmld: Maximum mixed layer depth__, 12.micom.hm., (level: 0) -> maximum PPP is __0.978__; averaged PPP is 0.277; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-12.micom.hm.maxmld.png)
  
 ------ 
  
-  * __mld: Mixed layer depth__, 12.micom.hm., (level: 0) -> maximum PPP is __0.873__; averaged PPP is 0.269; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __mld: Mixed layer depth__, 12.micom.hm., (level: 0) -> maximum PPP is __0.873__; averaged PPP is 0.269; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-12.micom.hm.mld.png)
  
 ------ 
  
@@ -3502,15 +3502,15 @@ PPP of all variables in ocn
  
 ------ 
  
-  * __sigmx: Mixed layer density__, 12.micom.hm., (level: 0) -> maximum PPP is __0.976__; averaged PPP is __0.619__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sigmx: Mixed layer density__, 12.micom.hm., (level: 0) -> maximum PPP is __0.976__; averaged PPP is __0.619__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-12.micom.hm.sigmx.png)
  
 ------ 
  
-  * __sss: Ocean surface salinity__, 12.micom.hm., (level: 0) -> maximum PPP is __0.987__; averaged PPP is __0.695__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sss: Ocean surface salinity__, 12.micom.hm., (level: 0) -> maximum PPP is __0.987__; averaged PPP is __0.695__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-12.micom.hm.sss.png)
  
 ------ 
  
-  * __sst: Ocean surface temperature__, 12.micom.hm., (level: 0) -> maximum PPP is __0.973__; averaged PPP is 0.523; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+  * __sst: Ocean surface temperature__, 12.micom.hm., (level: 0) -> maximum PPP is __0.973__; averaged PPP is 0.523; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 ![] (../../figures/FF_ini_try/PPP_ocn/PPP-12.micom.hm.sst.png)
  
 ------ 
  
@@ -4667,6 +4667,154 @@ PPP of all variables in ocn
 ------ 
  
   * __salnlvl: Salinity__, 05.micom.hm., (level: 10.00) -> maximum PPP is __0.986__; averaged PPP is __0.696__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __sealv: Sea level__, 05.micom.hm., (level: 0) -> maximum PPP is __0.989__; averaged PPP is __0.830__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-05.micom.hm.sealv.png)
+ 
+------ 
+ 
+  * __templvl: Temperature__, 05.micom.hm., (level: 10.00) -> maximum PPP is __0.942__; averaged PPP is 0.564; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __fice: Ice concentration__, 06.micom.hm., (level: 0) -> maximum PPP is __0.869__; averaged PPP is 0.206; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-06.micom.hm.fice.png)
+ 
+------ 
+ 
+  * __salnlvl: Salinity__, 06.micom.hm., (level: 10.00) -> maximum PPP is __0.986__; averaged PPP is __0.692__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __sealv: Sea level__, 06.micom.hm., (level: 0) -> maximum PPP is __0.989__; averaged PPP is __0.829__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-06.micom.hm.sealv.png)
+ 
+------ 
+ 
+  * __templvl: Temperature__, 06.micom.hm., (level: 10.00) -> maximum PPP is __0.934__; averaged PPP is 0.556; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __fice: Ice concentration__, 07.micom.hm., (level: 0) -> maximum PPP is __0.859__; averaged PPP is 0.218; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-07.micom.hm.fice.png)
+ 
+------ 
+ 
+  * __salnlvl: Salinity__, 07.micom.hm., (level: 10.00) -> maximum PPP is __0.987__; averaged PPP is __0.686__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __sealv: Sea level__, 07.micom.hm., (level: 0) -> maximum PPP is __0.989__; averaged PPP is __0.831__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-07.micom.hm.sealv.png)
+ 
+------ 
+ 
+  * __templvl: Temperature__, 07.micom.hm., (level: 10.00) -> maximum PPP is __0.948__; averaged PPP is 0.555; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __fice: Ice concentration__, 08.micom.hm., (level: 0) -> maximum PPP is __0.862__; averaged PPP is 0.228; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-08.micom.hm.fice.png)
+ 
+------ 
+ 
+  * __salnlvl: Salinity__, 08.micom.hm., (level: 10.00) -> maximum PPP is __0.987__; averaged PPP is __0.684__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __sealv: Sea level__, 08.micom.hm., (level: 0) -> maximum PPP is __0.990__; averaged PPP is __0.835__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-08.micom.hm.sealv.png)
+ 
+------ 
+ 
+  * __templvl: Temperature__, 08.micom.hm., (level: 10.00) -> maximum PPP is __0.955__; averaged PPP is 0.557; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __fice: Ice concentration__, 09.micom.hm., (level: 0) -> maximum PPP is __0.838__; averaged PPP is 0.236; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-09.micom.hm.fice.png)
+ 
+------ 
+ 
+  * __salnlvl: Salinity__, 09.micom.hm., (level: 10.00) -> maximum PPP is __0.987__; averaged PPP is __0.689__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __sealv: Sea level__, 09.micom.hm., (level: 0) -> maximum PPP is __0.991__; averaged PPP is __0.836__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-09.micom.hm.sealv.png)
+ 
+------ 
+ 
+  * __templvl: Temperature__, 09.micom.hm., (level: 10.00) -> maximum PPP is __0.952__; averaged PPP is 0.565; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __fice: Ice concentration__, 10.micom.hm., (level: 0) -> maximum PPP is __0.820__; averaged PPP is 0.241; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-10.micom.hm.fice.png)
+ 
+------ 
+ 
+  * __salnlvl: Salinity__, 10.micom.hm., (level: 10.00) -> maximum PPP is __0.987__; averaged PPP is __0.698__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __sealv: Sea level__, 10.micom.hm., (level: 0) -> maximum PPP is __0.992__; averaged PPP is __0.835__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-10.micom.hm.sealv.png)
+ 
+------ 
+ 
+  * __templvl: Temperature__, 10.micom.hm., (level: 10.00) -> maximum PPP is __0.952__; averaged PPP is 0.566; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __fice: Ice concentration__, 11.micom.hm., (level: 0) -> maximum PPP is __0.812__; averaged PPP is 0.229; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-11.micom.hm.fice.png)
+ 
+------ 
+ 
+  * __salnlvl: Salinity__, 11.micom.hm., (level: 10.00) -> maximum PPP is __0.987__; averaged PPP is __0.705__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __sealv: Sea level__, 11.micom.hm., (level: 0) -> maximum PPP is __0.992__; averaged PPP is __0.832__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-11.micom.hm.sealv.png)
+ 
+------ 
+ 
+  * __templvl: Temperature__, 11.micom.hm., (level: 10.00) -> maximum PPP is __0.965__; averaged PPP is 0.551; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __fice: Ice concentration__, 12.micom.hm., (level: 0) -> maximum PPP is __0.870__; averaged PPP is 0.210; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-12.micom.hm.fice.png)
+ 
+------ 
+ 
+  * __salnlvl: Salinity__, 12.micom.hm., (level: 10.00) -> maximum PPP is __0.987__; averaged PPP is __0.707__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __sealv: Sea level__, 12.micom.hm., (level: 0) -> maximum PPP is __0.992__; averaged PPP is __0.831__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0  ![] (../../figures/FF_ini_try/PPP_ocn/PPP-12.micom.hm.sealv.png)
+ 
+------ 
+ 
+  * __templvl: Temperature__, 12.micom.hm., (level: 10.00) -> maximum PPP is __0.973__; averaged PPP is 0.536; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __abswnd: Absolute wind speed__, All_G01.micom.hy., (level: 0) -> maximum PPP is __0.921__; averaged PPP is 0.293; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __idlagelvl: Ideal age__, All_G01.micom.hy., (level: 10.00) -> maximum PPP is __0.825__; averaged PPP is 0.124; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __lip: Liquid precipitation__, All_G01.micom.hy., (level: 0) -> maximum PPP is __0.913__; averaged PPP is 0.344; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __salnlvl: Salinity__, All.micom.hm., (level: 10.00) -> maximum PPP is __0.986__; averaged PPP is __0.693__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __sealv: Sea level__, All.micom.hm., (level: 0) -> maximum PPP is __0.990__; averaged PPP is __0.829__; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __templvl: Temperature__, All.micom.hm., (level: 10.00) -> maximum PPP is __0.935__; averaged PPP is 0.560; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
+ 
+------ 
+ 
+  * __df_get_att_text   : ncid = 65536 varid = 0 name = calendar: __, _ps_func_check_Spread_output, (level: _ps_f) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
  
 ------ 
  

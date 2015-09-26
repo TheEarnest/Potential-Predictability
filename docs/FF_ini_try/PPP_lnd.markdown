@@ -2,7 +2,7 @@ PPP of all variables in lnd outputs
 ==========
 >> Created on: __Thu Sep 17 17:06:52 CEST 2015__ 
  
->> Last updated on: __Fri Sep 25 17:35:04 CEST 2015__ 
+>> Last updated on: __Sat Sep 26 22:13:13 CEST 2015__ 
 
 * __Region (Lon,Lon,Lat,Lat)__ 
   * SPG: (300,345,48,65) 
@@ -17,19 +17,19 @@ PPP of all variables in lnd outputs
  
 ------ 
  
-  * __BTRAN: transpiration beta factor__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.419; maximum PPP of SPG is __0.826__; maximum PPP of Eurasia is __0.986__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __BTRAN: transpiration beta factor__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.419; maximum PPP of SPG is __0.826__; maximum PPP of Eurasia is __0.986__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_lnd/PPP_All_G02.clm2.h0.BTRAN.png)
  
 ------ 
  
-  * __BUILDHEAT: heat flux from urban building interior to walls and roof__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __0.992__; averaged PPP is __0.753__; maximum PPP of SPG is __0.660__; maximum PPP of Eurasia is __0.944__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __BUILDHEAT: heat flux from urban building interior to walls and roof__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __0.992__; averaged PPP is __0.753__; maximum PPP of SPG is __0.660__; maximum PPP of Eurasia is __0.944__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_lnd/PPP_All_G02.clm2.h0.BUILDHEAT.png)
  
 ------ 
  
-  * __DSTFLXT: total surface dust emission__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __0.921__; averaged PPP is 0.240; maximum PPP of SPG is 0.412; maximum PPP of Eurasia is __0.740__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __DSTFLXT: total surface dust emission__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __0.921__; averaged PPP is 0.240; maximum PPP of SPG is 0.412; maximum PPP of Eurasia is __0.740__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_lnd/PPP_All_G02.clm2.h0.DSTFLXT.png)
  
 ------ 
  
-  * __EFLX_LH_TOT_R: Rural total evaporation__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __0.991__; averaged PPP is 0.557; maximum PPP of SPG is __0.698__; maximum PPP of Eurasia is __0.937__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __EFLX_LH_TOT_R: Rural total evaporation__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __0.991__; averaged PPP is 0.557; maximum PPP of SPG is __0.698__; maximum PPP of Eurasia is __0.937__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_lnd/PPP_All_G02.clm2.h0.EFLX_LH_TOT_R.png)
  
 ------ 
  
@@ -886,7 +886,7 @@ PPP_All_G02.clm2.h0.ZWT.png)
  
 ------ 
  
-  * __BIOGENCO: biogenic CO flux__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __0.998__; averaged PPP is __0.761__; maximum PPP of SPG is __0.924__; maximum PPP of Eurasia is __0.932__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __BIOGENCO: biogenic CO flux__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __0.998__; averaged PPP is __0.761__; maximum PPP of SPG is __0.924__; maximum PPP of Eurasia is __0.932__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_lnd/PPP_All_G02.clm2.h0.BIOGENCO.png)
  
 ------ 
  
