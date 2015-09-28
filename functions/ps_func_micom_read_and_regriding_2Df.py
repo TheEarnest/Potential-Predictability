@@ -52,6 +52,12 @@ if is_using_local_grid == "0" :
   grids_lon = GData.variables['plon'].data
   grids_lat = GData.variables['plat'].data
 
+if grids_lon.max() > 180:
+  temp_grid = grids_lon.copy()
+  temp_grid[temp_grid > 180] = temp_grid[temp_grid > 180] - 360
+  del grids_lon
+  grids_lon = temp_grid
+
 nio.netcdf_file.close(GData)
 
 temp = np.reshape(grids_lon, grids_lon.size)

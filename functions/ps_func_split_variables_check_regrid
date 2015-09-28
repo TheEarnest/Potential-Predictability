@@ -64,8 +64,6 @@ for ModelCompartment in ${ModelCompartments}; do
       cp -f ${tempFN} ${tarDIRrg}/${PPPfile} 
     fi
 
-
-exit 5
     done
   fi
 done
