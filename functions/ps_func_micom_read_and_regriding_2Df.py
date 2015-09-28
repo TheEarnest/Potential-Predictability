@@ -46,7 +46,6 @@ if is_using_local_grid == "1" :
   grids_lon = GData.variables[LonStr].data
   grids_lat = GData.variables[LatStr].data
 
-
 if is_using_local_grid == "0" :
   FGrid = "./grid.nc"
   GData = nio.netcdf_file(FGrid)

@@ -75,10 +75,9 @@ for ModelCompartment in ${ModelCompartments}; do
       matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile_rg}'; ${mScript}; exit "
       PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
       figfilename=`ls --color=no *${PPPfilename}*`
-      cp -f ${figfilename} ${PlotDIR}/PPP_${fname}${fsuffix}
+      cp -f ${figfilename} ${PlotDIR}/${fname}${fsuffix}
       rm -f ${figfilename}
     fi
-
   done
 done
 
