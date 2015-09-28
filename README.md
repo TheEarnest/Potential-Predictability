@@ -13,9 +13,9 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
   * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
-    * [__MICOM__] (docs/FF_ini_try/PPP_ocn.markdown), total figures in ocn (FF_ini_try): __0__ 
-    * [__CAM__] (docs/FF_ini_try/PPP_atm2.markdown), total figures in atm (FF_ini_try): __3432__ 
-    * [__CLM__] (docs/FF_ini_try/PPP_lnd.markdown), total figures in lnd (FF_ini_try): __211__
+    * [__MICOM__] (docs/FF_ini_try/PPP_ocn.markdown), total figures in ocn (FF_ini_try): __84__
+    * [__CAM__] (docs/FF_ini_try/PPP_atm2.markdown), total figures in atm (FF_ini_try): __1066__
+    * [__CLM__] (docs/FF_ini_try/PPP_lnd.markdown), total figures in lnd (FF_ini_try): __141__
     * [__CICE__] (docs/FF_ini_try/PPP_ice.markdown), total figures in ice (FF_ini_try): __0__
 
   * Figures of the PPP for different levels are not shown because there are too many levels and GitHub has presents files smaller than 1MB. 
