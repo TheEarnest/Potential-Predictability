@@ -23,7 +23,7 @@ if [  "${thost}" == "hexagon" ]; then
   #export LIBGL_DEBUG=verbose
 fi
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="ocn"
+ModelCompartments="ice"
 mScript=`echo ${plotScript} | awk -F "/" '{print $NF}' | awk -F ".m" '{print $1}' `
 MatlabScriptDIR=`echo ${plotScript} | awk -F "/${mScript}" '{print $1}'`
 
@@ -35,7 +35,8 @@ for ModelCompartment in ${ModelCompartments}; do
   PPPfiles=`ls ${DIR}/${ModelCompartment}/PPP_all_variables/*  `
   for PPPfile in ${PPPfiles}; do 
     #PPPfile=${DIR}/${ModelCompartment}/PPP_all_variables/PPP_All.micom.hm.sst.nc4 # for testing
-    lonlat=`ncdump -h ${PPPfile} | grep ":units" | grep -i "lon" ` || lonlat=None
+    #lonlat=`ncdump -h ${PPPfile} | grep ":units" | grep -i "lon" ` || lonlat=None
+    lonlat=`ncdump -h ${PPPfile} | grep "lon("  ` || lonlat=None
     # vname of lon & lat has to be checked and pass to matlab ...
     vname=`cdo showvar ${PPPfile} | cut -c2-100 `
     fname=`echo ${PPPfile} | awk -F "/" '{print $NF}' | awk -F "PPP_" '{print $NF}' | awk -F ".nc" '{print $1}'`
