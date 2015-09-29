@@ -16,7 +16,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
     * [__MICOM__] (docs/FF_ini_try/PPP_ocn.markdown), total figures in ocn (FF_ini_try): __84__
     * [__CAM__] (docs/FF_ini_try/PPP_atm2.markdown), total figures in atm (FF_ini_try): __1066__
     * [__CLM__] (docs/FF_ini_try/PPP_lnd.markdown), total figures in lnd (FF_ini_try): __141__
-    * [__CICE__] (docs/FF_ini_try/PPP_ice.markdown), total figures in ice (FF_ini_try): __0__
+    * [__CICE__] (docs/FF_ini_try/PPP_ice.markdown), total figures in ice (FF_ini_try): __96__
 
   * Figures of the PPP for different levels are not shown because there are too many levels and GitHub has presents files smaller than 1MB. 
 
@@ -52,31 +52,4 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 
 ## Notes and Questions
-* some trouble in processing atm data:
-
-```
-cdo sellevidx: Processed 34740 values from 1 variable over 1 timestep ( 0.00s )
-cdo sellevidx: Processed 34740 values from 1 variable over 1 timestep ( 0.01s )
-cdo sellevidx: Processed 34740 values from 1 variable over 1 timestep ( 0.00s )
-Error (cdf_get_att_text) : NetCDF: Attempt to convert between text & numbers
-HDF5-DIAG: Error detected in HDF5 (1.8.5-patch1) thread 0:
-  #000: ../../src/H5T.c line 1721 in H5Tclose(): not a datatype
-    major: Invalid arguments to routine
-    minor: Inappropriate type
-Error (cdf_close) : HDF error
-Error (cdf_get_att_text) : NetCDF: Attempt to convert between text & numbers
-HDF5-DIAG: Error detected in HDF5 (1.8.5-patch1) thread 0:
-  #000: ../../src/H5T.c line 1721 in H5Tclose(): not a datatype
-    major: Invalid arguments to routine
-    minor: Inappropriate type
-Error (cdf_close) : HDF error
-(standard_in) 1: illegal character: :
-(standard_in) 1: syntax error
-(standard_in) 1: syntax error
-(standard_in) 1: syntax error
-(standard_in) 1: syntax error
-Error (cdf_get_att_text) : NetCDF: Attempt to convert between text & numbers
-
-
-```
 
