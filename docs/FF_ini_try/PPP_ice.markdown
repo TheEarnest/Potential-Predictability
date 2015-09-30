@@ -2,7 +2,7 @@ PPP of all variables in ice
 ==========
 >> Created on: __Thu Sep 17 17:08:08 CEST 2015__ 
  
->> Last updated on: __Wed Sep 30 10:29:56 CEST 2015__ 
+>> Last updated on: __Wed Sep 30 10:30:39 CEST 2015__ 
  
 ------ 
  
@@ -18,21 +18,21 @@ PPP of all variables in ice
  
   * __transiy: ice mass transport (y) on North side__, 01.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.337; maximum PPP of SPG is 0.183; maximum PPP of Eurasia is 0.114; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-01.cice.h.transiy.png)
  
-  * __uvel: ice velocity (x)__, 01.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.182; maximum PPP of SPG is 0.468; maximum PPP of Eurasia is 0.419; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-01.cice.h.uvel.png)
+  * __uvel: ice velocity (x)__, 01.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.182; maximum PPP of SPG is 0.468; maximum PPP of Eurasia is 0.419; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-01.cice.h.uvel.png PPP_All_G01.cice.h.uvel.png)
  
-  * __vvel: ice velocity (y)__, 01.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.162; maximum PPP of SPG is 0.312; maximum PPP of Eurasia is 0.206; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-01.cice.h.vvel.png)
+  * __vvel: ice velocity (y)__, 01.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.162; maximum PPP of SPG is 0.312; maximum PPP of Eurasia is 0.206; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-01.cice.h.vvel.png PPP_All_G01.cice.h.vvel.png)
  
-  * __aice: ice area (aggregate)__, 02.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.443; maximum PPP of SPG is __0.606__; maximum PPP of Eurasia is __01.000__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-02.cice.h.aice.png)
+  * __aice: ice area (aggregate)__, 02.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.443; maximum PPP of SPG is __0.606__; maximum PPP of Eurasia is __01.000__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-02.cice.h.aice.png PPP_All_G02.cice.h.aice.png)
  
-  * __fs: grid cell mean snow fraction__, 02.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.446; maximum PPP of SPG is __0.606__; maximum PPP of Eurasia is __01.000__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-02.cice.h.fs.png)
+  * __fs: grid cell mean snow fraction__, 02.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.446; maximum PPP of SPG is __0.606__; maximum PPP of Eurasia is __01.000__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-02.cice.h.fs.png PPP_All_G02.cice.h.fs.png)
  
-  * __hi: grid cell mean ice thickness__, 02.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.454; maximum PPP of SPG is 0.587; maximum PPP of Eurasia is 0.354; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-02.cice.h.hi.png)
+  * __hi: grid cell mean ice thickness__, 02.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.454; maximum PPP of SPG is 0.587; maximum PPP of Eurasia is 0.354; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-02.cice.h.hi.png PPP_All_G02.cice.h.hi.png)
  
-  * __hs: grid cell mean snow thickness__, 02.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.423; maximum PPP of SPG is 0.551; maximum PPP of Eurasia is 0.203; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-02.cice.h.hs.png)
+  * __hs: grid cell mean snow thickness__, 02.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.423; maximum PPP of SPG is 0.551; maximum PPP of Eurasia is 0.203; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-02.cice.h.hs.png PPP_All_G02.cice.h.hs.png)
  
-  * __transix: ice mass transport (x) on East side__, 02.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.358; maximum PPP of SPG is 0.452; maximum PPP of Eurasia is 0.130; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-02.cice.h.transix.png)
+  * __transix: ice mass transport (x) on East side__, 02.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.358; maximum PPP of SPG is 0.452; maximum PPP of Eurasia is 0.130; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-02.cice.h.transix.png PPP_All_G02.cice.h.transix.png)
  
-  * __transiy: ice mass transport (y) on North side__, 02.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.296; maximum PPP of SPG is 0.466; maximum PPP of Eurasia is 0.222; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-02.cice.h.transiy.png)
+  * __transiy: ice mass transport (y) on North side__, 02.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.296; maximum PPP of SPG is 0.466; maximum PPP of Eurasia is 0.222; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-02.cice.h.transiy.png PPP_All_G02.cice.h.transiy.png)
  
   * __uvel: ice velocity (x)__, 02.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.208; maximum PPP of SPG is 0.446; maximum PPP of Eurasia is 0.276; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-02.cice.h.uvel.png)
  
@@ -198,21 +198,21 @@ PPP of all variables in ice
  
   * __vvel: ice velocity (y)__, 12.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.144; maximum PPP of SPG is 0.251; maximum PPP of Eurasia is 0.159; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP-12.cice.h.vvel.png)
  
-  * __uvel: ice velocity (x)__, All_G01.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.145; maximum PPP of SPG is __0.993__; maximum PPP of Eurasia is 0.365; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __uvel: ice velocity (x)__, All_G01.cice.h., (level: 0) -> maximum PPP is __01.000__; averaged PPP is 0.145; maximum PPP of SPG is __0.993__; maximum PPP of Eurasia is 0.365; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP_All_G01.cice.h.uvel.png)
  
-  * __vvel: ice velocity (y)__, All_G01.cice.h., (level: 0) -> maximum PPP is __0.929__; averaged PPP is 0.139; maximum PPP of SPG is __0.929__; maximum PPP of Eurasia is __0.820__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __vvel: ice velocity (y)__, All_G01.cice.h., (level: 0) -> maximum PPP is __0.929__; averaged PPP is 0.139; maximum PPP of SPG is __0.929__; maximum PPP of Eurasia is __0.820__; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP_All_G01.cice.h.vvel.png)
  
-  * __aice: ice area (aggregate)__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.788__; averaged PPP is 0.220; maximum PPP of SPG is 0.507; maximum PPP of Eurasia is 0.389; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __aice: ice area (aggregate)__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.788__; averaged PPP is 0.220; maximum PPP of SPG is 0.507; maximum PPP of Eurasia is 0.389; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP_All_G02.cice.h.aice.png)
  
-  * __fs: grid cell mean snow fraction__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.788__; averaged PPP is 0.212; maximum PPP of SPG is 0.499; maximum PPP of Eurasia is 0.380; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __fs: grid cell mean snow fraction__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.788__; averaged PPP is 0.212; maximum PPP of SPG is 0.499; maximum PPP of Eurasia is 0.380; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP_All_G02.cice.h.fs.png)
  
-  * __hi: grid cell mean ice thickness__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.858__; averaged PPP is 0.216; maximum PPP of SPG is 0.501; maximum PPP of Eurasia is 0.381; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __hi: grid cell mean ice thickness__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.858__; averaged PPP is 0.216; maximum PPP of SPG is 0.501; maximum PPP of Eurasia is 0.381; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP_All_G02.cice.h.hi.png)
  
-  * __hs: grid cell mean snow thickness__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.806__; averaged PPP is 0.201; maximum PPP of SPG is 0.487; maximum PPP of Eurasia is 0.365; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __hs: grid cell mean snow thickness__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.806__; averaged PPP is 0.201; maximum PPP of SPG is 0.487; maximum PPP of Eurasia is 0.365; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP_All_G02.cice.h.hs.png)
  
-  * __transix: ice mass transport (x) on East side__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.791__; averaged PPP is 0.135; maximum PPP of SPG is 0.379; maximum PPP of Eurasia is 0.132; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __transix: ice mass transport (x) on East side__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.791__; averaged PPP is 0.135; maximum PPP of SPG is 0.379; maximum PPP of Eurasia is 0.132; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP_All_G02.cice.h.transix.png)
  
-  * __transiy: ice mass transport (y) on North side__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.688__; averaged PPP is 0.112; maximum PPP of SPG is 0.411; maximum PPP of Eurasia is 0.246; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN 
+  * __transiy: ice mass transport (y) on North side__, All_G02.cice.h., (level: 0) -> maximum PPP is __0.688__; averaged PPP is 0.112; maximum PPP of SPG is 0.411; maximum PPP of Eurasia is 0.246; maximum PPP of Nino 3 is NaN; maximum PPP of Atlantic Nino 3 is NaN ![] (../../figures/FF_ini_try/PPP_ice/PPP_All_G02.cice.h.transiy.png)
  
   * __: T grid center longitude T grid center latitude area of grid cell model time ice area (aggregate)__, , (level: ) -> maximum PPP is 0; averaged PPP is 0; maximum PPP of SPG is 0; maximum PPP of Eurasia is 0; maximum PPP of Nino 3 is 0; maximum PPP of Atlantic Nino 3 is 0 
  
