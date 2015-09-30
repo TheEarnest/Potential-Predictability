@@ -16,7 +16,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
     * [__MICOM__] (docs/FF_ini_try/PPP_ocn.markdown), total figures in ocn (FF_ini_try): __84__
     * [__CAM__] (docs/FF_ini_try/PPP_atm2.markdown), total figures in atm (FF_ini_try): __1066__
     * [__CLM__] (docs/FF_ini_try/PPP_lnd.markdown), total figures in lnd (FF_ini_try): __141__
-    * [__CICE__] (docs/FF_ini_try/PPP_ice.markdown), total figures in ice (FF_ini_try): __96__
+    * [__CICE__] (docs/FF_ini_try/PPP_ice.markdown), total figures in ice (FF_ini_try): __104__
 
   * Figures of the PPP for different levels are not shown because there are too many levels and GitHub has presents files smaller than 1MB. 
 
