@@ -6,6 +6,7 @@ Prognostic Potential Predictability (PPP)
 Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
   * Figures of the PPP for different levels are not shown because there are too many levels and GitHub can only present the web-page if the page size is smaller than 1MB.
+
 ## Analysis:
 
 --------------------------------------
