@@ -22,11 +22,11 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
     * Data is kept @Norstore-osl:
     * We using [ Norwegian Earth System Model (NorESM)] (http://folk.uib.no/ngfhd/EarthClim/)
     * Applying full-field SST ([HadISST2](http://www.metoffice.gov.uk/hadobs/hadisst2/)) assimilation ([EnKF](http://enkf.nersc.no/), 30 members) on ocean compartment only
-    * From 1970-2010
-     * PPP of SST ![] (figures/FF_ini_2nd_try/PPP_PPP-08.cam2.h0.SST.png)
-     * PPP (to observation) of SST ![] (figures/FF_ini_2nd_try/Glabal2D_sst_NorCPM_F19_tn21_PP08.nc.png)
-     * Prediction Skill of SST ![] (figures/FF_ini_2nd_try/Glabal2D_corr_ACC_SST_r008_08.nc.png)
-       * Notes on this prediction:
+    * From __1970-2010__ (or to 2015, depend on the period of HadISST2)
+    * PPP of SST ![] (figures/FF_ini_2nd_try/PPP_PPP-08.cam2.h0.SST.png)
+    * PPP (to observation) of SST ![] (figures/FF_ini_2nd_try/Glabal2D_sst_NorCPM_F19_tn21_PP08.nc.png)
+    * Prediction Skill of SST ![] (figures/FF_ini_2nd_try/Glabal2D_corr_ACC_SST_r008_08.nc.png)
+    * Notes on this prediction:
 --------------------------------------
 * ### Full field SST assimilated Ocean of NorESM (1st version)
 
@@ -42,14 +42,14 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
     * Data is kept @Norstore-osl:/tape/NS9207K/earnest/NorCPM/FF_ini_try_tar/
     * We using [ Norwegian Earth System Model (NorESM)] (http://folk.uib.no/ngfhd/EarthClim/)
     * Applying full-field SST ([HadISST2](http://www.metoffice.gov.uk/hadobs/hadisst2/)) assimilation ([EnKF](http://enkf.nersc.no/), 30 members) on ocean compartment only
-    * From 1980-2007
+    * From __1980-2007__
     * Known issue: skill lost due to one-grid shift in preparing SST data. It also implies that the PPP of ensemble members is not really robust. 
-      * PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
-      * Redefine the noise as the spread to observation (SST) can identify this skill loose. 
-     * PPP of SST ![] (figures/FF_ini_try/PPP_PPP-08.cam2.h0.SST.png)
-     * PPP (to observation) of SST ![] (figures/FF_ini_try/Glabal2D_sst_NorCPM_F19_tn21_PP08.nc.png)
-     * Prediction Skill of SST ![] (figures/FF_ini_try/Glabal2D_corr_ACC_SST_r008_08.nc.png)
-       * Notes on this prediction:
+    * PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
+    * Redefine the noise as the spread to observation (SST) can identify this skill loose. 
+   * PPP of SST ![] (figures/FF_ini_try/PPP_PPP-08.cam2.h0.SST.png)
+   * PPP (to observation) of SST ![] (figures/FF_ini_try/Glabal2D_sst_NorCPM_F19_tn21_PP08.nc.png)
+   * Prediction Skill of SST ![] (figures/FF_ini_try/Glabal2D_corr_ACC_SST_r008_08.nc.png)
+   * Notes on this prediction:
 
 ------------------
 ## Do these before using the script ##
