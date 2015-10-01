@@ -5,7 +5,12 @@ Prognostic Potential Predictability (PPP)
 
 Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
-  * Figures of the PPP for different levels are not shown because there are too many levels and GitHub can only present the web-page if the page size is smaller than 1MB.
+  * Notes for Script Developing: 
+    * Should noted where is the main scripts sitting
+    * Should add the sctipt for calculating PPP with observation 
+    * Should add a matlab script for ploting results of vertical section (mainly for MICOM)
+    * Figures of the PPP for different levels are not shown because there are too many levels and GitHub can only present the web-page if the page size is smaller than 1MB.
+
 
 ## Analysis:
 
@@ -72,4 +77,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 
 ## Notes and Questions
+
+  * Main scripts are sitting @norstore-osl:/norstore_osl/projects/NS9207K/earnest/Analysis/Prognostic-Potential-Predictabil
+
 
