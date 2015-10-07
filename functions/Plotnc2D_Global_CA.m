@@ -11,7 +11,6 @@ elseif ~isempty(strfind(computer,'PCWIN64'))
 	load D:\MyCloud\SkyDrive\Program\Matlab\work\Z_MatFiles\VAIO_Workaround
 	addpath D:\MyCloud\SkyDrive\Program\Matlab\SelfDefine\export_fig
 	addpath D:\MyCloud\SkyDrive\Program\Matlab\SelfDefine\m_map
-	addpath D:\MyCloud\SkyDrive\Program\Matlab\SelfDefine\export_fig
 	eval(['addpath ' SDpath])
 elseif ~isempty(strfind(computer,'GLNXA64'))
   addpath /home/uib/earnest/tools/Matlab_SelfDefine
