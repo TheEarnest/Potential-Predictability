@@ -74,7 +74,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 ## Working Notes
 
-  * Trouble in presenting local maximum predictability!!!.
+  * Trouble in presenting local maximum predictability!!! (HDF error).
   * Should noted where is the main scripts sitting
   * Should add the sctipt for calculating PPP with observation
   * Should add a matlab script for ploting results of vertical section (mainly for MICOM)
