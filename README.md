@@ -78,6 +78,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 ## Notes and Questions
 
+  * add a global map of SST bias or RMSE
   * Main scripts are sitting @norstore-osl:/norstore_osl/projects/NS9207K/earnest/Analysis/Prognostic-Potential-Predictabil
 
 
