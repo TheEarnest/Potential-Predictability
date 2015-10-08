@@ -51,7 +51,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
     * PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
     * Redefine the noise as the spread to observation (SST) can identify this skill loose. 
    * PPP of SST ![] (figures/FF_ini_try/PPP_PPP-08.cam2.h0.SST.png)
-   * PPP (to observation) of SST ![] (figures/FF_ini_try/Glabal2D_sst_NorCPM_F19_tn21_PP08.nc.png)
+   * PPP (against observation) of SST ![] (figures/FF_ini_try/Glabal2D_sst_NorCPM_F19_tn21_PP08.nc.png)
    * Prediction Skill of SST ![] (figures/FF_ini_try/Glabal2D_corr_ACC_SST_r008_08.nc.png)
    * Notes on this prediction:
 
@@ -74,6 +74,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 ## Working Notes
 
+  * Trouble in presenting local maximum predictability!!!.
   * Should noted where is the main scripts sitting
   * Should add the sctipt for calculating PPP with observation
   * Should add a matlab script for ploting results of vertical section (mainly for MICOM)
