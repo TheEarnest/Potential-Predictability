@@ -76,7 +76,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * The script of CAM automatically keeps the output of previous simulation, of which the exported variables are highly possible different with any new simulation. So those files (NorCPM_F19_tn21_mem??.cam2.h0.1979-12.nc in this case) should be removed in advance.   
 
 
-## Notes and Questions
+## Working Notes
 
   * add a global map of SST bias or RMSE
   * Main scripts are sitting @norstore-osl:/norstore_osl/projects/NS9207K/earnest/Analysis/Prognostic-Potential-Predictabil
