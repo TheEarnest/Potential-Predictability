@@ -166,6 +166,8 @@ for ModelCompartment in ${ModelCompartments}; do
 #  if [ "${mlscheck}" != "None" ] &&  [ "${nameinfix}" == "02.micom.hm." ] ; then 
 #    exit 5 
 #  fi 
+
+
   done
   sed -i s/"total figures in ${ModelCompartment} (${ExpID}): ".*/"total figures in ${ModelCompartment} (${ExpID}): __${figureCount}__"/g ${ScriptHome}/README.md
 done
