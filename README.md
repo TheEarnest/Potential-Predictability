@@ -10,6 +10,23 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 
 ## Analysis:
+--------------------------------------
+* ### Full Profiled assimilated Ocean and State-nudged Atmosphere of NorESM (1st version)
+
+  * About this analysis:
+    * __Finished on ?? ?? 2016__
+    * Have to wait for Yiguo Wang's work on full profiled assimilation
+    * More details can be found in the [description page] (docs/FrontPage.markdown)
+    * PPP of SST ![] (figures/FFSSTwiNudA_ini_1st_try/PPP_PPP-08.cam2.h0.SST.png)
+
+
+--------------------------------------
+* ### Full field SST assimilated Ocean and State-nudged Atmosphere of NorESM (1st version)
+
+  * About this analysis:
+    * __Finished on ?? ?? 2015__
+    * More details can be found in the [description page] (docs/FrontPage.markdown)
+    * PPP of SST ![] (figures/FFSSTwiNudA_ini_1st_try/PPP_PPP-08.cam2.h0.SST.png)
 
 --------------------------------------
 * ### Full field SST assimilated Ocean of NorESM (2nd version)
