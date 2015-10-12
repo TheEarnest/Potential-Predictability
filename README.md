@@ -2,6 +2,7 @@
 Prognostic Potential Predictability (PPP)
 ==========
 >> For calculating Prognostic Potential Predictability (PPP) on nostore-osl 
+>> Mainly evaluating if the system is well constrained. 
 
 Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
@@ -32,7 +33,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
     * Notes on this prediction:
 
 --------------------------------------
-* ### Full field SST assimilated Ocean of NorESM (1st version)
+* ### [Full field SST assimilated Ocean of NorESM (1st version)] (doc/FrontPage_FF_ini_try.markdown)
 
   * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
