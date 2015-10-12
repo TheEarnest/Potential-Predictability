@@ -33,11 +33,11 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
     * Notes on this prediction:
 
 --------------------------------------
-* ### [Full field SST assimilated Ocean of NorESM (1st version)] (doc/FrontPage_FF_ini_try.markdown)
+* ### [Full field SST assimilated Ocean of NorESM (1st version)] (docs/FrontPage_FF_ini_try.markdown)
 
   * About this analysis:
    * __Finished on 18 Apr. 2015__
-   * More details can be found in the [description page] (doc/FrontPage_FF_ini_try.markdown)
+   * More details can be found in the [description page] (docs/FrontPage_FF_ini_try.markdown)
    * PPP of SST ![] (figures/FF_ini_try/PPP_PPP-08.cam2.h0.SST.png)
 
 ------------------
