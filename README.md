@@ -63,6 +63,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 ## Working Notes
 
+  * MICOM hy output is missing in the figure list (also fail plot the figures?)
   * Trouble in presenting local maximum predictability!!! (HDF error).
   * Should add the sctipt for calculating PPP with observation
   * Should add a matlab script for ploting results of vertical section (mainly for MICOM)
