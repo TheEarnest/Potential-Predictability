@@ -11,7 +11,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 ## Analysis:
 --------------------------------------
-* ### Full Profiled assimilated Ocean and State-nudged Atmosphere of NorESM (1st version)
+* ### Full Profile assimilated Ocean and State-nudged Atmosphere of NorESM (1st version)
 
   * About this analysis:
     * __Finished on ?? ?? 2016__
@@ -19,14 +19,15 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
     * More details can be found in the [description page] (docs/FrontPage.markdown)
     * PPP of SST ![] (figures/FFSSTwiNudA_ini_1st_try/PPP_PPP-08.cam2.h0.SST.png)
 
-
 --------------------------------------
-* ### Full field SST assimilated Ocean and State-nudged Atmosphere of NorESM (1st version)
+* ### Full Profile assimilated Ocean of NorESM (1st version)
 
   * About this analysis:
-    * __Finished on ?? ?? 2015__
+    * __Finished on ?? ?? 2016__
+    * Have to wait for Yiguo Wang's work on full profiled assimilation
     * More details can be found in the [description page] (docs/FrontPage.markdown)
     * PPP of SST ![] (figures/FFSSTwiNudA_ini_1st_try/PPP_PPP-08.cam2.h0.SST.png)
+
 
 --------------------------------------
 * ### Full field SST assimilated Ocean of NorESM (2nd version)
@@ -72,6 +73,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 ## Working Notes
 
+  * ./cheeck_Prognostic_SNR[65]: .: line 31: 24098: Memory fault(coredump) for historical ensemble
   * MICOM hy output is missing in the figure list (also fail plot the figures?)
   * Trouble in presenting local maximum predictability!!! (HDF error).
   * Should add the sctipt for calculating PPP with observation
