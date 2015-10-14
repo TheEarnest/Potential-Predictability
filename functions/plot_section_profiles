@@ -1,0 +1,91 @@
+#! /bin/bash
+###############################################################################
+# check micom annual output 
+#------------------------------------------------------------------------------
+#
+set -ex
+
+ScriptHome=`pwd`
+#DataHOME=/work/earnest/Analysis/NorCPM_COREv2_output
+#DataHOME=/work/earnest/Analysis/NorCPM_Fifth_try_output
+DataHOME=/work/earnest/Analysis/NorCPM_F19_tn21_output
+#DataHOME=/work/earnest/Analysis/NorCPM_Pool_try_output
+#DataHOME=/work/earnest/Analysis/NorCPM_Historical_output
+#Mmin=0; Mmax=50; 
+#varname="salnlvl"; MCI=0.25; DCI=0.05; Dmax=0.5; Dmin="-0.5"; Ovar='s_an'
+#varname="templvl"; MCI=2; DCI=0.25; Dmax=2; Dmin="-2"; Ovar='t_an'
+# for bias -
+Mmax=4; Mmin=-4;
+#varname="salnlvl"; MCI=0.25; DCI=0.05; Dmax=0.5; Dmin="-0.5"; Ovar='s_an'
+varname="templvl"; MCI=0.5; DCI=0.25; Dmax=2; Dmin="-2"; Ovar='t_an'
+# NorCPM_COREv2_output        
+# NorCPM_F19_tn21_output      
+# NorCPM_Fifth_try_output     
+# NorCPM_Historical_output    
+# NorCPM_Pool_try_output
+mScriptHome=/home/uib/earnest/Analysis/epocasa/micom
+mScriptGM=Plotnc2D_Global_micom
+mScript=Plotnc2D_profile
+matlab=`which matlab` || {
+  module load matlab
+  matlab=`which matlab`
+}
+
+vnames="templvl salnlvl"
+ 
+for varname in ${vnames}; do 
+
+
+DataDIR=${DataHOME}/Bias_${varname}
+meanFNs=`ls --color=no ${DataDIR}/*Dmean*`
+
+
+if [ "${varname}" == "templvl" ]; then
+#  MCI=2; DCI=0.25; Dmax=2; Dmin="-2"; Ovar='t_an'
+  MCI=0.5; DCI=0.25; Dmax=4; Dmin="-4"; Ovar='t_an'
+elif [ "${varname}" == "salnlvl" ]; then
+  MCI=0.25; DCI=0.05; Dmax=0.5; Dmin="-0.5"; Ovar='s_an'
+#  MCI=0.25; DCI=0.05; Dmax=0.5; Dmin="-0.5"; Ovar='s_an'
+fi
+for meanFN in ${meanFNs}; do  
+
+  FNprefix=`echo ${meanFN} | awk -F "Dmean" '{print $1}'`
+  biasFN=`ls ${FNprefix}*Dbias* ` || biasFN=None
+  diffFN=`ls ${FNprefix}*Ddiff* `
+
+  woacheck=`echo ${meanFN} | grep woa13` || woacheck="None"
+  if [ ${woacheck} == "None" ]; then
+    var=${varname}
+  else
+    var=${Ovar}
+  fi
+  cd ${mScriptHome}
+
+  GMcheck=`echo ${meanFN} | grep GM` || GMcheck="None"
+  if [ ${GMcheck} == "None" ]; then
+   matlab -nosplash -nodesktop -r "Cvname='${var}';Svname='${var}';Cfilename='${meanFN}'; Sfilename='${diffFN}'; CCLevelStepVar1=${MCI}; SCLevelStepVar1=${DCI}; CMinVal=${Mmin}; CMaxVal=${Mmax}; SMinVal=${Dmin}; SMaxVal=${Dmax}; ${mScript}; exit"
+
+#  matlab -nosplash -nodesktop -r "Cvname='${var}';Svname='${var}';Cfilename='${biasFN}'; Sfilename='${diffFN}'; CCLevelStepVar1=${MCI}; SCLevelStepVar1=${DCI}; CMinVal=${Mmin}; CMaxVal=${Mmax}; SMinVal=${Dmin}; SMaxVal=${Dmax}; ${mScript}; exit"
+  if [ "${biasFN}" != "None" ]; then
+    matlab -nosplash -nodesktop -r "Cvname='${var}';Svname='${var}';Cfilename='${biasFN}'; Sfilename='${biasFN}'; CCLevelStepVar1=${MCI}; SCLevelStepVar1=${DCI}; CMinVal=${Mmin}; CMaxVal=${Mmax}; SMinVal=${Dmin}; SMaxVal=${Dmax}; ${mScript}; exit"
+  fi
+  else
+    matlab -nosplash -nodesktop -r "vname='${var}';filename='${diffFN}';${mScriptGM}; exit "
+  fi
+
+
+exit
+done # for different regions 
+
+GMfns=`ls --color=no ${DataDIR}/GM_Bias*`
+for GMfn in ${GMfns}; do
+  matlab -nosplash -nodesktop -r "vname='${varname}';filename='${GMfn}';${mScriptGM}; exit"
+done
+GMDbias=/work/earnest/wrk/GM_Dbias
+cdo -O ensmean ${GMfns} ${GMDbias}
+matlab -nosplash -nodesktop -r "vname='${varname}';filename='${GMDbias}';${mScriptGM}; exit "
+
+
+
+
+done
