@@ -33,41 +33,47 @@ if ~exist('Cvname','var'), Cvname='templvl'; end
 if ~exist('Svname','var'), Svname='templvl'; end
 if ~exist('Cfilename','var'), Cfilename='/work/earnest/Analysis/NorCPM_F19_tn21_output/Bias_templvl/WP_templvl_NorCPM_F19_tn21_ensmean_1995_2004.nc'; end
 if ~exist('Sfilename','var'), Sfilename='/work/earnest/Analysis/NorCPM_F19_tn21_output/Bias_templvl/WP_Bias_templvl_NorCPM_F19_tn21_ensmean_1995_2004.nc'; end
-if ~exist('CMinVal','var'), CMinVal = 4; end
-if ~exist('CMaxVal','var'), CMaxVal = 28; end
-if ~exist('CCLevelStepVar1','var'), CCLevelStepVar1=2; end
-if ~exist('SMinVal','var'), CMinVal = -4; end
-if ~exist('SMaxVal','var'), CMaxVal = 4; end
-if ~exist('SCLevelStepVar1','var'), SCLevelStepVar1=1; end
+if ~exist('CMinVal','var'), CMinVal = 0; end
+if ~exist('CMaxVal','var'), CMaxVal = 1; end
+if ~exist('CCLevelStepVar1','var'), CCLevelStepVar1=0.1; end
+if ~exist('SMinVal','var'), SMinVal = 0; end
+if ~exist('SMaxVal','var'), SMaxVal = 1; end
+if ~exist('SCLevelStepVar1','var'), SCLevelStepVar1=0.1; end
 
 % -----------------------------------------------------------------------
-MaxDepth = 1500; 
+MaxDepth =4000; 
 ScreenPos = [74     56   1111    629];
 
 temp = strsplit(Cfilename, DSep);
 CaseName = temp{end}
 
-Data = readnetcdf_one(Cfilename, Cvname); Cvar = Data.data; Cvar(Cvar < -100) = NaN;
-Clong = Data.lon; Clati = Data.lat; Cdepth = Data.depth;
-if (length(Clong) > 1)
-  [mCx, mCdepth] = meshgrid(Clong, Cdepth);
-elseif (length(Clati) > 1)
+Data = readnetcdf_one(Cfilename, Cvname); 
+Cvar = Data.data(:,:,3); Cvar(Cvar > 100) = NaN;
+%Clong = Data.lon; 
+Clati = Data.lat; 
+Cdepth = Data.depth_bnds(1,:);
+%Cdepth = Data.depth;
+%if (length(Clong) > 1)
+%  [mCx, mCdepth] = meshgrid(Clong, Cdepth);
+%elseif (length(Clati) > 1)
   [mCx, mCdepth] = meshgrid(Clati, Cdepth);
-end
+%end
 
 Data = readnetcdf_one(Sfilename, Svname); 
-if ~exist('Data.att_add_offset','var')
-  Svar = Data.data.*double(Data.att_scale_factor) + double(Data.att_add_offset);
-  Svar(Svar < -100) = NaN;
-else
-  Svar = Data.data; Svar(Svar < -100) = NaN;
-end
-Slong = Data.lon; Slati = Data.lat; Sdepth = Data.depth;
-if (length(Slong) > 1)
-  [mSx, mSdepth] = meshgrid(Slong, Sdepth);
-elseif (length(Slati) > 1)
+%if ~exist('Data.att_add_offset','var')
+%  Svar = Data.data.*double(Data.att_scale_factor) + double(Data.att_add_offset);
+%  Svar(Svar < -100) = NaN;
+%else
+  Svar = Data.data(:,:,3); Svar(Svar > 100) = NaN;
+%end
+%Slong = Data.lon; 
+Slati = Data.lat; 
+Sdepth = Data.depth_bnds(1,:);
+%if (length(Slong) > 1)
+%  [mSx, mSdepth] = meshgrid(Slong, Sdepth);
+%elseif (length(Slati) > 1)
   [mSx, mSdepth] = meshgrid(Slati, Sdepth);
-end
+%end
 mCvar = squeeze(Cvar)';
 mSvar = squeeze(Svar)';
 
@@ -130,20 +136,20 @@ acmap = mycmap(1:4:end,:); %acmap(end/2:(end/2+1),:) = 1;
 colormap(acmap);
 
 yHL = ylabel('Depth (m)', 'fontsize', 16);
-if (length(Clong) > 1)
-  set(gca, 'XTick', -170:10:170)
-  set(gca, 'XTickLabel', ['170W';'160W';'150W';'140W';'130W';'120W';'110W'; ...
-                          '110W';'100W';' 90W';' 80W';' 70W';' 60W';' 50W'; ...
-                          ' 40W';' 30W';' 20W';' 10W';'   0';' 10E';' 20E'; ...
-                          ' 30E';' 40E';' 50E';' 60E';' 70E';' 80E';' 90E'; ...
-                          '100E';'110E';'120E';'130E';'140E';'150E';'160E'; ...
-                          '170E'])
-elseif (length(Clati) > 1)
+%if (length(Clong) > 1)
+%  set(gca, 'XTick', -170:10:170)
+%  set(gca, 'XTickLabel', ['170W';'160W';'150W';'140W';'130W';'120W';'110W'; ...
+%                          '110W';'100W';' 90W';' 80W';' 70W';' 60W';' 50W'; ...
+%                          ' 40W';' 30W';' 20W';' 10W';'   0';' 10E';' 20E'; ...
+%                          ' 30E';' 40E';' 50E';' 60E';' 70E';' 80E';' 90E'; ...
+%                          '100E';'110E';'120E';'130E';'140E';'150E';'160E'; ...
+%                          '170E'])
+%elseif (length(Clati) > 1)
   set(gca, 'XTick', -70:10:70)
   set(gca, 'XTickLabel', ['70S';'60S';'50S';'40S';'30S';'20S';'10S';'  0'; ...
                           '10N';'20N';'30N';'40N';'50N';'60N';'70N'; ...
                           ])
-end
+%end
 
 axis([min(mCx(:)) max(mCx(:)) 0 MaxDepth])
 box on;
