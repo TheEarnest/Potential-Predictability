@@ -56,11 +56,11 @@ for ModelCompartment in ${ModelCompartments}; do
         LonStr=${LonStr//\ }; LatStr=${LatStr//\ }
         echo ${PPPfile}
         cd ${MatlabScriptDIR}
-        matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile}'; ${mScript}; exit "
-        PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
-        figfilename=`ls --color=no *${PPPfilename}*`
-        cp -f ${figfilename} ${PlotDIR}/PPP${fname}${fsuffix}
-        rm -f ${figfilename}
+#        matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile}'; ${mScript}; exit "
+#        PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
+#        figfilename=`ls --color=no *${PPPfilename}*`
+#        cp -f ${figfilename} ${PlotDIR}/PPP${fname}${fsuffix}
+#        rm -f ${figfilename}
       fi
     else
       # path has to be redirted to regrid path
@@ -74,10 +74,10 @@ for ModelCompartment in ${ModelCompartments}; do
       echo ${PPPfile}
       cd ${MatlabScriptDIR}
 #      matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile_rg}'; ${mScript}; exit "
-      PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
-      figfilename=`ls --color=no *${PPPfilename}*`
-      cp -f ${figfilename} ${PlotDIR}/PPP${fname}${fsuffix}
-      rm -f ${figfilename}
+#      PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
+#      figfilename=`ls --color=no *${PPPfilename}*`
+#      cp -f ${figfilename} ${PlotDIR}/PPP${fname}${fsuffix}
+#      rm -f ${figfilename}
     fi
   done
 done
