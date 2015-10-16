@@ -3,7 +3,7 @@
 # check prediction skill
 #------------------------------------------------------------------------------
 #
-set -ex
+set -e
 MainScript=cheeck_Prognostic_SNR
 if [ ! -f ${MainScript} ]; then
   cd ..
@@ -23,7 +23,7 @@ if [  "${thost}" == "hexagon" ]; then
   #export LIBGL_DEBUG=verbose
 fi
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="ice"
+ModelCompartments="ocn"
 mScript=`echo ${plotScript} | awk -F "/" '{print $NF}' | awk -F ".m" '{print $1}' `
 MatlabScriptDIR=`echo ${plotScript} | awk -F "/${mScript}" '{print $1}'`
 
@@ -56,11 +56,11 @@ for ModelCompartment in ${ModelCompartments}; do
         LonStr=${LonStr//\ }; LatStr=${LatStr//\ }
         echo ${PPPfile}
         cd ${MatlabScriptDIR}
-        matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile}'; ${mScript}; exit "
-        PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
-        figfilename=`ls --color=no *${PPPfilename}*`
-        cp -f ${figfilename} ${PlotDIR}/PPP${fname}${fsuffix}
-        rm -f ${figfilename}
+#        matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile}'; ${mScript}; exit "
+#        PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
+#        figfilename=`ls --color=no *${PPPfilename}*`
+#        cp -f ${figfilename} ${PlotDIR}/PPP${fname}${fsuffix}
+#        rm -f ${figfilename}
       fi
     else
       # path has to be redirted to regrid path
@@ -73,11 +73,11 @@ for ModelCompartment in ${ModelCompartments}; do
 
       echo ${PPPfile}
       cd ${MatlabScriptDIR}
-      matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile_rg}'; ${mScript}; exit "
-      PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
-      figfilename=`ls --color=no *${PPPfilename}*`
-      cp -f ${figfilename} ${PlotDIR}/PPP${fname}${fsuffix}
-      rm -f ${figfilename}
+#      matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile_rg}'; ${mScript}; exit "
+#      PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
+#      figfilename=`ls --color=no *${PPPfilename}*`
+#      cp -f ${figfilename} ${PlotDIR}/PPP${fname}${fsuffix}
+#      rm -f ${figfilename}
     fi
   done
 done
