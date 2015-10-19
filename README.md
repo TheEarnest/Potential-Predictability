@@ -73,6 +73,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 ## Working Notes
 
+  * the ploting script has to be revised to get a better presentation, ie thiner colorbar, grids lines, ....
   * ./cheeck_Prognostic_SNR[65]: .: line 31: 24098: Memory fault(coredump) for historical ensemble
   * MICOM hy output is missing in the figure list (also fail plot the figures?)
   * Trouble in presenting local maximum predictability!!! (HDF error).

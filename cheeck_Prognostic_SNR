@@ -7,7 +7,7 @@
 # ./cheeck_Prognostic_SNR[71]: .: line 24: 33535: Memory fault(coredump)
 # Segmentation fault (core dumped)
 #
-DebugSetting="set -ex"
+DebugSetting="set -x"
 ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 # Parameters
