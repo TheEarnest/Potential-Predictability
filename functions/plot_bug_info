@@ -1,0 +1,24 @@
+
+
+                 R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Error using netcdflib
+The NetCDF library encountered an error during execution of 'inqVarID' function
+- 'Variable not found (NC_ENOTVAR)'.
+
+Error in netcdf.inqVarID (line 22)
+varid = netcdflib('inqVarID', ncid, varname);
+
+Error in readnetcdf_one (line 13)
+varid = netcdf.inqVarID(ncid, VarStr);
+
+Error in Plotnc2D_Global_CA (line 43)
+Data = readnetcdf_one(filename, vname); var = Data.data;
+
+
+
