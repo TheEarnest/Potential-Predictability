@@ -21,7 +21,7 @@ casePrefix=NorCPM_F19_tn21
 MEyear=2000
 
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="lnd"
+ModelCompartments="atm"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -76,6 +76,11 @@ for compartment in ${ModelCompartments}; do
     . ${funcPath}/ps_func_check_Signal2NoiseRatio
     # spliting variables
     . ${funcPath}/ps_func_split_variables_check
+
+    if [ "${compartment}" == "atm" ]; then
+      # for regional PPP
+      . ${funcPath}/ps_func_check_regional_PPP
+    fi
   done
 done
 
