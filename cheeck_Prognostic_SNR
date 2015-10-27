@@ -90,8 +90,9 @@ for compartment in ${ModelCompartments}; do
       #RegionN="AtlNino3"; RegLonLat="-20,-0,-3,3"
       #RegionN="SPG"; RegLonLat="300,345,48,65"
       #######################################################################
-      #. ${funcPath}/ps_func_check_regional_sqr
-      . ${funcPath}/ps_func_check_regional_Spread
+#      . ${funcPath}/ps_func_check_regional_sqr
+#      . ${funcPath}/ps_func_check_regional_Spread
+      . ${funcPath}/ps_func_check_regional_Signal2NoiseRatio
     fi
   done
 done

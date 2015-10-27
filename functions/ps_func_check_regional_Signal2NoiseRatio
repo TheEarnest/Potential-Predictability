@@ -1,0 +1,83 @@
+#! /bin/bash
+###############################################################################
+# ensemble info
+#------------------------------------------------------------------------------
+#
+${DebugSetting}
+JobStartTime=`date`
+JobName='ps_func_check_regional_Signal2NoiseRatio'
+# 
+echo ${LinnBreaker}
+echo ${LinnBreaker}
+echo "Starting "${JobName}" of "${compartment}" ...... "
+
+tempPrefix=t_'ps_func_check_regional_Signal2NoiseRatio'
+###############################################################################
+tarDIR=${DIR}/${Mod}/Signal2NoiseRatio_Regional/${RegionN}_${VarName}
+EnsDiffVarDIR=${DIR}/${Mod}/EnsDiffVar_Regional/${RegionN}_${VarName}
+EnsMergedFile=` ls --color=no ${DIR}/${Mod}/${casePrefix}${infix}*mergetime `
+#########################################
+#  Calculating varience of the specific region
+#
+EnsRegTS=${tarDIR}/${casePrefix}${infix}_EnsRegTS
+EnsRegYMonmean=${tarDIR}/${casePrefix}${infix}_EnsRegYMonmean
+EnsRegAnomaly=${tarDIR}/${casePrefix}${infix}_Anomaly
+EnsRegTimvar=${tarDIR}/${casePrefix}${infix}_Timvar
+cdo fldmean -sellonlatbox,${RegLonLat} -selvar,${VarName} ${EnsMergedFile} ${EnsRegTS}
+cdo ymonmean ${EnsRegTS} ${EnsRegYMonmean}
+cdo sub ${EnsRegTS} ${EnsRegYMonmean} ${EnsRegAnomaly}
+cdo timvar ${EnsRegAnomaly} ${EnsRegTimvar}
+
+
+lsDivisorStr="${EnsRegTimvar}"
+
+if [ ! -d ${tarDIR} ]; then 
+  mkdir -p ${tarDIR}
+fi
+if [ -d ${EnsDiffVarDIR} ]; then
+  cd ${DIR}/${Mod} 
+  files=`ls --color=no ${lsDivisorStr} `
+  ls --color=no ${lsDivisorStr} > ${tempDIR}/${tempPrefix}_files
+  file_count=` wc -l ${tempDIR}/${tempPrefix}_files | awk -F " " '{print $1}'`
+else
+  echo "Ensemble difference is not ready yet ... "
+  exit 1
+fi
+ 
+if [ "${file_count}" == "1" ]; then
+  EnsDiffVar=`ls `
+  echo "Unexpect file numbers: "${file_count}" ......"
+  exit 1
+else
+  for file in ${files}; do
+    cd ${DIR}/${Mod} 
+
+    varnames=`cdo showvar ${file}`
+    for var in ${varnames}; do 
+      if [ "${var}" == "${VarName}" ]; then
+        cdo selvar,${VarName} ${file} ${file}_${VarName}
+        org_file=${file}
+        file=${file}_${VarName}
+        # for single grid
+        lsDividendStr=${tarDIR}/*${infix}*EnsDiffVar*
+        lsDividendStrAll=${tarDIR}/*${infix}*EnsDiffVar_All
+        lsDividendStrMon=${tarDIR}/*${infix}*EnsDiffVar
+        . ${funcPath}/ps_func_check_Signal2NoiseRatio_monthly_outputs
+        if [ "${file}"  != ${org_file} ]; then 
+          rm ${file}
+        fi
+
+exit 5
+      fi
+    done
+  done
+fi
+###############################################################################
+echo ${JobStartTime}
+echo `date`" || "${JobName}
+echo ${LinnBreaker}
+
+
+
+
+
