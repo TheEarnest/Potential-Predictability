@@ -6,7 +6,7 @@ PPP of all variables in atm
  
 ------ 
  
-  * ### __FREQSH: Fractional occurance of shallow convection__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.756__; averaged PPP is 0.095; maximum PPP of SPG is 0.263; maximum PPP of Eurasia is 0.211; maximum PPP of Nino 3 is 0.521; maximum PPP of Atlantic Nino 3 is 0.090 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FREQSH.png)###
+  * __FREQSH: Fractional occurance of shallow convection__, 01.cam2.h0., (level: 0) -> maximum PPP is __0.756__; averaged PPP is 0.095; maximum PPP of SPG is 0.263; maximum PPP of Eurasia is 0.211; maximum PPP of Nino 3 is 0.521; maximum PPP of Atlantic Nino 3 is 0.090 ![] (../../figures/FF_ini_try/PPP_atm/PPP_PPP-01.cam2.h0.FREQSH.png)
  
 ------ 
  
