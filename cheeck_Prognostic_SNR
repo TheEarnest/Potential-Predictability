@@ -64,22 +64,34 @@ for compartment in ${ModelCompartments}; do
   #---------------------------------------------------------------------------
   # calculating the ensemble mean/std/spread (max-min)
   for prefix in ${prefixes}; do 
-    . ${funcPath}/ps_func_building_ensemble_mean
+#    . ${funcPath}/ps_func_building_ensemble_mean
 
   #---------------------------------------------------------------------------
   # the difference of each member and ensemble mean
     #------------------------------------------------------------------------
     # for all variables 
-    . ${funcPath}/ps_func_check_Diff
-    . ${funcPath}/ps_func_check_sqr
-    . ${funcPath}/ps_func_check_Spread
-    . ${funcPath}/ps_func_check_Signal2NoiseRatio
+#    . ${funcPath}/ps_func_check_Diff
+#    . ${funcPath}/ps_func_check_sqr
+#    . ${funcPath}/ps_func_check_Spread
+#    . ${funcPath}/ps_func_check_Signal2NoiseRatio
     # spliting variables
-    . ${funcPath}/ps_func_split_variables_check
+#    . ${funcPath}/ps_func_split_variables_check
 
     if [ "${compartment}" == "atm" ]; then
       # for regional PPP
-      . ${funcPath}/ps_func_check_regional_PPP
+      ########################################################################
+      VarName="SST"
+      Mod=${compartment}
+      ########################################################################
+      # Region define 
+      #RegionN="Nino4"; RegLonLat="160,210,-5,5"
+      RegionN="Nino34"; RegLonLat="-170,-120,-5,5"
+      #RegionN="Nino3"; RegLonLat="-150,-90,-5,5"
+      #RegionN="AtlNino3"; RegLonLat="-20,-0,-3,3"
+      #RegionN="SPG"; RegLonLat="300,345,48,65"
+      #######################################################################
+      #. ${funcPath}/ps_func_check_regional_sqr
+      . ${funcPath}/ps_func_check_regional_Spread
     fi
   done
 done
