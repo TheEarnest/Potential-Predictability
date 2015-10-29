@@ -51,8 +51,8 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * About this analysis:
    * __Finished on 10 Mar. 2014__
    * More details can be found in the [description page] (docs/FrontPage_Historical_forcing_ens.markdown)
-   * PPP of SST ![] (figures/Historical_forcing_ens/PPP_PPP-08.cam2.h0.SST.png)
-
+   * PPP of SST [![] (figures/Historical_forcing_ens/PPP_PPP-08.cam2.h0.SST.png)
+] (docs/FrontPage_Historical_forcing_ens.markdown)
 
 ------------------
 ## Do these before using the script ##
@@ -74,7 +74,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 ## Working Notes
 
   * Regional PPP (Nino 3.4; ATL3; SPG)
-  * should add a script to check PPP evolving (comparing spatial std in this case) 
+  * should add a script to check PPP evolving (comparing spatial std in this case, and focus on SST only) 
   * From PPP to evaluate prediction barrier - comparing to ENSO prediction barrier 
   * the ploting script has to be revised to get a better presentation, ie thiner colorbar, grids lines, ....
   * ./cheeck_Prognostic_SNR[65]: .: line 31: 24098: Memory fault(coredump) for historical ensemble
