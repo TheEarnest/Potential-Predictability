@@ -5,7 +5,7 @@ Uninitialized NorESM (histrical forcing only)
 
     * [__MICOM__] (Historical_forcing_ens/PPP_ocn.markdown), total figures in ocn: __0__
     * [__CAM__] (Historical_forcing_ens/PPP_atm2.markdown), total figures in atm: __0__
-    * [__CLM__] (Historical_forcing_ens/PPP_lnd.markdown), total figures in lnd: __0__
+    * [__CLM__] (Historical_forcing_ens/PPP_lnd.markdown), total figures in lnd: __109__
     * [__CICE__] (Historical_forcing_ens/PPP_ice.markdown), total figures in ice: __0__
 
   * About this analysis:
@@ -14,4 +14,9 @@ Uninitialized NorESM (histrical forcing only)
     * We using [ Norwegian Earth System Model (NorESM)] (http://folk.uib.no/ngfhd/EarthClim/)
     * From __1850-2004__, but the evaluation is only applied for the period __1960-2004__
   * PPP of SST ![] (../figures/FF_ini_try/PPP_PPP-08.cam2.h0.SST.png)
+
+>> Created on: __Fri Oct 30 10:42:11 CET 2015__
+
+>> Last updated on: __Fri Oct 30 11:00:13 CET 2015__ 
+
 

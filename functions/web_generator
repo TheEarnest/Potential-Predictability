@@ -170,6 +170,9 @@ sed -i s/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -".*/"${vname}: 
 #  fi 
 
   done
-  sed -i s/"total figures in ${ModelCompartment} (${ExpID}): ".*/"total figures in ${ModelCompartment} (${ExpID}): __${figureCount}__"/g ${ScriptHome}/docs/FrontPage_${ExpID}.markdown
+
+  sed -i s/"total figures in ${ModelCompartment}: ".*/"total figures in ${ModelCompartment}: __${figureCount}__"/g ${ScriptHome}/docs/FrontPage_${ExpID}.markdown
+  nowdate=`date`
+  sed -i s/"Last update".*/"Last updated on: __${nowdate}__ "/g ${ScriptHome}/docs/FrontPage_${ExpID}.markdown
 done
 
