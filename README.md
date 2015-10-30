@@ -72,10 +72,10 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 ## Working Notes
 
-  * Regional PPP (Nino 3.4; ATL3; SPG)
-  * should add a script to check PPP evolving (comparing spatial std in this case, and focus on SST only) 
+  * Regional PPP (Nino 3.4; ATL3; SPG) (not urgent)
+  * should add a script to check PPP evolving (comparing spatial std in this case, and focus on SST only) (not urgent) 
   * From PPP to evaluate prediction barrier - comparing to ENSO prediction barrier 
-  * the ploting script has to be revised to get a better presentation, ie thiner colorbar, grids lines, ....
+  * the ploting script has to be revised to get a better presentation, ie thiner colorbar, grids lines (not urgent)
   * ./cheeck_Prognostic_SNR[65]: .: line 31: 24098: Memory fault(coredump) for historical ensemble
   * MICOM hy output is missing in the figure list (also fail plot the figures?)
   * Trouble in presenting local maximum predictability!!! (HDF error).
