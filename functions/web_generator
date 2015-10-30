@@ -34,6 +34,10 @@ for ModelCompartment in ${ModelCompartments}; do
     rm -rf ${figureDIR}/PPP_${ModelCompartment}
     cp -rf ${OutputDIR}/${ModelCompartment}/PPP_all_figures ${figureDIR}/PPP_${ModelCompartment}
   fi
+# count all figures
+  ls ${figureDIR}/PPP_${ModelCompartment} > ${ScriptHome}/docs/${ExpID}/figure_list
+  TotalFigurecouont=`cat ${ScriptHome}/docs/${ExpID}/figure_list | wc -l`
+  rm ${ScriptHome}/docs/${ExpID}/figure_list
 # -------------------------
 # building base page in advance 
   figureCount=0
@@ -62,7 +66,8 @@ for ModelCompartment in ${ModelCompartments}; do
     sed -i s/"Atlantic Nino 3:".*/"Atlantic Nino 3: (${AtlNino3Reg}) "/g ${MDfile}
   fi
 
-  PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `
+  #PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `
+  PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/*All* `
   for PPPfile in ${PPPfiles}; do 
     threholdPPP=`echo "scale=0; (${thPPP}*1000.0)/1.0" | bc -l `
     fldmax=0`cdo -s outputf,%10.3f,1 -fldmax ${PPPfile} | bc -l`
@@ -171,7 +176,7 @@ sed -i s/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -".*/"${vname}: 
 
   done
 
-  sed -i s/"total figures in ${ModelCompartment}: ".*/"total figures in ${ModelCompartment}: __${figureCount}__"/g ${ScriptHome}/docs/FrontPage_${ExpID}.markdown
+  sed -i s/"total figures in ${ModelCompartment}: ".*/"total figures in ${ModelCompartment}: __${figureCount}__\/${TotalFigurecouont} "/g ${ScriptHome}/docs/FrontPage_${ExpID}.markdown
   nowdate=`date`
   sed -i s/"Last update".*/"Last updated on: __${nowdate}__ "/g ${ScriptHome}/docs/FrontPage_${ExpID}.markdown
 done
