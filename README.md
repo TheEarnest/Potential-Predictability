@@ -43,7 +43,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * About this analysis:
    * __Finished on 18 Apr. 2015__
    * More details can be found in the [description page] (docs/FrontPage_FF_ini_try.markdown)
-   * PPP of SST [![] (figures/FF_ini_try/PPP_PPP-08.cam2.h0.SST.png)](docs/FrontPage_FF_ini_try.markdown)
+   * PPP of SST [![] (figures/FF_ini_try/PPP_All_G04.cam2.h0.SST.png)](docs/FrontPage_FF_ini_try.markdown)
 
 --------------------------------------
 * ### [Uninitialized NorESM (histrical forcing only)] (docs/FrontPage_Historical_forcing_ens.markdown)
