@@ -3,10 +3,10 @@ Uninitialized NorESM (histrical forcing only)
 
   * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
-    * [__MICOM__] (Historical_forcing_ens/PPP_ocn.markdown), total figures in ocn: __0__
-    * [__CAM__] (Historical_forcing_ens/PPP_atm2.markdown), total figures in atm: __0__
-    * [__CLM__] (Historical_forcing_ens/PPP_lnd.markdown), total figures in lnd: __109__
-    * [__CICE__] (Historical_forcing_ens/PPP_ice.markdown), total figures in ice: __0__
+    * [__MICOM__] (Historical_forcing_ens/PPP_ocn.markdown), presented/total figures in ocn: __0__
+    * [__CAM__] (Historical_forcing_ens/PPP_atm2.markdown), presented/total figures in atm: __0__
+    * [__CLM__] (Historical_forcing_ens/PPP_lnd.markdown), presented/total figures in lnd: __146__/216 
+    * [__CICE__] (Historical_forcing_ens/PPP_ice.markdown), presented/total figures in ice: __0__
 
   * About this analysis:
     * __Finished on 10 Mar. 2014__
@@ -17,6 +17,6 @@ Uninitialized NorESM (histrical forcing only)
 
 >> Created on: __Fri Oct 30 10:42:11 CET 2015__
 
->> Last updated on: __Fri Oct 30 11:00:13 CET 2015__ 
+>> Last updated on: __Fri Oct 30 13:59:51 CET 2015__ 
 
 
