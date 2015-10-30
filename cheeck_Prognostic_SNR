@@ -12,10 +12,10 @@ ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 # Parameters
 #------------------------------------------------------------------------------
-OutputDIR=/scratch/earnest/SyncTransfer/Historical_forcing_ens
-DataDIR=/scratch/earnest/noresmexp/Historical_forcing_ens
-#O#utputDIR=/scratch/earnest/SyncTransfer/FF_ini_try
-#D#ataDIR=/scratch/earnest/noresmexp/FF_ini_try
+#O#utputDIR=/scratch/earnest/SyncTransfer/Historical_forcing_ens
+#D#ataDIR=/scratch/earnest/noresmexp/Historical_forcing_ens
+OutputDIR=/scratch/earnest/SyncTransfer/FF_ini_try
+DataDIR=/scratch/earnest/noresmexp/FF_ini_try
 tempDIR=/scratch/earnest/temp
 casePrefix=NorCPM_F19_tn21
 MEyear=2000
