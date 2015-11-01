@@ -7,7 +7,7 @@
 # ./cheeck_Prognostic_SNR[71]: .: line 24: 33535: Memory fault(coredump)
 # Segmentation fault (core dumped)
 #
-DebugSetting="set -x"
+DebugSetting="set -ex"
 ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 # Parameters
@@ -64,18 +64,17 @@ for compartment in ${ModelCompartments}; do
   #---------------------------------------------------------------------------
   # calculating the ensemble mean/std/spread (max-min)
   for prefix in ${prefixes}; do 
-#    . ${funcPath}/ps_func_building_ensemble_mean
-
+    . ${funcPath}/ps_func_building_ensemble_mean
   #---------------------------------------------------------------------------
   # the difference of each member and ensemble mean
     #------------------------------------------------------------------------
     # for all variables 
-#    . ${funcPath}/ps_func_check_Diff
-#    . ${funcPath}/ps_func_check_sqr
-#    . ${funcPath}/ps_func_check_Spread
-#    . ${funcPath}/ps_func_check_Signal2NoiseRatio
+    . ${funcPath}/ps_func_check_Diff
+    . ${funcPath}/ps_func_check_sqr
+    . ${funcPath}/ps_func_check_Spread
+    . ${funcPath}/ps_func_check_Signal2NoiseRatio
     # spliting variables
-#    . ${funcPath}/ps_func_split_variables_check
+    . ${funcPath}/ps_func_split_variables_check
 
     if [ "${compartment}" == "atm" ]; then
       # for regional PPP
@@ -92,7 +91,7 @@ for compartment in ${ModelCompartments}; do
       #######################################################################
 #      . ${funcPath}/ps_func_check_regional_sqr
 #      . ${funcPath}/ps_func_check_regional_Spread
-      . ${funcPath}/ps_func_check_regional_Signal2NoiseRatio
+#      . ${funcPath}/ps_func_check_regional_Signal2NoiseRatio
     fi
   done
 done

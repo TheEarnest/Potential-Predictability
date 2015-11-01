@@ -4,6 +4,7 @@
 #------------------------------------------------------------------------------
 #
 ${DebugSetting}
+set +e
 JobStartTime=`date`
 JobName=ps_func_building_ensemble_mean
 # 
@@ -113,6 +114,7 @@ echo ${JobStartTime}
 echo `date`" || "${JobName}
 echo ${LinnBreaker}
 
+${DebugSetting}
 
 
 

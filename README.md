@@ -43,7 +43,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * About this analysis:
    * __Finished on 18 Apr. 2015__
    * More details can be found in the [description page] (docs/FrontPage_FF_ini_try.markdown)
-   * PPP of SST [![] (figures/FF_ini_try/PPP_PPP-08.cam2.h0.SST.png)](docs/FrontPage_FF_ini_try.markdown)
+   * PPP of SST [![] (figures/FF_ini_try/PPP_atm/PPP_All_G04.cam2.h0.SST.png)](docs/FrontPage_FF_ini_try.markdown)
 
 --------------------------------------
 * ### [Uninitialized NorESM (histrical forcing only)] (docs/FrontPage_Historical_forcing_ens.markdown)
@@ -72,10 +72,10 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 ## Working Notes
 
-  * Regional PPP (Nino 3.4; ATL3; SPG)
-  * should add a script to check PPP evolving (comparing spatial std in this case, and focus on SST only) 
+  * should add a script to check PPP evolving (comparing spatial std in this case, and focus on SST only)
+  * Regional PPP (Nino 3.4; ATL3; SPG) (not urgent)
   * From PPP to evaluate prediction barrier - comparing to ENSO prediction barrier 
-  * the ploting script has to be revised to get a better presentation, ie thiner colorbar, grids lines, ....
+  * the ploting script has to be revised to get a better presentation, ie thiner colorbar, grids lines (not urgent)
   * ./cheeck_Prognostic_SNR[65]: .: line 31: 24098: Memory fault(coredump) for historical ensemble
   * MICOM hy output is missing in the figure list (also fail plot the figures?)
   * Trouble in presenting local maximum predictability!!! (HDF error).

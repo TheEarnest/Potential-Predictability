@@ -3,10 +3,10 @@ Full field SST assimilated Ocean of NorESM (1st version)
 
   * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
-    * [__MICOM__] (FF_ini_try/PPP_ocn.markdown), total figures in ocn (FF_ini_try): __84__
-    * [__CAM__] (FF_ini_try/PPP_atm2.markdown), total figures in atm (FF_ini_try): __1066__
-    * [__CLM__] (FF_ini_try/PPP_lnd.markdown), total figures in lnd (FF_ini_try): __141__
-    * [__CICE__] (FF_ini_try/PPP_ice.markdown), total figures in ice (FF_ini_try): __104__
+    * [__MICOM__] (FF_ini_try/PPP_ocn.markdown), presented/total figures in ocn: __84__
+    * [__CAM__] (FF_ini_try/PPP_atm2.markdown), presented/total figures in atm: __1066__
+    * [__CLM__] (FF_ini_try/PPP_lnd.markdown), presented/total figures in lnd: __141__/211 
+    * [__CICE__] (FF_ini_try/PPP_ice.markdown), presented/total figures in ice: __104__
 
   * About this analysis:
     * __Finished on 18 Apr. 2015__

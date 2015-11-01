@@ -24,7 +24,7 @@ AtlNino3Reg="-20,-0,-3,3"
 thPPP=0.6
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 
-ModelCompartments="ocn"
+ModelCompartments="lnd"
 if [ ! -d ${webpageDIR} ]; then 
   mkdir -p ${figureDIR}
   mkdir -p ${webpageDIR}
@@ -34,6 +34,10 @@ for ModelCompartment in ${ModelCompartments}; do
     rm -rf ${figureDIR}/PPP_${ModelCompartment}
     cp -rf ${OutputDIR}/${ModelCompartment}/PPP_all_figures ${figureDIR}/PPP_${ModelCompartment}
   fi
+# count all figures
+  ls ${figureDIR}/PPP_${ModelCompartment} > ${ScriptHome}/docs/${ExpID}/figure_list
+  TotalFigurecouont=`cat ${ScriptHome}/docs/${ExpID}/figure_list | wc -l`
+  rm ${ScriptHome}/docs/${ExpID}/figure_list
 # -------------------------
 # building base page in advance 
   figureCount=0
@@ -62,7 +66,8 @@ for ModelCompartment in ${ModelCompartments}; do
     sed -i s/"Atlantic Nino 3:".*/"Atlantic Nino 3: (${AtlNino3Reg}) "/g ${MDfile}
   fi
 
-  PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `
+  #PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `
+  PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/*All* `
   for PPPfile in ${PPPfiles}; do 
     threholdPPP=`echo "scale=0; (${thPPP}*1000.0)/1.0" | bc -l `
     fldmax=0`cdo -s outputf,%10.3f,1 -fldmax ${PPPfile} | bc -l`
@@ -153,13 +158,15 @@ for ModelCompartment in ${ModelCompartments}; do
 
     if [ "${vnameCheck}" == "None" ]; then
       # generate the line
-      echo "  * __${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax} ${figurelink}" >> ${MDfile}
+#      echo "  * __${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax} ${figurelink}" >> ${MDfile}
+      echo "  * __${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean} ${figurelink}" >> ${MDfile}
       echo " " >> ${MDfile}
       echo "------ "  >> ${MDfile}
       echo " " >> ${MDfile}
     else
       figurelink=`echo ${figurelink} | sed 's/\//\\\\\//g' `
-      sed -i s/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -".*/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax} ${figurelink}"/g ${MDfile}
+#      sed -i s/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -".*/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean}; maximum PPP of SPG is ${SPGfldmax}; maximum PPP of Eurasia is ${EUfldmax}; maximum PPP of Nino 3 is ${Nino34fldmax}; maximum PPP of Atlantic Nino 3 is ${AltNino3fldmax} ${figurelink}"/g ${MDfile}
+sed -i s/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -".*/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -> maximum PPP is ${fldmax}; averaged PPP is ${fldmean} ${figurelink}"/g ${MDfile}
     fi
 
 #  mlscheck=`grep "fice" ${PPPfile} `  || mlscheck="None"
@@ -167,8 +174,10 @@ for ModelCompartment in ${ModelCompartments}; do
 #    exit 5 
 #  fi 
 
-
   done
-  sed -i s/"total figures in ${ModelCompartment} (${ExpID}): ".*/"total figures in ${ModelCompartment} (${ExpID}): __${figureCount}__"/g ${ScriptHome}/docs/FrontPage_${ExpID}.markdown
+
+  sed -i s/"total figures in ${ModelCompartment}: ".*/"total figures in ${ModelCompartment}: __${figureCount}__\/${TotalFigurecouont} "/g ${ScriptHome}/docs/FrontPage_${ExpID}.markdown
+  nowdate=`date`
+  sed -i s/"Last update".*/"Last updated on: __${nowdate}__ "/g ${ScriptHome}/docs/FrontPage_${ExpID}.markdown
 done
 

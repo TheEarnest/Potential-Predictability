@@ -39,7 +39,9 @@ done
 mkdir -p ${DIR}/${Mod}/Signal2NoiseRatio
 if [ "${suffix_no_year_pre}" == "${suffix_no_year}" ]; then
   target=${DIR}/${Mod}/Signal2NoiseRatio/${casePrefix}${infix}EnsDiffVar_All
+set +e
   cdo -O ensmean ${tarDIR}/*${infix}*${suffix_no_year}* ${target}
+set -e
   cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
   grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
   if [ "${grid_count}" != "1" ]; then
