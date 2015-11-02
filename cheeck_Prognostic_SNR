@@ -21,7 +21,7 @@ casePrefix=NorCPM_F19_tn21
 MEyear=2000
 
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="atm"
+ModelCompartments="ice"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
