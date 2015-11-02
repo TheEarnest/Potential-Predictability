@@ -5,7 +5,7 @@ Uninitialized NorESM (histrical forcing only)
 
     * [__MICOM__] (Historical_forcing_ens/PPP_ocn.markdown), presented/total figures in ocn: __17__/999 
     * [__CAM__] (Historical_forcing_ens/PPP_atm2.markdown), presented/total figures in atm: __0__
-    * [__CLM__] (Historical_forcing_ens/PPP_lnd.markdown), presented/total figures in lnd: __216__/216 
+    * [__CLM__] (Historical_forcing_ens/PPP_lnd.markdown), presented/total figures in lnd: __146__/216 
     * [__CICE__] (Historical_forcing_ens/PPP_ice.markdown), presented/total figures in ice: __0__
 
   * About this analysis:
@@ -17,6 +17,6 @@ Uninitialized NorESM (histrical forcing only)
 
 >> Created on: __Fri Oct 30 10:42:11 CET 2015__
 
->> Last updated on: __Mon Nov  2 02:03:09 CET 2015__ 
+>> Last updated on: __Mon Nov  2 10:41:12 CET 2015__ 
 
 
