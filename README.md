@@ -34,8 +34,8 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
   * About this analysis:
     * __Finished on ?? ?? 2015__
-    * More details can be found in the [description page] (docs/FrontPage.markdown)
-    * PPP of SST ![] (figures/FF_ini_2nd_try/PPP_PPP-08.cam2.h0.SST.png)
+    * More details can be found in the [description page] (docs/FrontPage_FF_2nd_try.markdown)
+    * PPP of SST [![] (figures/FF_ini_2nd_try/PPP_PPP-08.cam2.h0.SST.png)] (docs/FrontPage_FF_2nd_try.markdown)
 
 --------------------------------------
 * ### [Full field SST assimilated Ocean of NorESM (1st version)] (docs/FrontPage_FF_ini_try.markdown)
