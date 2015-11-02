@@ -11,7 +11,7 @@ Full field SST assimilated Ocean of NorESM (1st version)
   * About this analysis:
     * __Finished on 18 Apr. 2015__
     * Data is kept @Norstore-osl:/tape/NS9207K/earnest/NorCPM/FF_ini_try_tar/
-    * We using [ Norwegian Earth System Model (NorESM)] (http://folk.uib.no/ngfhd/EarthClim/)
+    * We use [Norwegian Earth System Model (NorESM)] (http://folk.uib.no/ngfhd/EarthClim/) version F19_tn21 (approximately two degree atmosphere and two degree ocean)
     * Applying full-field SST ([HadISST2](http://www.metoffice.gov.uk/hadobs/hadisst2/)) assimilation ([EnKF](http://enkf.nersc.no/), 30 members) on ocean compartment only
     * From __1980-2007__
     * Known issue: skill lost due to one-grid shift in preparing SST data. It also implies that the PPP of ensemble members is not really robust. 
