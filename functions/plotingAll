@@ -3,7 +3,7 @@
 # check prediction skill
 #------------------------------------------------------------------------------
 #
-set -e
+set -ex
 MainScript=cheeck_Prognostic_SNR
 if [ ! -f ${MainScript} ]; then
   cd ..
@@ -23,7 +23,7 @@ if [  "${thost}" == "hexagon" ]; then
   #export LIBGL_DEBUG=verbose
 fi
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="ocn"
+ModelCompartments="lnd"
 mScript=`echo ${plotScript} | awk -F "/" '{print $NF}' | awk -F ".m" '{print $1}' `
 MatlabScriptDIR=`echo ${plotScript} | awk -F "/${mScript}" '{print $1}'`
 
@@ -38,7 +38,7 @@ for ModelCompartment in ${ModelCompartments}; do
     #lonlat=`ncdump -h ${PPPfile} | grep ":units" | grep -i "lon" ` || lonlat=None
     lonlat=`ncdump -h ${PPPfile} | grep "lon("  ` || lonlat=None
     # vname of lon & lat has to be checked and pass to matlab ...
-    vname=`cdo showvar ${PPPfile} | cut -c2-100 `
+    vname=`cdo -s -L showvar ${PPPfile} | cut -c2-100 `
     fname=`echo ${PPPfile} | awk -F "/" '{print $NF}' | awk -F "PPP" '{print $NF}' | awk -F ".nc" '{print $1}'`
     figtarget=${PlotDIR}/PPP${fname}${fsuffix}
     varLongName=`ncdump -h ${PPPfile} | grep "${vname}:long_name" | awk -F "= "  '{print $NF}' | awk -F " ;" '{print $1}' `
@@ -46,8 +46,7 @@ for ModelCompartment in ${ModelCompartments}; do
     titleStr=${varLongName}" ("${varunits}")"
     titleStr=`echo "${titleStr//\"}" `
 
-
-    if [ "${lonlat}" != "None" ]; then
+    if [ "${ModelCompartment}" != "ocn" ]; then
       # [ "${lonlat}" == "None" ] is the case for ocn aice 
       if [ ! -f ${figtarget} ]; then
         # define title
