@@ -4,7 +4,7 @@ Uninitialized NorESM (histrical forcing only)
   * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
     * [__MICOM__] (Historical_forcing_ens/PPP_ocn.markdown), presented/total figures in ocn: __17__/999 
-    * [__CAM__] (Historical_forcing_ens/PPP_atm2.markdown), presented/total figures in atm: __1__/170 
+    * [__CAM__] (Historical_forcing_ens/PPP_atm2.markdown), presented/total figures in atm: __1__/216 
     * [__CLM__] (Historical_forcing_ens/PPP_lnd.markdown), presented/total figures in lnd: __146__/216 
     * [__CICE__] (Historical_forcing_ens/PPP_ice.markdown), presented/total figures in ice: __0__
 
@@ -17,6 +17,6 @@ Uninitialized NorESM (histrical forcing only)
 
 >> Created on: __Fri Oct 30 10:42:11 CET 2015__
 
->> Last updated on: __Thu Nov  5 20:39:12 CET 2015__ 
+>> Last updated on: __Thu Nov  5 20:47:27 CET 2015__ 
 
 
