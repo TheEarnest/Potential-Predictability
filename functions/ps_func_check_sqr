@@ -12,6 +12,7 @@ echo ${LinnBreaker}
 echo "Starting "${JobName}" of "${compartment}" ...... "
 
 tempPrefix=t_'ps_func_check_sqr'
+Mod=${compartment}
 ###############################################################################
 tarDIR=${DIR}/${Mod}/sqr
 for Member in ${Members}; do
