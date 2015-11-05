@@ -1,361 +1,599 @@
 PPP of all variables in atm outputs
 ==========
->> Created on: __Thu Nov 5 16:39:23 CET 2015__ 
- 
->> Last updated on: __Thu Nov  5 20:29:37 CET 2015__ 
-  * __Region (Lon,Lon,Lat,Lat)__ 
+>> Created on: __Thu Nov 5 16:39:23 CET 2015__
+
+>> Last updated on: __Thu Nov  5 20:38:42 CET 2015__ 
+  * __Region (Lon,Lon,Lat,Lat)__
   * SPG: (300,345,48,65) 
   * Eurasia: (40,140,40,70) 
   * Nino 3.4: (-170,-120,-5,5) 
   * Atlantic Nino 3: (-20,-0,-3,3) 
+
+------
+
+
+
+  * __AEROD_v: Total Aerosol Optical Depth in visible band__, All_G04.cam2.h0., (level: 0) -> maximum PPP is __0.999__; averaged PPP is __0.910__ 
  
 ------ 
  
-  * __: longitude latitude time Total Aerosol Optical Depth in visible band__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __ATMEINT: Vertically integrated total atmospheric energy__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.401; averaged PPP is 0.141 
  
 ------ 
  
-  * __: longitude latitude time Vertically integrated total atmospheric energy__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __CLDHGH: Vertically-integrated high cloud__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.061; averaged PPP is 0.037 
  
 ------ 
  
-  * __: longitude latitude time Vertically-integrated high cloud__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __CLDLOW: Vertically-integrated low cloud__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.106; averaged PPP is 0.040 
  
 ------ 
  
-  * __: longitude latitude time Vertically-integrated low cloud__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __CLDMED: Vertically-integrated mid-level cloud__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.075; averaged PPP is 0.037 
  
 ------ 
  
-  * __: longitude latitude time Vertically-integrated mid-level cloud__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __CLDTOT: Vertically-integrated total cloud__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.070; averaged PPP is 0.038 
  
 ------ 
  
-  * __: longitude latitude time Vertically-integrated total cloud__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FLDSC: Clearsky downwelling longwave flux at surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.466; averaged PPP is 0.137 
  
 ------ 
  
-  * __: longitude latitude time Clearsky downwelling longwave flux at surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FLDS: Downwelling longwave flux at surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.324; averaged PPP is 0.089 
  
 ------ 
  
-  * __: longitude latitude time Downwelling longwave flux at surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FLNSC: Clearsky net longwave flux at surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.379; averaged PPP is 0.081 
  
 ------ 
  
-  * __: longitude latitude time Clearsky net longwave flux at surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FLNS: Net longwave flux at surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.126; averaged PPP is 0.047 
  
 ------ 
  
-  * __: longitude latitude time Net longwave flux at surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FLNTC: Clearsky net longwave flux at top of model__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.288; averaged PPP is 0.075 
  
 ------ 
  
-  * __: longitude latitude time Clearsky net longwave flux at top of model__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FLNT: Net longwave flux at top of model__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.072; averaged PPP is 0.040 
  
 ------ 
  
-  * __: longitude latitude time Net longwave flux at top of model__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FLUTC: Clearsky upwelling longwave flux at top of model__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.288; averaged PPP is 0.075 
  
 ------ 
  
-  * __: longitude latitude time Clearsky upwelling longwave flux at top of model__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FLUT: Upwelling longwave flux at top of model__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.072; averaged PPP is 0.040 
  
 ------ 
  
-  * __: longitude latitude time Upwelling longwave flux at top of model__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FREQSH: Fractional occurance of shallow convection__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.120; averaged PPP is 0.038 
  
 ------ 
  
-  * __: longitude latitude time Fractional occurance of shallow convection__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FREQZM: Fractional occurance of ZM convection__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.155; averaged PPP is 0.039 
  
 ------ 
  
-  * __: longitude latitude time Fractional occurance of ZM convection__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FSDSC: Clearsky downwelling solar flux at surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is __0.964__; averaged PPP is 0.515 
  
 ------ 
  
-  * __: longitude latitude time Clearsky downwelling solar flux at surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FSDS: Downwelling solar flux at surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.115; averaged PPP is 0.043 
  
 ------ 
  
-  * __: longitude latitude time Downwelling solar flux at surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FSNSC: Clearsky net solar flux at surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is __0.972__; averaged PPP is 0.464 
  
 ------ 
  
-  * __: longitude latitude time Clearsky net solar flux at surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FSNS: Net solar flux at surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.122; averaged PPP is 0.043 
  
 ------ 
  
-  * __: longitude latitude time Net solar flux at surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FSNTC: Clearsky net solar flux at top of model__, All_G04.cam2.h0., (level: 0) -> maximum PPP is __0.999__; averaged PPP is __0.738__ 
  
 ------ 
  
-  * __: longitude latitude time Clearsky net solar flux at top of model__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FSNT: Net solar flux at top of model__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.259; averaged PPP is 0.049 
  
 ------ 
  
-  * __: longitude latitude time Net solar flux at top of model__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FSNTOAC: Clearsky net solar flux at top of atmosphere__, All_G04.cam2.h0., (level: 0) -> maximum PPP is __0.999__; averaged PPP is __0.737__ 
  
 ------ 
  
-  * __: longitude latitude time Clearsky net solar flux at top of atmosphere__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FSNTOA: Net solar flux at top of atmosphere__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.265; averaged PPP is 0.048 
  
 ------ 
  
-  * __: longitude latitude time Net solar flux at top of atmosphere__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __FSUTOA: Upwelling solar flux at top of atmosphere__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.265; averaged PPP is 0.048 
  
 ------ 
  
-  * __: longitude latitude time Upwelling solar flux at top of atmosphere__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __ICEFRAC: Fraction of sfc area covered by sea-ice__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.255; averaged PPP is 0.049 
  
 ------ 
  
-  * __: longitude latitude time Fraction of sfc area covered by sea-ice__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __LHFLX: Surface latent heat flux__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.171; averaged PPP is 0.041 
  
 ------ 
  
-  * __: longitude latitude time Surface latent heat flux__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __LWCF: Longwave cloud forcing__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.068; averaged PPP is 0.038 
  
 ------ 
  
-  * __: longitude latitude time Longwave cloud forcing__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __MSKtem: TEM mask__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.214; averaged PPP is 0.038 
  
 ------ 
  
-  * __: longitude latitude time TEM mask__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __OCNFRAC: Fraction of sfc area covered by ocean__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.255; averaged PPP is 0.049 
  
 ------ 
  
-  * __: longitude latitude time Fraction of sfc area covered by ocean__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __OMEGA500: Vertical velocity at 500 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.067; averaged PPP is 0.036 
  
 ------ 
  
-  * __: longitude latitude time Vertical velocity at 500 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __OMEGA850: Vertical velocity at 850 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.080; averaged PPP is 0.037 
  
 ------ 
  
-  * __: longitude latitude time Vertical velocity at 850 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __PBLH: PBL height__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.189; averaged PPP is 0.040 
  
 ------ 
  
-  * __: longitude latitude time PBL height__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __PCONVB: convection base pressure__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.133; averaged PPP is 0.043 
  
 ------ 
  
-  * __: longitude latitude time convection base pressure__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __PCONVT: convection top pressure__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.147; averaged PPP is 0.040 
  
 ------ 
  
-  * __: longitude latitude time convection top pressure__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __PRECCDZM: Convective precipitation rate from ZM deep__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.375; averaged PPP is 0.038 
  
 ------ 
  
-  * __: longitude latitude time Convective precipitation rate from ZM deep__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __PRECC: Convective precipitation rate (liq + ice)__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.122; averaged PPP is 0.038 
  
 ------ 
  
-  * __: longitude latitude time Convective precipitation rate (liq + ice)__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __PRECL: Large-scale (stable) precipitation rate (liq + ice)__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.079; averaged PPP is 0.036 
  
 ------ 
  
-  * __: longitude latitude time Large-scale (stable) precipitation rate (liq + ice)__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __PRECSC: Convective snow rate (water equivalent)__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.117; averaged PPP is 0.038 
  
 ------ 
  
-  * __: longitude latitude time Convective snow rate (water equivalent)__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __PRECSH: Shallow Convection precipitation rate__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.100; averaged PPP is 0.037 
  
 ------ 
  
-  * __: longitude latitude time Shallow Convection precipitation rate__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __PRECSL: Large-scale (stable) snow rate (water equivalent)__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.120; averaged PPP is 0.035 
  
 ------ 
  
-  * __: longitude latitude time Large-scale (stable) snow rate (water equivalent)__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __PRECT: Total (convective and large-scale) precipitation rate (liq + ice)__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.106; averaged PPP is 0.038 
  
 ------ 
  
-  * __: longitude latitude time Total (convective and large-scale) precipitation rate (liq + ice)__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __PSL: Sea level pressure__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.119; averaged PPP is 0.043 
  
 ------ 
  
-  * __: longitude latitude time Sea level pressure__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __PS: Surface pressure__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.275; averaged PPP is 0.045 
  
 ------ 
  
-  * __: longitude latitude time Surface pressure__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 100.515) -> maximum PPP is 0.580; averaged PPP is 0.239 
  
 ------ 
  
-  * __: longitude latitude hybrid level at layer midpoints hybrid A coefficient at layer interfaces hybrid B coefficient at layer interfaces hybrid A coefficient at layer midpoints hybrid B coefficient at layer midpoints time Specific humidity__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 139.115) -> maximum PPP is 0.370; averaged PPP is 0.154 
  
 ------ 
  
-  * __: longitude latitude time Surface water flux__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 163.662) -> maximum PPP is 0.428; averaged PPP is 0.144 
  
 ------ 
  
-  * __: longitude latitude time Reference height humidity__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 226.513) -> maximum PPP is 0.339; averaged PPP is 0.105 
  
 ------ 
  
-  * __: longitude latitude time Reference height relative humidity__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 266.481) -> maximum PPP is 0.302; averaged PPP is 0.085 
  
 ------ 
  
-  * __: longitude latitude time Surface sensible heat flux__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 3.54464) -> maximum PPP is __0.681__; averaged PPP is __0.670__ 
  
 ------ 
  
-  * __: longitude latitude time Water equivalent snow depth__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 37.2303) -> maximum PPP is __0.731__; averaged PPP is 0.578 
  
 ------ 
  
-  * __: longitude latitude time Net radiative flux at surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 510.455) -> maximum PPP is 0.148; averaged PPP is 0.056 
  
 ------ 
  
-  * __: longitude latitude time sea surface temperature__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 600.524) -> maximum PPP is 0.135; averaged PPP is 0.052 
  
 ------ 
  
-  * __: longitude latitude time Shortwave cloud forcing__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 70.0592) -> maximum PPP is __0.680__; averaged PPP is 0.404 
  
 ------ 
  
-  * __: longitude latitude time Temperature at 1000 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 787.702) -> maximum PPP is 0.286; averaged PPP is 0.063 
  
 ------ 
  
-  * __: longitude latitude hybrid level at layer midpoints hybrid A coefficient at layer interfaces hybrid B coefficient at layer interfaces hybrid A coefficient at layer midpoints hybrid B coefficient at layer midpoints time Temperature__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 867.161) -> maximum PPP is 0.299; averaged PPP is 0.078 
  
 ------ 
  
-  * __: longitude latitude time Temperature at 200 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 970.555) -> maximum PPP is 0.353; averaged PPP is 0.092 
  
 ------ 
  
-  * __: longitude latitude time Temperature at 500 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __QFLX: Surface water flux__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.171; averaged PPP is 0.041 
  
 ------ 
  
-  * __: longitude latitude time Temperature at 700 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __QREFHT: Reference height humidity__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.382; averaged PPP is 0.104 
  
 ------ 
  
-  * __: longitude latitude time Temperature at 850 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __RHREFHT: Reference height relative humidity__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.185; averaged PPP is 0.041 
  
 ------ 
  
-  * __: longitude latitude time Zonal surface stress__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __SHFLX: Surface sensible heat flux__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.162; averaged PPP is 0.043 
  
 ------ 
  
-  * __: longitude latitude time Meridional surface stress__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __SNOWHICE: Water equivalent snow depth__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.107; averaged PPP is 0.042 
  
 ------ 
  
-  * __: longitude latitude time Total grid-box cloud ice water path__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __SRFRAD: Net radiative flux at surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.240; averaged PPP is 0.068 
  
 ------ 
  
-  * __: longitude latitude time Total grid-box cloud liquid water path__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __SST: sea surface temperature__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.418; averaged PPP is 0.140 
  
 ------ 
  
-  * __: longitude latitude hybrid level at layer interfaces time Potential Temperature__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __SWCF: Shortwave cloud forcing__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.192; averaged PPP is 0.042 
  
 ------ 
  
-  * __: longitude latitude time Total (vertically integrated) precipitatable water__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T1000: Temperature at 1000 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.453; averaged PPP is 0.122 
  
 ------ 
  
-  * __: longitude latitude time Reference height temperature__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 118.25) -> maximum PPP is 0.277; averaged PPP is 0.086 
  
 ------ 
  
-  * __: longitude latitude time Average of TREFHT daily minimum__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 13.9672) -> maximum PPP is 0.417; averaged PPP is 0.243 
  
 ------ 
  
-  * __: longitude latitude time Average of TREFHT daily maximum__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 192.54) -> maximum PPP is 0.531; averaged PPP is 0.183 
  
 ------ 
  
-  * __: longitude latitude time Tropopause Pressure__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T200: Temperature at 200 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.532; averaged PPP is 0.185 
  
 ------ 
  
-  * __: longitude latitude time Tropopause Temperature__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 23.9446) -> maximum PPP is 0.528; averaged PPP is 0.308 
  
 ------ 
  
-  * __: longitude latitude time Tropopause Height__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 313.501) -> maximum PPP is 0.516; averaged PPP is 0.188 
  
 ------ 
  
-  * __: longitude latitude time Minimum surface temperature over output period__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 368.818) -> maximum PPP is 0.497; averaged PPP is 0.176 
  
 ------ 
  
-  * __: longitude latitude time Maximum surface temperature over output period__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 433.895) -> maximum PPP is 0.482; averaged PPP is 0.168 
  
 ------ 
  
-  * __: longitude latitude time Surface temperature (radiative)__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T500: Temperature at 500 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.491; averaged PPP is 0.164 
  
 ------ 
  
-  * __: longitude latitude hybrid level at layer midpoints hybrid A coefficient at layer interfaces hybrid B coefficient at layer interfaces hybrid A coefficient at layer midpoints hybrid B coefficient at layer midpoints time Zonal wind__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 53.1146) -> maximum PPP is __0.891__; averaged PPP is 0.560 
  
 ------ 
  
-  * __: longitude latitude time 10m wind speed__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 696.796) -> maximum PPP is 0.476; averaged PPP is 0.139 
  
 ------ 
  
-  * __: longitude latitude time Zonal wind at 200 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T700: Temperature at 700 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.502; averaged PPP is 0.141 
  
 ------ 
  
-  * __: longitude latitude time Zonal wind at 850 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 787.702) -> maximum PPP is 0.523; averaged PPP is 0.123 
  
 ------ 
  
-  * __: longitude latitude hybrid level at layer midpoints hybrid A coefficient at layer interfaces hybrid B coefficient at layer interfaces hybrid A coefficient at layer midpoints hybrid B coefficient at layer midpoints time Meridional wind__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T850: Temperature at 850 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.531; averaged PPP is 0.120 
  
 ------ 
  
-  * __: longitude latitude time Meridional wind at 200 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 867.161) -> maximum PPP is 0.518; averaged PPP is 0.117 
  
 ------ 
  
-  * __: longitude latitude time Meridional wind at 850 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 970.555) -> maximum PPP is 0.471; averaged PPP is 0.125 
  
 ------ 
  
-  * __: longitude latitude time Geopotential Z at 50 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __TAUX: Zonal surface stress__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.137; averaged PPP is 0.040 
  
 ------ 
  
-  * __: longitude latitude time Geopotential Z at 100 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __TAUY: Meridional surface stress__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.159; averaged PPP is 0.038 
  
 ------ 
  
-  * __: longitude latitude time Geopotential Z at 200 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __TGCLDIWP: Total grid-box cloud ice water path__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.061; averaged PPP is 0.037 
  
 ------ 
  
-  * __: longitude latitude time Geopotential Z at 300 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __TGCLDLWP: Total grid-box cloud liquid water path__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.075; averaged PPP is 0.037 
  
 ------ 
  
-  * __: longitude latitude time Geopotential Z at 500 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 001000) -> maximum PPP is 0.391; averaged PPP is 0.070 
  
 ------ 
  
-  * __: longitude latitude time Geopotential Z at 700 mbar pressure surface__, , (level: ) -> maximum PPP is 0; averaged PPP is 0 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 108.664) -> maximum PPP is 0.273; averaged PPP is 0.087 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 150.394) -> maximum PPP is 0.426; averaged PPP is 0.140 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 18.052) -> maximum PPP is 0.443; averaged PPP is 0.272 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 2.19407) -> maximum PPP is __0.854__; averaged PPP is 0.543 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 288.085) -> maximum PPP is 0.519; averaged PPP is 0.193 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 338.917) -> maximum PPP is 0.512; averaged PPP is 0.184 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 44.6233) -> maximum PPP is __0.875__; averaged PPP is 0.543 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 4.89521) -> maximum PPP is __0.789__; averaged PPP is 0.470 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 61.6059) -> maximum PPP is __0.844__; averaged PPP is 0.490 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 744.383) -> maximum PPP is 0.551; averaged PPP is 0.151 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 831.021) -> maximum PPP is 0.542; averaged PPP is 0.124 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 955.997) -> maximum PPP is 0.422; averaged PPP is 0.109 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 9.88242) -> maximum PPP is 0.471; averaged PPP is 0.268 
+ 
+------ 
+ 
+  * __TMQ: Total (vertically integrated) precipitatable water__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.279; averaged PPP is 0.071 
+ 
+------ 
+ 
+  * __TREFHT: Reference height temperature__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.533; averaged PPP is 0.142 
+ 
+------ 
+ 
+  * __TREFMNAV: Average of TREFHT daily minimum__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.566; averaged PPP is 0.141 
+ 
+------ 
+ 
+  * __TREFMXAV: Average of TREFHT daily maximum__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.480; averaged PPP is 0.133 
+ 
+------ 
+ 
+  * __TROP_P: Tropopause Pressure__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.253; averaged PPP is 0.095 
+ 
+------ 
+ 
+  * __TROP_T: Tropopause Temperature__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.189; averaged PPP is 0.080 
+ 
+------ 
+ 
+  * __TROP_Z: Tropopause Height__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.300; averaged PPP is 0.110 
+ 
+------ 
+ 
+  * __TSMN: Minimum surface temperature over output period__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.396; averaged PPP is 0.116 
+ 
+------ 
+ 
+  * __TSMX: Maximum surface temperature over output period__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.411; averaged PPP is 0.106 
+ 
+------ 
+ 
+  * __TS: Surface temperature (radiative)__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.541; averaged PPP is 0.132  ![] (../../figures/Historical_forcing_ens/PPP_atm/PPP_All_G04.cam2.h0.TS.png)
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 100.515) -> maximum PPP is 0.128; averaged PPP is 0.051 
+ 
+------ 
+ 
+  * __U10: 10m wind speed__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.473; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 118.25) -> maximum PPP is 0.114; averaged PPP is 0.048 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 13.9672) -> maximum PPP is 0.153; averaged PPP is 0.088 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 192.54) -> maximum PPP is 0.074; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __U200: Zonal wind at 200 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.072; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 23.9446) -> maximum PPP is 0.181; averaged PPP is 0.102 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 313.501) -> maximum PPP is 0.061; averaged PPP is 0.038 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 368.818) -> maximum PPP is 0.060; averaged PPP is 0.038 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 433.895) -> maximum PPP is 0.060; averaged PPP is 0.038 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 53.1146) -> maximum PPP is 0.160; averaged PPP is 0.076 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 696.796) -> maximum PPP is 0.072; averaged PPP is 0.039 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 7.38881) -> maximum PPP is 0.133; averaged PPP is 0.077 
+ 
+------ 
+ 
+  * __U850: Zonal wind at 850 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.085; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 867.161) -> maximum PPP is 0.097; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 970.555) -> maximum PPP is 0.086; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 100.515) -> maximum PPP is 0.048; averaged PPP is 0.037 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 139.115) -> maximum PPP is 0.053; averaged PPP is 0.037 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 163.662) -> maximum PPP is 0.056; averaged PPP is 0.036 
+ 
+------ 
+ 
+  * __V200: Meridional wind at 200 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.046; averaged PPP is 0.036 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 23.9446) -> maximum PPP is 0.065; averaged PPP is 0.042 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 313.501) -> maximum PPP is 0.054; averaged PPP is 0.036 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 368.818) -> maximum PPP is 0.048; averaged PPP is 0.036 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 433.895) -> maximum PPP is 0.046; averaged PPP is 0.036 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 53.1146) -> maximum PPP is 0.093; averaged PPP is 0.043 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 696.796) -> maximum PPP is 0.085; averaged PPP is 0.037 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 7.38881) -> maximum PPP is 0.064; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __V850: Meridional wind at 850 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.076; averaged PPP is 0.037 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 867.161) -> maximum PPP is 0.078; averaged PPP is 0.037 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 970.555) -> maximum PPP is 0.126; averaged PPP is 0.038 
+ 
+------ 
+ 
+  * __Z050: Geopotential Z at 50 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.516; averaged PPP is 0.297 
+ 
+------ 
+ 
+  * __Z100: Geopotential Z at 100 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.567; averaged PPP is 0.270 
+ 
+------ 
+ 
+  * __Z200: Geopotential Z at 200 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.581; averaged PPP is 0.226 
+ 
+------ 
+ 
+  * __Z300: Geopotential Z at 300 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.563; averaged PPP is 0.213 
+ 
+------ 
+ 
+  * __Z500: Geopotential Z at 500 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.486; averaged PPP is 0.182 
+ 
+------ 
+ 
+  * __Z700: Geopotential Z at 700 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.453; averaged PPP is 0.131 
  
 ------ 
  
