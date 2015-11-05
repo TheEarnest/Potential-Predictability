@@ -4,6 +4,7 @@
 #------------------------------------------------------------------------------
 #
 ${DebugSetting}
+set +e
 JobStartTime=`date`
 JobName='ps_func_check_Spread'
 echo ${LinnBreaker}

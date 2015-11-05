@@ -28,14 +28,23 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
     * More details can be found in the [description page] (docs/FrontPage.markdown)
     * PPP of SST ![] (figures/FFSSTwiNudA_ini_1st_try/PPP_PPP-08.cam2.h0.SST.png)
 
+--------------------------------------
+* ### Full field SST assimilated Ocean of NorESM (3rd version)
+
+  * About this analysis:
+    * __Finished on ?? ?? 2015__
+    * More details can be found in the [description page] (docs/FrontPage_FF_3rd_try.markdown)
+    * PPP of SST [![] (figures/FF_ini_3rd_try/PPP_PPP-08.cam2.h0.SST.png)] (docs/FrontPage_FF_3rd_try.markdown)
+
+
 
 --------------------------------------
 * ### Full field SST assimilated Ocean of NorESM (2nd version)
 
   * About this analysis:
     * __Finished on ?? ?? 2015__
-    * More details can be found in the [description page] (docs/FrontPage.markdown)
-    * PPP of SST ![] (figures/FF_ini_2nd_try/PPP_PPP-08.cam2.h0.SST.png)
+    * More details can be found in the [description page] (docs/FrontPage_FF_2nd_try.markdown)
+    * PPP of SST [![] (figures/FF_ini_2nd_try/PPP_PPP-08.cam2.h0.SST.png)] (docs/FrontPage_FF_2nd_try.markdown)
 
 --------------------------------------
 * ### [Full field SST assimilated Ocean of NorESM (1st version)] (docs/FrontPage_FF_ini_try.markdown)
@@ -51,7 +60,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * About this analysis:
    * __Finished on 10 Mar. 2014__
    * More details can be found in the [description page] (docs/FrontPage_Historical_forcing_ens.markdown)
-   * PPP of SST [![] (figures/Historical_forcing_ens/PPP_PPP-08.cam2.h0.SST.png)](docs/FrontPage_Historical_forcing_ens.markdown)
+   * PPP of SST [![] (figures/Historical_forcing_ens/PPP_ocn/PPP_All.micom.hm.sst.png)](docs/FrontPage_Historical_forcing_ens.markdown)
 
 ------------------
 ## Do these before using the script ##
@@ -73,6 +82,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 ## Working Notes
 
   * should add a script to check PPP evolving (comparing spatial std in this case, and focus on SST only)
+  * Should build a system to counter check the files
   * Regional PPP (Nino 3.4; ATL3; SPG) (not urgent)
   * From PPP to evaluate prediction barrier - comparing to ENSO prediction barrier 
   * the ploting script has to be revised to get a better presentation, ie thiner colorbar, grids lines (not urgent)
