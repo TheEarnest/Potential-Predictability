@@ -6,7 +6,7 @@
 set -ex
 MainScript=cheeck_Prognostic_SNR
 scriptname=ps_func_micom_read_and_regriding_2Df.py
-ModelCompartments="ice"
+ModelCompartments="ocn"
 if [ ! -f ${MainScript} ]; then
   cd ..
 fi

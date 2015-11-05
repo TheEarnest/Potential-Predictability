@@ -23,7 +23,7 @@ if [  "${thost}" == "hexagon" ]; then
   #export LIBGL_DEBUG=verbose
 fi
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="lnd"
+ModelCompartments="atm"
 mScript=`echo ${plotScript} | awk -F "/" '{print $NF}' | awk -F ".m" '{print $1}' `
 MatlabScriptDIR=`echo ${plotScript} | awk -F "/${mScript}" '{print $1}'`
 
@@ -62,21 +62,23 @@ for ModelCompartment in ${ModelCompartments}; do
         rm -f ${figfilename}
       fi
     else
-      # path has to be redirted to regrid path
-      ana_path=`echo ${PPPfile} | awk -F "/PPP${fname}" '{print $1}'`
-      ana_path=${ana_path}_regrided
-      PPPfile_rg=`ls --color=no ${ana_path}/PPP${fname}* `
-      LonStr=`ncdump -h ${PPPfile_rg} | grep ":units ="  | grep -i "lon" | awk -F ":" '{print $1}' `
-      LatStr=`ncdump -h ${PPPfile_rg} | grep ":units ="  | grep -i "lat" | awk -F ":" '{print $1}' `
-      LonStr=${LonStr//\ }; LatStr=${LatStr//\ }
+      if [ ! -f ${figtarget} ]; then
+        # path has to be redirted to regrid path
+        ana_path=`echo ${PPPfile} | awk -F "/PPP${fname}" '{print $1}'`
+        ana_path=${ana_path}_regrided
+        PPPfile_rg=`ls --color=no ${ana_path}/PPP${fname}.nc `
+        LonStr=`ncdump -h ${PPPfile_rg} | grep ":units ="  | grep -i "lon" | awk -F ":" '{print $1}' `
+        LatStr=`ncdump -h ${PPPfile_rg} | grep ":units ="  | grep -i "lat" | awk -F ":" '{print $1}' `
+        LonStr=${LonStr//\ }; LatStr=${LatStr//\ }
 
-      echo ${PPPfile}
-      cd ${MatlabScriptDIR}
-      matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile_rg}'; ${mScript}; exit "
-      PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
-      figfilename=`ls --color=no *${PPPfilename}*`
-      cp -f ${figfilename} ${PlotDIR}/PPP${fname}${fsuffix}
-      rm -f ${figfilename}
+        echo ${PPPfile}
+        cd ${MatlabScriptDIR}
+        matlab -nosplash -nodesktop -r "LonStr='${LonStr}'; LatStr='${LatStr}';vname='${vname}'; titleStr='${titleStr}'; filename='${PPPfile_rg}'; ${mScript}; exit "
+        PPPfilename=`echo ${PPPfile} | awk -F "/" '{print $NF}'`
+        figfilename=`ls --color=no *${PPPfilename}*`
+        cp -f ${figfilename} ${PlotDIR}/PPP${fname}${fsuffix}
+        rm -f ${figfilename}
+      fi 
     fi
   done
 done
