@@ -1,0 +1,65 @@
+#! /bin/bash
+###############################################################################
+# ensemble info
+#------------------------------------------------------------------------------
+#
+${DebugSetting}
+JobStartTime=`date`
+JobName='ps_func_check_Signal2NoiseRatio'
+# 
+echo ${LinnBreaker}
+echo ${LinnBreaker}
+echo "Starting "${JobName}" of "${compartment}" ...... "
+
+tempPrefix=t_'ps_func_check_Signal2NoiseRatio'
+###############################################################################
+tarDIR=${DIR}/${Mod}/Signal2NoiseRatio
+EnsDiffVarDIR=${DIR}/${Mod}/EnsDiffVar
+lsDivisorStr="${DIR}/${Mod}/${casePrefix}${infix}*timvar*"
+if [ -d ${EnsDiffVarDIR} ]; then
+  cd ${DIR}/${Mod} 
+  files=`ls --color=no ${lsDivisorStr} `
+  ls --color=no ${lsDivisorStr} > ${tempDIR}/${tempPrefix}_files
+  file_count=` wc -l ${tempDIR}/${tempPrefix}_files | awk -F " " '{print $1}'`
+else
+  echo "Ensemble difference is not ready yet ... "
+  exit 1
+fi
+# counting for grids
+cdo griddes ${DIR}/${Mod}/${casePrefix}${infix}ymonmean | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
+grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
+GridC=""
+ 
+if [ "${file_count}" == "1" ]; then
+  EnsDiffVar=`ls `
+  echo "Unexpect file numbers: "${file_count}" ......"
+  exit 1
+else
+  for file in ${files}; do
+    cd ${DIR}/${Mod} 
+    if [ "${grid_count}" == "1" ]; then
+    # for single grid
+      lsDividendStr=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar*
+      lsDividendStrAll=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar_All
+      lsDividendStrMon=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar
+      . ${funcPath}/ps_func_check_Signal2NoiseRatio_monthly_outputs
+    else
+    # for multiple grids ...
+      GridC=`echo ${file} | awk -F "_G" '{print $NF}' | cut -c1-2`
+      lsDividendStr=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar*G${GridC}*
+      lsDividendStrAll=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar_All*G${GridC}*
+      lsDividendStrMon=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar
+      . ${funcPath}/ps_func_check_Signal2NoiseRatio_monthly_outputs
+    fi
+  done
+fi
+
+###############################################################################
+echo ${JobStartTime}
+echo `date`" || "${JobName}
+echo ${LinnBreaker}
+
+
+
+
+

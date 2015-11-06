@@ -72,10 +72,13 @@ for compartment in ${ModelCompartments}; do
     # for all variables 
 #    . ${funcPath}/ps_func_check_Diff
 #    . ${funcPath}/ps_func_check_sqr
-    . ${funcPath}/ps_func_check_Spread
-    . ${funcPath}/ps_func_check_Signal2NoiseRatio
+    . ${funcPath}/ps_func_check_fld_Spread
+    . ${funcPath}/ps_func_check_fld_Signal2NoiseRatio
+    . ${funcPath}/ps_func_fld_split_and_cast_variables
+#    . ${funcPath}/ps_func_check_Spread
+#    . ${funcPath}/ps_func_check_Signal2NoiseRatio
     # spliting variables
-    . ${funcPath}/ps_func_split_variables_check
+#    . ${funcPath}/ps_func_split_variables_check
 
     if [ "${compartment}" == "atm" ]; then
       # for regional PPP
