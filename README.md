@@ -77,6 +77,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * Make sure the data are well-prepared (no missing ensemble member or missing years)
   * micom outputs are compressed format, and cannot be processed by "cdo" because each file has different factor and offset. Better convert the outputs to F32 format before using this script.
   * The script of CAM automatically keeps the output of previous simulation, of which the exported variables are highly possible different with any new simulation. So those files (NorCPM_F19_tn21_mem??.cam2.h0.1979-12.nc in this case) should be removed in advance.   
+  * MICOM & ICE outputs have to be regridded before ploting
   * Main scripts are sitting @norstore-osl:/norstore_osl/projects/NS9207K/earnest/Analysis/Prognostic-Potential-Predictabil
 
 ## Working Notes
