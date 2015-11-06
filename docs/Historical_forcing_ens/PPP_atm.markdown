@@ -2,7 +2,7 @@ PPP of all variables in atm outputs
 ==========
 >> Created on: __Thu Nov 5 16:39:23 CET 2015__
 
->> Last updated on: __Fri Nov  6 13:05:00 CET 2015__ 
+>> Last updated on: __Fri Nov  6 13:42:05 CET 2015__ 
   * __Region (Lon,Lon,Lat,Lat)__
   * SPG: (300,345,48,65) 
   * Eurasia: (40,140,40,70) 
@@ -649,6 +649,306 @@ PPP of all variables in atm outputs
 ------ 
  
   * __QFLX: Surface water flux__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.171; averaged PPP is 0.041 
+ 
+------ 
+ 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 118.25) -> maximum PPP is 0.277; averaged PPP is 0.086 
+ 
+------ 
+ 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 13.9672) -> maximum PPP is 0.417; averaged PPP is 0.243 
+ 
+------ 
+ 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 192.54) -> maximum PPP is 0.531; averaged PPP is 0.183 
+ 
+------ 
+ 
+  * __T200: Temperature at 200 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.532; averaged PPP is 0.185 
+ 
+------ 
+ 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 23.9446) -> maximum PPP is 0.528; averaged PPP is 0.308 
+ 
+------ 
+ 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 313.501) -> maximum PPP is 0.516; averaged PPP is 0.188 
+ 
+------ 
+ 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 368.818) -> maximum PPP is 0.497; averaged PPP is 0.176 
+ 
+------ 
+ 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 433.895) -> maximum PPP is 0.482; averaged PPP is 0.168 
+ 
+------ 
+ 
+  * __T500: Temperature at 500 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.491; averaged PPP is 0.164 
+ 
+------ 
+ 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 53.1146) -> maximum PPP is __0.891__; averaged PPP is 0.560 
+ 
+------ 
+ 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 696.796) -> maximum PPP is 0.476; averaged PPP is 0.139 
+ 
+------ 
+ 
+  * __T700: Temperature at 700 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.502; averaged PPP is 0.141 
+ 
+------ 
+ 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 787.702) -> maximum PPP is 0.523; averaged PPP is 0.123 
+ 
+------ 
+ 
+  * __T850: Temperature at 850 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.531; averaged PPP is 0.120 
+ 
+------ 
+ 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 867.161) -> maximum PPP is 0.518; averaged PPP is 0.117 
+ 
+------ 
+ 
+  * __T: Temperature__, All_G04.cam2.h0., (level: 970.555) -> maximum PPP is 0.471; averaged PPP is 0.125 
+ 
+------ 
+ 
+  * __TAUX: Zonal surface stress__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.137; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 001000) -> maximum PPP is 0.391; averaged PPP is 0.070 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 108.664) -> maximum PPP is 0.273; averaged PPP is 0.087 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 150.394) -> maximum PPP is 0.426; averaged PPP is 0.140 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 18.052) -> maximum PPP is 0.443; averaged PPP is 0.272 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 2.19407) -> maximum PPP is __0.854__; averaged PPP is 0.543 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 288.085) -> maximum PPP is 0.519; averaged PPP is 0.193 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 338.917) -> maximum PPP is 0.512; averaged PPP is 0.184 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 44.6233) -> maximum PPP is __0.875__; averaged PPP is 0.543 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 4.89521) -> maximum PPP is __0.789__; averaged PPP is 0.470 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 61.6059) -> maximum PPP is __0.844__; averaged PPP is 0.490 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 744.383) -> maximum PPP is 0.551; averaged PPP is 0.151 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 831.021) -> maximum PPP is 0.542; averaged PPP is 0.124 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 955.997) -> maximum PPP is 0.422; averaged PPP is 0.109 
+ 
+------ 
+ 
+  * __TH: Potential Temperature__, All_G04.cam2.h0., (level: 9.88242) -> maximum PPP is 0.471; averaged PPP is 0.268 
+ 
+------ 
+ 
+  * __TMQ: Total (vertically integrated) precipitatable water__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.279; averaged PPP is 0.071 
+ 
+------ 
+ 
+  * __U10: 10m wind speed__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.473; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 13.9672) -> maximum PPP is 0.153; averaged PPP is 0.088 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 192.54) -> maximum PPP is 0.074; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __U200: Zonal wind at 200 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.072; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 23.9446) -> maximum PPP is 0.181; averaged PPP is 0.102 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 313.501) -> maximum PPP is 0.061; averaged PPP is 0.038 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 368.818) -> maximum PPP is 0.060; averaged PPP is 0.038 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 433.895) -> maximum PPP is 0.060; averaged PPP is 0.038 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 53.1146) -> maximum PPP is 0.160; averaged PPP is 0.076 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 696.796) -> maximum PPP is 0.072; averaged PPP is 0.039 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 7.38881) -> maximum PPP is 0.133; averaged PPP is 0.077 
+ 
+------ 
+ 
+  * __U850: Zonal wind at 850 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.085; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 867.161) -> maximum PPP is 0.097; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __U: Zonal wind__, All_G04.cam2.h0., (level: 970.555) -> maximum PPP is 0.086; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 100.515) -> maximum PPP is 0.048; averaged PPP is 0.037 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 139.115) -> maximum PPP is 0.053; averaged PPP is 0.037 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 163.662) -> maximum PPP is 0.056; averaged PPP is 0.036 
+ 
+------ 
+ 
+  * __V200: Meridional wind at 200 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.046; averaged PPP is 0.036 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 23.9446) -> maximum PPP is 0.065; averaged PPP is 0.042 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 313.501) -> maximum PPP is 0.054; averaged PPP is 0.036 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 368.818) -> maximum PPP is 0.048; averaged PPP is 0.036 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 433.895) -> maximum PPP is 0.046; averaged PPP is 0.036 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 53.1146) -> maximum PPP is 0.093; averaged PPP is 0.043 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 696.796) -> maximum PPP is 0.085; averaged PPP is 0.037 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 7.38881) -> maximum PPP is 0.064; averaged PPP is 0.040 
+ 
+------ 
+ 
+  * __V850: Meridional wind at 850 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.076; averaged PPP is 0.037 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 867.161) -> maximum PPP is 0.078; averaged PPP is 0.037 
+ 
+------ 
+ 
+  * __V: Meridional wind__, All_G04.cam2.h0., (level: 970.555) -> maximum PPP is 0.126; averaged PPP is 0.038 
+ 
+------ 
+ 
+  * __Z050: Geopotential Z at 50 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.516; averaged PPP is 0.297 
+ 
+------ 
+ 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 100.515) -> maximum PPP is 0.580; averaged PPP is 0.239 
+ 
+------ 
+ 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 139.115) -> maximum PPP is 0.370; averaged PPP is 0.154 
+ 
+------ 
+ 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 163.662) -> maximum PPP is 0.428; averaged PPP is 0.144 
+ 
+------ 
+ 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 226.513) -> maximum PPP is 0.339; averaged PPP is 0.105 
+ 
+------ 
+ 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 266.481) -> maximum PPP is 0.302; averaged PPP is 0.085 
+ 
+------ 
+ 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 3.54464) -> maximum PPP is __0.681__; averaged PPP is __0.670__ 
+ 
+------ 
+ 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 37.2303) -> maximum PPP is __0.731__; averaged PPP is 0.578 
+ 
+------ 
+ 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 510.455) -> maximum PPP is 0.148; averaged PPP is 0.056 
+ 
+------ 
+ 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 600.524) -> maximum PPP is 0.135; averaged PPP is 0.052 
+ 
+------ 
+ 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 70.0592) -> maximum PPP is __0.680__; averaged PPP is 0.404 
+ 
+------ 
+ 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 787.702) -> maximum PPP is 0.286; averaged PPP is 0.063 
+ 
+------ 
+ 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 867.161) -> maximum PPP is 0.299; averaged PPP is 0.078 
+ 
+------ 
+ 
+  * __Q: Specific humidity__, All_G04.cam2.h0., (level: 970.555) -> maximum PPP is 0.353; averaged PPP is 0.092 
+ 
+------ 
+ 
+  * __QFLX: Surface water flux__, All_G04.cam2.h0., (level: 0) -> maximum PPP is 0.171; averaged PPP is 0.041  ![] (../../figures/Historical_forcing_ens/PPP_atm/PPP_All_G04.cam2.h0.QFLX.png)
  
 ------ 
  
