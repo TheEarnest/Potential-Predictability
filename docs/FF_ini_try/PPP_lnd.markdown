@@ -4,12 +4,6 @@ PPP of all variables in lnd outputs
 
 >> Last updated on: __Mon Nov  2 10:08:17 CET 2015__ 
 
-* __Region (Lon,Lon,Lat,Lat)__
-  * SPG: (300,345,48,65) 
-  * Eurasia: (40,140,40,70) 
-  * Nino 3.4: (-170,-120,-5,5) 
-  * Atlantic Nino 3: (-20,-0,-3,3) 
-
 ------ 
 
   * __BIOGENCO: biogenic CO flux__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __0.998__; averaged PPP is __0.761__ ![] (../../figures/FF_ini_try/PPP_lnd/PPP_All_G02.clm2.h0.BIOGENCO.png)
