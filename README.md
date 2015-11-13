@@ -82,7 +82,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 ## Working Notes
 
-  * should add a script to check PPP evolving (comparing spatial std in this case, and focus on SST only)
+  * should add a script to check PPP evolving (comparing spatial std in this case, and focus on SST only) (Note: fldvar/fldcorr is not helpful)
   * Should build a system to counter check the files
   * uploading the nc files of PPP as well??
   * Regional PPP (Nino 3.4; ATL3; SPG) (not urgent)
