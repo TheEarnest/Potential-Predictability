@@ -1,0 +1,101 @@
+#! /bin/bash
+###############################################################################
+# ensemble info
+#------------------------------------------------------------------------------
+#
+${DebugSetting}
+set +e
+JobStartTime=`date`
+JobName='ps_func_check_Spread'
+echo ${LinnBreaker}
+echo ${LinnBreaker}
+echo "Starting "${JobName}" of "${compartment}" ...... "
+# 
+tempPrefix=t_'ps_func_check_Spread'
+###############################################################################
+tarDIR=${DIR}/${Mod}/fldEnsDiffVar
+mkdir -p ${tarDIR}
+sqrDIR=${DIR}/${Mod}/sqr
+if [ -d ${sqrDIR} ]; then
+  cd ${sqrDIR}/${firstMem}
+  files=`ls --color=no ${prefix}*`
+else
+  echo "Ensemble difference is not ready yet ... "
+  exit 1
+fi
+for file in ${files}; do
+  . ${funcPath}/ps_func_check_filefix
+  cd ${sqrDIR}
+  Sources=`ls */*${suffix} `
+exit 5
+  target=${tarDIR}/${casePrefix}${infix}fldEnsDiffVar.${suffix}
+  if [ ! -f ${target} ]; then
+    echo "Checking "${suffix}" of "${Mod}" ... "
+    cd ${sqrDIR}
+    cdo fldmean ${Sources} ${target} 
+  fi
+exit 5
+done
+
+
+
+mkdir -p ${DIR}/${Mod}/Signal2NoiseRatio
+if [ "${suffix_no_year_pre}" == "${suffix_no_year}" ]; then
+  target=${DIR}/${Mod}/Signal2NoiseRatio/${casePrefix}${infix}EnsDiffVar_All
+set +e
+  cdo -O ensmean ${tarDIR}/*${infix}*${suffix_no_year}* ${target}
+set -e
+  cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
+  grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
+  if [ "${grid_count}" != "1" ]; then
+    cdo -O splitgrid ${target} ${target}_G 
+  fi
+else
+  suffixes_no_year=""
+  is_same_suffix=0
+  for file in ${files}; do
+    . ${funcPath}/ps_func_check_filefix
+    is_same_suffix=0
+    for suffixCheck in ${suffixes_no_year}; do
+      if [ "${suffixCheck}" == "${suffix_no_year}" ]; then
+        is_same_suffix=1
+      fi
+    done
+    if [ "${is_same_suffix}" != "1" ]; then
+      # adding suffix for all months
+      suffixes_no_year=${suffixes_no_year}" "${suffix_no_year}
+    fi
+  done
+  enstar_All=""
+  for suffixCheck in ${suffixes_no_year}; do
+    # dealing the noise (variance) for each month 
+    target=${DIR}/${Mod}/Signal2NoiseRatio/${casePrefix}${infix}EnsDiffVar${suffixCheck}
+    enstar_All=${enstar_All}" "${target}
+    cdo -O ensmean ${tarDIR}/*${infix}*${suffixCheck}* ${target}
+    cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
+    grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
+    if [ "${grid_count}" != "1" ]; then
+      cdo -O splitgrid ${target} ${target}_G
+    fi
+  done
+ 
+  target=${DIR}/${Mod}/Signal2NoiseRatio/${casePrefix}${infix}EnsDiffVar_All
+  # ensemble size is too big as doing for atm outputs
+  # monthly noise (variance) should be ready, and the total 
+  #cdo -O ensmean ${tarDIR}/${casePrefix}${infix}EnsDiffVar* ${target}
+  cdo -O ensmean ${enstar_All} ${target}
+  cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
+  grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
+  if [ "${grid_count}" != "1" ]; then
+    cdo -O splitgrid ${target} ${target}_G
+  fi  
+fi
+###############################################################################
+echo ${JobStartTime}
+echo `date`" || "${JobName}
+echo ${LinnBreaker}
+
+
+
+
+

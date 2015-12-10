@@ -49,21 +49,21 @@ for ModelCompartment in ${ModelCompartments}; do
     echo ">> Created on: __"`date`"__ " >> ${MDfile} 
     echo " "  >> ${MDfile}
     echo ">> Last updated on: __"`date`"__ " >> ${MDfile}
-    echo "  * __Region (Lon,Lon,Lat,Lat)__ " >> ${MDfile}
-    echo "  * SPG: (${SPGReg}) " >> ${MDfile}
-    echo "  * Eurasia: (${EUReg}) " >> ${MDfile}
-    echo "  * Nino 3.4: (${Nino34Reg}) " >> ${MDfile}
-    echo "  * Atlantic Nino 3: (${AtlNino3Reg}) " >> ${MDfile}
+ #   echo "  * __Region (Lon,Lon,Lat,Lat)__ " >> ${MDfile}
+ #   echo "  * SPG: (${SPGReg}) " >> ${MDfile}
+ #   echo "  * Eurasia: (${EUReg}) " >> ${MDfile}
+ #   echo "  * Nino 3.4: (${Nino34Reg}) " >> ${MDfile}
+ #   echo "  * Atlantic Nino 3: (${AtlNino3Reg}) " >> ${MDfile}
     echo " "  >> ${MDfile}
     echo "------ "  >> ${MDfile}
     echo " "  >> ${MDfile}
   else
     nowdate=`date`
     sed -i s/"Last update".*/"Last updated on: __${nowdate}__ "/g ${MDfile}
-    sed -i s/"SPG:".*/"SPG: (${SPGReg}) "/g ${MDfile}    
-    sed -i s/"Eurasia:".*/"Eurasia: (${EUReg}) "/g ${MDfile}
-    sed -i s/"Nino 3.4:".*/"Nino 3.4: (${Nino34Reg}) "/g ${MDfile}
-    sed -i s/"Atlantic Nino 3:".*/"Atlantic Nino 3: (${AtlNino3Reg}) "/g ${MDfile}
+#    sed -i s/"SPG:".*/"SPG: (${SPGReg}) "/g ${MDfile}    
+#    sed -i s/"Eurasia:".*/"Eurasia: (${EUReg}) "/g ${MDfile}
+#    sed -i s/"Nino 3.4:".*/"Nino 3.4: (${Nino34Reg}) "/g ${MDfile}
+#    sed -i s/"Atlantic Nino 3:".*/"Atlantic Nino 3: (${AtlNino3Reg}) "/g ${MDfile}
   fi
 
   #PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `

@@ -35,7 +35,7 @@ for ModelCompartment in ${ModelCompartments}; do
     cd ${tarDIR}
     PPPfiles=`ls --color=no `
     if [ "${ModelCompartment}" == "ocn" ]; then
-      cp ${funcPath}/grid.nc ${tempDIR}
+      cp ${funcPath}/grid_g16.nc ${tempDIR}/grid.nc
     fi
     for PPPfile in ${PPPfiles}; do
       #PPPfile=PPP_All.micom.hm.sst.nc4  # for testing ...
