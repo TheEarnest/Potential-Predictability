@@ -14,16 +14,10 @@ ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 #O#utputDIR=/scratch/earnest/SyncTransfer/Historical_forcing_ens
 #D#ataDIR=/scratch/earnest/noresmexp/Historical_forcing_ens
-<<<<<<< HEAD
 #O#utputDIR=/scratch/earnest/SyncTransfer/FF_ini_try
 #D#ataDIR=/scratch/earnest/noresmexp/FF_ini_try
 OutputDIR=/scratch/earnest/SyncTransfer/Reanalysis_standard
 DataDIR=/scratch/earnest/noresmexp/Reanalysis_standard
-
-=======
-OutputDIR=/scratch/earnest/SyncTransfer/FF_ini_try
-DataDIR=/scratch/earnest/noresmexp/FF_ini_try
->>>>>>> 4c7730bb47c4d0ae2c1e419392f0fc60dfc1ad46
 tempDIR=/scratch/earnest/temp
 casePrefix=NorCPM_F19_tn21
 MEyear=2000
