@@ -23,7 +23,7 @@ if [  "${thost}" == "hexagon" ]; then
   #export LIBGL_DEBUG=verbose
 fi
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="atm"
+ModelCompartments="ice"
 mScript=`echo ${plotScript} | awk -F "/" '{print $NF}' | awk -F ".m" '{print $1}' `
 MatlabScriptDIR=`echo ${plotScript} | awk -F "/${mScript}" '{print $1}'`
 
@@ -46,7 +46,7 @@ for ModelCompartment in ${ModelCompartments}; do
     titleStr=${varLongName}" ("${varunits}")"
     titleStr=`echo "${titleStr//\"}" `
 
-    if [ "${ModelCompartment}" != "ocn" ]; then
+    if [ "${ModelCompartment}" != "ocn" ] && [ "${ModelCompartment}" != "ice" ] ; then
       # [ "${lonlat}" == "None" ] is the case for ocn aice 
       if [ ! -f ${figtarget} ]; then
         # define title
