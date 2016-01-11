@@ -32,7 +32,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 * ### Full field SST assimilated Ocean of NorESM (3rd version)
 
   * About this analysis:
-    * __Finished on ?? ?? 2015__
+    * __Finished on ?? ?? 2016__
     * More details can be found in the [description page] (docs/FrontPage_FF_3rd_try.markdown)
     * PPP of SST [![] (figures/FF_ini_3rd_try/PPP_PPP-08.cam2.h0.SST.png)] (docs/FrontPage_FF_3rd_try.markdown)
 
@@ -42,7 +42,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 * ### Full field SST assimilated Ocean of NorESM (2nd version)
 
   * About this analysis:
-    * __Finished on ?? ?? 2015__
+    * __Finished on ?? ?? 2016__
     * More details can be found in the [description page] (docs/FrontPage_FF_2nd_try.markdown)
     * PPP of SST [![] (figures/FF_ini_2nd_try/PPP_PPP-08.cam2.h0.SST.png)] (docs/FrontPage_FF_2nd_try.markdown)
 
