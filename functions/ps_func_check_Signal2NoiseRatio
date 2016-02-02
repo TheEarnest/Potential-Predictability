@@ -27,6 +27,8 @@ else
 fi
 # $file is not empty 
  . ${funcPath}/ps_func_check_filefix
+
+
 # counting for grids
 cdo griddes ${DIR}/${Mod}/${casePrefix}${infix}ymonmean | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
 grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
@@ -35,7 +37,24 @@ GridC=""
 if [ "${file_count}" == "1" ]; then
   EnsDiffVar=`ls `
   echo "Unexpect file numbers: "${file_count}" ......"
-  exit 1
+
+    cd ${DIR}/${Mod}
+    if [ "${grid_count}" == "1" ]; then
+    # for single grid
+      lsDividendStr=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar*
+      lsDividendStrAll=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar_All
+      lsDividendStrMon=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar
+      . ${funcPath}/ps_func_check_Signal2NoiseRatio_monthly_outputs
+    else
+    # for multiple grids ...
+      GridC=`echo ${file} | awk -F "_G" '{print $NF}' | cut -c1-2`
+      lsDividendStr=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar*G${GridC}*
+      lsDividendStrAll=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar_All*G${GridC}*
+      lsDividendStrMon=${DIR}/${Mod}/Signal2NoiseRatio/*${infix}*EnsDiffVar
+      . ${funcPath}/ps_func_check_Signal2NoiseRatio_monthly_outputs
+    fi
+
+
 else
   for file in ${files}; do
     cd ${DIR}/${Mod} 

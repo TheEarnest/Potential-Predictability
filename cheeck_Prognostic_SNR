@@ -23,7 +23,7 @@ casePrefix=NorCPM_F19_tn21
 MEyear=1987
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="ice"
+ModelCompartments="ocn"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -67,15 +67,15 @@ for compartment in ${ModelCompartments}; do
   #---------------------------------------------------------------------------
   # calculating the ensemble mean/std/spread (max-min)
   for prefix in ${prefixes}; do 
-    . ${funcPath}/ps_func_building_ensemble_mean
+#    . ${funcPath}/ps_func_building_ensemble_mean
   #---------------------------------------------------------------------------
   # the difference of each member and ensemble mean
     #------------------------------------------------------------------------
     # for all variables 
-    . ${funcPath}/ps_func_check_Diff
-    . ${funcPath}/ps_func_check_sqr
+#    . ${funcPath}/ps_func_check_Diff
+#    . ${funcPath}/ps_func_check_sqr
     #. ${funcPath}/ps_func_check_fld_Signal2NoiseRatio
-    . ${funcPath}/ps_func_check_Spread
+#    . ${funcPath}/ps_func_check_Spread
     . ${funcPath}/ps_func_check_Signal2NoiseRatio
     # spliting variables
     . ${funcPath}/ps_func_split_variables_check

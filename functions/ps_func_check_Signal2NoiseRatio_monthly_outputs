@@ -3,6 +3,7 @@
 EnsDiffVarFile=`ls --color=no ${lsDividendStr} `
 ls --color=no ${lsDividendStr} > ${tempDIR}/${tempPrefix}_files
 file_count=` wc -l ${tempDIR}/${tempPrefix}_files | awk -F " " '{print $1}'`
+
 if [ "${file_count}" == "1" ]; then
   S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
   . ${funcPath}/ps_func_calculate_SNR_wi_PPP

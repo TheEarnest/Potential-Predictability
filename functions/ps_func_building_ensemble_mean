@@ -76,7 +76,7 @@ if [ "${grid_count}" == "1" ]; then
     for month in ${months}; do
       (( nmonth = nmonth + 1 ))
       mm=`echo 00${nmonth} | tail -c3 `
-      cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}
+      cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_detrend_m${mm}
     done
   fi
 else
