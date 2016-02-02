@@ -16,8 +16,8 @@ Full field SST assimilated Ocean of NorESM (1st version)
     * From __1970-1990__
     * Known issue:  
     * PPP cannot identify this skill loose because the noise is calculated base on the ensemble mean. 
-  * PPP of SST ![] (../figures/FF_ini_try/PPP_PPP-08.cam2.h0.SST.png)
-  * PPP (against observation) of SST ![] (../figures/FF_ini_try/Glabal2D_sst_NorCPM_F19_tn21_PP08.nc.png)
-  * Prediction Skill of SST ![] (../figures/FF_ini_try/Glabal2D_corr_ACC_SST_r008_08.nc.png)
+  * PPP of SST ![] (../figures/FF_3rd_try/PPP_PPP-08.cam2.h0.SST.png)
+  * PPP (against observation) of SST ![] (../figures/FF_3rd_try/Glabal2D_sst_NorCPM_F19_tn21_PP08.nc.png)
+  * Prediction Skill of SST ![] (../figures/FF_3rd_try/Glabal2D_corr_ACC_SST_r008_08.nc.png)
   * Notes on this prediction:
 
