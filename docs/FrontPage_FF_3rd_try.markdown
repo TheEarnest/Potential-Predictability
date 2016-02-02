@@ -5,7 +5,7 @@ Full field SST assimilated Ocean of NorESM (1st version)
 
     * [__MICOM__] (FF_3rd_try/PPP_ocn.markdown), presented/total figures in ocn: __24__/1053 
     * [__CAM__] (FF_3rd_try/PPP_atm.markdown), presented/total figures in atm: __82__/3432 
-    * [__CLM__] (FF_3rd_try/PPP_lnd.markdown), presented/total figures in lnd: __0__/46 
+    * [__CLM__] (FF_3rd_try/PPP_lnd.markdown), presented/total figures in lnd: __0__/146 
     * [__CICE__] (FF_3rd_try/PPP_ice.markdown), presented/total figures in ice: __8__/104 
 
   * About this analysis:
