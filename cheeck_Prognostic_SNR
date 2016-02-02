@@ -23,7 +23,7 @@ casePrefix=NorCPM_F19_tn21
 MEyear=1987
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
-	ModelCompartments="lnd"
+	ModelCompartments="ocn"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
