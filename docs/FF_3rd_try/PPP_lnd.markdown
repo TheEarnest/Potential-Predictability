@@ -2,7 +2,7 @@ PPP of all variables in lnd outputs
 ==========
 >> Created on: __Tue Feb 2 09:44:19 CET 2016__ 
  
->> Last updated on: __Tue Feb  2 15:05:03 CET 2016__ 
+>> Last updated on: __Tue Feb  2 15:21:16 CET 2016__ 
  
 ------ 
  
@@ -618,63 +618,63 @@ PPP of all variables in lnd outputs
  
 ------ 
  
-  * __U10: 10-m wind__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.999__ 
+  * __U10: 10-m wind__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.999__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.U10.png)
  
 ------ 
  
-  * __URBAN_AC: urban air conditioning flux__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.962__ 
+  * __URBAN_AC: urban air conditioning flux__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.962__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.URBAN_AC.png)
  
 ------ 
  
-  * __URBAN_HEAT: urban heating flux__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.984__ 
+  * __URBAN_HEAT: urban heating flux__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.984__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.URBAN_HEAT.png)
  
 ------ 
  
-  * __VOCFLXT: total VOC flux into atmosphere__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.989__ 
+  * __VOCFLXT: total VOC flux into atmosphere__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.989__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.VOCFLXT.png)
  
 ------ 
  
-  * __WA: water in the unconfined aquifer__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.994__ 
+  * __WA: water in the unconfined aquifer__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.994__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.WA.png)
  
 ------ 
  
-  * __WASTEHEAT: sensible heat flux from heating-cooling sources of urban waste heat__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.986__ 
+  * __WASTEHEAT: sensible heat flux from heating-cooling sources of urban waste heat__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.986__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.WASTEHEAT.png)
  
 ------ 
  
-  * __WIND: atmospheric wind velocity magnitude__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.999__ 
+  * __WIND: atmospheric wind velocity magnitude__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.999__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.WIND.png)
  
 ------ 
  
-  * __WT: total water storage (unsaturated soil water + groundwater)__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.995__ 
+  * __WT: total water storage (unsaturated soil water + groundwater)__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.995__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.WT.png)
  
 ------ 
  
-  * __ZBOT: atmospheric reference height__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+  * __ZBOT: atmospheric reference height__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __01.000__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.ZBOT.png)
  
 ------ 
  
-  * __ZWT: water table depth__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.771__ 
+  * __ZWT: water table depth__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.771__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.ZWT.png)
  
 ------ 
  
-  * __QCHANR_ICE: RTM river flow: ICE__, All_G03.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.951__ 
+  * __QCHANR_ICE: RTM river flow: ICE__, All_G03.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.951__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G03.clm2.h0.QCHANR_ICE.png)
  
 ------ 
  
-  * __QCHANR: RTM river flow: LIQ__, All_G03.clm2.h0., (level: 0) -> maximum PPP is __0.999__; averaged PPP is __0.963__ 
+  * __QCHANR: RTM river flow: LIQ__, All_G03.clm2.h0., (level: 0) -> maximum PPP is __0.999__; averaged PPP is __0.963__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G03.clm2.h0.QCHANR.png)
  
 ------ 
  
-  * __QCHOCNR_ICE: RTM river discharge into ocean: ICE__, All_G03.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.911__ 
+  * __QCHOCNR_ICE: RTM river discharge into ocean: ICE__, All_G03.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.911__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G03.clm2.h0.QCHOCNR_ICE.png)
  
 ------ 
  
-  * __QCHOCNR: RTM river discharge into ocean: LIQ__, All_G03.clm2.h0., (level: 0) -> maximum PPP is __0.999__; averaged PPP is __0.954__ 
+  * __QCHOCNR: RTM river discharge into ocean: LIQ__, All_G03.clm2.h0., (level: 0) -> maximum PPP is __0.999__; averaged PPP is __0.954__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G03.clm2.h0.QCHOCNR.png)
  
 ------ 
  
-  * __VOLR: RTM storage: LIQ__, All_G03.clm2.h0., (level: 0) -> maximum PPP is __0.999__; averaged PPP is __0.963__ 
+  * __VOLR: RTM storage: LIQ__, All_G03.clm2.h0., (level: 0) -> maximum PPP is __0.999__; averaged PPP is __0.963__ ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G03.clm2.h0.VOLR.png)
  
 ------ 
  
@@ -2079,6 +2079,162 @@ PPP of all variables in lnd outputs
 ------ 
  
   * __TV: vegetation temperature__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __H2OSOI: volumetric soil water__, All_G02.clm2.h0., (level: 0.00710064) -> maximum PPP is __01.000__; averaged PPP is __0.999__ 
+ 
+------ 
+ 
+  * __H2OSOI: volumetric soil water__, All_G02.clm2.h0., (level: 0.0622586) -> maximum PPP is __01.000__; averaged PPP is __0.999__ 
+ 
+------ 
+ 
+  * __H2OSOI: volumetric soil water__, All_G02.clm2.h0., (level: 0.212193) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __H2OSOI: volumetric soil water__, All_G02.clm2.h0., (level: 0.619758) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __H2OSOI: volumetric soil water__, All_G02.clm2.h0., (level: 12.9253) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __H2OSOI: volumetric soil water__, All_G02.clm2.h0., (level: 21.3265) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __H2OSOI: volumetric soil water__, All_G02.clm2.h0., (level: 35.1776) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __H2OSOI: volumetric soil water__, All_G02.clm2.h0., (level: 7.82977) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __HC: heat content of soil-snow-lake__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.950__  ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.HC.png)
+ 
+------ 
+ 
+  * __SOILICE: soil ice__, All_G02.clm2.h0., (level: 0.00710064) -> maximum PPP is __01.000__; averaged PPP is __0.997__ 
+ 
+------ 
+ 
+  * __SOILICE: soil ice__, All_G02.clm2.h0., (level: 0.0622586) -> maximum PPP is __01.000__; averaged PPP is __0.995__ 
+ 
+------ 
+ 
+  * __SOILICE: soil ice__, All_G02.clm2.h0., (level: 0.212193) -> maximum PPP is __01.000__; averaged PPP is __0.994__ 
+ 
+------ 
+ 
+  * __SOILICE: soil ice__, All_G02.clm2.h0., (level: 0.619758) -> maximum PPP is __01.000__; averaged PPP is __0.984__ 
+ 
+------ 
+ 
+  * __SOILICE: soil ice__, All_G02.clm2.h0., (level: 12.9253) -> maximum PPP is __01.000__; averaged PPP is __0.975__ 
+ 
+------ 
+ 
+  * __SOILICE: soil ice__, All_G02.clm2.h0., (level: 21.3265) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __SOILICE: soil ice__, All_G02.clm2.h0., (level: 35.1776) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __SOILICE: soil ice__, All_G02.clm2.h0., (level: 7.82977) -> maximum PPP is __01.000__; averaged PPP is __0.864__ 
+ 
+------ 
+ 
+  * __SOILLIQ: soil liquid water__, All_G02.clm2.h0., (level: 0.0622586) -> maximum PPP is __01.000__; averaged PPP is __0.990__ 
+ 
+------ 
+ 
+  * __SOILLIQ: soil liquid water__, All_G02.clm2.h0., (level: 0.212193) -> maximum PPP is __01.000__; averaged PPP is __0.964__ 
+ 
+------ 
+ 
+  * __SOILLIQ: soil liquid water__, All_G02.clm2.h0., (level: 0.619758) -> maximum PPP is __01.000__; averaged PPP is __0.976__ 
+ 
+------ 
+ 
+  * __SOILLIQ: soil liquid water__, All_G02.clm2.h0., (level: 12.9253) -> maximum PPP is __01.000__; averaged PPP is __0.997__ 
+ 
+------ 
+ 
+  * __SOILLIQ: soil liquid water__, All_G02.clm2.h0., (level: 21.3265) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __SOILLIQ: soil liquid water__, All_G02.clm2.h0., (level: 35.1776) -> maximum PPP is __01.000__; averaged PPP is __0.898__ 
+ 
+------ 
+ 
+  * __SOILLIQ: soil liquid water__, All_G02.clm2.h0., (level: 7.82977) -> maximum PPP is __01.000__; averaged PPP is __0.994__ 
+ 
+------ 
+ 
+  * __SOILWATER_10CM: soil liquid water + ice in top 10cm of soil__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __01.000__  ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.SOILWATER_10CM.png)
+ 
+------ 
+ 
+  * __TLAKE: lake temperature__, All_G02.clm2.h0., (level: 000.05) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __TLAKE: lake temperature__, All_G02.clm2.h0., (level: 0002.1) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __TLAKE: lake temperature__, All_G02.clm2.h0., (level: 0008.1) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __TLAKE: lake temperature__, All_G02.clm2.h0., (level: 0018.6) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __TLAKE: lake temperature__, All_G02.clm2.h0., (level: 34.325) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __TREFMNAV: daily minimum of average 2-m temperature__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __0.632__; averaged PPP is 0.568  ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.TREFMNAV.png)
+ 
+------ 
+ 
+  * __TSOI: soil temperature__, All_G02.clm2.h0., (level: 0.0622586) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __TSOI: soil temperature__, All_G02.clm2.h0., (level: 0.212193) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __TSOI: soil temperature__, All_G02.clm2.h0., (level: 0.619758) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __TSOI_10CM: soil temperature in top 10cm of soil__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.980__  ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.TSOI_10CM.png)
+ 
+------ 
+ 
+  * __TSOI: soil temperature__, All_G02.clm2.h0., (level: 1.72764) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __TSOI: soil temperature__, All_G02.clm2.h0., (level: 2.86461) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __TSOI: soil temperature__, All_G02.clm2.h0., (level: 4.73916) -> maximum PPP is __01.000__; averaged PPP is __01.000__ 
+ 
+------ 
+ 
+  * __TV: vegetation temperature__, All_G02.clm2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __01.000__  ![] (../../figures/FF_3rd_try/PPP_lnd/PPP_All_G02.clm2.h0.TV.png)
  
 ------ 
  
