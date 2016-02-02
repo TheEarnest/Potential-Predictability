@@ -61,7 +61,10 @@ if [ "${grid_count}" == "1" ]; then
   gridtarget=${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar
   if [ ! -f ${gridtarget} ]; then
     cdo -O sub ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${DIR}/${Mod}/${casePrefix}${infix}ymonmean ${DIR}/${Mod}/${casePrefix}${infix}anomaly
+     cdo -O trend ${DIR}/${Mod}/${casePrefix}${infix}anomaly ${DIR}/${Mod}/${casePrefix}${infix}anomaly_trend1 ${DIR}/${Mod}/${casePrefix}${infix}anomaly_trend2
+    cdo -O subtrend ${DIR}/${Mod}/${casePrefix}${infix}anomaly ${DIR}/${Mod}/${casePrefix}${infix}anomaly_trend1 ${DIR}/${Mod}/${casePrefix}${infix}anomaly_trend2 ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend 
     cdo -O timvar ${DIR}/${Mod}/${casePrefix}${infix}anomaly ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar
+    cdo -O timvar ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_detrend
   fi
   months=`cdo showmon ${DIR}/${Mod}/${casePrefix}${infix}ymonmean `
   imonC=0
@@ -71,7 +74,7 @@ if [ "${grid_count}" == "1" ]; then
   if [ ${imonC} -gt 1 ]; then
     for month in ${months}; do 
       mm=`echo 00${month} | tail -c3 `
-      cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}
+      cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}
     done
   fi
 else
@@ -90,6 +93,9 @@ else
     if [ ! -f ${gridtarget} ]; then
       cdo -O sub ${tempDIR}/${tempPrefix}_mergetime_G${igg}.nc ${tempDIR}/${tempPrefix}_ymonmean_G${igg}.nc ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg}
       cdo -O timvar ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_G${igg}
+      cdo -O trend ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg}_trend1 ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg}_trend2 
+      cdo -O subtrend ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg}_trend1 ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg}_trend2 ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend_G${igg}
+      cdo -O timvar ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_detrend_G${igg}
     fi
     # check time dimention ...
     checkDate=`cdo showdate ${gridtarget} ` 
@@ -102,7 +108,7 @@ else
       if [ ${imonC} -gt 1 ]; then
         for month in ${months}; do
           mm=`echo 00${month} | tail -c3 `
-          cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}_G${igg}
+          cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_detrend_m${mm}_G${igg}
         done
       fi
     fi

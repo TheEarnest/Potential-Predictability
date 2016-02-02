@@ -23,7 +23,7 @@ casePrefix=NorCPM_F19_tn21
 MEyear=1987
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
-	ModelCompartments="ocn"
+	ModelCompartments="lnd"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -68,6 +68,7 @@ for compartment in ${ModelCompartments}; do
   # calculating the ensemble mean/std/spread (max-min)
   for prefix in ${prefixes}; do 
     . ${funcPath}/ps_func_building_ensemble_mean
+exit 5
   #---------------------------------------------------------------------------
   # the difference of each member and ensemble mean
     #------------------------------------------------------------------------
