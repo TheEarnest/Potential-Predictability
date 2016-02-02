@@ -72,8 +72,10 @@ if [ "${grid_count}" == "1" ]; then
     (( imonC = imonC + 1 ))
   done
   if [ ${imonC} -gt 1 ]; then
-    for month in ${months}; do 
-      mm=`echo 00${month} | tail -c3 `
+    nmonth=0
+    for month in ${months}; do
+      (( nmonth = nmonth + 1 ))
+      mm=`echo 00${nmonth} | tail -c3 `
       cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_m${mm}
     done
   fi
@@ -106,8 +108,10 @@ else
         (( imonC = imonC + 1 ))
       done
       if [ ${imonC} -gt 1 ]; then
+        nmonth=0
         for month in ${months}; do
-          mm=`echo 00${month} | tail -c3 `
+          (( nmonth = nmonth + 1 ))
+          mm=`echo 00${nmonth} | tail -c3 `
           cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_detrend_m${mm}_G${igg}
         done
       fi

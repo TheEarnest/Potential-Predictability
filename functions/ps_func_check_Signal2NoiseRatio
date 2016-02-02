@@ -15,7 +15,7 @@ tempPrefix=t_'ps_func_check_Signal2NoiseRatio'
 ###############################################################################
 tarDIR=${DIR}/${Mod}/Signal2NoiseRatio
 EnsDiffVarDIR=${DIR}/${Mod}/EnsDiffVar
-lsDivisorStr="${DIR}/${Mod}/${casePrefix}${infix}*timvar*"
+lsDivisorStr="${DIR}/${Mod}/${casePrefix}*timvar_detrend*"
 if [ -d ${EnsDiffVarDIR} ]; then
   cd ${DIR}/${Mod} 
   files=`ls --color=no ${lsDivisorStr} `
@@ -25,6 +25,8 @@ else
   echo "Ensemble difference is not ready yet ... "
   exit 1
 fi
+# $file is not empty 
+ . ${funcPath}/ps_func_check_filefix
 # counting for grids
 cdo griddes ${DIR}/${Mod}/${casePrefix}${infix}ymonmean | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
 grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
