@@ -21,7 +21,9 @@ PPPfiles=`ls --color=no ${lsPPPStr} `
 for PPPfile in ${PPPfiles}; do 
   PPPsuffix=`echo ${PPPfile} | awk -F "PPP" '{print $NF}' | awk -F ".nc" '{print $1}' `
   FNprefix=PPP${PPPsuffix}${infix} 
+set +e
   cdo -O splitvar ${PPPfile} ${tarDIR}/${FNprefix} 
+set -e
 done
 
 cd ${tarDIR}
