@@ -24,7 +24,7 @@ AtlNino3Reg="-20,-0,-3,3"
 thPPP=0.6
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 
-ModelCompartments="ice"
+ModelCompartments="ocn"
 if [ ! -d ${webpageDIR} ]; then 
   mkdir -p ${figureDIR}
   mkdir -p ${webpageDIR}
