@@ -19,11 +19,11 @@ DataDIR=/scratch/earnest/noresmexp/FF_3rd_try
 #O#utputDIR=/scratch/earnest/SyncTransfer/FF_ini_try
 #D#ataDIR=/scratch/earnest/noresmexp/FF_ini_try
 tempDIR=/scratch/earnest/temp
-casePrefix=NorCPM_ME
-MEyear=1997
+casePrefix=NorCPM_F19_tn21
+MEyear=1987
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
-	ModelCompartments="ocn"
+ModelCompartments="atm"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -74,7 +74,7 @@ for compartment in ${ModelCompartments}; do
     # for all variables 
     . ${funcPath}/ps_func_check_Diff
     . ${funcPath}/ps_func_check_sqr
-#    . ${funcPath}/ps_func_check_fld_Signal2NoiseRatio
+    #. ${funcPath}/ps_func_check_fld_Signal2NoiseRatio
     . ${funcPath}/ps_func_check_Spread
     . ${funcPath}/ps_func_check_Signal2NoiseRatio
     # spliting variables

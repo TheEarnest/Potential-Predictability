@@ -23,16 +23,16 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 * ### Full Profile assimilated Ocean of NorESM (1st version)
 
   * About this analysis:
-    * __Finished on 28 Jan 2016__
+    * __Finished on ?? ?? 2016__
     * Have to wait for Yiguo Wang's work on full profiled assimilation
     * More details can be found in the [description page] (docs/FrontPage.markdown)
     * PPP of SST ![] (figures/FFSSTwiNudA_ini_1st_try/PPP_PPP-08.cam2.h0.SST.png)
 
 --------------------------------------
-* ### Full field SST assimilated Ocean of NorESM (3rd version)
+* ### [Full field SST assimilated Ocean of NorESM (3rd version)] (docs/FrontPage_FF_3rd_try.markdown)
 
   * About this analysis:
-    * __Finished on ?? ?? 2016__
+    * __Finished on 28 Jan 2016__
     * More details can be found in the [description page] (docs/FrontPage_FF_3rd_try.markdown)
     * PPP of SST [![] (figures/FF_ini_3rd_try/PPP_PPP-08.cam2.h0.SST.png)] (docs/FrontPage_FF_3rd_try.markdown)
 
