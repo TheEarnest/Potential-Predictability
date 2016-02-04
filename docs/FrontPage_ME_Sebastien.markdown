@@ -3,14 +3,14 @@ Full field SST assimilated Ocean of NorESM (3rd version)
 
   * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
-    * [__MICOM__] (ME_Sebastien/PPP_ocn.markdown), presented/total figures in ocn: __10__/153 
+    * [__MICOM__] (ME_Sebastien/PPP_ocn.markdown), presented/total figures in ocn: __24__/235 
     * [__CAM__] (ME_Sebastien/PPP_atm.markdown), presented/total figures in atm: __0__/0 
     * [__CLM__] (ME_Sebastien/PPP_lnd.markdown), presented/total figures in lnd: __0__/0 
     * [__CICE__] (ME_Sebastien/PPP_ice.markdown), presented/total figures in ice: __0__/0 
 
   * About this analysis:
     * __Finished on 5 Oct 2015__
-    * Data is kept @Norstore-osl:/tape/NS9207K/earnest/NorCPM/FF_3rd_try_tar/
+    * Data is kept @Norstore-osl:/projects/NS9039K/shared/norcpm/cases/NorCPM/True_Obs-1980-2000/ME_Sebastien
     * We use [Norwegian Earth System Model (NorESM)] (http://folk.uib.no/ngfhd/EarthClim/) version F19_tn21 (approximately two degree atmosphere and two degree ocean)
     * Applying SST anomaly ([HadISST2](http://www.metoffice.gov.uk/hadobs/hadisst2/)) assimilation ([EnKF](http://enkf.nersc.no/), 30 members) on ocean compartment only
     * From __1980-2000__
