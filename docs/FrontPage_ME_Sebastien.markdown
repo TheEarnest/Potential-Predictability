@@ -1,11 +1,11 @@
-Full field SST assimilated Ocean of NorESM (3rd version)
+SST anomaly assimilated Ocean of NorESM (ME by Sebastien)
 ==========
 
   * The results (in global map) can be found in the following pages. Note that the results won't be shown if the PPP is smaller than __0.001__.
 
     * [__MICOM__] (ME_Sebastien/PPP_ocn.markdown), presented/total figures in ocn: __24__/235 
     * [__CAM__] (ME_Sebastien/PPP_atm.markdown), presented/total figures in atm: __0__/0 
-    * [__CLM__] (ME_Sebastien/PPP_lnd.markdown), presented/total figures in lnd: __0__/0 
+    * [__CLM__] (ME_Sebastien/PPP_lnd.markdown), presented/total figures in lnd: __223__/262 
     * [__CICE__] (ME_Sebastien/PPP_ice.markdown), presented/total figures in ice: __0__/0 
 
   * About this analysis:
