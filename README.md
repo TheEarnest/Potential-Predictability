@@ -86,7 +86,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * Should build a system to counter check the files
   * uploading the nc files of PPP as well??
   * Regional PPP (Nino 3.4; ATL3; SPG) (not urgent)
-  * From PPP to evaluate prediction barrier - comparing to ENSO prediction barrier 
+  * From PPP to evaluate prediction barrier/uncertainty - comparing to ENSO prediction barrier 
   * the ploting script has to be revised to get a better presentation, ie thiner colorbar, grids lines (not urgent)
   * ./cheeck_Prognostic_SNR[65]: .: line 31: 24098: Memory fault(coredump) for historical ensemble
   * MICOM hy output is missing in the figure list (also fail plot the figures?)
