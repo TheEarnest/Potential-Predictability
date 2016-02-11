@@ -19,8 +19,8 @@ DataDIR=/scratch/earnest/noresmexp/ME_Sebastien
 #O#utputDIR=/scratch/earnest/SyncTransfer/FF_ini_try
 #D#ataDIR=/scratch/earnest/noresmexp/FF_ini_try
 tempDIR=/scratch/earnest/temp
-#casePrefix=NorCPM_F19_tn21
-casePrefix=NorCPM_ME
+casePrefix=NorCPM_F19_tn21
+#casePrefix=NorCPM_ME
 MEyear=1987
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
