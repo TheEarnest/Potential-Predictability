@@ -16,17 +16,17 @@ ScriptHome=`pwd`
 #D#ataDIR=/scratch/earnest/noresmexp/Historical_forcing_ens
 #O#utputDIR=/scratch/earnest/SyncTransfer/ME_Sebastien
 #D#ataDIR=/scratch/earnest/noresmexp/ME_Sebastien
-#O#utputDIR=/scratch/earnest/SyncTransfer/n01d_AMIP
-#D#ataDIR=/scratch/earnest/noresmexp/n01d_AMIP
-OutputDIR=/scratch/earnest/SyncTransfer/FF_3rd_try
-DataDIR=/scratch/earnest/noresmexp/FF_3rd_try
+OutputDIR=/scratch/earnest/SyncTransfer/n01d_AMIP
+DataDIR=/scratch/earnest/noresmexp/n01d_AMIP
+#O#utputDIR=/scratch/earnest/SyncTransfer/FF_3rd_try
+#D#ataDIR=/scratch/earnest/noresmexp/FF_3rd_try
 tempDIR=/scratch/earnest/temp
 casePrefix=nudging_01d_AMIP
 #casePrefix=NorCPM_ME
 MEyear=1987
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="lnd"
+ModelCompartments="atm"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1

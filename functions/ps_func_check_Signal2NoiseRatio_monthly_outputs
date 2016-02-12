@@ -11,16 +11,23 @@ else
   month=`echo ${file} | awk -F "_m" '{print $NF}' | cut -c1-2`
   if [ "${month}" == "/s" ]; then
     EnsDiffVarFile=`ls --color=no ${lsDividendStrAll}   `
+    namecheck=`echo ${EnsDiffVarFile} | awk -F "_G" '{print $NF}'`
+    if [ "${namecheck}" != "06.nc" ]; then
     S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
     . ${funcPath}/ps_func_calculate_SNR_wi_PPP
+    fi
   else
     if [ "${GridC}" == "" ]; then
       EnsDiffVarFile=`ls --color=no ${lsDividendStrMon}*${month}* `
     else
       EnsDiffVarFile=`ls --color=no ${lsDividendStrMon}*${month}*G${GridC}* `
     fi
+    namecheck=`echo ${EnsDiffVarFile} | awk -F "_G" '{print $NF}'`
+    if [ "${namecheck}" != "06.nc" ]; then
+
     S2NRsuffix=`echo ${EnsDiffVarFile} | awk -F "EnsDiffVar" '{print $NF}' `
     . ${funcPath}/ps_func_calculate_SNR_wi_PPP
+			fi
   fi
 fi
 

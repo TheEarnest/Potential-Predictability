@@ -48,7 +48,7 @@ ${DebugSetting}
 target=${DIR}/${Mod}/${casePrefix}${infix}mergetime
 if [ ! -f ${target} ]; then
   time cdo -O mergetime ${DIR}/${Mod}/hist_ensmean/*${infix}* ${tempDIR}/${tempPrefix}_mergetime
-  cdo -f nc copy ${tempDIR}/${tempPrefix}_mergetime ${target}
+  cdo -O -b F64 -f nc copy ${tempDIR}/${tempPrefix}_mergetime ${target}
 fi
 target=${DIR}/${Mod}/${casePrefix}${infix}ymonmean
 if [ ! -f ${target} ]; then
@@ -84,9 +84,9 @@ else
   ig=`echo 000${grid_count} | tail -c3 `
   gridtarget=${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_G${ig}
   if [ ! -f ${gridtarget} ]; then    
-    cdo -O -f nc copy ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${tempDIR}/${tempPrefix}_mergetime_nc
+    cdo -O -b F64 -f nc copy ${DIR}/${Mod}/${casePrefix}${infix}mergetime ${tempDIR}/${tempPrefix}_mergetime_nc
     cdo -O splitgrid ${tempDIR}/${tempPrefix}_mergetime_nc ${tempDIR}/${tempPrefix}_mergetime_G
-    cdo -O -f nc copy ${DIR}/${Mod}/${casePrefix}${infix}ymonmean ${tempDIR}/${tempPrefix}_ymonmean_nc
+    cdo -O -b F64 -f nc copy ${DIR}/${Mod}/${casePrefix}${infix}ymonmean ${tempDIR}/${tempPrefix}_ymonmean_nc
     cdo -O splitgrid ${tempDIR}/${tempPrefix}_ymonmean_nc ${tempDIR}/${tempPrefix}_ymonmean_G
   fi
   for ig in `seq 1 ${grid_count}`; do 
