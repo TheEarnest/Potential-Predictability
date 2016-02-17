@@ -35,7 +35,6 @@ for file in ${files}; do
   fi
 done
 
-exit 5
 
 
 mkdir -p ${DIR}/${Mod}/Signal2NoiseRatio
