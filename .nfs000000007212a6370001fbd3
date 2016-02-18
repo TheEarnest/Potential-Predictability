@@ -18,12 +18,12 @@ ScriptHome=`pwd`
 #D#ataDIR=/scratch/earnest/noresmexp/ME_Sebastien
 #O#utputDIR=/scratch/earnest/SyncTransfer/normal_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/normal_AMIP
-OutputDIR=/scratch/earnest/SyncTransfer/n05d_AMIP
-DataDIR=/scratch/earnest/noresmexp/n05d_AMIP
+OutputDIR=/scratch/earnest/SyncTransfer/n30d_AMIP
+DataDIR=/scratch/earnest/noresmexp/n30d_AMIP
 #O#utputDIR=/scratch/earnest/SyncTransfer/FF_3rd_try
 #D#ataDIR=/scratch/earnest/noresmexp/FF_3rd_try
 tempDIR=/scratch/earnest/temp
-casePrefix=nudging_05d_AMIP
+casePrefix=nudging_30d_AMIP
 #casePrefix=NorCPM_ME
 MEyear=1987
 ${DebugSetting}
