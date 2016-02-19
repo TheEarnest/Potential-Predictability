@@ -16,14 +16,15 @@ ScriptHome=`pwd`
 #D#ataDIR=/scratch/earnest/noresmexp/Historical_forcing_ens
 #O#utputDIR=/scratch/earnest/SyncTransfer/ME_Sebastien
 #D#ataDIR=/scratch/earnest/noresmexp/ME_Sebastien
-#O#utputDIR=/scratch/earnest/SyncTransfer/normal_AMIP
-#D#ataDIR=/scratch/earnest/noresmexp/normal_AMIP
-OutputDIR=/scratch/earnest/SyncTransfer/n05d_AMIP
-DataDIR=/scratch/earnest/noresmexp/n05d_AMIP
+OutputDIR=/scratch/earnest/SyncTransfer/normal_AMIP
+DataDIR=/scratch/earnest/noresmexp/normal_AMIP
+#O#utputDIR=/scratch/earnest/SyncTransfer/n05d_AMIP
+#D#ataDIR=/scratch/earnest/noresmexp/n05d_AMIP
 #O#utputDIR=/scratch/earnest/SyncTransfer/FF_3rd_try
 #D#ataDIR=/scratch/earnest/noresmexp/FF_3rd_try
 tempDIR=/scratch/earnest/temp
-casePrefix=nudging_05d_AMIP
+#casePrefix=nudging_05d_AMIP
+casePrefix=normal_AMIP
 #casePrefix=NorCPM_ME
 MEyear=1987
 ${DebugSetting}
@@ -72,6 +73,7 @@ for compartment in ${ModelCompartments}; do
   #---------------------------------------------------------------------------
   # calculating the ensemble mean/std/spread (max-min)
   for prefix in ${prefixes}; do 
+
     . ${funcPath}/ps_func_building_ensemble_mean
   #---------------------------------------------------------------------------
   # the difference of each member and ensemble mean

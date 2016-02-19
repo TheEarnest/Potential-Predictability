@@ -15,7 +15,10 @@ tempPrefix=t_'ps_func_check_Signal2NoiseRatio'
 ###############################################################################
 tarDIR=${DIR}/${Mod}/Signal2NoiseRatio
 EnsDiffVarDIR=${DIR}/${Mod}/EnsDiffVar
-lsDivisorStr="${DIR}/${Mod}/${casePrefix}*timvar_detrend*"
+file=${prefix}
+ . ${funcPath}/ps_func_check_filefix
+lsDivisorStr="${DIR}/${Mod}/${casePrefix}*${infix}*timvar_detrend*"
+
 if [ -d ${EnsDiffVarDIR} ]; then
   cd ${DIR}/${Mod} 
   files=`ls --color=no ${lsDivisorStr} `
