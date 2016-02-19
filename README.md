@@ -34,7 +34,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * About this analysis:
     * __Finished on 28 Jan 2016__
     * More details can be found in the [description page] (docs/FrontPage_FF_3rd_try.markdown)
-    * PPP of air surface temperature [![] (figures/FF_ini_3rd_try/PPP_atm/PPP_All_G04.cam2.h0.TS.png)] (docs/FrontPage_FF_3rd_try.markdown)
+    * PPP of air surface temperature [![] (figures/FF_3rd_try/PPP_atm/PPP_All_G04.cam2.h0.TS.png)] (docs/FrontPage_FF_3rd_try.markdown)
 
 
 
