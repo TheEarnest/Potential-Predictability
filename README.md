@@ -34,7 +34,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * About this analysis:
     * __Finished on 28 Jan 2016__
     * More details can be found in the [description page] (docs/FrontPage_FF_3rd_try.markdown)
-    * PPP of SST [![] (figures/FF_ini_3rd_try/PPP_PPP-08.cam2.h0.SST.png)] (docs/FrontPage_FF_3rd_try.markdown)
+    * PPP of air surface temperature [![] (figures/FF_ini_3rd_try/PPP_atm/PPP_All_G04.cam2.h0.TS.png)] (docs/FrontPage_FF_3rd_try.markdown)
 
 
 
@@ -44,7 +44,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * About this analysis:
     * __Finished on 20 Dec 2015__
     * More details can be found in the [description page] (docs/FrontPage_FF_2nd_try.markdown)
-    * PPP of SST [![] (figures/FF_ini_2nd_try/PPP_PPP-08.cam2.h0.SST.png)] (docs/FrontPage_FF_2nd_try.markdown)
+    * PPP of air surface temperature [![] (figures/FF_ini_2nd_try/PPP_atm/PPP_All_G04.cam2.h0.TS.png)] (docs/FrontPage_FF_2nd_try.markdown)
 
 --------------------------------------
 * ### [Full field SST assimilated Ocean of NorESM (1st version)] (docs/FrontPage_FF_ini_try.markdown)
@@ -52,7 +52,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * About this analysis:
    * __Finished on 18 Apr. 2015__
    * More details can be found in the [description page] (docs/FrontPage_FF_ini_try.markdown)
-   * PPP of SST [![] (figures/FF_ini_try/PPP_atm/PPP_All_G04.cam2.h0.SST.png)](docs/FrontPage_FF_ini_try.markdown)
+   * PPP of  air surface temperature[![] (figures/FF_ini_try/PPP_atm/PPP_All_G04.cam2.h0.TS.png)](docs/FrontPage_FF_ini_try.markdown)
 
 --------------------------------------
 * ### [Uninitialized NorESM (histrical forcing only)] (docs/FrontPage_Historical_forcing_ens.markdown)
