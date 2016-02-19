@@ -71,6 +71,52 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
    * More details can be found in the [description page] (docs/FrontPage_normal_AMIP.markdown)
    * PPP of air surface temperature [![] (figures/normal_AMIP/PPP_atm/PPP_All_G04.cam2.h0.TS.png)](docs/FrontPage_normal_AMIP.markdown)
 
+--------------------------------------
+* ### [AMIP with 1 day atmospheric nudging] (docs/FrontPage_n01d_AMIP.markdown)
+
+  * About this analysis:
+   * __Finished on 12 Feb. 2016__
+   * More details can be found in the [description page] (docs/FrontPage_n01d_AMIP.markdown)
+   * PPP of air surface temperature [![] (figures/n01d_AMIP/PPP_atm/PPP_All_G04.cam2.h0.TS.png)](docs/FrontPage_n01d_AMIP.markdown)
+
+
+
+--------------------------------------
+* ### [AMIP with 2 day atmospheric nudging] (docs/FrontPage_n02d_AMIP.markdown)
+
+  * About this analysis:
+   * __Finished on ?? Feb. 2016__
+   * More details can be found in the [description page] (docs/FrontPage_n02d_AMIP.markdown)
+   * PPP of air surface temperature [![] (figures/n02d_AMIP/PPP_atm/PPP_All_G04.cam2.h0.TS.png)](docs/FrontPage_n02d_AMIP.markdown)
+
+
+--------------------------------------
+* ### [AMIP with 3 day atmospheric nudging] (docs/FrontPage_n03d_AMIP.markdown)
+
+  * About this analysis:
+   * __Finished on ?? Feb. 2016__
+   * More details can be found in the [description page] (docs/FrontPage_n03d_AMIP.markdown)
+   * PPP of air surface temperature [![] (figures/n03d_AMIP/PPP_atm/PPP_All_G04.cam2.h0.TS.png)](docs/FrontPage_n03d_AMIP.markdown)
+
+
+--------------------------------------
+* ### [AMIP with 5 day atmospheric nudging] (docs/FrontPage_n05d_AMIP.markdown)
+
+  * About this analysis:
+   * __Finished on 18 Feb. 2016__
+   * More details can be found in the [description page] (docs/FrontPage_n05d_AMIP.markdown)
+   * PPP of air surface temperature [![] (figures/n05d_AMIP/PPP_atm/PPP_All_G04.cam2.h0.TS.png)](docs/FrontPage_n05d_AMIP.markdown)
+
+
+--------------------------------------
+* ### [AMIP with 30 day atmospheric nudging] (docs/FrontPage_n30d_AMIP.markdown)
+
+  * About this analysis:
+   * __Finished on 17 Feb. 2016__
+   * More details can be found in the [description page] (docs/FrontPage_n30d_AMIP.markdown)
+   * PPP of air surface temperature [![] (figures/n30d_AMIP/PPP_atm/PPP_All_G04.cam2.h0.TS.png)](docs/FrontPage_n30d_AMIP.markdown)
+
+
 ------------------
 ## Do these before using the script ##
 
