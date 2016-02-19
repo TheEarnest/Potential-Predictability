@@ -60,7 +60,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * About this analysis:
    * __Finished on 10 Mar. 2014__
    * More details can be found in the [description page] (docs/FrontPage_Historical_forcing_ens.markdown)
-   * PPP of SST [![] (figures/Historical_forcing_ens/PPP_ocn/PPP_All.micom.hm.sst.png)](docs/FrontPage_Historical_forcing_ens.markdown)
+   * PPP of air surface temperature [![] (figures/Historical_forcing_ens/PPP_atm/PPP_All_G04.cam2.h0.TS.png)](docs/FrontPage_Historical_forcing_ens.markdown)
 
 
 --------------------------------------
@@ -69,7 +69,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * About this analysis:
    * __Finished on 13 Feb. 2016__
    * More details can be found in the [description page] (docs/FrontPage_normal_AMIP.markdown)
-   * PPP of Surface temperature [![] (figures/normal_AMIP/PPP_atm/PPP_All_G04.cam2.h0.TS.png)](docs/FrontPage_normal_AMIP.markdown)
+   * PPP of air surface temperature [![] (figures/normal_AMIP/PPP_atm/PPP_All_G04.cam2.h0.TS.png)](docs/FrontPage_normal_AMIP.markdown)
 
 ------------------
 ## Do these before using the script ##
