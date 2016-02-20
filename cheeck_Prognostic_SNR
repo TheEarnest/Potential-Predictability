@@ -18,8 +18,8 @@ ScriptHome=`pwd`
 #D#ataDIR=/scratch/earnest/noresmexp/ME_Sebastien
 #O#utputDIR=/scratch/earnest/SyncTransfer/normal_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/normal_AMIP
-OutputDIR=/scratch/earnest/SyncTransfer/n05d_AMIP
-DataDIR=/scratch/earnest/noresmexp/n05d_AMIP
+OutputDIR=/scratch/earnest/SyncTransfer/n01d_AMIP
+DataDIR=/scratch/earnest/noresmexp/n01d_AMIP
 #O#utputDIR=/scratch/earnest/SyncTransfer/FF_3rd_try
 #D#ataDIR=/scratch/earnest/noresmexp/FF_3rd_try
 tempDIR=/scratch/earnest/temp
@@ -73,7 +73,7 @@ for compartment in ${ModelCompartments}; do
   #---------------------------------------------------------------------------
   # calculating the ensemble mean/std/spread (max-min)
   for prefix in ${prefixes}; do 
-
+#    . ${funcPath}/ps_func_building_seansonal2decadal_average
     . ${funcPath}/ps_func_building_ensemble_mean
   #---------------------------------------------------------------------------
   # the difference of each member and ensemble mean

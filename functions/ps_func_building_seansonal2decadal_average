@@ -1,0 +1,42 @@
+#! /bin/bash
+###############################################################################
+# ensemble info
+#------------------------------------------------------------------------------
+#
+${DebugSetting}
+JobStartTime=`date`
+JobName='ps_func_building_seansonal2decadal_average'
+# 
+echo ${LinnBreaker}
+echo ${LinnBreaker}
+echo "Starting "${JobName}" ...... "
+
+tempPrefix=t_'ps_func_building_seansonal2decadal_average'
+###############################################################################
+# seasonal define
+# DJF, MAM, JJA, SON
+
+Mod=${compartment}
+cd ${DataDIR}/${firstMem}/${Mod}/hist
+
+
+ls --color=no  > ${tempDIR}/${tempPrefix}_files
+files=`ls --color=no ${prefix}*`
+for file in ${files}; do
+  cd ${DataDIR}
+  . ${funcPath}/ps_func_check_filefix
+  if [ "${fmonth}" == "12" ]; then
+    echo $fmonth
+  fi
+exit 5
+
+done
+###############################################################################
+echo ${JobStartTime}
+echo `date`" || "${JobName}
+echo ${LinnBreaker}
+
+
+
+
+
