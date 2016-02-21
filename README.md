@@ -149,5 +149,5 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * Should add a matlab script for ploting results of vertical section (mainly for MICOM)
   * add a global map of SST bias or RMSE
   * add Seasonal, 5-year pantad, decadal pantad results
- 
+  * Sometime the model might write different number of variables when restart files were generated. (error handling is necessary) 
 

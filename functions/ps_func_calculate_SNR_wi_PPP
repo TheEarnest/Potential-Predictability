@@ -3,8 +3,17 @@
 target=${tarDIR}/${casePrefix}${infix}S2NR${S2NRsuffix}
 cdo -O -b F64 copy ${EnsDiffVarFile} ${tempDIR}/${tempPrefix}_divisor 
 cdo -O -b F64 copy ${file} ${tempDIR}/${tempPrefix}_dividend 
-cdo -O div ${tempDIR}/${tempPrefix}_dividend ${tempDIR}/${tempPrefix}_divisor ${target}
-target2=${tarDIR}/${casePrefix}${infix}PPP${S2NRsuffix}
-cdo -O addc,1 ${target} ${tempDIR}/${tempPrefix}_divisor
-cdo -O div ${target} ${tempDIR}/${tempPrefix}_divisor ${target2}
-
+# avoiding files with different number of variables
+var_number_divisor=`cdo showvar ${tempDIR}/${tempPrefix}_divisor`
+var_number_dividend=`cdo showvar ${tempDIR}/${tempPrefix}_dividend`
+if [ "${var_number_divisor}" == "${var_number_dividend}" ]; then 
+  cdo -O div ${tempDIR}/${tempPrefix}_dividend ${tempDIR}/${tempPrefix}_divisor ${target}
+  target2=${tarDIR}/${casePrefix}${infix}PPP${S2NRsuffix}
+  cdo -O addc,1 ${target} ${tempDIR}/${tempPrefix}_divisor
+  cdo -O div ${target} ${tempDIR}/${tempPrefix}_divisor ${target2}
+else
+  DocPathName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
+  echo "`date +%Y/%m/%d@%H:%M` :: Input streams have different number of variables per timestep" >> ${funcPath}/../docs/${DocPathName}/ErrorLogs  
+  echo "divisor: ${EnsDiffVarFile}"
+  echo "dividend:  ${file}"
+fi
