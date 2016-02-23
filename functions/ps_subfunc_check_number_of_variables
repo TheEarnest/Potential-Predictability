@@ -86,13 +86,12 @@ if [ "${sameVN}"  == "0" ]; then
           if [ "${nomatch}" == "1" ]; then
             inconsistentVN=${inconsistentVN}" "${VN2}
           fi
+exit 5
         done
         vnames1=${tempVNs1}; 
         if [ ${VNcount} -lt ${halfVNcount} ]; then 
           echo "Losing more than half of variables ..."
           exit 5
-        else
-          vnames1=${tempVNs1};  
         fi
       fi        
     fi
