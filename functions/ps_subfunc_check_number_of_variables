@@ -1,0 +1,110 @@
+#! /bin/bash
+###############################################################################
+# ensemble info
+#------------------------------------------------------------------------------
+#
+${DebugSetting}
+JobStartTime=`date`
+JobName='ps_func_check_Diff'
+# 
+echo ${LinnBreaker}
+echo ${LinnBreaker}
+echo "Starting "${JobName}" of "${compartment}" ...... "
+
+tempPrefix=t_'ps_func_check_Diff'
+###############################################################################
+Mod=${compartment}
+tarDIR=${DIR}/${Mod}/Diff
+# for getting infix
+file=${prefix}
+ . ${funcPath}/ps_func_check_filefix
+echo "files to be checked: with infix ${infix}"
+# check/re-check number of variables
+SpreadDIR=${DIR}/${Mod}/Signal2NoiseRatio
+if [ ! -d ${SpreadDIR} ]; then
+  cd ${DataDIR}/${firstMem}/${Mod}/hist
+  VNCHKfiles=`ls --color=no ${prefix}*`
+else
+  cd ${SpreadDIR}
+  VNCHKfiles=`ls  *${infix}*EnsDiffVar*`
+fi
+
+sameVN=1
+firstVNs=0
+for VNCHKfile in ${VNCHKfiles}; do 
+  # exclude grid_spliting files
+  filecheck=`echo ${VNCHKfile}  | awk -F "_G" '{print $NF}' | cut -c3-5`
+  if [ "${filecheck}" != ".nc" ]; then 
+    if [ "${firstVNs}" == "0" ]; then 
+      vnames1=`cdo showvar ${VNCHKfile} `;
+      firstVNs=1 
+    else
+      vnames2=`cdo showvar ${VNCHKfile} `;
+      if [ "${vnames1}" != "${vnames2}" ]; then
+        sameVN=0
+      fi 
+    fi
+  fi
+done
+# define which variables have to be removed.  Stop if more than half of variables
+inconsistentVN=""
+if [ "${sameVN}"  == "0" ]; then
+  cd ${DataDIR}/${firstMem}/${Mod}/hist
+  VNCHKfiles=`ls --color=no ${prefix}*`
+  firstVNs=0
+  VNcount=0
+  for VNCHKfile in ${VNCHKfiles}; do
+    if [ "${firstVNs}" == "0" ]; then   
+      vnames1=`cdo showvar ${VNCHKfile} `;
+      firstVNs=1   
+      for VN in ${vnames1}; do 
+        (( VNcount = VNcount + 1 ))
+      done
+      halfVNcount=` echo "scale=0; (${VNcount})/2.0" | bc -l `
+      echo "Number of variables in ${VNCHKfile} is ${VNcount}."
+    else
+      vnames2=`cdo showvar ${VNCHKfile} `;
+      if [ "${vnames1}" != "${vnames2}" ]; then
+        VNcount2=0
+        for VN2 in ${vnames2}; do
+          (( VNcount2 = VNcount2 + 1 ))
+        done
+
+        if [ ${VNcount2} -lt ${VNcount}  ]; then
+          tempVNs2=${vnames1}; tempVNs1=${vnames2} 
+        else
+          tempVNs1=${vnames1}; tempVNs2=${vnames2}
+        fi
+        for VN2 in ${tempVNs2}; do
+          nomatch=1
+          for VN in ${tempVNs1}; do
+            if [ "${VN}" == "${VN2}" ]; then
+              nomatch=0
+            fi
+          done
+          if [ "${nomatch}" == "1" ]; then
+            inconsistentVN=${inconsistentVN}" "${VN2}
+          fi
+        done
+
+exit 5
+
+      fi        
+    fi
+  done
+fi
+exit 5
+
+
+
+
+
+###############################################################################
+echo ${JobStartTime}
+echo `date`" || "${JobName}
+echo ${LinnBreaker}
+
+
+
+
+

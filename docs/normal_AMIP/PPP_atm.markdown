@@ -2,9 +2,11 @@ PPP of all variables in atm outputs
 ==========
 >> Created on: __Wed Feb 17 19:51:22 CET 2016__
 
->> Last updated on: __Sun Feb 21 18:21:47 CET 2016__ 
+>> Last updated on: __Tue Feb 23 10:43:33 CET 2016__ 
 
 ------
+
+
 
   * __AEROD_v: Total Aerosol Optical Depth in visible band__, All_G04.cam2.h0., (level: 0) -> maximum PPP is __0.999__; averaged PPP is __0.913__  ![] (../../figures/normal_AMIP/PPP_atm/PPP_All_G04.cam2.h0.AEROD_v.png)
  
@@ -1400,7 +1402,7 @@ PPP of all variables in atm outputs
 .311
 .311
 .313
-.314 
+.314  ![] (../../figures/normal_AMIP/PPP_atm/PPP_All_G04.cam2.h1.PRECC.png)
  
 ------ 
  
@@ -1950,7 +1952,7 @@ PPP of all variables in atm outputs
 .184
 .183
 .183
-.183 
+.183  ![] (../../figures/normal_AMIP/PPP_atm/PPP_All_G04.cam2.h1.PRECL.png)
  
 ------ 
  
@@ -2500,7 +2502,7 @@ PPP of all variables in atm outputs
 .438
 .438
 .437
-.437 
+.437  ![] (../../figures/normal_AMIP/PPP_atm/PPP_All_G04.cam2.h1.PSL.png)
  
 ------ 
  
@@ -3050,7 +3052,7 @@ PPP of all variables in atm outputs
 .773
 .773
 .773
-.773 
+.773  ![] (../../figures/normal_AMIP/PPP_atm/PPP_All_G04.cam2.h1.TREFHTMN.png)
  
 ------ 
  
@@ -3600,7 +3602,7 @@ PPP of all variables in atm outputs
 .751
 .751
 .751
-.752 
+.752  ![] (../../figures/normal_AMIP/PPP_atm/PPP_All_G04.cam2.h1.TREFHTMX.png)
  
 ------ 
  
@@ -4150,7 +4152,7 @@ PPP of all variables in atm outputs
 .776
 .776
 .776
-.777 
+.777  ![] (../../figures/normal_AMIP/PPP_atm/PPP_All_G04.cam2.h1.TREFHT.png)
  
 ------ 
  
