@@ -1,11 +1,11 @@
 PPP of all variables in atm outputs
 ==========
->> Created on: __Tue Feb 23 21:29:14 CET 2016__ 
- 
->> Last updated on: __Tue Feb 23 21:29:14 CET 2016__ 
- 
------- 
- 
+>> Created on: __Tue Feb 23 21:29:14 CET 2016__
+
+>> Last updated on: __Tue Feb 23 22:46:44 CET 2016__ 
+
+------
+
   * __AEROD_v: Total Aerosol Optical Depth in visible band__, All_G04.cam2.h0., (level: 0) -> maximum PPP is __01.000__; averaged PPP is __0.965__  ![] (../../figures/n03d_AMIP/PPP_atm/PPP_All_G04.cam2.h0.AEROD_v.png)
  
 ------ 
@@ -851,6 +851,110 @@ PPP of all variables in atm outputs
 ------ 
  
   * __Z700: Geopotential Z at 700 mbar pressure surface__, All_G04.cam2.h0., (level: 0) -> maximum PPP is __0.985__; averaged PPP is __0.960__  ![] (../../figures/n03d_AMIP/PPP_atm/PPP_All_G04.cam2.h0.Z700.png)
+ 
+------ 
+ 
+  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 100.515) -> maximum PPP is __0.994__; averaged PPP is __0.979__ 
+ 
+------ 
+ 
+  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 139.115) -> maximum PPP is __0.992__; averaged PPP is __0.975__ 
+ 
+------ 
+ 
+  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 163.662) -> maximum PPP is __0.991__; averaged PPP is __0.969__ 
+ 
+------ 
+ 
+  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 226.513) -> maximum PPP is __0.988__; averaged PPP is __0.957__ 
+ 
+------ 
+ 
+  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 266.481) -> maximum PPP is __0.987__; averaged PPP is __0.954__ 
+ 
+------ 
+ 
+  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 3.54464) -> maximum PPP is __01.000__; averaged PPP is __0.999__ 
+ 
+------ 
+ 
+  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 37.2303) -> maximum PPP is __01.000__; averaged PPP is __0.997__ 
+ 
+------ 
+ 
+  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 510.455) -> maximum PPP is __0.982__; averaged PPP is __0.943__ 
+ 
+------ 
+ 
+  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 600.524) -> maximum PPP is __0.981__; averaged PPP is __0.938__ 
+ 
+------ 
+ 
+  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 70.0592) -> maximum PPP is __0.998__; averaged PPP is __0.990__ 
+ 
+------ 
+ 
+  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 787.702) -> maximum PPP is __0.975__; averaged PPP is __0.906__ 
+ 
+------ 
+ 
+  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 867.161) -> maximum PPP is __0.976__; averaged PPP is __0.887__ 
+ 
+------ 
+ 
+  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 970.555) -> maximum PPP is __0.978__; averaged PPP is __0.866__ 
+ 
+------ 
+ 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 100.515) -> maximum PPP is __0.985__; averaged PPP is __0.943__ 
+ 
+------ 
+ 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 139.115) -> maximum PPP is __0.984__; averaged PPP is __0.941__ 
+ 
+------ 
+ 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 163.662) -> maximum PPP is __0.983__; averaged PPP is __0.935__ 
+ 
+------ 
+ 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 226.513) -> maximum PPP is __0.979__; averaged PPP is __0.924__ 
+ 
+------ 
+ 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 266.481) -> maximum PPP is __0.977__; averaged PPP is __0.921__ 
+ 
+------ 
+ 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 3.54464) -> maximum PPP is __0.999__; averaged PPP is __0.996__ 
+ 
+------ 
+ 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 37.2303) -> maximum PPP is __0.997__; averaged PPP is __0.982__ 
+ 
+------ 
+ 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 510.455) -> maximum PPP is __0.973__; averaged PPP is __0.894__ 
+ 
+------ 
+ 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 600.524) -> maximum PPP is __0.972__; averaged PPP is __0.889__ 
+ 
+------ 
+ 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 70.0592) -> maximum PPP is __0.989__; averaged PPP is __0.955__ 
+ 
+------ 
+ 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 787.702) -> maximum PPP is __0.961__; averaged PPP is __0.862__ 
+ 
+------ 
+ 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 867.161) -> maximum PPP is __0.959__; averaged PPP is __0.854__ 
+ 
+------ 
+ 
+  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 970.555) -> maximum PPP is __0.982__; averaged PPP is __0.850__ 
  
 ------ 
  
@@ -4151,110 +4255,6 @@ PPP of all variables in atm outputs
 .906
 .906
 .906  ![] (../../figures/n03d_AMIP/PPP_atm/PPP_All_G04.cam2.h1.TREFHT.png)
- 
------- 
- 
-  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 100.515) -> maximum PPP is __0.994__; averaged PPP is __0.979__ 
- 
------- 
- 
-  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 139.115) -> maximum PPP is __0.992__; averaged PPP is __0.975__ 
- 
------- 
- 
-  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 163.662) -> maximum PPP is __0.991__; averaged PPP is __0.969__ 
- 
------- 
- 
-  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 226.513) -> maximum PPP is __0.988__; averaged PPP is __0.957__ 
- 
------- 
- 
-  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 266.481) -> maximum PPP is __0.987__; averaged PPP is __0.954__ 
- 
------- 
- 
-  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 3.54464) -> maximum PPP is __01.000__; averaged PPP is __0.999__ 
- 
------- 
- 
-  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 37.2303) -> maximum PPP is __01.000__; averaged PPP is __0.997__ 
- 
------- 
- 
-  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 510.455) -> maximum PPP is __0.982__; averaged PPP is __0.943__ 
- 
------- 
- 
-  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 600.524) -> maximum PPP is __0.981__; averaged PPP is __0.938__ 
- 
------- 
- 
-  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 70.0592) -> maximum PPP is __0.998__; averaged PPP is __0.990__ 
- 
------- 
- 
-  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 787.702) -> maximum PPP is __0.975__; averaged PPP is __0.906__ 
- 
------- 
- 
-  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 867.161) -> maximum PPP is __0.976__; averaged PPP is __0.887__ 
- 
------- 
- 
-  * __US: Zonal wind, staggered__, All_G05.cam2.h0., (level: 970.555) -> maximum PPP is __0.978__; averaged PPP is __0.866__ 
- 
------- 
- 
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 100.515) -> maximum PPP is __0.985__; averaged PPP is __0.943__ 
- 
------- 
- 
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 139.115) -> maximum PPP is __0.984__; averaged PPP is __0.941__ 
- 
------- 
- 
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 163.662) -> maximum PPP is __0.983__; averaged PPP is __0.935__ 
- 
------- 
- 
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 226.513) -> maximum PPP is __0.979__; averaged PPP is __0.924__ 
- 
------- 
- 
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 266.481) -> maximum PPP is __0.977__; averaged PPP is __0.921__ 
- 
------- 
- 
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 3.54464) -> maximum PPP is __0.999__; averaged PPP is __0.996__ 
- 
------- 
- 
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 37.2303) -> maximum PPP is __0.997__; averaged PPP is __0.982__ 
- 
------- 
- 
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 510.455) -> maximum PPP is __0.973__; averaged PPP is __0.894__ 
- 
------- 
- 
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 600.524) -> maximum PPP is __0.972__; averaged PPP is __0.889__ 
- 
------- 
- 
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 70.0592) -> maximum PPP is __0.989__; averaged PPP is __0.955__ 
- 
------- 
- 
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 787.702) -> maximum PPP is __0.961__; averaged PPP is __0.862__ 
- 
------- 
- 
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 867.161) -> maximum PPP is __0.959__; averaged PPP is __0.854__ 
- 
------- 
- 
-  * __VS: Meridional wind, staggered__, All_G06.cam2.h0., (level: 970.555) -> maximum PPP is __0.982__; averaged PPP is __0.850__ 
  
 ------ 
  

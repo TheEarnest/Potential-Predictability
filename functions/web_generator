@@ -67,8 +67,28 @@ for ModelCompartment in ${ModelCompartments}; do
   fi
 
   #PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/* `
-  PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/*All* `
+  
+  # check infix
+  tmepcheck=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/*All* | awk -F "." '{print $2"."$3}' `
+  infixes=""
+  for infixCheck in ${tmepcheck}; do
+    is_same_prefix=0
+    for infix in ${infixes}; do
+      if [ "${infixCheck}" == "${infix}" ]; then
+        is_same_prefix=1
+      fi
+    done
+    if [ "${is_same_prefix}" != "1" ]; then
+      infixes=${infixes}" "${infixCheck}
+    fi
+  done
+
+  for infix in ${infixes}; do 
+  PPPfiles=`ls --color=no ${OutputDIR}/${ModelCompartment}/PPP_all_variables/*All*${infix}* `
+  
+
   for PPPfile in ${PPPfiles}; do 
+
     threholdPPP=`echo "scale=0; (${thPPP}*1000.0)/1.0" | bc -l `
     fldmax=0`cdo -s outputf,%10.3f,1 -fldmax ${PPPfile} | bc -l`
     NaN_check=`echo "scale=0; (${fldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
@@ -174,8 +194,8 @@ sed -i s/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -".*/"${vname}: 
 #    exit 5 
 #  fi 
 
-  done
-
+  done # for different variables 
+  done # for different infix
   sed -i s/"total figures in ${ModelCompartment}: ".*/"total figures in ${ModelCompartment}: __${figureCount}__\/${TotalFigurecouont} "/g ${ScriptHome}/docs/FrontPage_${ExpID}.markdown
   nowdate=`date`
   sed -i s/"Last update".*/"Last updated on: __${nowdate}__ "/g ${ScriptHome}/docs/FrontPage_${ExpID}.markdown
