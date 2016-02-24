@@ -76,6 +76,7 @@ if [ "${sameVN}"  == "0" ]; then
         else
           tempVNs1=${vnames1}; tempVNs2=${vnames2}
         fi
+set +x
         for VN2 in ${tempVNs2}; do
           nomatch=1
           for VN in ${tempVNs1}; do
@@ -83,9 +84,11 @@ if [ "${sameVN}"  == "0" ]; then
               nomatch=0
             fi
           done
+set -x
           if [ "${nomatch}" == "1" ]; then
             inconsistentVN=${inconsistentVN}" "${VN2}
           fi
+echo $inconsistentVN
 exit 5
         done
         vnames1=${tempVNs1}; 

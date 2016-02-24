@@ -96,13 +96,13 @@ for ModelCompartment in ${ModelCompartments}; do
       fldmax="__${fldmax}__"
     fi
 
-    fldmean=0`cdo -s outputf,%10.3f,1 -fldmean ${PPPfile} | bc -l`
+    fldmean=0`cdo -s outputf,%10.3f,1 -fldmean -timmean ${PPPfile} | bc -l`
     NaN_check=`echo "scale=0; (${fldmean}*1000.0)/1.0" | bc -l | cut -c1-14`
     if [ ${NaN_check} -gt ${threholdPPP} ]; then
     fldmean="__${fldmean}__"
     fi
 
-    SPGfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${SPGReg} ${PPPfile} | bc -l`
+    SPGfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -timmean -sellonlatbox,${SPGReg} ${PPPfile} | bc -l`
     NaN_check=`echo "scale=0; (${SPGfldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
     if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
       SPGfldmax="NaN"
@@ -113,7 +113,7 @@ for ModelCompartment in ${ModelCompartments}; do
     fi
 
 
-    EUfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${EUReg} ${PPPfile} | bc -l`
+    EUfldmax=0`cdo -s outputf,%10.3f,1 -fldmax -timmean -sellonlatbox,${EUReg} ${PPPfile} | bc -l`
     NaN_check=`echo "scale=0; (${EUfldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
     if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
       EUfldmax="NaN"
@@ -123,7 +123,7 @@ for ModelCompartment in ${ModelCompartments}; do
       fi
     fi
 
-    Nino34fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${Nino34Reg} ${PPPfile} | bc -l`
+    Nino34fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -timmean -sellonlatbox,${Nino34Reg} ${PPPfile} | bc -l`
     NaN_check=`echo "scale=0; (${Nino34fldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
     if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
       Nino34fldmax="NaN"
@@ -133,7 +133,7 @@ for ModelCompartment in ${ModelCompartments}; do
       fi
     fi
  
-    AltNino3fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -sellonlatbox,${AtlNino3Reg} ${PPPfile} | bc -l`
+    AltNino3fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -timmean -sellonlatbox,${AtlNino3Reg} ${PPPfile} | bc -l`
     NaN_check=`echo "scale=0; (${AltNino3fldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
     if [ ${NaN_check} -gt 10000 ] || [ ${NaN_check} -lt -10000 ]; then
       AltNino3fldmax="NaN"
