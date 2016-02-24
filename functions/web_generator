@@ -90,7 +90,7 @@ for ModelCompartment in ${ModelCompartments}; do
   for PPPfile in ${PPPfiles}; do 
 
     threholdPPP=`echo "scale=0; (${thPPP}*1000.0)/1.0" | bc -l `
-    fldmax=0`cdo -s outputf,%10.3f,1 -fldmax ${PPPfile} | bc -l`
+    fldmax=0`cdo -s outputf,%10.3f,1 -fldmax -timmean ${PPPfile} | bc -l`
     NaN_check=`echo "scale=0; (${fldmax}*1000.0)/1.0" | bc -l | cut -c1-14`
     if [ ${NaN_check} -gt ${threholdPPP} ]; then 
       fldmax="__${fldmax}__"

@@ -14,10 +14,10 @@ ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 #O#utputDIR=/scratch/earnest/SyncTransfer/normal_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/normal_AMIP
-OutputDIR=/scratch/earnest/SyncTransfer/n05d_AMIP
-DataDIR=/scratch/earnest/noresmexp/n05d_AMIP
+OutputDIR=/scratch/earnest/SyncTransfer/n04d_AMIP
+DataDIR=/scratch/earnest/noresmexp/n04d_AMIP
 tempDIR=/scratch/earnest/temp
-casePrefix=nudging_05d_AMIP
+casePrefix=nudging_04d_AMIP
 #casePrefix=normal_AMIP
 #casePrefix=NorCPM_ME
 MEyear=1987
