@@ -36,9 +36,6 @@ for file in ${files}; do
     fi
   done    
 done
-if [ "${Mod}"  == "lnd" ]; then
-  . ${funcPath}/ps_subfunc_check_number_of_variables
-fi
 ###############################################################################
 echo ${JobStartTime}
 echo `date`" || "${JobName}

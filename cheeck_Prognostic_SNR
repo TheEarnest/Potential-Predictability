@@ -12,18 +12,19 @@ ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 # Parameters
 #------------------------------------------------------------------------------
-#O#utputDIR=/scratch/earnest/SyncTransfer/normal_AMIP
+OutputDIR=/scratch/earnest/SyncTransfer/normal_AMIP
+DataDIR=/projects/NS9207K/earnest/NorCPM/archive/normal_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/normal_AMIP
-OutputDIR=/scratch/earnest/SyncTransfer/n05d_AMIP
-DataDIR=/scratch/earnest/noresmexp/n05d_AMIP
+#O#utputDIR=/scratch/earnest/SyncTransfer/n04d_AMIP
+#D#ataDIR=/scratch/earnest/noresmexp/n04d_AMIP
 tempDIR=/scratch/earnest/temp
-casePrefix=nudging_04d_AMIP
-#casePrefix=normal_AMIP
+#casePrefix=nudging_04d_AMIP
+casePrefix=normal_AMIP
 #casePrefix=NorCPM_ME
 MEyear=1987
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="lnd"
+ModelCompartments="atm"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -42,6 +43,11 @@ firstMem=`echo ${Members} | awk -F " " '{print $1}'`
 lastMem=`echo ${Members} | awk -F " " '{print $NF}'`
 
 ${DebugSetting}
+
+# create links for outputs
+for compartment in ${ModelCompartments}; do
+  echo ${compartment}
+done
 
 for compartment in ${ModelCompartments}; do 
   Mod=${compartment}
@@ -65,17 +71,19 @@ for compartment in ${ModelCompartments}; do
   done
 
   #---------------------------------------------------------------------------
-  # calculating the ensemble mean/std/spread (max-min)
   for prefix in ${prefixes}; do 
 #    . ${funcPath}/ps_func_building_seansonal2decadal_average
-
+#exit 5
+  # calculating the ensemble mean/std/spread (max-min)
 #    . ${funcPath}/ps_func_building_ensemble_mean
   #---------------------------------------------------------------------------
   # the difference of each member and ensemble mean
     #------------------------------------------------------------------------
     # for all variables 
-    . ${funcPath}/ps_func_check_Diff
-exit 5
+#    . ${funcPath}/ps_func_check_Diff
+    if [ "${Mod}"  == "lnd" ]; then
+      . ${funcPath}/ps_func_check_number_of_variables 
+    fi
     . ${funcPath}/ps_func_check_sqr
     #. ${funcPath}/ps_func_check_fld_Signal2NoiseRatio
     . ${funcPath}/ps_func_check_Spread
