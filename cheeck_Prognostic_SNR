@@ -12,19 +12,20 @@ ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 # Parameters
 #------------------------------------------------------------------------------
-OutputDIR=/scratch/earnest/SyncTransfer/normal_AMIP
-DataDIR=/projects/NS9207K/earnest/NorCPM/archive/normal_AMIP
-#D#ataDIR=/scratch/earnest/noresmexp/normal_AMIP
-#O#utputDIR=/scratch/earnest/SyncTransfer/n04d_AMIP
+#O#utputDIR=/scratch/earnest/SyncTransfer/normal_AMIP
+#D#ataDIR=/projects/NS9207K/earnest/NorCPM/archive/normal_AMIP
+DataDIR=/scratch/earnest/noresmexp/n30d_AMIP
+OutputDIR=/scratch/earnest/SyncTransfer/n30d_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/n04d_AMIP
-tempDIR=/scratch/earnest/temp
-#casePrefix=nudging_04d_AMIP
+expCaseName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
+tempDIR=/scratch/earnest/temp/${expCaseName}
+#casePrefix=nudging_05d_AMIP
 casePrefix=normal_AMIP
 #casePrefix=NorCPM_ME
 MEyear=1987
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="atm"
+ModelCompartments="lnd"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -34,9 +35,9 @@ funcPath=${ScriptHome}/functions
 LinnBreaker="--------------------------------------------------------"
 #------------------------------------------------------------------------------
 #
-if [ ! -d ${DIR} ]; then
-  mkdir -p ${DIR}
-fi
+if [ ! -d ${DIR} ]; then mkdir -p ${DIR}; fi
+if [ ! -d ${tempDIR} ]; then mkdir -p ${tempDIR}; fi
+
 cd ${DataDIR}
 Members=`ls --color=no `
 firstMem=`echo ${Members} | awk -F " " '{print $1}'`
@@ -84,6 +85,7 @@ for compartment in ${ModelCompartments}; do
     if [ "${Mod}"  == "lnd" ]; then
       . ${funcPath}/ps_func_check_number_of_variables 
     fi
+exit 5
     . ${funcPath}/ps_func_check_sqr
     #. ${funcPath}/ps_func_check_fld_Signal2NoiseRatio
     . ${funcPath}/ps_func_check_Spread

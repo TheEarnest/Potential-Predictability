@@ -5,13 +5,13 @@
 #
 ${DebugSetting}
 JobStartTime=`date`
-JobName='ps_func_check_Diff'
+JobName='ps_func_check_number_of_variables'
 # 
 echo ${LinnBreaker}
 echo ${LinnBreaker}
 echo "Starting "${JobName}" of "${compartment}" ...... "
 
-tempPrefix=t_'ps_func_check_Diff'
+tempPrefix=t_'ps_func_check_number_of_variables'
 ###############################################################################
 Mod=${compartment}
 tarDIR=${DIR}/${Mod}/Diff
@@ -22,8 +22,8 @@ echo "files to be checked: with infix ${infix}"
 # check/re-check number of variables
 SpreadDIR=${DIR}/${Mod}/Signal2NoiseRatio
 if [ ! -d ${SpreadDIR} ]; then
-  cd ${DataDIR}/${firstMem}/${Mod}/hist
-  VNCHKfiles=`ls --color=no ${prefix}*`
+  cd ${tarDIR}/${firstMem}
+  VNCHKfiles=`ls --color=no *${infix}*`
 else
   cd ${SpreadDIR}
   VNCHKfiles=`ls  *${infix}*EnsDiffVar*`
@@ -42,6 +42,7 @@ for VNCHKfile in ${VNCHKfiles}; do
       vnames2=`cdo showvar ${VNCHKfile} `;
       if [ "${vnames1}" != "${vnames2}" ]; then
         sameVN=0
+        break
       fi 
     fi
   fi
@@ -50,7 +51,7 @@ done
 inconsistentVNs=""
 inconsistSuffixes=""
 if [ "${sameVN}"  == "0" ]; then
-  cd ${DataDIR}/${firstMem}/${Mod}/hist
+  cd ${tarDIR}/${firstMem}
   VNCHKfiles=`ls --color=no ${prefix}*`
   firstVNs=0
   VNcount=0
@@ -110,10 +111,9 @@ set -x
   done
 fi
 VN2bRemoved=`echo ${inconsistentVNs} | sed 's/\ /,/g'`
-
 for suffix in ${inconsistSuffixes}; do 
-  cd ${DataDIR}
-  Sources=`ls ${DataDIR}/${casePrefix}*/${compartment}/hist/*${suffix}`
+  cd ${tarDIR}
+  Sources=`ls ${casePrefix}*/*${suffix}`
   for Source in ${Sources}; do
     cdo -O delname,${VN2bRemoved} ${Source} ${tempDIR}/${tempPrefix}_nc
     cp -f ${tempDIR}/${tempPrefix}_nc ${Source} 
