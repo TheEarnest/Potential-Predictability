@@ -1,6 +1,7 @@
 #! /bin/bash
 ###########################################################################
-EnsDiffVarFile=`ls --color=no ${lsDividendStr} `
+EnsDiffVarFile=`ls --color=no ${lsDividendStr} ` || EnsDiffVarFile="None"
+if [ "${EnsDiffVarFile}" != "None"  ]; then
 ls --color=no ${lsDividendStr} > ${tempDIR}/${tempPrefix}_files
 file_count=` wc -l ${tempDIR}/${tempPrefix}_files | awk -F " " '{print $1}'`
 
@@ -31,4 +32,9 @@ else
   fi
 fi
 
+
+else
+  echo "`date +%Y/%m/%d@%H:%M` :: file is missing ... " >> ${ErrorLogs}  
+  echo "missing file: ${lsDividendStr}" >> ${ErrorLogs}
+fi
 

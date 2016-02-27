@@ -14,13 +14,13 @@ ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 #O#utputDIR=/scratch/earnest/SyncTransfer/normal_AMIP
 #D#ataDIR=/projects/NS9207K/earnest/NorCPM/archive/normal_AMIP
-DataDIR=/scratch/earnest/noresmexp/n30d_AMIP
-OutputDIR=/scratch/earnest/SyncTransfer/n30d_AMIP
+DataDIR=/scratch/earnest/noresmexp/n15d_AMIP
+OutputDIR=/scratch/earnest/SyncTransfer/n15d_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/n04d_AMIP
 expCaseName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
 tempDIR=/scratch/earnest/temp/${expCaseName}
-#casePrefix=nudging_05d_AMIP
-casePrefix=normal_AMIP
+casePrefix=nudging_15d_AMIP
+#casePrefix=normal_AMIP
 #casePrefix=NorCPM_ME
 MEyear=1987
 ${DebugSetting}
@@ -33,6 +33,10 @@ DIR=${OutputDIR}
 #------------------------------------------------------------------------------
 funcPath=${ScriptHome}/functions
 LinnBreaker="--------------------------------------------------------"
+DocPathName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
+DocPath=${funcPath}/../docs/${DocPathName}
+if [ ! -d ${DocPath} ]; then mkdir -p ${DocPath}; fi
+ErrorLogs=${DocPath}/ErrorLogs
 #------------------------------------------------------------------------------
 #
 if [ ! -d ${DIR} ]; then mkdir -p ${DIR}; fi
@@ -76,16 +80,15 @@ for compartment in ${ModelCompartments}; do
 #    . ${funcPath}/ps_func_building_seansonal2decadal_average
 #exit 5
   # calculating the ensemble mean/std/spread (max-min)
-#    . ${funcPath}/ps_func_building_ensemble_mean
+    . ${funcPath}/ps_func_building_ensemble_mean
   #---------------------------------------------------------------------------
   # the difference of each member and ensemble mean
     #------------------------------------------------------------------------
     # for all variables 
-#    . ${funcPath}/ps_func_check_Diff
+    . ${funcPath}/ps_func_check_Diff
     if [ "${Mod}"  == "lnd" ]; then
       . ${funcPath}/ps_func_check_number_of_variables 
     fi
-exit 5
     . ${funcPath}/ps_func_check_sqr
     #. ${funcPath}/ps_func_check_fld_Signal2NoiseRatio
     . ${funcPath}/ps_func_check_Spread
