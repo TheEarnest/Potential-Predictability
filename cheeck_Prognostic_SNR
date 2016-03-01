@@ -25,7 +25,7 @@ casePrefix=nudging_15d_AMIP
 MEyear=1987
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="lnd"
+ModelCompartments="atm"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -37,23 +37,30 @@ DocPathName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
 DocPath=${funcPath}/../docs/${DocPathName}
 if [ ! -d ${DocPath} ]; then mkdir -p ${DocPath}; fi
 ErrorLogs=${DocPath}/ErrorLogs
-#------------------------------------------------------------------------------
-#
 if [ ! -d ${DIR} ]; then mkdir -p ${DIR}; fi
 if [ ! -d ${tempDIR} ]; then mkdir -p ${tempDIR}; fi
+#------------------------------------------------------------------------------
+#
 
 cd ${DataDIR}
 Members=`ls --color=no `
 firstMem=`echo ${Members} | awk -F " " '{print $1}'`
 lastMem=`echo ${Members} | awk -F " " '{print $NF}'`
-
 ${DebugSetting}
 
-# create links for outputs
+# create links for outputs and switch the data path
+PathPrefix=DP
 for compartment in ${ModelCompartments}; do
-  echo ${compartment}
+  for member in ${Members}; do 
+    DPath=${tempDIR}/DP/${member}/${compartment}/hist
+    mkdir -p ${DPath} ; cd ${DPath} 
+    ln -sf ${DataDIR}/${member}/${compartment}/hist/* .
+    . ${funcPath}/ps_func_building_seansonal2decadal_average
+  done
 done
 
+DataDIR=${tempDIR}/DP
+exit 5 
 for compartment in ${ModelCompartments}; do 
   Mod=${compartment}
   # check the files
@@ -77,8 +84,6 @@ for compartment in ${ModelCompartments}; do
 
   #---------------------------------------------------------------------------
   for prefix in ${prefixes}; do 
-#    . ${funcPath}/ps_func_building_seansonal2decadal_average
-#exit 5
   # calculating the ensemble mean/std/spread (max-min)
     . ${funcPath}/ps_func_building_ensemble_mean
   #---------------------------------------------------------------------------
