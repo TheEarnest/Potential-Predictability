@@ -13,24 +13,71 @@ echo "Starting "${JobName}" ...... "
 
 tempPrefix=t_'ps_func_building_seansonal2decadal_average'
 ###############################################################################
-# seasonal define
-# DJF, MAM, JJA, SON
+# hs: DJF(12), MAM(3), JJA(6), SON(9)
+# hf: 5 year
+# hd: decadal 
 
+Seasonal_pantad=`echo ${Seasonal_Decadal_pantad} | cut -c1-1`  ; S_infix=hs 
+FiveYears_pantad=`echo ${Seasonal_Decadal_pantad} | cut -c2-2` ; F_infix=hf
+Decadal_pantad=`echo ${Seasonal_Decadal_pantad} | cut -c3-3`   ; D_infix=hd
 Mod=${compartment}
-cd ${DataDIR}/${firstMem}/${Mod}/hist
+# for seasonal  
+if [ "${Seasonal_pantad}" == "T" ]; then
+  Smonths="03 06 09 12"
+  for Sm1 in ${Smonths}; do 
+    if [ "${Sm1}" = "03" ]; then Season=MAM; fi
+    if [ "${Sm1}" = "06" ]; then Season=JJA; fi
+    if [ "${Sm1}" = "09" ]; then Season=SON; fi
+    if [ "${Sm1}" = "12" ]; then Season=DJF; fi
+    for Member in ${Members}; do 
+      cd ${DataDIR}/${Member}/${Mod}/hist
+      files=`ls --color=no *-${Sm1}.nc`
+      for file in ${files}; do
+        . ${funcPath}/ps_func_check_filefix
+        fileLongPrefix=`echo ${file} | awk -F "${infix}" '{print $1}'`
+        suff_infix=`echo ${infix} | tail -c4`
+        pre_infix=`echo ${infix} | awk -F "${suff_infix}" '{print $1}'`
+        New_infix=${pre_infix}${S_infix}. 
+        targetFile=${fileLongPrefix}${New_infix}${fileyear}-${Season}.nc
+        if [ ! -f ${targetFile} ]; then
+          NextDate1=`python ${funcPath}/ps_func_datecheck.py ${fileyear} ${filemonth} 1 months 1 | cut -c1-7`
+          NextDate2=`python ${funcPath}/ps_func_datecheck.py ${fileyear} ${filemonth} 1 months 2 | cut -c1-7`
+          Nextfile1=`ls --color=no *${NextDate1}.nc` || Nextfile1="None"
+          Nextfile2=`ls --color=no *${NextDate2}.nc` || Nextfile2="None"
+          if [ -f ${Nextfile1} ] && [ -f ${Nextfile2} ] ; then
+            cdo -O ensmean ${file} ${Nextfile1} ${Nextfile2} ${targetFile} 
+          fi
+        fi
+      done
+    done # for diff members
+  done # for diff months
+fi
 
 
-ls --color=no  > ${tempDIR}/${tempPrefix}_files
-files=`ls --color=no ${prefix}*`
-for file in ${files}; do
-  cd ${DataDIR}
-  . ${funcPath}/ps_func_check_filefix
-  if [ "${fmonth}" == "12" ]; then
-    echo $fmonth
-  fi
-exit 5
+# for five years pantad
+if [ "${FiveYears_pantad}" == "T" ]; then
+    for Member in ${Members}; do
+      cd ${DataDIR}/${Member}/${Mod}/hist
+      files=`ls --color=no *hs*.nc` || files="None"
+      if [ "${files}" == "None" ]; then
+        files=`ls --color=no *.nc`
+      fi
+      for file in ${files}; do  
+        . ${funcPath}/ps_func_check_filefix
+        (( fyrLastDG = fileyear % 10 ))
+        if [ "${fyrLastDG}" == "1" ] || [ "${fyrLastDG}" == "6" ]; then
+       echo $infix
+exit 44
 
-done
+        fi
+      done
+    done # for diff members
+  
+fi
+
+
+
+
 ###############################################################################
 echo ${JobStartTime}
 echo `date`" || "${JobName}

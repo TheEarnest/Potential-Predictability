@@ -23,6 +23,7 @@ casePrefix=nudging_15d_AMIP
 #casePrefix=normal_AMIP
 #casePrefix=NorCPM_ME
 MEyear=1987
+Seasonal_Decadal_pantad=FTT # for seasonal, five years and decadal pantad 
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
 ModelCompartments="atm"
@@ -50,19 +51,10 @@ ${DebugSetting}
 
 # create links for outputs and switch the data path
 PathPrefix=DP
-for compartment in ${ModelCompartments}; do
-  for member in ${Members}; do 
-    DPath=${tempDIR}/DP/${member}/${compartment}/hist
-    mkdir -p ${DPath} ; cd ${DPath} 
-    ln -sf ${DataDIR}/${member}/${compartment}/hist/* .
-    . ${funcPath}/ps_func_building_seansonal2decadal_average
-  done
-done
-
+ . ${funcPath}/ps_func_check_file_links
 DataDIR=${tempDIR}/DP
  . ${funcPath}/ps_func_building_seansonal2decadal_average
 
-exit 5
 for compartment in ${ModelCompartments}; do 
   Mod=${compartment}
   # check the files

@@ -1,10 +1,15 @@
 #! /bin/bash
 ###############################################################################
-suffix=`echo ${file} | awk -F "${prefix}" '{print $NF}' `
-firstprefix=`echo ${prefix} | awk -F "." '{print $1}'`
-infix=`echo ${prefix} | awk -F "${firstprefix}" '{print $NF}'`
-fileyear=`echo ${suffix} | awk -F "-" '{print $1}'`
-filemonth=`echo ${suffix} | awk -F "-" '{print $2}'`
-fmonth=`echo ${filemonth} | awk -F ".nc" '{print $1}'`
+LongSuffix=`echo ${file} | awk -F "${casePrefix}" '{print $NF}' `
+memfix=`echo ${LongSuffix} | awk -F "." '{print $1}'`
+#suffix=`echo ${file} | awk -F "${prefix}" '{print $NF}' `
+firstprefix=`echo ${file} | awk -F "." '{print $1}'`
+modelinfix=`echo ${file} | awk -F "." '{print $2}'`
+typeinfix=`echo ${file} | awk -F "." '{print $3}'`
+infix=.${modelinfix}.${typeinfix}.
+suffix=`echo ${file} | awk -F "${infix}" '{print $NF}' `
+fileyear=`echo ${suffix} | awk -F "-" '{print $1}' | tail -c5`
+filemonth=`echo ${suffix} | awk -F "-" '{print $2}' | cut -c1-2` 
+filedate=`echo ${suffix} | awk -F "${fileyear}-${filemonth}" '{print $NF}'`
 suffix_no_year_pre=${suffix_no_year}
 suffix_no_year=`echo ${suffix} | awk -F "${fileyear}" '{print $NF}'`
