@@ -60,6 +60,8 @@ for compartment in ${ModelCompartments}; do
 done
 
 DataDIR=${tempDIR}/DP
+ . ${funcPath}/ps_func_building_seansonal2decadal_average
+
 exit 5 
 for compartment in ${ModelCompartments}; do 
   Mod=${compartment}
