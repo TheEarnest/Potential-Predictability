@@ -12,18 +12,18 @@ ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 # Parameters
 #------------------------------------------------------------------------------
-#O#utputDIR=/scratch/earnest/SyncTransfer/normal_AMIP
-#D#ataDIR=/projects/NS9207K/earnest/NorCPM/archive/normal_AMIP
-DataDIR=/scratch/earnest/noresmexp/n15d_AMIP
-OutputDIR=/scratch/earnest/SyncTransfer/n15d_AMIP
+OutputDIR=/scratch/earnest/SyncTransfer/normal_AMIP
+DataDIR=/projects/NS9207K/earnest/NorCPM/archive/normal_AMIP
+#D#ataDIR=/scratch/earnest/noresmexp/n10d_AMIP
+#O#utputDIR=/scratch/earnest/SyncTransfer/n10d_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/n04d_AMIP
 expCaseName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
 tempDIR=/scratch/earnest/temp/${expCaseName}
-casePrefix=nudging_15d_AMIP
-#casePrefix=normal_AMIP
-#casePrefix=NorCPM_ME
+#casePrefix=nudging_10d_AMIP
+casePrefix=normal_AMIP
+#csePrefix=NorCPM_ME
 MEyear=1987
-Seasonal_Decadal_pantad=FTT # for seasonal, five years and decadal pantad 
+Seasonal_Decadal_pantad=TTF # for seasonal, five years and decadal pantad 
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
 ModelCompartments="atm"
@@ -52,13 +52,13 @@ ${DebugSetting}
 # create links for outputs and switch the data path
 PathPrefix=DP
  . ${funcPath}/ps_func_check_file_links
-DataDIR=${tempDIR}/DP
- . ${funcPath}/ps_func_building_seansonal2decadal_average
+DataDDIR=${tempDIR}/DP
+# . ${funcPath}/ps_func_building_seansonal2decadal_average
 
 for compartment in ${ModelCompartments}; do 
   Mod=${compartment}
   # check the files
-  cd ${DataDIR}/${firstMem}/${compartment}/hist
+  cd ${DataDDIR}/${firstMem}/${compartment}/hist
   #tarFiles=`ls --color=no ${casePrefix}* `
   tempcheck=`ls --color=no *${MEyear}* | awk -F "${MEyear}" '{print $1}'`
 

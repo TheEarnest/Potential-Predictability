@@ -14,9 +14,11 @@ echo "Starting "${JobName}" ...... "
 tempPrefix=t_'ps_func_building_seansonal2decadal_average'
 ###############################################################################
 # hs: DJF(12), MAM(3), JJA(6), SON(9)
+# ho: one year 
 # hf: 5 year
 # hd: decadal 
 
+O_infix=ho
 Seasonal_pantad=`echo ${Seasonal_Decadal_pantad} | cut -c1-1`  ; S_infix=hs 
 FiveYears_pantad=`echo ${Seasonal_Decadal_pantad} | cut -c2-2` ; F_infix=hf
 Decadal_pantad=`echo ${Seasonal_Decadal_pantad} | cut -c3-3`   ; D_infix=hd
@@ -55,23 +57,71 @@ fi
 
 
 # for five years pantad
+if [ "${FiveYears_pantad}" == "T" ] || [ "${Decadal_pantad}" == "T" ]; then
+# indicate the need of annual averaged files
+  for Member in ${Members}; do
+    cd ${DataDIR}/${Member}/${Mod}/hist
+    files=`ls --color=no *.????-??.nc` || files="None"
+    if [ "${files}" != "None" ]; then
+      for file in ${files}; do  
+        . ${funcPath}/ps_func_check_filefix
+        fileLongPrefix=`echo ${file} | awk -F "${infix}" '{print $1}'`
+        suff_infix=`echo ${infix} | tail -c4`
+        pre_infix=`echo ${infix} | awk -F "${suff_infix}" '{print $1}'`
+        New_infix=${pre_infix}${O_infix}.
+        targetFile=${fileLongPrefix}${New_infix}${fileyear}.nc
+        if [ ! -f ${targetFile} ]; then
+          files1=`ls --color=no *${infix}*${fileyear}*.nc `
+          ensStr=""; month_count=0
+          for infile in ${files1}; do 
+            ensStr=${ensStr}" "${infile}
+            (( month_count = month_count + 1 ))
+          done
+          if [ "${month_count}" == "12" ]; then 
+            cdo -O ensmean ${ensStr} ${targetFile}
+          fi
+        fi
+      done      
+    fi
+  done
+fi
+
 if [ "${FiveYears_pantad}" == "T" ]; then
-    for Member in ${Members}; do
-      cd ${DataDIR}/${Member}/${Mod}/hist
-      files=`ls --color=no *hs*.nc` || files="None"
-      if [ "${files}" == "None" ]; then
-        files=`ls --color=no *.nc`
-      fi
+  for Member in ${Members}; do
+    cd ${DataDIR}/${Member}/${Mod}/hist
+    files=`ls --color=no *${O_infix}.????.nc` || files="None"
+    if [ "${files}" != "None" ]; then
       for file in ${files}; do  
         . ${funcPath}/ps_func_check_filefix
         (( fyrLastDG = fileyear % 10 ))
         if [ "${fyrLastDG}" == "1" ] || [ "${fyrLastDG}" == "6" ]; then
-       echo $infix
-exit 44
-
+          fileLongPrefix=`echo ${file} | awk -F "${infix}" '{print $1}'`
+          suff_infix=`echo ${infix} | tail -c4`
+          pre_infix=`echo ${infix} | awk -F "${suff_infix}" '{print $1}'`
+          New_infix=${pre_infix}${F_infix}.
+          targetFile=${fileLongPrefix}${New_infix}${fileyear}.nc
+          if [ ! -f ${targetFile} ]; then
+            (( Nyr1 = fileyear + 1 ))
+            (( Nyr2 = fileyear + 2 ))
+            (( Nyr3 = fileyear + 3 ))
+            (( Nyr4 = fileyear + 4 ))
+            files1=`ls --color=no *${infix}*${fileyear}.nc `
+            files2=`ls --color=no *${infix}*${Nyr1}.nc `
+            files3=`ls --color=no *${infix}*${Nyr2}.nc `
+            files4=`ls --color=no *${infix}*${Nyr3}.nc `
+            files5=`ls --color=no *${infix}*${Nyr4}.nc `
+            totalFiles=${files1}" "${files2}" "${files3}" "${files4}" "${files5}
+            ensStr=""
+            for tagfile in ${totalFiles}; do 
+              ensStr=${ensStr}" "${tagfile}
+            done
+            cdo -O ensmean ${ensStr} ${targetFile}
+          fi
+exit 55
         fi
       done
-    done # for diff members
+    fi
+  done # for diff members
   
 fi
 

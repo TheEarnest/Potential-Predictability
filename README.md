@@ -35,8 +35,8 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * should add a script to check PPP evolving (comparing spatial std in this case, and focus on SST only) (Note: fldvar/fldcorr is not helpful)
   * Should build a system to counter check the files
   * uploading the nc files of PPP as well??
-  * Regional PPP (Nino 3.4; ATL3; SPG) (not urgent)
   * From PPP to evaluate prediction barrier/uncertainty - comparing to ENSO prediction barrier 
+  * add post process: skip some orginal output and adding more diag variables
   * the ploting script has to be revised to get a better presentation, ie thiner colorbar, grids lines (not urgent)
   * MICOM hy output is missing in the figure list (also fail plot the figures?)
   * Trouble in presenting local maximum predictability!!! (HDF error).

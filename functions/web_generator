@@ -32,8 +32,8 @@ fi
 for ModelCompartment in ${ModelCompartments}; do 
   if [ -d ${OutputDIR}/${ModelCompartment}/PPP_all_figures ]; then
     rm -rf ${figureDIR}/PPP_${ModelCompartment}
-    cp -rf ${OutputDIR}/${ModelCompartment}/PPP_all_figures ${figureDIR}/PPP_${ModelCompartment}
   fi
+    cp -rf ${OutputDIR}/${ModelCompartment}/PPP_all_figures ${figureDIR}/PPP_${ModelCompartment}
 # count all figures
   ls ${figureDIR}/PPP_${ModelCompartment} > ${ScriptHome}/docs/${ExpID}/figure_list
   TotalFigurecouont=`cat ${ScriptHome}/docs/${ExpID}/figure_list | wc -l`

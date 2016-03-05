@@ -5,13 +5,13 @@
 #
 ${DebugSetting}
 JobStartTime=`date`
-JobName='ps_func_building_seansonal2decadal_average'
+JobName='ps_func_check_file_links'
 # 
 echo ${LinnBreaker}
 echo ${LinnBreaker}
 echo "Starting "${JobName}" ...... "
 
-tempPrefix=t_'ps_func_building_seansonal2decadal_average'
+tempPrefix=t_'ps_func_check_file_links'
 ###############################################################################
 # seasonal define
 for compartment in ${ModelCompartments}; do
