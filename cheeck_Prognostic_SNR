@@ -59,47 +59,8 @@ DataDDIR=${tempDIR}/DP
 for compartment in ${ModelCompartments}; do 
   Mod=${compartment}
   # check the files
-  cd ${DataDDIR}/${firstMem}/${compartment}/hist
-  #tarFiles=`ls --color=no ${casePrefix}* `
-  tempcheck=`ls --color=no *${MEyear}* | awk -F "${MEyear}" '{print $1}'`
+  . ${funcPath}/ps_func_check_prefixes
 
-  prefixes=""
-  is_same_prefix=0
-  if [ "${SkipOrigOutputs}" != "T" ]; then
-    for prefixCheck in ${tempcheck}; do 
-      is_same_prefix=0
-      for prefix in ${prefixes}; do 
-        if [ "${prefixCheck}" == "${prefix}" ]; then
-          is_same_prefix=1
-        fi
-      done
-      if [ "${is_same_prefix}" != "1" ]; then
-        prefixes=${prefixes}" "${prefixCheck}
-      fi
-    done
-  else # if skiping original outputs
-    for prefixCheck in ${tempcheck}; do
-      is_same_prefix=0
-      for prefix in ${prefixes}; do
-        realpath=`readlink -f ../hist/ | awk -F "hist" '{print $1}'`
-        ls ${prefix}${MEyear}*  > ${tempDIR}/t_local_files
-        thefilecount=`wc -l ${tempDIR}/t_local_files | awk -F " " '{print $1}'`
-        thefile=`sed -n "${thefilecount}p" < ${tempDIR}/t_local_files `
-        thepath=`readlink -f ${thefile}  | awk -F "hist" '{print $1}' `
-        if [ "${realpath}" == "${thepath}" ]; then
-          if [ "${prefixCheck}" == "${prefix}" ]; then
-            is_same_prefix=1
-          fi
-        fi
-      done
-      if [ "${is_same_prefix}" != "1" ]; then
-        prefixes=${prefixes}" "${prefixCheck}
-      fi
-    done
-  fi
-
-echo $prefixes
-exit 5
   #---------------------------------------------------------------------------
   for prefix in ${prefixes}; do 
   # calculating the ensemble mean/std/spread (max-min)
