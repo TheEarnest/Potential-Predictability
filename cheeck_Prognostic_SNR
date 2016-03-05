@@ -23,6 +23,7 @@ tempDIR=/scratch/earnest/temp/${expCaseName}
 casePrefix=normal_AMIP
 #csePrefix=NorCPM_ME
 MEyear=1987
+SkipOrigOutputs=T
 Seasonal_Decadal_pantad=TTF # for seasonal, five years and decadal pantad 
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
@@ -64,18 +65,41 @@ for compartment in ${ModelCompartments}; do
 
   prefixes=""
   is_same_prefix=0
-  for prefixCheck in ${tempcheck}; do 
-    is_same_prefix=0
-    for prefix in ${prefixes}; do 
-      if [ "${prefixCheck}" == "${prefix}" ]; then
-        is_same_prefix=1
+  if [ "${SkipOrigOutputs}" != "T" ]; then
+    for prefixCheck in ${tempcheck}; do 
+      is_same_prefix=0
+      for prefix in ${prefixes}; do 
+        if [ "${prefixCheck}" == "${prefix}" ]; then
+          is_same_prefix=1
+        fi
+      done
+      if [ "${is_same_prefix}" != "1" ]; then
+        prefixes=${prefixes}" "${prefixCheck}
       fi
     done
-    if [ "${is_same_prefix}" != "1" ]; then
-      prefixes=${prefixes}" "${prefixCheck}
-    fi
-  done
+  else # if skiping original outputs
+    for prefixCheck in ${tempcheck}; do
+      is_same_prefix=0
+      for prefix in ${prefixes}; do
+        realpath=`readlink -f ../hist/ | awk -F "hist" '{print $1}'`
+        ls ${prefix}${MEyear}*  > ${tempDIR}/t_local_files
+        thefilecount=`wc -l ${tempDIR}/t_local_files | awk -F " " '{print $1}'`
+        thefile=`sed -n "${thefilecount}p" < ${tempDIR}/t_local_files `
+        thepath=`readlink -f ${thefile}  | awk -F "hist" '{print $1}' `
+        if [ "${realpath}" == "${thepath}" ]; then
+          if [ "${prefixCheck}" == "${prefix}" ]; then
+            is_same_prefix=1
+          fi
+        fi
+      done
+      if [ "${is_same_prefix}" != "1" ]; then
+        prefixes=${prefixes}" "${prefixCheck}
+      fi
+    done
+  fi
 
+echo $prefixes
+exit 5
   #---------------------------------------------------------------------------
   for prefix in ${prefixes}; do 
   # calculating the ensemble mean/std/spread (max-min)
