@@ -55,7 +55,7 @@ if [ "${Seasonal_pantad}" == "T" ]; then
   done # for diff months
 fi
 
-
+exit 44
 # for five years pantad
 if [ "${FiveYears_pantad}" == "T" ] || [ "${Decadal_pantad}" == "T" ]; then
 # indicate the need of annual averaged files

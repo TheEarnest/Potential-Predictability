@@ -60,8 +60,8 @@ for compartment in ${ModelCompartments}; do
   Mod=${compartment}
   # check the files
   . ${funcPath}/ps_func_check_prefixes
-
-  #---------------------------------------------------------------------------
+exit 5
+  #--------------------------------------------------------------------------
   for prefix in ${prefixes}; do 
   # calculating the ensemble mean/std/spread (max-min)
     . ${funcPath}/ps_func_building_ensemble_mean
