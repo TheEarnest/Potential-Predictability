@@ -55,9 +55,8 @@ if [ "${Seasonal_pantad}" == "T" ]; then
   done # for diff months
 fi
 
-exit 44
 # for five years pantad
-if [ "${FiveYears_pantad}" == "T" ] || [ "${Decadal_pantad}" == "T" ]; then
+if [ "${FiveYears_pantad}" == "T" ] && [ "${Decadal_pantad}" == "T" ]; then
 # indicate the need of annual averaged files
   for Member in ${Members}; do
     cd ${DataDIR}/${Member}/${Mod}/hist
@@ -86,15 +85,23 @@ if [ "${FiveYears_pantad}" == "T" ] || [ "${Decadal_pantad}" == "T" ]; then
   done
 fi
 
+
 if [ "${FiveYears_pantad}" == "T" ]; then
   for Member in ${Members}; do
     cd ${DataDIR}/${Member}/${Mod}/hist
     files=`ls --color=no *${O_infix}.????.nc` || files="None"
+    firstyear=""; baseyear1=""; baseyear2=""
     if [ "${files}" != "None" ]; then
       for file in ${files}; do  
         . ${funcPath}/ps_func_check_filefix
+        if [ "${firstyear}" == "" ]; then
+          firstyear=${fileyear}
+          (( baseyear1 = firstyear % 10 ))
+          (( baseyear2 = baseyear1 + 5 ))
+        fi
+
         (( fyrLastDG = fileyear % 10 ))
-        if [ "${fyrLastDG}" == "1" ] || [ "${fyrLastDG}" == "6" ]; then
+        if [ "${fyrLastDG}" == "${baseyear1}" ] || [ "${fyrLastDG}" == "${baseyear2}" ]; then
           fileLongPrefix=`echo ${file} | awk -F "${infix}" '{print $1}'`
           suff_infix=`echo ${infix} | tail -c4`
           pre_infix=`echo ${infix} | awk -F "${suff_infix}" '{print $1}'`
@@ -106,23 +113,28 @@ if [ "${FiveYears_pantad}" == "T" ]; then
             (( Nyr3 = fileyear + 3 ))
             (( Nyr4 = fileyear + 4 ))
             files1=`ls --color=no *${infix}*${fileyear}.nc `
-            files2=`ls --color=no *${infix}*${Nyr1}.nc `
-            files3=`ls --color=no *${infix}*${Nyr2}.nc `
-            files4=`ls --color=no *${infix}*${Nyr3}.nc `
-            files5=`ls --color=no *${infix}*${Nyr4}.nc `
+            files2=`ls --color=no *${infix}*${Nyr1}.nc ` || file2="None"
+            files3=`ls --color=no *${infix}*${Nyr2}.nc ` || file3="None"
+            files4=`ls --color=no *${infix}*${Nyr3}.nc ` || file4="None"
+            files5=`ls --color=no *${infix}*${Nyr4}.nc ` || file5="None"
             totalFiles=${files1}" "${files2}" "${files3}" "${files4}" "${files5}
             ensStr=""
+            iHaveAllYears=1
             for tagfile in ${totalFiles}; do 
-              ensStr=${ensStr}" "${tagfile}
+              if [ "${tagfile}" != "None" ]; then 
+                ensStr=${ensStr}" "${tagfile}
+              else
+                iHaveAllYears=0
+              fi
             done
-            cdo -O ensmean ${ensStr} ${targetFile}
+            if [ "${iHaveAllYears}" == "1" ]; then
+              cdo -O ensmean ${ensStr} ${targetFile}
+            fi
           fi
-exit 55
         fi
       done
     fi
   done # for diff members
-  
 fi
 
 

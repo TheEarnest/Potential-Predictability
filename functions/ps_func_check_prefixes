@@ -14,7 +14,7 @@ echo "Starting "${JobName}" ...... "
 tempPrefix=t_'ps_func_template'
 ###############################################################################
 # check the files
-cd ${DataDDIR}/${firstMem}/${compartment}/hist
+cd ${DataDIR}/${firstMem}/${compartment}/hist
 #tarFiles=`ls --color=no ${casePrefix}* `
 tempcheck=`ls --color=no *${MEyear}* | awk -F "${MEyear}" '{print $1}'`
 
