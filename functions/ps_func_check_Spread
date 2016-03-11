@@ -31,7 +31,7 @@ for file in ${files}; do
   if [ ! -f ${target} ]; then
     echo "Checking "${suffix}" of "${Mod}" ... "
     cd ${sqrDIR}
-    cdo ensmean ${Sources} ${target} 
+    ncea -O -3 ${Sources} -o ${target} 
   fi
 done
 
@@ -40,7 +40,7 @@ done
 mkdir -p ${DIR}/${Mod}/Signal2NoiseRatio
 if [ "${suffix_no_year_pre}" == "${suffix_no_year}" ]; then
   target=${DIR}/${Mod}/Signal2NoiseRatio/${casePrefix}${infix}EnsDiffVar_All
-  cdo -O ensmean ${tarDIR}/*${infix}*${suffix_no_year}* ${target}
+  ncea -O -3 ${tarDIR}/*${infix}*${suffix_no_year}* -o ${target}
   cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
   grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
   if [ "${grid_count}" != "1" ]; then
@@ -67,7 +67,7 @@ else
     # dealing the noise (variance) for each month 
     target=${DIR}/${Mod}/Signal2NoiseRatio/${casePrefix}${infix}EnsDiffVar${suffixCheck}
     enstar_All=${enstar_All}" "${target}
-    cdo -O ensmean ${tarDIR}/*${infix}*${suffixCheck}* ${target}
+    ncea -O -3 ${tarDIR}/*${infix}*${suffixCheck}* -o ${target}
     cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
     grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
     if [ "${grid_count}" != "1" ]; then
@@ -78,8 +78,7 @@ else
   target=${DIR}/${Mod}/Signal2NoiseRatio/${casePrefix}${infix}EnsDiffVar_All
   # ensemble size is too big as doing for atm outputs
   # monthly noise (variance) should be ready, and the total 
-  #cdo -O ensmean ${tarDIR}/${casePrefix}${infix}EnsDiffVar* ${target}
-  cdo -O ensmean ${enstar_All} ${target}
+  ncea -O -3 ${enstar_All} -o ${target}
   cdo -O griddes ${target} | grep "gridID" > ${tempDIR}/${tempPrefix}_grids
   grid_count=` wc -l ${tempDIR}/${tempPrefix}_grids | awk -F " " '{print $1}'`
   if [ "${grid_count}" != "1" ]; then

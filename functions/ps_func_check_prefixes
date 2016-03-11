@@ -5,23 +5,22 @@
 #
 ${DebugSetting}
 JobStartTime=`date`
-JobName=ps_func_template
+JobName='ps_func_check_prefixes'
 # 
 echo ${LinnBreaker}
 echo ${LinnBreaker}
 echo "Starting "${JobName}" ...... "
 
-tempPrefix=t_'ps_func_template'
+tempPrefix=t_'ps_func_check_prefixes'
 ###############################################################################
 # check the files
 cd ${DataDIR}/${firstMem}/${compartment}/hist
 #tarFiles=`ls --color=no ${casePrefix}* `
 tempcheck=`ls --color=no *${MEyear}* | awk -F "${MEyear}" '{print $1}'`
 
-
+set +x
 
 prefixes=""
-is_same_prefix=0
 if [ "${SkipOrigOutputs}" != "T" ]; then
   for prefixCheck in ${tempcheck}; do
     is_same_prefix=0
@@ -35,32 +34,27 @@ if [ "${SkipOrigOutputs}" != "T" ]; then
     fi
   done
 else # if skiping original outputs
+  realpath=`readlink -f ../hist/ | awk -F "hist" '{print $1}'`
   for prefixCheck in ${tempcheck}; do
-    is_same_prefix=0
-    for prefix in ${prefixes}; do
-      if [ "${prefixCheck}" == "${prefix}" ]; then
-        realpath=`readlink -f ../hist/ | awk -F "hist" '{print $1}'`
-        ls ${prefix}${MEyear}*  > ${tempDIR}/t_local_files
-        thefilecount=`wc -l ${tempDIR}/t_local_files | awk -F " " '{print $1}'`
-        thefile=`sed -n "${thefilecount}p" < ${tempDIR}/t_local_files `
-        thepath=`readlink -f ${thefile}  | awk -F "hist" '{print $1}' `
-        if [ "${realpath}" == "${thepath}" ]; then
+    ls ${prefixCheck}${MEyear}*  > ${tempDIR}/t_local_files
+    thefilecount=`wc -l ${tempDIR}/t_local_files | awk -F " " '{print $1}'`
+    thefile=`sed -n "${thefilecount}p" < ${tempDIR}/t_local_files `
+    thepath=`readlink -f ${thefile}  | awk -F "hist" '{print $1}' `
+    is_same_prefix=1
+    if [ "${realpath}" == "${thepath}" ]; then
+      is_same_prefix=0
+      for prefix in ${prefixes}; do
+        if [ "${prefixCheck}" == "${prefix}" ]; then
           is_same_prefix=1
-exit 55
         fi
-      fi
-    done
+      done
+    fi 
     if [ "${is_same_prefix}" != "1" ]; then
       prefixes=${prefixes}" "${prefixCheck}
     fi
-exit 55
   done
 fi
-
-
-echo $prefixes
-exit 55
-
+set -x
 ###############################################################################
 echo ${JobStartTime}
 echo `date`" || "${JobName}

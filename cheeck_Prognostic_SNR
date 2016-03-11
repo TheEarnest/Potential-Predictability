@@ -13,21 +13,22 @@ ScriptHome=`pwd`
 # Parameters
 #------------------------------------------------------------------------------
 OutputDIR=/scratch/earnest/SyncTransfer/FF_3rd_try
-DataDDIR=/projects/NS9207K/earnest/NorCPM/archive/FF_3rd_try
+#D#ataDDIR=/projects/NS9207K/earnest/NorCPM/archive/normal_AMIP
+DataDDIR=/projects/NS9039K/shared/norcpm/cases/NorCPM/True_Obs-1970-2010/FF_3rd_try
 #D#ataDIR=/scratch/earnest/noresmexp/n10d_AMIP
 #O#utputDIR=/scratch/earnest/SyncTransfer/n10d_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/n04d_AMIP
 expCaseName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
 tempDIR=/scratch/earnest/temp/${expCaseName}
 #casePrefix=nudging_10d_AMIP
-casePrefix=normal_AMIP
-#csePrefix=NorCPM_ME
+#casePrefix=normal_AMIP
+csePrefix=NorCPM_F19_tn21
 MEyear=1987
 SkipOrigOutputs=T
-Seasonal_Decadal_pantad=FTF # for seasonal, five years and decadal pantad 
+Seasonal_Decadal_pantad=TTF # for seasonal, five years and decadal pantad 
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="atm"
+ModelCompartments="ocn"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -44,7 +45,7 @@ if [ ! -d ${tempDIR} ]; then mkdir -p ${tempDIR}; fi
 #------------------------------------------------------------------------------
 #
 
-cd ${DataDIR}
+cd ${DataDDIR}
 Members=`ls --color=no `
 firstMem=`echo ${Members} | awk -F " " '{print $1}'`
 lastMem=`echo ${Members} | awk -F " " '{print $NF}'`
@@ -60,7 +61,7 @@ for compartment in ${ModelCompartments}; do
   Mod=${compartment}
   # check the files
   . ${funcPath}/ps_func_check_prefixes
-exit 5
+
   #--------------------------------------------------------------------------
   for prefix in ${prefixes}; do 
   # calculating the ensemble mean/std/spread (max-min)

@@ -19,7 +19,7 @@ for compartment in ${ModelCompartments}; do
     DPath=${tempDIR}/DP/${member}/${compartment}/hist
     if [ ! -d ${DPath} ]; then
       mkdir -p ${DPath} ; cd ${DPath}
-      ln -sf ${DataDIR}/${member}/${compartment}/hist/* .
+      ln -sf ${DataDDIR}/${member}/${compartment}/hist/* .
     fi
   done
 done

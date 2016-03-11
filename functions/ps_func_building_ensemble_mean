@@ -37,7 +37,7 @@ for file in ${files}; do
   Target=${DIR}/${Mod}/hist_ensmean/${casePrefix}${infix}ensmean.${suffix}
   if [ ! -f ${Target} ]; then
     ensTargets=`ls ${casePrefix}_mem??/${Mod}/hist/*${suffix} `
-    cdo -O ensmean ${ensTargets} ${Target}
+    ncea -O -3 ${ensTargets} -o ${Target}
   fi
   Target=${DIR}/${Mod}/hist_ensstd/${casePrefix}${infix}ensstd.${suffix}
   if [ ! -f ${Target} ]; then

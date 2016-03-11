@@ -47,7 +47,7 @@ if [ "${Seasonal_pantad}" == "T" ]; then
           Nextfile1=`ls --color=no *${NextDate1}.nc` || Nextfile1="None"
           Nextfile2=`ls --color=no *${NextDate2}.nc` || Nextfile2="None"
           if [ -f ${Nextfile1} ] && [ -f ${Nextfile2} ] ; then
-            cdo -O ensmean ${file} ${Nextfile1} ${Nextfile2} ${targetFile} 
+            ncea -O -3 ${file} ${Nextfile1} ${Nextfile2} -o ${targetFile} 
           fi
         fi
       done
@@ -77,7 +77,7 @@ if [ "${FiveYears_pantad}" == "T" ] && [ "${Decadal_pantad}" == "T" ]; then
             (( month_count = month_count + 1 ))
           done
           if [ "${month_count}" == "12" ]; then 
-            cdo -O ensmean ${ensStr} ${targetFile}
+            ncea -O -3 ${ensStr} -o ${targetFile}
           fi
         fi
       done      
@@ -128,7 +128,7 @@ if [ "${FiveYears_pantad}" == "T" ]; then
               fi
             done
             if [ "${iHaveAllYears}" == "1" ]; then
-              cdo -O ensmean ${ensStr} ${targetFile}
+              ncea -O -3 ${ensStr}  -o ${targetFile}
             fi
           fi
         fi
