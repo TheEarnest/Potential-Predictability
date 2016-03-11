@@ -14,13 +14,13 @@ fsuffix=${fsuffix//\"}
 #------------------------------------------------------------------------------
 # Parameters (grep from the main script)
 #------------------------------------------------------------------------------
-ExpID=`grep "DataDIR=" ${MainScript} | awk -F "/" '{print $NF}'`
-webpageDIR=${ScriptHome}/docs/${ExpID}
-figureDIR=${ScriptHome}/figures/${ExpID}
+ExpID=`grep "DataDDIR=" ${MainScript} | awk -F "/" '{print $NF}'`
+webpageDIR=${ScriptHome}/../PPP-Results/docs/${ExpID}
+figureDIR=${ScriptHome}/../PPP-Results/figures/${ExpID}
 SPGReg="300,345,48,65"
 EUReg="40,140,40,70"
 Nino34Reg="-170,-120,-5,5"
-#AtlNino3Reg="-20,-0,-3,3"
+AtlNino3Reg="-20,-0,-3,3"
 thPPP=0.6
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 

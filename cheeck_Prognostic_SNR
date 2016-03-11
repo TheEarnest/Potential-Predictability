@@ -13,7 +13,7 @@ ScriptHome=`pwd`
 # Parameters
 #------------------------------------------------------------------------------
 OutputDIR=/scratch/earnest/SyncTransfer/normal_AMIP
-DataDIR=/projects/NS9207K/earnest/NorCPM/archive/normal_AMIP
+DataDDIR=/projects/NS9207K/earnest/NorCPM/archive/normal_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/n10d_AMIP
 #O#utputDIR=/scratch/earnest/SyncTransfer/n10d_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/n04d_AMIP
