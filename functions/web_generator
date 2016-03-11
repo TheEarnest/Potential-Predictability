@@ -24,7 +24,7 @@ AtlNino3Reg="-20,-0,-3,3"
 thPPP=0.6
 OutputDIR=`grep "OutputDIR=" ${MainScript} | awk -F "=" '{print $NF}'`
 
-ModelCompartments="atm"
+ModelCompartments="ocn"
 if [ ! -d ${webpageDIR} ]; then 
   mkdir -p ${figureDIR}
   mkdir -p ${webpageDIR}
@@ -196,7 +196,7 @@ sed -i s/"${vname}: ${varLongName}__, ${nameinfix}, ${levelStr} -".*/"${vname}: 
 
   done # for different variables 
   done # for different infix
-  sed -i s/"total figures in ${ModelCompartment}: ".*/"total figures in ${ModelCompartment}: __${figureCount}__\/${TotalFigurecouont} "/g ${ScriptHome}/docs/FrontPage_${ExpID}.markdown
+  sed -i s/"total figures in ${ModelCompartment}: ".*/"total figures in ${ModelCompartment}: __${figureCount}__\/${TotalFigurecouont} "/g ${ScriptHome}/../PPP-Results/docs/FrontPage_${ExpID}.markdown
   nowdate=`date`
   sed -i s/"Last update".*/"Last updated on: __${nowdate}__ "/g ${ScriptHome}/docs/FrontPage_${ExpID}.markdown
 done
