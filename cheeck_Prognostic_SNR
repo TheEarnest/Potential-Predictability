@@ -14,7 +14,7 @@ ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 OutputDIR=/scratch/earnest/SyncTransfer/FF_3rd_try
 #D#ataDDIR=/projects/NS9207K/earnest/NorCPM/archive/normal_AMIP
-DataDDIR=/projects/NS9039K/shared/norcpm/cases/NorCPM/True_Obs-1970-2010/FF_3rd_try
+DataDDIR=/scratch/earnest/noresmexp/FF_3rd_try
 #D#ataDIR=/scratch/earnest/noresmexp/n10d_AMIP
 #O#utputDIR=/scratch/earnest/SyncTransfer/n10d_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/n04d_AMIP

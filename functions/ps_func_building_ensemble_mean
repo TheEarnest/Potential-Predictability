@@ -26,7 +26,7 @@ for file in ${files}; do
 
   echo "Checking ${suffix} of ${Mod} ..."
   Target=${DIR}/${Mod}/hist_ensspread/${casePrefix}${infix}ensspread.${suffix}
-
+exit 33
   if [ ! -f ${Target} ]; then
     ensTargets=`ls ${casePrefix}_mem??/${Mod}/hist/*${suffix} `
 #    cdo -O ensmax ${ensTargets} ${tempDIR}/${tempPrefix}_ensmax
