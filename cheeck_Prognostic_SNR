@@ -24,7 +24,7 @@ tempDIR=/scratch/earnest/temp/${expCaseName}
 #casePrefix=normal_AMIP
 csePrefix=NorCPM_F19_tn21
 MEyear=1987
-SkipOrigOutputs=T
+SkipOrigOutputs=F
 Seasonal_Decadal_pantad=TTF # for seasonal, five years and decadal pantad 
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
