@@ -12,9 +12,9 @@ ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 # Parameters
 #------------------------------------------------------------------------------
-OutputDIR=/scratch/earnest/SyncTransfer/FF_3rd_try
+OutputDIR=/scratch/earnest/SyncTransfer/FF_4th_try_Seasonal
 #D#ataDDIR=/projects/NS9207K/earnest/NorCPM/archive/normal_AMIP
-DataDDIR=/scratch/earnest/noresmexp/FF_3rd_try
+DataDDIR=/scratch/earnest/noresmexp/FF_4th_try_Seasonal
 #D#ataDIR=/scratch/earnest/noresmexp/n10d_AMIP
 #O#utputDIR=/scratch/earnest/SyncTransfer/n10d_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/n04d_AMIP
@@ -22,13 +22,13 @@ expCaseName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
 tempDIR=/scratch/earnest/temp/${expCaseName}
 #casePrefix=nudging_10d_AMIP
 #casePrefix=normal_AMIP
-csePrefix=NorCPM_F19_tn21
-MEyear=1987
-SkipOrigOutputs=F
+csePrefix=noresm1_ME_hist_s01
+MEyear=1997
+SkipOrigOutputs=T
 Seasonal_Decadal_pantad=TTF # for season, year, five years 
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="ocn"
+ModelCompartments="lnd"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
