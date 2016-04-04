@@ -25,7 +25,7 @@ tempDIR=/scratch/earnest/temp/${expCaseName}
 csePrefix=NorCPM_F19_tn21
 MEyear=1987
 SkipOrigOutputs=F
-Seasonal_Decadal_pantad=TTF # for seasonal, five years and decadal pantad 
+Seasonal_Decadal_pantad=TTF # for season, year, five years 
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
 ModelCompartments="ocn"

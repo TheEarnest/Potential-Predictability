@@ -32,6 +32,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
 ## Working Notes
 
+  * change all set of figures from PPP to SNR 
   * should add a script to check PPP evolving (comparing spatial std in this case, and focus on SST only) (Note: fldvar/fldcorr is not helpful)
   * Should build a system to counter check the files
   * uploading the nc files of PPP as well??
