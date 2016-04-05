@@ -22,13 +22,13 @@ expCaseName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
 tempDIR=/scratch/earnest/temp/${expCaseName}
 #casePrefix=nudging_10d_AMIP
 #casePrefix=normal_AMIP
-csePrefix=noresm1_ME_hist_s01
+casePrefix=noresm1_ME_hist_s01
 MEyear=1997
 SkipOrigOutputs=T
 Seasonal_Decadal_pantad=TTF # for season, year, five years 
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="lnd"
+ModelCompartments="atm"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1

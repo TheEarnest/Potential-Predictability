@@ -24,9 +24,9 @@ for file in ${files}; do
   cd ${DataDIR}
   . ${funcPath}/ps_func_check_filefix
 
+
   echo "Checking ${suffix} of ${Mod} ..."
   Target=${DIR}/${Mod}/hist_ensspread/${casePrefix}${infix}ensspread.${suffix}
-exit 33
   if [ ! -f ${Target} ]; then
     ensTargets=`ls ${casePrefix}_mem??/${Mod}/hist/*${suffix} `
 #    cdo -O ensmax ${ensTargets} ${tempDIR}/${tempPrefix}_ensmax
@@ -40,9 +40,9 @@ exit 33
     ncea -O -3 ${ensTargets} -o ${Target}
   fi
   Target=${DIR}/${Mod}/hist_ensstd/${casePrefix}${infix}ensstd.${suffix}
-  if [ ! -f ${Target} ]; then
-    cdo -O ensstd ${ensTargets} ${Target}
-  fi
+#  if [ ! -f ${Target} ]; then
+#    cdo -O ensstd ${ensTargets} ${Target}
+#  fi
 done
 ${DebugSetting}
 target=${DIR}/${Mod}/${casePrefix}${infix}mergetime
