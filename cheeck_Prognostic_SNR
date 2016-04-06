@@ -28,7 +28,7 @@ SkipOrigOutputs=T
 Seasonal_Decadal_pantad=TTF # for season, year, five years 
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="atm"
+ModelCompartments="ocn"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
