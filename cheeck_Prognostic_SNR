@@ -12,9 +12,9 @@ ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 # Parameters
 #------------------------------------------------------------------------------
-OutputDIR=/scratch/earnest/SyncTransfer/FF_4th_try_Seasonal
+OutputDIR=/scratch/earnest/SyncTransfer/n06hd_AMIP
 #D#ataDDIR=/projects/NS9207K/earnest/NorCPM/archive/normal_AMIP
-DataDDIR=/scratch/earnest/noresmexp/FF_4th_try_Seasonal
+DataDDIR=/scratch/earnest/noresmexp/n06hd_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/n10d_AMIP
 #O#utputDIR=/scratch/earnest/SyncTransfer/n10d_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/n04d_AMIP
@@ -22,13 +22,13 @@ expCaseName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
 tempDIR=/scratch/earnest/temp/${expCaseName}
 #casePrefix=nudging_10d_AMIP
 #casePrefix=normal_AMIP
-casePrefix=noresm1_ME_hist_s01
+casePrefix=nudging_06h_AMIP
 MEyear=1997
-SkipOrigOutputs=T
+SkipOrigOutputs=F
 Seasonal_Decadal_pantad=TTF # for season, year, five years 
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
-ModelCompartments="ocn"
+ModelCompartments="atm"
 #------------------------------------------------------------------------------
 # Constants
 is_revisiting_jobs=1
@@ -55,7 +55,7 @@ ${DebugSetting}
 PathPrefix=DP
  . ${funcPath}/ps_func_check_file_links
 DataDIR=${tempDIR}/DP
- . ${funcPath}/ps_func_building_seansonal2decadal_average
+# . ${funcPath}/ps_func_building_seansonal2decadal_average
 
 for compartment in ${ModelCompartments}; do 
   Mod=${compartment}
