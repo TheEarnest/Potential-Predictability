@@ -33,7 +33,7 @@ if [ "${Seasonal_pantad}" == "T" ]; then
     if [ "${Sm1}" = "12" ]; then Season=DJF; fi
     for Member in ${Members}; do 
       cd ${DataDIR}/${Member}/${Mod}/hist
-      files=`ls --color=no *-${Sm1}.nc`
+      files=`ls --color=no *-${Sm1}.nc`  || files=""
       for file in ${files}; do
         . ${funcPath}/ps_func_check_filefix
         fileLongPrefix=`echo ${file} | awk -F "${infix}" '{print $1}'`

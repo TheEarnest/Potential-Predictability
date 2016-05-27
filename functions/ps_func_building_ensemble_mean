@@ -71,7 +71,7 @@ if [ "${grid_count}" == "1" ]; then
   for month in ${months}; do
     (( imonC = imonC + 1 ))
   done
-  if [ "${imonC}" == "12" ]; then # monthly outputs
+  if [ ${imonC} -gt 12 ]; then # monthly outputs
     nmonth=0
     for month in ${months}; do
       (( nmonth = nmonth + 1 ))
@@ -79,15 +79,12 @@ if [ "${grid_count}" == "1" ]; then
       cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_detrend_m${mm}
     done
   fi
-  if [ "${imonC}" == "4" ]; then
-    nmonth=0
+  if [ ${imonC} -le 4 ]; then
     for month in ${months}; do
-      (( nmonth = nmonth + 1 ))
       if [ "${month}" = "3" ] || [ "${month}" = "4" ] || [ "${month}" = "5" ];  then Season=MAM; fi
       if [ "${month}" = "6" ] || [ "${month}" = "7" ] || [ "${month}" = "8" ];  then Season=JJA; fi
       if [ "${month}" = "9" ] || [ "${month}" = "10" ] || [ "${month}" = "11" ] ; then Season=SON; fi
       if [ "${month}" = "12" ] || [ "${month}" = "1" ] || [ "${month}" = "2" ];  then Season=DJF; fi
-      mm=`echo 00${nmonth} | tail -c3 `
       cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_detrend_m${Season}
     done
     
@@ -120,24 +117,22 @@ else
       for month in ${months}; do
         (( imonC = imonC + 1 ))
       done
-      if [ "${imonC}" == "12" ]; then
+      if [ ${imonC} -gt 4 ]; then
         nmonth=0
         for month in ${months}; do
           (( nmonth = nmonth + 1 ))
+      #    nmonth=${month}
           mm=`echo 00${nmonth} | tail -c3 `
           cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_detrend_m${mm}_G${igg}
         done
       fi
-
-      if [ "${imonC}" == "4" ]; then
+      if [ ${imonC} -le 4 ]; then
         nmonth=0
         for month in ${months}; do
-          (( nmonth = nmonth + 1 ))
-          if [ "${month}" = "4" ];  then Season=MAM; fi
-          if [ "${month}" = "7" ];  then Season=JJA; fi
-          if [ "${month}" = "10" ]; then Season=SON; fi
-          if [ "${month}" = "1" ];  then Season=DJF; fi
-          mm=`echo 00${nmonth} | tail -c3 `
+          if [ "${month}" = "3" ] || [ "${month}" = "4" ] || [ "${month}" = "5" ];  then Season=MAM; fi
+          if [ "${month}" = "6" ] || [ "${month}" = "7" ] || [ "${month}" = "8" ];  then Season=JJA; fi
+          if [ "${month}" = "9" ] || [ "${month}" = "10" ] || [ "${month}" = "11" ]; then Season=SON; fi
+          if [ "${month}" = "12" ] || [ "${month}" = "1" ] || [ "${month}" = "1" ];  then Season=DJF; fi
           cdo -O timvar -selmon,${month} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_detrend_G${igg} ${DIR}/${Mod}/${casePrefix}${infix}anomaly_timvar_detrend_m${Season}_G${igg}
         done
       fi

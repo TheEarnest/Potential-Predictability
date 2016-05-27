@@ -25,7 +25,7 @@ EnsRegAnomaly=${tarDIR}/${casePrefix}${infix}_Anomaly
 EnsRegTimvar=${tarDIR}/${casePrefix}${infix}_Timvar
 cdo fldmean -sellonlatbox,${RegLonLat} -selvar,${VarName} ${EnsMergedFile} ${EnsRegTS}
 cdo ymonmean ${EnsRegTS} ${EnsRegYMonmean}
-cdo sub ${EnsRegTS} ${EnsRegYMonmean} ${EnsRegAnomaly}
+ncdiff -O -3 ${EnsRegTS} ${EnsRegYMonmean} ${EnsRegAnomaly}
 cdo timvar ${EnsRegAnomaly} ${EnsRegTimvar}
 
 

@@ -32,7 +32,8 @@ for file in ${files}; do
     target=${tarDIR}/${caseName}/${filename}
     if [ ! -f ${target} ]; then
       echo "Checking "${filename}" of "${Mod}" ... "
-      cdo sub ${Source} ${ensmean} ${target}
+      #ncdiff -O -3 ${Source} ${ensmean} ${target}
+      cdo -O sub ${Source} ${ensmean} ${target}
     fi
   done    
 done
