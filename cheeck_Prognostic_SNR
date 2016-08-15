@@ -12,9 +12,9 @@ ScriptHome=`pwd`
 #------------------------------------------------------------------------------
 # Parameters
 #------------------------------------------------------------------------------
-OutputDIR=/projects/NS9207K/earnest/SyncTransfer/PPP/n06h_AMIP_Nino34
+OutputDIR=/projects/NS9207K/earnest/SyncTransfer/PPP/FF_4th_try
 #D#ataDDIR=/projects/NS9207K/earnest/NorCPM/archive/normal_AMIP
-DataDDIR=/scratch/earnest/noresmexp/n06h_AMIP_Nino34
+DataDDIR=/scratch/earnest/noresmexp/FF_4th_try
 #D#ataDIR=/scratch/earnest/noresmexp/n10d_AMIP
 #O#utputDIR=/scratch/earnest/SyncTransfer/n10d_AMIP
 #D#ataDIR=/scratch/earnest/noresmexp/n04d_AMIP
@@ -22,7 +22,7 @@ expCaseName=`echo ${OutputDIR} | awk -F "/" '{print $NF}'`
 tempDIR=/scratch/earnest/temp/${expCaseName}
 #casePrefix=nudging_10d_AMIP
 #casePrefix=normal_AMIP
-casePrefix=nudging_06h_AMIP
+casePrefix=noresm1_ME_hist_s01
 MEyear=1997
 SkipOrigOutputs=F
 Seasonal_Decadal_pantad=TTF # for season, year, five years 

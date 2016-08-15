@@ -8,7 +8,7 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
 
   * Figures of the PPP for different levels are not shown because there are too many levels and GitHub can only present the web-page if the page size is smaller than 1MB.
 
-  * There are too many figures (over 32,000 figures and will be more). Therefore I have to seperate code and [the results] (https://github.com/TheEarnest/PPP-Results).
+  * There are too many figures (over 32,000 figures and will be more). Therefore I have to seperate code and [the results (PPP-Results)] (https://github.com/TheEarnest/PPP-Results).
 
 
 
