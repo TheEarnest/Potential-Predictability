@@ -56,7 +56,7 @@ if [ "${Seasonal_pantad}" == "T" ]; then
 fi
 
 # for five years pantad
-if [ "${FiveYears_pantad}" == "T" ] && [ "${Decadal_pantad}" == "T" ]; then
+if [ "${FiveYears_pantad}" == "T" ] || [ "${Decadal_pantad}" == "T" ]; then
 # indicate the need of annual averaged files
   for Member in ${Members}; do
     cd ${DataDIR}/${Member}/${Mod}/hist
