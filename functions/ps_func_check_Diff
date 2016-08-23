@@ -24,7 +24,7 @@ files=`ls --color=no ${prefix}*`
 for file in ${files}; do
   . ${funcPath}/ps_func_check_filefix
   cd ${DataDIR}
-  Sources=`ls ${DataDIR}/${casePrefix}*/${compartment}/hist/*${suffix}`
+  Sources=`ls ${DataDIR}/${casePrefix}*/${compartment}/hist/*${infix}*${suffix}`
   ensmean=`ls ${DIR}/${Mod}/hist_ensmean/*${suffix} `
   for Source in ${Sources}; do
     filename=`echo ${Source} | awk -F "/" '{print $NF}'`
@@ -32,8 +32,11 @@ for file in ${files}; do
     target=${tarDIR}/${caseName}/${filename}
     if [ ! -f ${target} ]; then
       echo "Checking "${filename}" of "${Mod}" ... "
-      #ncdiff -O -3 ${Source} ${ensmean} ${target}
-      cdo -O sub ${Source} ${ensmean} ${target}
+      if [ "${Mod}" == "ocn" ]; then 
+        ncdiff -O -3 ${Source} ${ensmean} ${target}
+      else
+        cdo -O sub ${Source} ${ensmean} ${target}
+      fi
     fi
   done    
 done
