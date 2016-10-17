@@ -18,6 +18,7 @@ EnsDiffVarDIR=${DIR}/${Mod}/EnsDiffVar
 file=${prefix}
  . ${funcPath}/ps_func_check_filefix
 lsDivisorStr="${DIR}/${Mod}/${casePrefix}*${infix}*timvar_detrend*"
+file=${lsDivisorStr}
 
 if [ -d ${EnsDiffVarDIR} ]; then
   cd ${DIR}/${Mod} 

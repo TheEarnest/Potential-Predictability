@@ -26,7 +26,7 @@ fi
 for file in ${files}; do
   . ${funcPath}/ps_func_check_filefix
   cd ${sqrDIR}
-  Sources=`ls */*${suffix} `
+  Sources=`ls */*${infix}*${suffix} `
   target=${tarDIR}/${casePrefix}${infix}EnsDiffVar.${suffix}
   if [ ! -f ${target} ]; then
     echo "Checking "${suffix}" of "${Mod}" ... "

@@ -1,0 +1,6 @@
+2016/09/09@14:44 :: Input streams have different number of variables per timestep
+divisor: /projects/NS9207K/earnest/SyncTransfer/PPP/FF_4th_try/ocn/Signal2NoiseRatio/noresm1_ME_hist_s01.micom.hy.EnsDiffVar_All_G01.nc
+dividend:  /projects/NS9207K/earnest/SyncTransfer/PPP/FF_4th_try/ocn/noresm1_ME_hist_s01.micom.hy.anomaly_timvar_detrend_G01
+2016/09/15@09:37 :: Input streams have different number of variables per timestep
+divisor: /projects/NS9207K/earnest/SyncTransfer/PPP/FF_4th_try/ocn/Signal2NoiseRatio/noresm1_ME_hist_s01.micom.hy.EnsDiffVar_All_G01.nc
+dividend:  /projects/NS9207K/earnest/SyncTransfer/PPP/FF_4th_try/ocn/noresm1_ME_hist_s01.micom.hy.anomaly_timvar_detrend_G01

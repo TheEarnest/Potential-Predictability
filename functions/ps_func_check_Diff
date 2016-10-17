@@ -25,7 +25,7 @@ for file in ${files}; do
   . ${funcPath}/ps_func_check_filefix
   cd ${DataDIR}
   Sources=`ls ${DataDIR}/${casePrefix}*/${compartment}/hist/*${infix}*${suffix}`
-  ensmean=`ls ${DIR}/${Mod}/hist_ensmean/*${suffix} `
+  ensmean=`ls ${DIR}/${Mod}/hist_ensmean/*${infix}*${suffix} `
   for Source in ${Sources}; do
     filename=`echo ${Source} | awk -F "/" '{print $NF}'`
     caseName=`echo ${filename} | awk -F "${infix}" '{print $1}'`
