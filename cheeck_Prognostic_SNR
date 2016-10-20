@@ -25,7 +25,7 @@ tempDIR=/scratch/earnest/temp/${expCaseName}
 casePrefix=noresm1_ME_hist_s01
 MEyear=1997
 SkipOrigOutputs=F
-Seasonal_Decadal_pantad=TTF # for season, year, five years 
+Seasonal_Decadal_pantad=TFF # for season, year, five years 
 ${DebugSetting}
 #ModelCompartments="lnd ocn atm ice"
 ModelCompartments="ocn"
