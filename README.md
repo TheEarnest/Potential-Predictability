@@ -11,6 +11,10 @@ Author: Mao-Lin Shen (E-mail: maolin.shen@uib.no)
   * There are too many figures (over 32,000 figures and will be more). Therefore I have to seperate code and [the results (PPP-Results)] (https://github.com/TheEarnest/PPP-Results).
 
 
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://github.com/TheEarnest/Prognostic-Potential-Predictability/badges/version.svg)](https://github.com/TheEarnest/Prognostic-Potential-Predictability)
+Downloads: [![Anaconda-Server Badge](https://github.com/TheEarnest/Prognostic-Potential-Predictability/badges/downloads.svg)](https://github.com/TheEarnest/Prognostic-Potential-Predictability)
 
 ------------------
 ## Do these before using the script ##
