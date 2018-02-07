@@ -10,7 +10,8 @@ if [ "${file_count}" == "1" ]; then
   . ${funcPath}/ps_func_calculate_SNR_wi_PPP
 else
   month=`echo ${file} | awk -F "_m" '{print $NF}' | cut -c1-2`
-  if [ "${month}" == "/p" ]; then
+  re='^[0-9]+$'
+  if ! [[ ${yournumber} =~ ${re} ]]; then
     EnsDiffVarFile=`ls --color=no ${lsDividendStrAll}   `
     namecheck=`echo ${EnsDiffVarFile} | awk -F "_G" '{print $NF}'`
 #    if [ "${namecheck}" != "06.nc" ]; then

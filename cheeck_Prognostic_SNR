@@ -67,13 +67,13 @@ for compartment in ${ModelCompartments}; do
   # the difference of each member and ensemble mean
     #------------------------------------------------------------------------
     # for all variables 
-    . ${funcPath}/ps_func_check_Diff
+#    . ${funcPath}/ps_func_check_Diff
     if [ "${Mod}"  == "lnd" ]; then
       . ${funcPath}/ps_func_check_number_of_variables 
     fi
-    . ${funcPath}/ps_func_check_sqr
+#    . ${funcPath}/ps_func_check_sqr
     #. ${funcPath}/ps_func_check_fld_Signal2NoiseRatio
-    . ${funcPath}/ps_func_check_Spread
+#    . ${funcPath}/ps_func_check_Spread
     . ${funcPath}/ps_func_check_Signal2NoiseRatio
     # spliting variables
     . ${funcPath}/ps_func_split_variables_check
