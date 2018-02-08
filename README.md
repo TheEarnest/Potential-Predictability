@@ -1,6 +1,8 @@
 
 Prognostic Potential Predictability (PPP)
 ==========
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1169199.svg)](https://doi.org/10.5281/zenodo.1169199)
+
 >> For calculating Prognostic Potential Predictability (PPP) on nostore-osl 
 >> Mainly evaluating if the system is well constrained. 
 
