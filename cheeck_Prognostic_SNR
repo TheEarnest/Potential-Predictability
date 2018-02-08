@@ -72,7 +72,6 @@ for compartment in ${ModelCompartments}; do
       . ${funcPath}/ps_func_check_number_of_variables 
     fi
 #    . ${funcPath}/ps_func_check_sqr
-    #. ${funcPath}/ps_func_check_fld_Signal2NoiseRatio
 #    . ${funcPath}/ps_func_check_Spread
     . ${funcPath}/ps_func_check_Signal2NoiseRatio
     # spliting variables
